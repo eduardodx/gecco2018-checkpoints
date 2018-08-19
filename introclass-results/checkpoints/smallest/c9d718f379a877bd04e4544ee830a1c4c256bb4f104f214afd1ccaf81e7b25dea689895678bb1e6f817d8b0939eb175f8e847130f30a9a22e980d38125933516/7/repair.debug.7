@@ -1,0 +1,251 @@
+GenProg Version: Sun Jan  7 23:46:13 UTC 2018
+
+--allow-coverage-fail false
+--appp 0.33333
+--asm-code-only false
+--best-edit-rule "1 * fault_loc_weight ; 1 * max_test_fail_prob ; -1 * num_tests"
+--best-test-rule "1 * test_fail_prob ; 1 * test_fail_count ; -1 * test_pass_count"
+--checkpoints true
+--clone-file ""
+--compiler "gcc"
+--compiler-command "python3 compile.py __EXE_NAME__ >& /dev/null"
+--compiler-opts ""
+--continue false
+--coverage-info ""
+--coverage-per-test false
+--crossover "one"
+--crossp 0.5
+--delp 0.33333
+--describe-machine false
+--diversity-selection 0
+--edit-script false
+--elf-risc false
+--elitism 4
+--exclude-edits ""
+--exp-diff false
+--fault-file ""
+--fault-path "coverage.path.neg"
+--fault-scheme "path"
+--fitness-in-parallel 1
+--fix-file ""
+--fix-oracle ""
+--fix-path "coverage.path.pos"
+--fix-scheme "default"
+--flatten-path ""
+--format "txt"
+--gen-per-exchange 1
+--generations 30
+--geomp 0.5
+--gui false
+--hostname "127.0.0.1"
+--ignore-dead-code false
+--ignore-equiv-appends false
+--ignore-standard-headers false
+--ignore-string-equiv-fixes false
+--ignore-untyped-returns false
+--incoming-pop ""
+--keep-source false
+--label-repair false
+--lase-deallocation-api "free"
+--lase-paired-functions ""
+--lasep 0
+--max-evals 0
+--minimization false
+--mt-cov false
+--multiopt-minimize false
+--multiopt-no-inf false
+--neg-tests 6
+--neg-weight 1
+--negative-test-weight 2
+--nested false
+--neutral-walk-max-size 0
+--neutral-walk-weight ""
+--nht-id "global"
+--nht-port 51000
+--nht-server ""
+--no-rep-cache true
+--no-test-cache true
+--num-comps 2
+--num-objectives 2
+--oracle-genome ""
+--pd-mutp 0.25
+--popsize 40
+--port 60000
+--pos-tests 2
+--pos-weight 0.1
+--prefix "./"
+--preprocessor ""
+--print-incremental-evals false
+--print-source-name false
+--program "smallest.i"
+--promut 1
+--quiet false
+--regen-paths false
+--rep ""
+--rep-cache ""
+--repp 0
+--samp-strat "variant"
+--sample 1
+--sample-runs 100
+--sanity "default"
+--search "ga"
+--seed 7
+--semantic-check "exact"
+--single-fitness true
+--skip-failed-sanity-tests true
+--skip-tests ""
+--split-search 0
+--sport 65000
+--subatom-constp 0.5
+--subatom-mutp 0
+--swap-bug false
+--swapp 0.33333
+--template-cache ""
+--templates ""
+--test-command "__TEST_SCRIPT__ __TEST_NAME__ __EXE_NAME__ __FITNESS_FILE__ >& /dev/null"
+--test-script "python3 test.py"
+--tournament-size 2
+--uniq false
+--use-partition -1
+--valgrind false
+--variants-exchanged 50
+--version false
+cilRep: preprocessing IO function signatures: /tmp/tmpb929c8.c /tmp/tmpb4c3ac.c
+cilRep: done preprocessing IO function signatures
+cilrep: from_source: pre: stmt_count = 0
+cilRep: smallest.i: parsing
+cilRep: smallest.i: parsed (0.0266066 MB)
+cilrep: from_source: post: stmt_count: 31
+cilRep: shared size: 0.0324993 MB
+cilRep: private size: 0.00689983 MB
+cachingRepresentation: sanity checking begins
+	p1: true (1)
+	p2: true (1)
+	n1: false (0)
+	n2: false (0)
+	n3: false (0)
+	n4: false (0)
+	n5: false (0)
+	n6: false (0)
+cachingRepresentation: sanity checking passed (time_taken = 4.90554)
+faultLocRep: compute_localization: fault_scheme: path, fix_scheme: default
+Rep: coverage_sourcename: /workdir/experiment/smallest-c9d718f379a877bd04e4544ee830a1c4c256bb4f104f214afd1ccaf81e7b25dea689895678bb1e6f817d8b0939eb175f8e847130f30a9a22e980d38125933516-7/./coverage.c
+cilRep: instrumenting for fault localization
+cilRep: done instrumenting for fault localization
+coverage negative:
+	test: 1
+	test: 2
+	test: 3
+	test: 4
+	test: 5
+	test: 6
+coverage positive:
+	test: 1
+	test: 2
+cilRep: smallest.cache: saved
+cachingRep: smallest.cache: saved
+faultlocRep: smallest.cache: saved
+cilrep done serialize
+cilRep: stmt_count = 31
+cilRep: stmts in weighted_path = 16
+cilRep: total weight = 4.2
+cilRep: stmts in weighted_path with weight >= 1.0 = 3
+cilRep: smallest.i (code bank/base file; atoms [1,31])
+cilRep: 1 file(s) total in representation
+search: genetic algorithm begins (|original| = 0.0346193 MB)
+search: initial population (sizeof one variant = 0.0367298 MB)
+	0.23125 s(31,16)
+	0.11875 a(8,7)
+	0.11875 a(9,3)
+	0.11875 d(8)
+	0.28525 s(7,31)
+	0.11875 a(8,2)
+	0.128571 a(2,31)
+	0.11875 a(7,16)
+	0.11875 s(9,30)
+	0.11875 a(9,1)
+	0.4125 a(9,4)
+	0.176571 d(3)
+	0.11875 a(2,17)
+	0.11875 a(9,3)
+	0.11875 a(9,10)
+	0.11875 d(8)
+	0.0634286 s(8,4)
+	0.11875 d(7)
+	0.11875 a(8,23)
+	0.11875 a(23,9)
+	0.11875 s(7,16)
+	0.11875 a(7,16)
+	0.11875 s(7,9)
+	0.034 d(5)
+	0.11875 a(9,24)
+	0.11875 a(7,10)
+	0.28525 d(31)
+	0.11875 s(8,9)
+	0.11875 d(9)
+	0.11875 a(9,1)
+	0.176571 s(7,3)
+	0.27925 s(7,10)
+	0.11875 d(9)
+	0.11875 a(7,23)
+	0.034 s(7,5)
+	0.27925 s(17,16)
+	0.11875 d(7)
+	0.11875 d(8)
+	0.11875 d(16)
+	0.11875 original
+search: generation 1 (sizeof one variant = 0.0531559 MB)
+	0.11875 a(7,16) a(4,2)
+	0.0634286 d(9) s(8,4)
+	0.11875 a(7,16) d(23)
+	0.11875 d(9) d(7)
+	0.11875 a(7,16) a(9,24)
+	0.11875 a(9,3) a(7,16)
+	0.11875 a(7,16) d(7)
+	0.0634286 a(9,3) s(4,8)
+	0.0634286 s(8,4) d(9)
+	0.11875 a(7,16) a(9,30)
+	0.0634286 s(8,4) d(9)
+	0.11875 a(7,16) a(10,17)
+	0.11875 a(9,1) d(7)
+	0.367893 a(8,7) s(9,4)
+	0.11875 a(9,1) s(30,16)
+	0.11875 a(8,7) d(9)
+	0.11875 a(9,3) d(9)
+	0.11875 a(8,2) a(4,17)
+	0.608929 a(8,2) s(9,6)
+	0.26125 d(7) s(3,10)
+	0.11875 a(8,2) s(8,30)
+	0.11875 d(7) d(8)
+	0.0634286 a(9,10) s(9,2)
+	0.11875 d(8) a(7,31)
+	0.11875 a(9,10) d(9)
+	0.11875 d(8) a(7,8)
+	0.11875 a(9,3) d(8)
+	0.27925 s(7,10) a(31,16)
+	0.11875 a(9,3) d(7)
+	0.27925 s(7,10) a(31,1)
+	0.176571 d(3) a(24,30)
+	0.11875 a(9,1) d(7)
+	  0 s(9,30) d(1)
+	0.608929 d(7) s(9,6)
+	  1 a(8,2) s(8,2)
+
+Repair Found: a(8,2) s(8,2)
+Repair Name: a(8,2) s(8,2)
+Test Cases Skipped: ""
+Current Time: 1515586211.479207
+cilRep: shared size: 0.0325956 MB
+cilRep: private size: 0.0724888 MB
+
+Variant Test Case Queries: 75
+"Test Suite Evaluations": 9.375
+
+Compile Failures: 0
+Wall-Clock Seconds Elapsed: 198.205
+  Activity Name                     Count Seconds = Percent of Total Time
+  sanity_check                          1   0.020 = 0.0103107%
+  rebuild files                      1370   0.202 = 0.104186%
+  compile                              41   5.690 = 2.93763%
+  test                                 55 187.785 = 96.9479%
+  TOTAL                                   193.697 = 97.7228% (avg CPU usage)

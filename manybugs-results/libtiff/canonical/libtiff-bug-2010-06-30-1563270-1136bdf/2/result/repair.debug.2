@@ -1,0 +1,640 @@
+GenProg Version: Tue Aug 29 02:35:57 EDT 2017
+
+--allow-coverage-fail false
+--appp 0.33333
+--asm-code-only false
+--best-edit-rule "1 * fault_loc_weight ; 1 * max_test_fail_prob ; -1 * num_tests"
+--best-test-rule "1 * test_fail_prob ; 1 * test_fail_count ; -1 * test_pass_count"
+--checkpoints false
+--clone-file ""
+--compiler "gcc"
+--compiler-command "perl compile.pl __EXE_NAME__ > /dev/null"
+--compiler-opts ""
+--continue false
+--coverage-info ""
+--coverage-per-test false
+--crossover "subset"
+--crossp 0.5
+--delp 0.33333
+--describe-machine false
+--diversity-selection 0
+--edit-script false
+--elf-risc false
+--elitism 4
+--exclude-edits ""
+--exp-diff false
+--fault-file ""
+--fault-path "coverage.path.neg"
+--fault-scheme "path"
+--fitness-in-parallel 1
+--fix-file ""
+--fix-oracle ""
+--fix-path "coverage.path.pos"
+--fix-scheme "default"
+--flatten-path ""
+--format "txt"
+--gen-per-exchange 1
+--generations 10
+--geomp 0.5
+--gui false
+--hostname "127.0.0.1"
+--ignore-dead-code false
+--ignore-equiv-appends false
+--ignore-standard-headers false
+--ignore-string-equiv-fixes false
+--ignore-untyped-returns false
+--incoming-pop ""
+--keep-source false
+--label-repair false
+--lase-deallocation-api "free"
+--lase-paired-functions ""
+--lasep 0
+--max-evals 0
+--minimization false
+--mt-cov false
+--multiopt-minimize false
+--multiopt-no-inf false
+--neg-tests 1
+--neg-weight 1
+--negative-test-weight 2
+--nested false
+--neutral-walk-max-size 0
+--neutral-walk-weight ""
+--nht-id "global"
+--nht-port 51000
+--nht-server ""
+--no-rep-cache true
+--no-test-cache true
+--num-comps 2
+--num-objectives 2
+--oracle-genome ""
+--pd-mutp 0.25
+--popsize 40
+--port 60000
+--pos-tests 76
+--pos-weight 0.1
+--prefix "preprocessed"
+--preprocessor ""
+--print-incremental-evals false
+--print-source-name false
+--program "bugged-program.txt"
+--promut 1
+--quiet false
+--regen-paths false
+--rep "cilpatch"
+--rep-cache ""
+--repp 0
+--samp-strat "variant"
+--sample 1
+--sample-runs 100
+--sanity "default"
+--search "ga"
+--seed 2
+--semantic-check "exact"
+--single-fitness false
+--skip-failed-sanity-tests false
+--skip-tests ""
+--split-search 0
+--sport 65000
+--subatom-constp 0.5
+--subatom-mutp 0
+--swap-bug false
+--swapp 0.33333
+--template-cache ""
+--templates ""
+--test-command "__TEST_SCRIPT__ __TEST_NAME__ __EXE_NAME__ __FITNESS_FILE__ >& /dev/null"
+--test-script "/root/src/Python/python /root/checkpoints/test/test_checkpoints.py"
+--tournament-size 2
+--uniq false
+--use-partition -1
+--valgrind false
+--variants-exchanged 50
+--version false
+cilRep: preprocessing IO function signatures: /tmp/tmpba29ec.c /tmp/tmp179fab.c
+cilRep: done preprocessing IO function signatures
+cilrep: from_source: pre: stmt_count = 0
+cilRep: preprocessed/tools/tiff2pdf.c: parsing
+cilRep: preprocessed/tools/tiff2pdf.c: parsed (0.376303 MB)
+cilrep: from_source: post: stmt_count: 3437
+cilRep: shared size: 0.607916 MB
+cilRep: private size: 0.00644588 MB
+cachingRepresentation: sanity checking begins
+	p1: true (1)
+	p2: true (1)
+	p3: true (1)
+	p4: true (1)
+	p5: true (1)
+	p6: true (1)
+	p7: true (1)
+	p8: true (1)
+	p9: true (1)
+	p10: true (1)
+	p11: true (1)
+	p12: true (1)
+	p13: true (1)
+	p14: true (1)
+	p15: true (1)
+	p16: true (1)
+	p17: true (1)
+	p18: true (1)
+	p19: true (1)
+	p20: true (1)
+	p21: true (1)
+	p22: true (1)
+	p23: true (1)
+	p24: true (1)
+	p25: true (1)
+	p26: true (1)
+	p27: true (1)
+	p28: true (1)
+	p29: true (1)
+	p30: true (1)
+	p31: true (1)
+	p32: true (1)
+	p33: true (1)
+	p34: true (1)
+	p35: true (1)
+	p36: true (1)
+	p37: true (1)
+	p38: true (1)
+	p39: true (1)
+	p40: true (1)
+	p41: true (1)
+	p42: true (1)
+	p43: true (1)
+	p44: true (1)
+	p45: true (1)
+	p46: true (1)
+	p47: true (1)
+	p48: true (1)
+	p49: true (1)
+	p50: true (1)
+	p51: true (1)
+	p52: true (1)
+	p53: true (1)
+	p54: true (1)
+	p55: true (1)
+	p56: true (1)
+	p57: true (1)
+	p58: true (1)
+	p59: true (1)
+	p60: true (1)
+	p61: true (1)
+	p62: true (1)
+	p63: true (1)
+	p64: true (1)
+	p65: true (1)
+	p66: true (1)
+	p67: true (1)
+	p68: true (1)
+	p69: true (1)
+	p70: true (1)
+	p71: true (1)
+	p72: true (1)
+	p73: true (1)
+	p74: true (1)
+	p75: true (1)
+	p76: true (1)
+	n1: false (0)
+cachingRepresentation: sanity checking passed (time_taken = 59.1628)
+faultLocRep: compute_localization: fault_scheme: path, fix_scheme: default
+Rep: coverage_sourcename: /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2010-06-30-1563270-1136bdf/coverage/coverage.c
+cilRep: instrumenting for fault localization
+cilRep: done instrumenting for fault localization
+coverage negative:
+	test: 1
+coverage positive:
+	test: 1
+	test: 2
+	test: 3
+	test: 4
+	test: 5
+	test: 6
+	test: 7
+	test: 8
+	test: 9
+	test: 10
+	test: 11
+	test: 12
+	test: 13
+	test: 14
+	test: 15
+	test: 16
+	test: 17
+	test: 18
+	test: 19
+	test: 20
+	test: 21
+	test: 22
+	test: 23
+	test: 24
+	test: 25
+	test: 26
+	test: 27
+	test: 28
+	test: 29
+	test: 30
+	test: 31
+	test: 32
+	test: 33
+	test: 34
+	test: 35
+	test: 36
+	test: 37
+	test: 38
+	test: 39
+	test: 40
+	test: 41
+	test: 42
+	test: 43
+	test: 44
+	test: 45
+	test: 46
+	test: 47
+	test: 48
+	test: 49
+	test: 50
+	test: 51
+	test: 52
+	test: 53
+	test: 54
+	test: 55
+	test: 56
+	test: 57
+	test: 58
+	test: 59
+	test: 60
+	test: 61
+	test: 62
+	test: 63
+	test: 64
+	test: 65
+	test: 66
+	test: 67
+	test: 68
+	test: 69
+	test: 70
+	test: 71
+	test: 72
+	test: 73
+	test: 74
+	test: 75
+	test: 76
+cilRep: bugged-program.cache: saved
+cachingRep: bugged-program.cache: saved
+faultlocRep: bugged-program.cache: saved
+cilrep done serialize
+cilRep: stmt_count = 3437
+cilRep: stmts in weighted_path = 972
+cilRep: total weight = 972
+cilRep: stmts in weighted_path with weight >= 1.0 = 972
+cilRep: tools/tiff2pdf.c (code bank/base file; atoms [1,3632])
+cilRep: 1 file(s) total in representation
+search: genetic algorithm begins (|original| = 0.577323 MB)
+search: initial population (sizeof one variant = 0.57997 MB)
+	 76 d(3630)
+	 76 d(1507)
+	 76 d(2907)
+	 76 d(334)
+	 76 s(2592,2565)
+	 76 d(807)
+	 76 s(2919,2927)
+	 76 d(455)
+	 76 s(3412,3377)
+	 76 a(468,986)
+	 76 a(2013,462)
+	 76 s(292,295)
+	 76 a(1303,830)
+	 76 a(2597,1371)
+	 76 d(2132)
+	 76 s(2420,2441)
+	 76 d(2391)
+	 76 a(875,891)
+	 76 s(2204,2200)
+	 76 d(468)
+	 76 d(3330)
+	 76 s(3384,3390)
+	 76 a(272,462)
+	 76 s(2453,2504)
+	 76 d(3441)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2010-06-30-1563270-1136bdf/000025/tools/tiff2pdf.c  s(1675,1506) fails to compile
+	  0 s(1675,1506)
+	 76 s(1345,1395)
+	 76 a(3405,2122)
+	 76 d(2306)
+	 76 a(1311,1346)
+	 76 d(426)
+	 76 d(809)
+	 76 a(2450,2946)
+	 76 a(817,1383)
+	 76 s(333,323)
+	 76 d(3198)
+	 76 a(2204,858)
+	 76 a(901,931)
+	 76 d(1462)
+	 76 original
+search: generation 1 (sizeof one variant = 0.881979 MB)
+	 76 s(2204,2200) d(3631)
+	 76 d(809) s(3417,3390)
+	 76 d(809) d(2509)
+	 76 d(468) a(807,1421)
+	 76 a(2450,2946) a(949,930)
+	 76 a(817,1383) s(3368,3447)
+	 76 d(437)
+	 76 d(3330) d(334) d(1465)
+	 76 d(334) a(2502,2446)
+	 76 d(3330) d(2236)
+	 76 a(2204,858) s(2238,2267)
+	 76 a(2013,462) a(2305,2232)
+	 76 d(3630) d(324)
+	 76 s(3434,3625)
+	 76 s(292,295) d(1465)
+	 76 d(3630) d(3328)
+	 76 d(3198) d(457)
+	 76 d(426) d(2497)
+	 76 d(3198) d(3454)
+	 76 d(426) a(2440,2457)
+	 76 a(817,1383) s(3454,3438)
+	 76 a(875,891) d(3602)
+	 76 s(2425,2509)
+	 76 d(807) a(2203,3422)
+	  0 s(2410,2389)
+	 76 d(807) d(2409)
+	 76 d(2132) s(3420,3445)
+	 76 a(2309,2347)
+	 76 d(1462) a(3439,2591)
+	 76 d(2132) d(2828)
+	 76 d(1507) d(441)
+	 76 s(2204,2200) d(428)
+	 76 d(1507) d(1023)
+	 76 s(2204,2200) s(1384,1308)
+	 76 a(2013,462) s(3357,3363)
+	 76 s(934,2946)
+	 76 s(3412,3377) s(2442,2503)
+	 76 a(2013,462) d(1371)
+	 76 a(901,931) s(1680,1654)
+	 76 a(901,931) d(426) d(823)
+	 76 d(426) d(967)
+	 76 a(901,931) a(2926,3547)
+	 76 d(2382)
+	 76 a(272,462) a(2450,2946) d(2224)
+	 76 a(2450,2946) d(1318)
+	 76 a(272,462) a(2772,891)
+	 76 s(2204,2200) d(2851)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2010-06-30-1563270-1136bdf/000083/tools/tiff2pdf.c  d(3441) a(864,896) fails to compile
+	  0 d(3441) a(864,896)
+	 76 s(2204,2200) a(2460,2499)
+	 76 d(3441) d(2384)
+	 76 s(3412,3377) s(3412,3377) a(2501,2440)
+	 76 s(2431,2498)
+	 76 s(3412,3377) d(3304)
+	 76 s(3412,3377) s(1517,1657)
+	 76 s(333,323) a(1360,1301)
+	 76 d(334) a(1462,1415)
+	 76 s(1673,1465)
+	 76 s(881,990)
+	 76 d(2306) s(2499,2455)
+	 76 s(2453,2504) a(2118,1421)
+Elite size: 4
+	 76 d(3630)
+	 76 d(1507)
+	 76 d(2907)
+	 76 d(334)
+Best individual (Elite U Pop'):
+ 76 d(3630) 
+search: generation 2 (sizeof one variant = 0.882885 MB)
+	 76 d(2382) d(1307)
+	 76 d(1507) a(3387,1007)
+	 76 d(1507) d(2389)
+	 76 a(2450,2946) d(1318) d(2162)
+	 76 s(881,990) d(2453)
+	 76 d(334) s(881,990) d(1298)
+	 76 s(881,990) d(2493)
+	 76 d(334) a(1462,1415) a(3310,2394)
+	 76 a(817,1383) s(2914,2853)
+	 76 s(2410,2389) a(890,1421)
+	 76 a(817,1383) s(3368,3447) a(1009,3248)
+	  0 s(2410,2389) a(828,2223)
+	  0 d(2132) d(2828) a(945,1421)
+	  0 d(3630) d(334)
+	 76 s(2431,2498) s(1061,300)
+	 76 d(3441) d(2431)
+	 76 s(2431,2498) a(3403,3454)
+	 76 d(3441) d(2384) s(3616,3401)
+	 76 d(334) a(1462,1415) s(2897,2900)
+	 76 d(3198) d(457) d(3369)
+	 76 d(3630) d(3443)
+	 76 s(881,990) d(2249)
+	 76 d(1507) a(3380,927)
+	 76 s(292,295) d(1465) d(326)
+	 76 d(1507) s(2884,2868)
+	 76 s(292,295) d(1465) a(1652,872)
+	 76 s(2204,2200) d(3631) d(3330) d(1465) a(2890,2869)
+	 76 d(3330) s(2204,2200) s(1030,1084)
+	 76 s(2204,2200) d(3631) d(816)
+	 76 d(3330) d(334) d(1465) s(2248,2312)
+	 76 s(2204,2200) s(2499,2455) d(2237)
+	 76 s(2204,2200) s(2494,2440)
+	 76 s(2204,2200) a(2460,2499) s(2429,2426)
+	 76 d(2306) s(2499,2455) d(2502)
+	 76 s(3412,3377) s(3412,3377) a(2501,2440) a(805,2586)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2010-06-30-1563270-1136bdf/000131/tools/tiff2pdf.c  d(3441) a(864,896) a(834,3499) fails to compile
+	  0 d(3441) a(864,896) a(834,3499)
+	 76 d(428) a(3400,2999)
+	 76 s(2204,2200) s(2523,2503)
+	 76 s(2204,2200) d(428) s(311,317)
+	 76 a(901,931) a(2926,3547) a(1089,2868)
+	 76 a(2013,462) s(3357,3363) a(337,300)
+	 76 a(2450,2946) d(1318) d(2197)
+	 76 a(2450,2946) d(1318) a(269,2296)
+	 76 a(2013,462) s(3357,3363) d(319)
+	 76 s(2442,2503) a(2450,2946) d(2224) d(3627)
+	 76 a(2450,2946) d(1011)
+	 76 s(3412,3377) s(2442,2503) a(2002,1685)
+	 76 a(272,462) a(2450,2946) d(2224) s(2720,2733)
+	 76 s(1517,1657) a(875,891) d(3602) a(2339,2231)
+	 76 a(875,891) d(3358)
+	 76 s(3412,3377) s(1517,1657) s(800,793)
+	 76 a(875,891) d(3602) s(2272,2238)
+	 76 s(881,990) s(2422,2435)
+	 76 s(934,2946) a(1305,3320)
+	 76 d(807) a(2203,3422) s(1523,1530)
+	 76 d(3441) d(2384) d(995)
+Elite size: 4
+	 76 d(3630)
+	 76 d(1507)
+	 76 d(2907)
+	 76 d(334)
+Best individual (Elite U Pop'):
+ 76 d(3630) 
+search: generation 3 (sizeof one variant = 0.883734 MB)
+	 76 d(3630) s(3350,3329)
+	 76 d(334) a(1462,1415) a(3310,2394) a(3388,2586)
+	 76 s(1523,1530) a(2013,462) d(319) d(3248)
+	 76 s(3357,3363) d(319) d(807) a(2203,3422) a(2595,2557)
+	 76 d(807) a(2203,3422) s(1523,1530) s(2831,2849)
+	 76 a(2013,462) s(3357,3363) d(319) s(1056,1397)
+	 76 d(2907) s(2325,2324)
+	 76 a(901,931) a(2926,3547) a(1089,2868) s(987,1007)
+	 76 d(816) s(1030,1084) d(2407)
+	 76 s(1030,1084) d(3631) d(816) s(3459,3388)
+	 76 s(2204,2200) d(3631) d(816) s(2494,2496)
+	 76 d(3330) s(2204,2200) s(1030,1084) s(978,986)
+	 76 d(1465) s(311,317) s(2168,2167)
+	 76 s(2204,2200) d(428) s(311,317) s(292,295) d(326) s(2282,2313)
+	 76 s(292,295) d(1465) d(326) s(1517,1658)
+	 76 s(2204,2200) d(428) s(311,317) s(824,813)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2010-06-30-1563270-1136bdf/000168/tools/tiff2pdf.c  s(2204,2200) d(3631) d(816) a(457,430) fails to compile
+	  0 s(2204,2200) d(3631) d(816) a(457,430)
+	 76 d(334) s(3367,3404)
+	 76 d(428) a(3400,2999) a(2593,441)
+	 76 s(292,295) d(1465) d(326) s(859,949)
+	 76 s(2410,2389) a(890,1421) s(2890,2872)
+	 76 a(2450,2946) d(1318) a(269,2296) s(2389,2404)
+	 76 d(3441) a(834,3499) d(2907) s(801,806)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2010-06-30-1563270-1136bdf/000175/tools/tiff2pdf.c  d(3441) a(864,896) a(834,3499) d(1311) fails to compile
+	  0 d(3441) a(864,896) a(834,3499) d(1311)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2010-06-30-1563270-1136bdf/000176/tools/tiff2pdf.c  d(3441) a(864,896) a(834,3499) d(2388) fails to compile
+	  0 d(3441) a(864,896) a(834,3499) d(2388)
+	 76 d(2907) s(2346,2248)
+	 76 s(2204,2200) s(1030,1084) d(3441) d(2431) a(2544,3371)
+	 76 d(3441) d(2431) d(3330) a(1514,2926)
+	 76 d(3330) s(2204,2200) s(1030,1084) s(1089,1348)
+	 76 d(3441) d(2431) s(937,964)
+	 76 d(334) d(3630) d(334) d(2846)
+	 76 d(334) d(334) s(881,990) d(2544)
+	 76 d(334) s(881,990) d(1298) s(2554,2549)
+	 76 d(3630) d(334) s(2305,2272)
+	 76 a(3380,927) a(2560,2296)
+	 76 d(3630) d(1507) a(3380,927) d(1055)
+	 76 d(1507) a(3380,927) d(1037)
+	 76 d(3630) d(1383)
+	 76 s(881,990) s(2422,2435) s(2558,2575)
+	 76 s(3412,3377) s(3412,3377) a(2501,2440) a(805,2586) a(1654,309)
+	 76 d(3630) d(3443) a(830,886)
+	 76 s(881,990) s(2422,2435) d(2899)
+	 76 a(2450,2946) d(1011) s(2436,2520)
+	 76 a(2450,2946) d(1318) d(2162) s(2168,2170)
+	 76 s(881,990) s(2422,2435) a(1416,798)
+	 76 d(3441) d(2384) d(995) a(3413,3438)
+	 76 a(2450,2946) d(1318) d(2197) a(2188,1906)
+	 76 d(1318) d(2197) a(988,2383)
+	 76 a(2450,2946) d(1318) d(2197) a(979,2868)
+	 76 d(2382) d(1307) s(310,304)
+	 76 a(817,1383) s(3368,3447) s(3357,3363) s(1687,1674)
+	 76 a(2013,462) a(1009,3248) d(2502)
+	 76 a(817,1383) s(3368,3447) a(1009,3248) a(3324,455)
+	 76 a(2013,462) s(3357,3363) a(337,300) a(2579,1354)
+Elite size: 4
+	 76 d(3630)
+	 76 d(1507)
+	 76 d(2907)
+	 76 d(334)
+Best individual (Elite U Pop'):
+ 76 d(3630) 
+search: generation 4 (sizeof one variant = 0.88452 MB)
+	 76 d(816) s(1030,1084) d(2407) d(311)
+	 76 s(881,990) s(2422,2435) a(1416,798) a(3398,2356)
+	 76 a(2450,2946) d(1318) a(269,2296) s(2389,2404) d(3628)
+	 76 d(2907) d(801)
+	 76 d(334) s(3367,3404) d(1402)
+	 76 s(881,990) s(2422,2435) a(1416,798) a(2187,2394)
+	 76 d(3330) s(2204,2200) s(1030,1084) s(1089,1348) d(2205)
+	 76 s(2204,2200) d(428) s(311,317) s(292,295) d(326) s(2282,2313) a(2520,1009)
+	 76 a(1009,3248) s(2305,2272) d(966)
+	 76 d(3630) a(817,1383) d(1506)
+	 76 a(817,1383) s(3368,3447) a(1009,3248) a(3324,455) d(2579)
+	  0 d(3630) d(334) s(2305,2272) d(3305)
+	 76 a(2013,462) a(2579,1354) d(2907) d(3607)
+	 76 s(2325,2324) s(3357,3363) d(3402)
+	 76 a(2013,462) s(3357,3363) a(337,300) a(2579,1354) d(931)
+	 76 d(2907) s(2325,2324) d(1015)
+	 76 s(2494,2496) d(2384) d(995) a(2405,428)
+	 76 d(2384) a(3413,3438) s(2494,2496) a(988,1420)
+	 76 s(2204,2200) d(3631) d(816) s(2494,2496) d(3591)
+	 76 d(3441) d(2384) d(995) a(3413,3438) a(2574,1505)
+	 76 d(3631) s(311,317) s(2168,2167) a(930,857)
+	 76 s(311,317) s(2168,2167) s(2204,2200) d(1392)
+	 76 s(2204,2200) d(3631) d(816) s(2494,2496) d(2188)
+	 76 d(1465) s(311,317) s(2168,2167) s(1508,1532)
+	 76 d(3630) d(3441) a(864,2591)
+	 76 d(2431) d(3330) a(1514,2926) d(3630) a(826,986)
+	 76 d(3630) a(2728,2926)
+	 76 d(3441) d(2431) d(3330) a(1514,2926) a(3625,3435)
+	 76 d(334) s(3367,3404) d(2177)
+	 76 d(1507) d(2568)
+	 76 s(2410,2389) a(890,1421) s(2890,2872) s(1514,1508)
+	 76 d(3441) a(834,3499) d(2907) s(801,806) s(3332,3339)
+	 76 d(2544) d(1311) a(2597,2572)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2010-06-30-1563270-1136bdf/000238/tools/tiff2pdf.c  a(864,896) a(834,3499) d(1311) d(334) d(334) s(881,990) d(2544) d(1298) fails to compile
+	  0 a(864,896) a(834,3499) d(1311) d(334) d(334) s(881,990) d(2544) d(1298)
+	 76 d(334) d(334) s(881,990) d(2544) s(2733,2718)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2010-06-30-1563270-1136bdf/000240/tools/tiff2pdf.c  d(3441) a(864,896) a(834,3499) d(1311) d(3623) fails to compile
+	  0 d(3441) a(864,896) a(834,3499) d(1311) d(3623)
+	 76 a(2013,462) s(3357,3363) d(319) s(1056,1397) a(1417,1505)
+	 76 s(881,990) s(2422,2435) s(2558,2575) d(3390)
+	 76 d(2899) s(2204,2200) d(3631) s(3219,3205)
+	 76 s(2204,2200) d(816) s(2494,2496) a(2561,1505)
+	 76 s(881,990) s(2422,2435) d(2899) d(470)
+	 76 s(2204,2200) d(3631) d(816) s(2494,2496) s(2524,2458)
+	 76 s(1056,1397) d(2132)
+	 76 d(2907) s(1056,1397) d(292)
+	 76 a(2013,462) s(3357,3363) d(319) s(1056,1397) a(2591,3300)
+	 76 d(2907) s(2325,2324) d(3381)
+	 76 a(2013,462) a(1009,3248) d(2502) a(3201,3201)
+	 76 d(334) s(3367,3404) s(2312,2234)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2010-06-30-1563270-1136bdf/000253/tools/tiff2pdf.c  d(3330) d(3441) a(864,896) d(2388) a(3627,3616) fails to compile
+	  0 d(3330) d(3441) a(864,896) d(2388) a(3627,3616)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2010-06-30-1563270-1136bdf/000254/tools/tiff2pdf.c  d(3441) a(864,896) d(3330) s(2204,2200) a(3619,1521) fails to compile
+	  0 d(3441) a(864,896) d(3330) s(2204,2200) a(3619,1521)
+	 76 d(3330) s(2204,2200) s(1030,1084) s(978,986) s(310,301)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2010-06-30-1563270-1136bdf/000256/tools/tiff2pdf.c  d(3441) a(864,896) a(834,3499) d(2388) s(2895,2862) fails to compile
+	  0 d(3441) a(864,896) a(834,3499) d(2388) s(2895,2862)
+	 76 s(1523,1530) a(2013,462) d(319) d(3248) a(2879,1354)
+	 76 s(881,990) s(2422,2435) s(2558,2575) d(2128)
+Elite size: 4
+	 76 d(3630)
+	 76 d(1507)
+	 76 d(2907)
+	 76 d(334)
+Best individual (Elite U Pop'):
+ 76 d(3630) 
+search: generation 5 (sizeof one variant = 0.885189 MB)
+	 76 d(3441) a(834,3499) d(2907) s(801,806) s(3332,3339) d(3606)
+	 76 d(334) s(3367,3404) d(2177) s(2503,2431)
+	 76 a(817,1383) d(1506) d(2227)
+	 76 d(1507) d(3630) d(1506) d(2917)
+	 76 d(3630) a(817,1383) d(1506) a(3389,3613)
+	 76 d(1507) d(809)
+	 76 a(337,300) d(931) d(334) s(3367,3404) d(3409)
+	 76 d(334) a(2013,462) a(337,300) a(2579,1354) d(931) d(2192)
+	 76 a(2013,462) s(3357,3363) a(337,300) a(2579,1354) d(931) a(2848,1402)
+	 76 d(334) s(3367,3404) d(1402) a(1305,1331)
+	 76 d(3630) a(3455,3592)
+	 76 s(2204,2200) d(3631) d(816) s(2494,2496) d(3591) a(3400,3420)
+	 76 s(2494,2496) d(2384) d(995) a(2405,428) d(2522)
+	 76 a(2013,462) s(3357,3363) a(337,300) a(2579,1354) d(931) a(3606,3625)
+	 76 a(2450,2946) d(1318) a(269,2296) s(2389,2404) d(3628) d(3218)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2010-06-30-1563270-1136bdf/000274/tools/tiff2pdf.c  d(3441) a(864,896) a(834,3499) d(2388) s(2895,2862) a(978,948) fails to compile
+	  0 d(3441) a(864,896) a(834,3499) d(2388) s(2895,2862) a(978,948)
+	 76 s(881,990) s(2422,2435) s(2558,2575) d(3390) s(2189,2183)
+	 76 d(3441) d(2431) d(3330) a(1514,2926) a(3625,3435) a(2725,1530)
+	228 d(334) d(3330) s(978,986) d(463)
+
+Repair Found: d(334) d(3330) s(978,986) d(463)
+Repair Name: d(334) d(3330) s(978,986) d(463)
+Test Cases Skipped: ""
+Current Time: 1504008032.546009
+cilRep: shared size: 0.615588 MB
+cilRep: private size: 0.325695 MB
+
+Variant Test Case Queries: 21791
+"Test Suite Evaluations": 283
+
+Compile Failures: 12
+Wall-Clock Seconds Elapsed: 19474.1
+  Activity Name                     Count Seconds = Percent of Total Time
+  rebuild files                     48701  29.581 = 0.154071%
+  compile                             280 687.171 = 3.57904%
+  test                              20636 18483.049 = 96.2666%
+  TOTAL                                   19199.847 = 98.5915% (avg CPU usage)

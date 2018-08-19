@@ -1,0 +1,389 @@
+GenProg Version: Sun Jan  7 23:45:04 UTC 2018
+
+--allow-coverage-fail false
+--appp 0.33333
+--asm-code-only false
+--best-edit-rule "1 * fault_loc_weight ; 1 * max_test_fail_prob ; -1 * num_tests"
+--best-test-rule "1 * test_fail_prob ; 1 * test_fail_count ; -1 * test_pass_count"
+--checkpoints false
+--clone-file ""
+--compiler "gcc"
+--compiler-command "python3 compile.py __EXE_NAME__ >& /dev/null"
+--compiler-opts ""
+--continue false
+--coverage-info ""
+--coverage-per-test false
+--crossover "one"
+--crossp 0.5
+--delp 0.33333
+--describe-machine false
+--diversity-selection 0
+--edit-script false
+--elf-risc false
+--elitism 4
+--exclude-edits ""
+--exp-diff false
+--fault-file ""
+--fault-path "coverage.path.neg"
+--fault-scheme "path"
+--fitness-in-parallel 1
+--fix-file ""
+--fix-oracle ""
+--fix-path "coverage.path.pos"
+--fix-scheme "default"
+--flatten-path ""
+--format "txt"
+--gen-per-exchange 1
+--generations 30
+--geomp 0.5
+--gui false
+--hostname "127.0.0.1"
+--ignore-dead-code false
+--ignore-equiv-appends false
+--ignore-standard-headers false
+--ignore-string-equiv-fixes false
+--ignore-untyped-returns false
+--incoming-pop ""
+--keep-source false
+--label-repair false
+--lase-deallocation-api "free"
+--lase-paired-functions ""
+--lasep 0
+--max-evals 0
+--minimization false
+--mt-cov false
+--multiopt-minimize false
+--multiopt-no-inf false
+--neg-tests 2
+--neg-weight 1
+--negative-test-weight 2
+--nested false
+--neutral-walk-max-size 0
+--neutral-walk-weight ""
+--nht-id "global"
+--nht-port 51000
+--nht-server ""
+--no-rep-cache true
+--no-test-cache true
+--num-comps 2
+--num-objectives 2
+--oracle-genome ""
+--pd-mutp 0.25
+--popsize 40
+--port 60000
+--pos-tests 8
+--pos-weight 0.1
+--prefix "./"
+--preprocessor ""
+--print-incremental-evals false
+--print-source-name false
+--program "digits.i"
+--promut 1
+--quiet false
+--regen-paths false
+--rep ""
+--rep-cache ""
+--repp 0
+--samp-strat "variant"
+--sample 1
+--sample-runs 100
+--sanity "default"
+--search "ga"
+--seed 20
+--semantic-check "exact"
+--single-fitness false
+--skip-failed-sanity-tests true
+--skip-tests ""
+--split-search 0
+--sport 65000
+--subatom-constp 0.5
+--subatom-mutp 0
+--swap-bug false
+--swapp 0.33333
+--template-cache ""
+--templates ""
+--test-command "__TEST_SCRIPT__ __TEST_NAME__ __EXE_NAME__ __FITNESS_FILE__ >& /dev/null"
+--test-script "python3 test.py"
+--tournament-size 2
+--uniq false
+--use-partition -1
+--valgrind false
+--variants-exchanged 50
+--version false
+cilRep: preprocessing IO function signatures: /tmp/tmpa5bd47.c /tmp/tmp7d7fb6.c
+cilRep: done preprocessing IO function signatures
+cilrep: from_source: pre: stmt_count = 0
+cilRep: digits.i: parsing
+cilRep: digits.i: parsed (0.0733109 MB)
+cilrep: from_source: post: stmt_count: 193
+cilRep: shared size: 0.0946903 MB
+cilRep: private size: 0.00689983 MB
+cachingRepresentation: sanity checking begins
+	p1: true (1)
+	p2: true (1)
+	p3: true (1)
+	p4: true (1)
+	p5: true (1)
+	p6: true (1)
+	p7: true (1)
+	p8: true (1)
+	n1: false (0)
+	n2: false (0)
+cachingRepresentation: sanity checking passed (time_taken = 7.1391)
+faultLocRep: compute_localization: fault_scheme: path, fix_scheme: default
+Rep: coverage_sourcename: /workdir/experiment/digits-7b78b2d5ab654253c4acb32046237950862d20275165bdb24a7584184a22d3cebeadb299f4e16fdf452f4dc6f958000d118d5ba60dea5645d143183573109d58-20/./coverage.c
+cilRep: instrumenting for fault localization
+cilRep: done instrumenting for fault localization
+coverage negative:
+	test: 1
+	test: 2
+coverage positive:
+	test: 1
+	test: 2
+	test: 3
+	test: 4
+	test: 5
+	test: 6
+	test: 7
+	test: 8
+cilRep: digits.cache: saved
+cachingRep: digits.cache: saved
+faultlocRep: digits.cache: saved
+cilrep done serialize
+cilRep: stmt_count = 193
+cilRep: stmts in weighted_path = 152
+cilRep: total weight = 15.8
+cilRep: stmts in weighted_path with weight >= 1.0 = 4
+cilRep: digits.i (code bank/base file; atoms [1,195])
+cilRep: 1 file(s) total in representation
+search: genetic algorithm begins (|original| = 0.091568 MB)
+search: initial population (sizeof one variant = 0.0985737 MB)
+	  8 a(127,40)
+	  8 a(55,10)
+	  8 a(10,11)
+	  0 s(12,137)
+	  8 s(81,38)
+	  8 a(3,125)
+	  7 a(145,60)
+	  8 a(37,47)
+	  8 d(127)
+	  0 d(30)
+	  8 a(163,141)
+	  0 s(37,15)
+	  8 a(164,173)
+	  8 a(117,109)
+	  8 a(57,26)
+	  8 d(169)
+	  8 a(37,153)
+	  8 a(34,32)
+	  3 d(101)
+	  7 s(17,47)
+	  7 a(49,15)
+	  0 s(38,168)
+	  8 d(161)
+	  7 s(37,49)
+	  8 d(61)
+	  8 a(17,93)
+	  8 a(194,117)
+	  3 d(120)
+	  2 s(163,171)
+	  8 d(36)
+	  6 a(59,162)
+	  8 s(2,26)
+	  8 s(37,68)
+	  0 s(162,2)
+	  8 d(158)
+	  8 a(34,9)
+	  8 a(16,101)
+	  7 s(169,45)
+	  8 d(169)
+	  8 original
+search: generation 1 (sizeof one variant = 0.178313 MB)
+	  7 s(169,45) a(100,26)
+	  8 s(2,26) s(49,42)
+	  1 s(169,45) d(165)
+	  8 s(2,26) a(37,67)
+	  1 s(81,38) s(163,157)
+	  6 a(59,162) s(93,129)
+	  5 s(81,38) d(71)
+	  6 a(59,162) a(160,45)
+	  5 a(163,141) a(79,186)
+	  2 s(163,171) d(37)
+	  2 s(17,47) s(117,138)
+	  0 d(120) d(12)
+	  2 s(17,47) s(167,181)
+	  3 d(120) d(35)
+	  0 s(12,137) s(69,38)
+	  8 a(10,11) a(147,154)
+	  0 s(12,137) s(37,87)
+	  8 a(10,11) s(153,91)
+	  0 s(162,2) a(36,12)
+	  1 s(163,171) a(50,166)
+	  8 a(16,101) a(73,63)
+	  0 s(162,2) s(36,86)
+	  8 a(16,101) a(61,81)
+	  0 s(162,2) a(157,9)
+	  3 d(61) s(36,100)
+	  7 a(34,32) d(40)
+	  8 a(163,141) d(61)
+	  7 s(37,49) d(89)
+	  3 d(101) a(195,187)
+	  2 a(3,125) s(169,168)
+	  3 d(101) a(107,60)
+	  3 a(3,125) s(53,137)
+	  7 s(37,68) s(45,58)
+	  0 s(38,168) d(36)
+	  2 s(37,68) s(71,176)
+	  0 s(38,168) d(13)
+	  0 s(37,15) d(3)
+	  7 s(169,45) a(37,15)
+	  0 s(37,15) s(8,3)
+	  7 s(169,45) d(163)
+	  2 a(145,60) s(163,82)
+	  2 d(120) s(97,195)
+	  8 a(37,153) a(40,55)
+	  0 s(162,2) a(36,177)
+	  7 s(17,47) d(55)
+	  6 a(34,9) d(7)
+	  5 s(2,26) s(69,77)
+	  8 a(34,9) d(163)
+	  0 s(37,15) s(14,9)
+	  0 s(37,15) d(7)
+	  0 s(37,15) d(1)
+	  0 s(37,15) d(4)
+	  6 s(17,47) s(57,1)
+	  8 a(10,11) a(158,63)
+	  7 s(17,47) a(121,158)
+	  8 a(10,11) a(113,113)
+Elite size: 4
+	  8 a(127,40)
+	  8 a(55,10)
+	  8 a(10,11)
+	  8 s(81,38)
+Best individual (Elite U Pop'):
+ 8 a(127,40) 
+search: generation 2 (sizeof one variant = 0.178689 MB)
+	  0 s(38,168) d(36) s(45,58) s(6,131)
+	  8 s(37,68) d(77)
+	  0 s(38,168) d(36) s(7,83)
+	  7 s(37,68) s(45,58) d(133)
+	  0 s(37,15) d(7) a(13,107)
+	  1 a(3,125) s(53,137) d(162)
+	  0 s(37,15) d(7) s(10,195)
+	  1 a(3,125) s(53,137) s(169,143)
+	  0 s(162,2) a(36,12) d(153)
+	  0 s(162,2) a(157,9) s(85,39)
+	  0 s(162,2) a(36,12) s(120,97)
+	  0 s(162,2) a(157,9) s(149,50)
+	  0 s(12,137) s(69,38) s(169,9)
+	  0 s(162,2) a(157,9) d(87)
+	  0 s(162,2) a(36,12) s(7,50)
+	  0 s(162,2) a(36,177) s(107,147)
+	  0 s(162,2) a(36,12) d(58)
+	  0 s(162,2) a(36,177) s(91,59)
+	  1 s(163,171) a(50,166) d(169)
+	  1 s(169,45) d(165) s(2,23)
+	  0 s(162,2) a(157,9) d(39)
+	  0 s(12,137) s(69,38) a(84,23)
+	  0 s(37,15) a(195,65)
+	  0 s(12,137) s(37,87) d(7) s(32,134)
+	  0 s(37,15) d(7) s(10,6)
+	  0 s(12,137) s(37,87) s(46,63)
+	  5 a(10,11) s(36,7)
+	  8 a(34,9) d(163) a(147,154) d(37)
+	  3 a(10,11) a(147,154) s(72,9)
+	  4 a(34,9) d(163) s(71,184)
+	  0 s(37,15) d(4) d(37) a(9,71)
+	  2 s(163,171) a(169,100)
+	  0 s(37,15) d(4) d(5)
+	  2 s(163,171) d(37) d(169)
+	  0 s(162,2) a(36,177) d(36)
+	  7 a(10,11) s(40,134)
+	  0 s(162,2) a(36,177) d(91)
+	  6 a(10,11) a(139,59)
+	  0 s(162,2) s(36,86) a(101,13)
+	  2 d(120) d(35) a(87,163)
+	  1 s(81,38) s(163,157) a(83,77)
+	  0 s(17,47) s(167,181) d(16)
+	  0 s(169,45) a(37,15) d(16)
+	  0 s(38,168) d(36) a(75,154)
+	  0 s(162,2) a(36,177) a(136,133)
+	  2 a(145,60) s(163,82) s(37,105)
+	  1 d(120) s(97,195) s(167,181) a(125,100)
+	  7 s(17,47) d(73)
+	  2 d(120) s(97,195) d(36)
+	  2 s(17,47) s(167,181) a(102,107)
+	  7 a(10,11) d(49)
+	  0 s(37,15) s(14,9) d(194)
+	  1 s(81,38) d(71) d(165)
+	  0 s(162,2) s(36,86) d(23)
+Elite size: 4
+	  8 a(127,40)
+	  8 a(55,10)
+	  8 a(10,11)
+	  8 s(81,38)
+Best individual (Elite U Pop'):
+ 8 a(127,40) 
+search: generation 3 (sizeof one variant = 0.179045 MB)
+	  0 s(162,2) a(36,177) d(91) d(26)
+	  0 s(38,168) d(36) s(7,83) d(31)
+	  0 s(12,137) s(69,38) s(169,9) a(195,65) d(51)
+	  0 s(37,15) d(195)
+	  0 s(12,137) s(69,38) s(169,9) a(163,160)
+	  0 s(37,15) a(195,65) a(13,155)
+	  0 s(37,15) d(7) a(9,71) d(4)
+	  0 s(37,15) d(4) d(37) s(10,195) d(11)
+	  0 s(37,15) d(7) s(10,195) d(4)
+	  0 s(37,15) d(4) d(37) a(9,71) d(1)
+	  0 s(162,2) a(157,9) a(36,177) d(91) s(34,17)
+	  0 s(162,2) s(149,50) d(143)
+	  0 s(162,2) a(157,9) s(149,50) a(4,45)
+	  0 s(162,2) a(36,177) d(91) d(35)
+	  0 s(37,15) s(53,137) d(162) s(8,2)
+	  0 a(3,125) s(14,9) d(194) s(163,113)
+	  0 s(37,15) s(14,9) d(194) s(6,2)
+	  1 a(3,125) s(53,137) d(162) a(59,56)
+	  0 s(37,15) d(7) s(10,195) d(2)
+	  0 s(162,2) s(36,86) a(101,13) a(26,81)
+	  2 s(17,47) s(167,181) a(102,107) d(61)
+	  0 s(37,15) s(14,9) d(194) d(10)
+	  0 s(38,168) d(36) s(7,83) d(46)
+	  0 s(12,137) s(37,87) s(46,63) s(84,45)
+	  0 s(12,137) s(69,38) a(84,23) d(151)
+	  0 s(37,15) d(7) a(13,107) d(13)
+	  0 s(37,15) d(7) s(10,6) a(36,12) d(153) a(13,171)
+	  0 s(162,2) d(36)
+	  0 s(37,15) d(7) s(10,6) a(1,170)
+	  0 s(162,2) a(36,12) d(153) a(113,53)
+	  0 s(162,2) a(157,9) d(39) a(136,47)
+	  0 s(162,2) a(36,177) s(91,59) s(135,86)
+	  0 s(162,2) a(36,177) s(91,59) s(37,8)
+	  0 s(162,2) a(157,9) d(39) s(32,48)
+	  0 s(162,2) a(157,9) d(39) d(97)
+	  0 s(162,2) s(36,86) a(101,13) s(157,151)
+	  7 s(169,45) a(37,15) a(36,177) a(136,133) a(10,35)
+	  0 s(162,2) d(16) s(37,127)
+	  0 s(169,45) a(37,15) d(16) s(115,187)
+	  0 s(162,2) a(36,177) a(136,133) d(36)
+	  0 s(162,2) a(36,12) s(120,97) a(133,120)
+	  0 s(162,2) a(36,12) s(120,97) d(23)
+	  8 a(10,11) a(109,25)
+	  0 s(12,137) s(37,87) s(46,63) a(139,59) d(163)
+	  6 a(10,11) a(139,59) a(163,162)
+	  0 s(12,137) s(37,87) s(46,63) s(3,191)
+	  0 s(38,168) d(36) a(75,154) a(31,194)
+	  0 s(37,15) d(7) s(10,195) d(9)
+	  0 s(37,15) d(4) d(5) a(2,41)
+	  2 d(120) d(35) a(87,163) d(169)
+	  0 s(12,137) s(37,87) s(46,63) d(167)
+	  0 s(162,2) a(157,9) s(149,50) a(143,125)
+Elite size: 4
+	  8 a(127,40)
+	  8 a(55,10)
+	  8 a(10,11)
+	  8 s(81,38)
+Best individual (Elite U Pop'):
+ 8 a(127,40) 
+search: generation 4 (sizeof one variant = 0.179186 MB)
+	  0 s(162,2) s(36,86) a(101,13) s(157,151) s(63,13)
+	  0 s(162,2) a(36,12) s(120,97) d(23) a(3,193)

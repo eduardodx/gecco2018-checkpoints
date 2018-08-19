@@ -1,0 +1,1206 @@
+GenProg Version: Tue Sep 26 22:19:14 EDT 2017
+
+--allow-coverage-fail false
+--appp 0.33333
+--asm-code-only false
+--best-edit-rule "1 * fault_loc_weight ; 1 * max_test_fail_prob ; -1 * num_tests"
+--best-test-rule "1 * test_fail_prob ; 1 * test_fail_count ; -1 * test_pass_count"
+--checkpoints true
+--clone-file ""
+--compiler "gcc"
+--compiler-command "perl compile.pl __EXE_NAME__ > /dev/null"
+--compiler-opts ""
+--continue false
+--coverage-info ""
+--coverage-per-test false
+--crossover "subset"
+--crossp 0.5
+--delp 0.33333
+--describe-machine false
+--diversity-selection 0
+--edit-script false
+--elf-risc false
+--elitism 4
+--exclude-edits ""
+--exp-diff false
+--fault-file ""
+--fault-path "coverage.path.neg"
+--fault-scheme "path"
+--fitness-in-parallel 1
+--fix-file ""
+--fix-oracle ""
+--fix-path "coverage.path.pos"
+--fix-scheme "default"
+--flatten-path ""
+--format "txt"
+--gen-per-exchange 1
+--generations 10
+--geomp 0.5
+--gui false
+--hostname "127.0.0.1"
+--ignore-dead-code false
+--ignore-equiv-appends false
+--ignore-standard-headers false
+--ignore-string-equiv-fixes false
+--ignore-untyped-returns false
+--incoming-pop ""
+--keep-source false
+--label-repair false
+--lase-deallocation-api "free"
+--lase-paired-functions ""
+--lasep 0
+--max-evals 0
+--minimization false
+--mt-cov false
+--multiopt-minimize false
+--multiopt-no-inf false
+--neg-tests 1
+--neg-weight 1
+--negative-test-weight 2
+--nested false
+--neutral-walk-max-size 0
+--neutral-walk-weight ""
+--nht-id "global"
+--nht-port 51000
+--nht-server ""
+--no-rep-cache true
+--no-test-cache true
+--num-comps 2
+--num-objectives 2
+--oracle-genome ""
+--pd-mutp 0.25
+--popsize 40
+--port 60000
+--pos-tests 34
+--pos-weight 0.1
+--prefix "preprocessed"
+--preprocessor ""
+--print-incremental-evals false
+--print-source-name false
+--program "bugged-program.txt"
+--promut 1
+--quiet false
+--regen-paths false
+--rep "cilpatch"
+--rep-cache ""
+--repp 0
+--samp-strat "variant"
+--sample 1
+--sample-runs 100
+--sanity "default"
+--search "ga"
+--seed 7
+--semantic-check "exact"
+--single-fitness true
+--skip-failed-sanity-tests false
+--skip-tests ""
+--split-search 0
+--sport 65000
+--subatom-constp 0.5
+--subatom-mutp 0
+--swap-bug false
+--swapp 0.33333
+--template-cache ""
+--templates ""
+--test-command "__TEST_SCRIPT__ __TEST_NAME__ __EXE_NAME__ __FITNESS_FILE__ >& /dev/null"
+--test-script "/root/src/Python/python /root/checkpoints/test/test_checkpoints.py"
+--tournament-size 2
+--uniq false
+--use-partition -1
+--valgrind false
+--variants-exchanged 50
+--version false
+cilRep: preprocessing IO function signatures: /tmp/tmpa3c9e2.c /tmp/tmp53cd47.c
+cilRep: done preprocessing IO function signatures
+cilrep: from_source: pre: stmt_count = 0
+cilRep: preprocessed/libtiff/tif_dirwrite.c: parsing
+cilRep: preprocessed/libtiff/tif_dirwrite.c: parsed (0.137105 MB)
+cilrep: from_source: post: stmt_count: 996
+cilRep: shared size: 0.20612 MB
+cilRep: private size: 0.00644588 MB
+cachingRepresentation: sanity checking begins
+	p1: true (1)
+	p2: true (1)
+	p3: true (1)
+	p4: true (1)
+	p5: true (1)
+	p6: true (1)
+	p7: true (1)
+	p8: true (1)
+	p9: true (1)
+	p10: true (1)
+	p11: true (1)
+	p12: true (1)
+	p13: true (1)
+	p14: true (1)
+	p15: true (1)
+	p16: true (1)
+	p17: true (1)
+	p18: true (1)
+	p19: true (1)
+	p20: true (1)
+	p21: true (1)
+	p22: true (1)
+	p23: true (1)
+	p24: true (1)
+	p25: true (1)
+	p26: true (1)
+	p27: true (1)
+	p28: true (1)
+	p29: true (1)
+	p30: true (1)
+	p31: true (1)
+	p32: true (1)
+	p33: true (1)
+	p34: true (1)
+	n1: false (0)
+cachingRepresentation: sanity checking passed (time_taken = 34.4382)
+faultLocRep: compute_localization: fault_scheme: path, fix_scheme: default
+Rep: coverage_sourcename: /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/coverage/coverage.c
+cilRep: instrumenting for fault localization
+cilRep: done instrumenting for fault localization
+coverage negative:
+	test: 1
+coverage positive:
+	test: 1
+	test: 2
+	test: 3
+	test: 4
+	test: 5
+	test: 6
+	test: 7
+	test: 8
+	test: 9
+	test: 10
+	test: 11
+	test: 12
+	test: 13
+	test: 14
+	test: 15
+	test: 16
+	test: 17
+	test: 18
+	test: 19
+	test: 20
+	test: 21
+	test: 22
+	test: 23
+	test: 24
+	test: 25
+	test: 26
+	test: 27
+	test: 28
+	test: 29
+	test: 30
+	test: 31
+	test: 32
+	test: 33
+	test: 34
+cilRep: bugged-program.cache: saved
+cachingRep: bugged-program.cache: saved
+faultlocRep: bugged-program.cache: saved
+cilrep done serialize
+cilRep: stmt_count = 996
+cilRep: stmts in weighted_path = 340
+cilRep: total weight = 20.6
+cilRep: stmts in weighted_path with weight >= 1.0 = 2
+cilRep: libtiff/tif_dirwrite.c (code bank/base file; atoms [1,1119])
+cilRep: 1 file(s) total in representation
+search: genetic algorithm begins (|original| = 0.200637 MB)
+search: initial population (sizeof one variant = 0.207097 MB)
+	0.905971 a(266,285)
+	0.854262 s(786,791)
+	0.901685 s(336,991)
+	0.124953 s(470,303)
+	0.901685 a(366,725)
+	0.493537 d(526)
+	0.901685 d(547)
+	0.901685 d(435)
+	0.822125 s(717,703)
+	0.901685 a(710,278)
+	0.127216 s(350,339)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000010/libtiff/tif_dirwrite.c  s(423,334) fails to compile
+	  0 s(423,334)
+	0.165182 d(793)
+	0.901685 a(998,316)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000013/libtiff/tif_dirwrite.c  s(343,297) fails to compile
+	  0 s(343,297)
+	0.901685 a(378,288)
+	0.901685 d(723)
+	0.901685 d(703)
+	0.901685 d(1062)
+	0.907302 d(275)
+	0.901685 s(719,723)
+	0.901685 a(365,491)
+	0.880727 a(701,681)
+	0.124978 s(379,285)
+	0.162731 s(1080,1057)
+	0.901685 a(752,435)
+	0.854262 d(542)
+	0.901685 a(546,411)
+	0.901685 a(546,262)
+	0.901685 a(318,475)
+	0.854262 s(1060,1058)
+	0.117467 d(283)
+	0.901685 d(547)
+	0.901685 a(1078,1116)
+	0.901685 s(710,725)
+	0.901685 a(546,639)
+	0.848645 d(683)
+	0.854189 d(297)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000033/libtiff/tif_dirwrite.c  s(275,497) fails to compile
+	  0 s(275,497)
+	0.901685 original
+search: generation 1 (sizeof one variant = 0.317267 MB)
+	0.168812 d(1062) d(1062) s(997,996)
+	0.175009 d(1062) s(541,638)
+	0.848645 d(1062) d(377)
+	0.901685 d(1062) a(351,287)
+	0.124953 s(470,303) d(793)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000039/libtiff/tif_dirwrite.c  s(275,497) d(790) fails to compile
+	  0 s(275,497) d(790)
+	0.164859 a(701,681) a(357,506)
+	0.164859 a(710,278) d(363)
+	0.901685 a(710,278) a(547,424)
+	0.282037 a(701,681) d(283)
+	0.124978 s(379,285) d(683)
+	0.901685 a(365,491) a(378,435)
+	0.163369 d(683) s(700,322)
+	0.848645 d(683) a(700,1067)
+	0.124978 s(379,285) d(547)
+	0.164195 d(683) s(780,791)
+	0.162859 d(542) d(1079)
+	0.854262 d(542) d(547)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000052/libtiff/tif_dirwrite.c  s(336,991) s(337,268) fails to compile
+	  0 s(336,991) s(337,268)
+	0.854262 d(542) s(1058,1097)
+	0.85304 a(365,491) a(271,692)
+	0.126969 a(546,262) s(350,472)
+	0.901685 a(365,491) s(723,710)
+	0.901685 a(546,262) d(262)
+	0.493537 d(526) d(546)
+	0.901685 a(780,807)
+	0.493537 d(526) a(790,330)
+	0.493537 d(526) a(682,286)
+	0.49966 d(682)
+	0.512766 s(786,791) d(1078)
+	0.506312 d(547) s(786,791) s(981,998)
+	0.392423 s(328,509)
+	0.901685 d(547) a(347,407)
+	0.854225 s(786,791) d(696)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000067/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) fails to compile
+	  0 s(423,334) a(263,1000)
+	0.127148 d(283) s(352,329)
+	0.848645 s(336,991) s(377,287)
+	0.901685 a(546,262) d(546)
+	0.901685 d(723) d(750)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000072/libtiff/tif_dirwrite.c  s(343,297) s(691,687) fails to compile
+	  0 s(343,297) s(691,687)
+	0.147691 d(683) s(350,339) s(277,329)
+	0.127216 s(350,339) d(334)
+	0.848645 d(683) a(344,418)
+	0.127216 s(350,339) d(351)
+	0.124953 s(470,303) d(791)
+	0.848645 d(683) a(267,1119)
+	0.165182 d(793) d(379)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000080/libtiff/tif_dirwrite.c  s(275,497) a(525,278) fails to compile
+	  0 s(275,497) a(525,278)
+	0.134057 d(526) s(547,681)
+	0.163982 s(719,723) a(715,726)
+	0.854509 s(326,318)
+	0.901685 s(336,991) s(1081,471)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000084/libtiff/tif_dirwrite.c  s(336,991) s(263,337) fails to compile
+	  0 s(336,991) s(263,337)
+	0.907302 s(710,725) d(247)
+Elite size: 4
+	0.907302 d(275)
+	0.905971 a(266,285)
+	0.901685 s(336,991)
+	0.901685 a(366,725)
+Best individual (Elite U Pop'):
+ 0.907302 d(275) 
+search: generation 2 (sizeof one variant = 0.430667 MB)
+	0.128525 d(377) d(547) s(981,998) s(267,276)
+	0.506312 d(547) s(786,791) s(981,998) a(527,542)
+	0.848645 d(1062) d(377) d(268)
+	0.506312 d(547) s(786,791) s(981,998) d(465)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000089/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) fails to compile
+	  0 a(525,278) s(719,723) a(276,297)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000090/libtiff/tif_dirwrite.c  a(715,726) s(275,497) a(525,278) s(287,420) fails to compile
+	  0 a(715,726) s(275,497) a(525,278) s(287,420)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000091/libtiff/tif_dirwrite.c  s(275,497) a(525,278) a(1078,1076) fails to compile
+	  0 s(275,497) a(525,278) a(1078,1076)
+	0.163982 s(719,723) a(715,726) a(273,710)
+	0.164859 a(701,681) a(357,506) d(330)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000093/libtiff/tif_dirwrite.c  s(343,297) s(691,687) s(547,681) fails to compile
+	  0 s(343,297) s(691,687) s(547,681)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000094/libtiff/tif_dirwrite.c  s(336,991) s(337,268) d(303) fails to compile
+	  0 s(336,991) s(337,268) d(303)
+	0.175009 d(1062) s(541,638) s(264,512)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000096/libtiff/tif_dirwrite.c  s(275,497) a(525,278) d(711) fails to compile
+	  0 s(275,497) a(525,278) d(711)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000097/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(434,339) fails to compile
+	  0 s(423,334) a(263,1000) s(434,339)
+	0.164859 a(701,681) a(357,506) d(703)
+	0.880727 a(701,681) a(267,715)
+	0.164859 a(701,681) a(357,506) s(1057,1073)
+	0.162688 s(326,318) d(291)
+	0.165182 d(793) d(379) a(753,767)
+	0.124953 s(470,303) d(791) s(317,286)
+	0.848645 d(379) d(723) d(750) d(357)
+	0.853496 d(723) d(793) d(379) d(320)
+	0.165182 d(793) d(379) a(1063,306)
+	0.901685 d(723) d(750) d(751)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000107/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332)
+	0.901685 a(546,262) d(546) d(262)
+	0.493537 a(700,1067) s(526,535)
+	0.901685 a(546,262) d(546) a(700,1067) a(698,418)
+	0.124016 d(683) a(700,1067) a(255,349)
+	0.901685 a(546,262) d(546) a(435,460)
+	0.854225 s(786,791) d(696) d(300)
+	0.164859 a(701,681) a(357,506) d(726)
+	0.50644 d(526) s(993,997)
+	0.133853 s(1081,471) s(547,681) d(330)
+	0.134057 d(526) s(547,681) d(306)
+	0.506355 s(336,991) s(1081,471) s(781,790)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000116/libtiff/tif_dirwrite.c  s(275,497) a(525,278) a(718,712) fails to compile
+	  0 s(275,497) a(525,278) a(718,712)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000117/libtiff/tif_dirwrite.c  s(275,497) a(525,278) a(547,824) fails to compile
+	  0 s(275,497) a(525,278) a(547,824)
+	0.901685 a(1062,465)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000119/libtiff/tif_dirwrite.c  s(423,334) a(377,417) fails to compile
+	  0 s(423,334) a(377,417)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000120/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(751,752) fails to compile
+	  0 s(423,334) a(263,1000) s(751,752)
+	0.164859 a(701,681) a(357,506) a(547,339)
+	0.162859 d(542) d(1079) a(999,254)
+	0.124978 s(379,285) d(683) d(547)
+	0.126825 a(682,286) a(701,681) d(283) s(290,453)
+	0.901685 a(286,263)
+	0.506601 d(526) a(682,286) s(981,993)
+	0.281994 a(701,681) d(283) s(791,790)
+	0.127148 d(283) s(352,329) d(546)
+	0.164195 d(683) s(780,791) s(721,725)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000130/libtiff/tif_dirwrite.c  s(343,297) s(691,687) s(726,723) fails to compile
+	  0 s(343,297) s(691,687) s(726,723)
+	0.499864 s(336,991) s(377,287) d(546)
+Elite size: 4
+	0.907302 d(275)
+	0.907302 s(710,725) d(247)
+	0.905971 a(266,285)
+	0.901685 s(336,991)
+Best individual (Elite U Pop'):
+ 0.907302 d(275) 
+search: generation 3 (sizeof one variant = 0.431207 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000132/libtiff/tif_dirwrite.c  a(701,681) d(283) a(525,278) a(276,297) s(255,318) fails to compile
+	  0 a(701,681) d(283) a(525,278) a(276,297) s(255,318)
+	0.164688 a(525,278) s(791,790) d(1000)
+	0.281994 a(701,681) d(283) s(791,790) s(352,373)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000134/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(752) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(752)
+	0.506312 d(547) s(786,791) s(981,998) a(527,542) a(790,791)
+	0.165182 d(793) d(379) a(1063,306) a(320,471)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000137/libtiff/tif_dirwrite.c  s(343,297) s(691,687) s(547,681) d(266) fails to compile
+	  0 s(343,297) s(691,687) s(547,681) d(266)
+	  0 s(423,334) a(263,1000) s(751,752) d(1075)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000138/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) a(542,779) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) a(542,779)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000139/libtiff/tif_dirwrite.c  s(275,497) a(525,278) d(711) a(751,1110) fails to compile
+	  0 s(275,497) a(525,278) d(711) a(751,1110)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000140/libtiff/tif_dirwrite.c  s(343,297) s(691,687) s(547,681) a(1057,1079) fails to compile
+	  0 s(343,297) s(691,687) s(547,681) a(1057,1079)
+	0.514722 s(336,991) s(1081,471) s(781,790) d(377)
+	0.133853 s(1081,471) s(547,681) d(330) d(306)
+	0.126825 a(682,286) a(701,681) d(283) s(290,453) s(723,713)
+	0.124978 s(379,285) d(547) a(753,767) d(362)
+	0.162688 d(379) a(753,767) s(379,285) d(547) d(291)
+	0.124978 s(379,285) d(683) d(547) a(688,538)
+	0.165182 d(793) d(379) a(753,767) a(721,489)
+	0.130574 d(547) a(527,542) a(682,286) d(283) s(787,789)
+	0.130574 d(283) d(547) s(786,791) a(527,542) d(794)
+	0.124527 d(547) s(786,791) s(981,998) a(527,542) d(288)
+	0.126825 a(682,286) a(701,681) d(283) s(290,453) s(702,722)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000151/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(546) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(546)
+	0.164067 d(526) s(547,681) d(306) s(792,780)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000153/libtiff/tif_dirwrite.c  d(377) s(981,998) s(275,497) a(525,278) d(711) d(298) fails to compile
+	  0 d(377) s(981,998) s(275,497) a(525,278) d(711) d(298)
+	0.128653 d(377) s(267,276) d(547)
+	0.128525 d(377) d(547) s(981,998) s(267,276) a(546,715)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000156/libtiff/tif_dirwrite.c  s(275,497) a(525,278) d(711) d(357) fails to compile
+	  0 s(275,497) a(525,278) d(711) d(357)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000157/libtiff/tif_dirwrite.c  s(275,497) a(525,278) a(718,712) s(1000,763) fails to compile
+	  0 s(275,497) a(525,278) a(718,712) s(1000,763)
+	0.164859 a(701,681) a(357,506) a(547,339) d(546)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000159/libtiff/tif_dirwrite.c  a(276,297) d(546) fails to compile
+	  0 a(276,297) d(546)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000160/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) a(701,681) a(267,715) a(703,763) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) a(701,681) a(267,715) a(703,763)
+	0.880727 a(701,681) a(267,715) d(702)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000162/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) a(752,1110) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) a(752,1110)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000163/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) s(337,268) s(546,528) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) s(337,268) s(546,528)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000164/libtiff/tif_dirwrite.c  s(336,991) s(337,268) d(303) s(423,334) a(263,1000) a(546,366) fails to compile
+	  0 s(336,991) s(337,268) d(303) s(423,334) a(263,1000) a(546,366)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000165/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) d(547) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) d(547)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000166/libtiff/tif_dirwrite.c  s(336,991) s(337,268) d(303) a(1057,1074) fails to compile
+	  0 s(336,991) s(337,268) d(303) a(1057,1074)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000167/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725)
+	0.875165 a(546,262) d(546) d(262) d(719)
+	0.164195 d(683) s(780,791) s(721,725) s(326,407)
+	  0 a(525,278) s(719,723) a(276,297) d(322)
+	  0 s(423,334) a(263,1000) s(434,339) d(262)
+	0.162731 d(683) s(780,791) s(721,725) s(472,298)
+	0.85304 s(547,681) d(330) a(263,1000) s(357,332) d(349)
+	0.12719 s(357,332) s(1081,471) s(547,681) a(322,1075)
+	0.13381 s(1081,471) s(547,681) d(330) s(263,489)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000174/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) a(701,330) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) a(701,330)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000175/libtiff/tif_dirwrite.c  s(337,268) s(470,303) d(791) s(362,263) fails to compile
+	  0 s(337,268) s(470,303) d(791) s(362,263)
+	0.901685 s(317,286) a(352,292)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000177/libtiff/tif_dirwrite.c  s(336,991) s(337,268) d(303) a(317,489) fails to compile
+	  0 s(336,991) s(337,268) d(303) a(317,489)
+	0.124953 s(470,303) d(791) s(317,286) a(755,259)
+Elite size: 4
+	0.907302 d(275)
+	0.907302 s(710,725) d(247)
+	0.905971 a(266,285)
+	0.901685 s(336,991)
+Best individual (Elite U Pop'):
+ 0.907302 d(275) 
+search: generation 4 (sizeof one variant = 0.431445 MB)
+	0.12719 s(357,332) s(1081,471) s(547,681) a(322,1075) d(794)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000180/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) a(542,779) d(1063)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000181/libtiff/tif_dirwrite.c  s(336,991) s(337,268) d(303) a(1057,1074) a(435,281) fails to compile
+	  0 s(336,991) s(337,268) d(303) a(1057,1074) a(435,281)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000182/libtiff/tif_dirwrite.c  d(377) s(981,998) s(275,497) a(525,278) d(711) d(298) a(271,451) fails to compile
+	  0 d(377) s(981,998) s(275,497) a(525,278) d(711) d(298) a(271,451)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000183/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(752,1110) a(525,278) s(719,723) a(276,297) d(322) d(722) fails to compile
+	  0 a(525,278) s(719,723) a(752,1110) a(525,278) s(719,723) a(276,297) d(322) d(722)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000184/libtiff/tif_dirwrite.c  a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) fails to compile
+	  0 a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000185/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) a(752,1110) d(304) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) a(752,1110) d(304)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000186/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(322) a(363,320) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(322) a(363,320)
+	0.127157 d(283) d(547) s(786,791) a(527,542) d(794) s(546,531)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000188/libtiff/tif_dirwrite.c  s(343,297) s(691,687) s(547,681) d(266) s(362,414) fails to compile
+	  0 s(343,297) s(691,687) s(547,681) d(266) s(362,414)
+	0.133853 a(525,278) s(547,681) d(330) a(719,711)
+	0.168769 d(330) s(263,489) d(1000) s(717,725)
+	0.164688 a(525,278) s(791,790) d(1000) s(750,752)
+	0.13381 s(1081,471) s(547,681) d(330) s(263,489) d(545)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000193/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(546) s(361,271) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(546) s(361,271)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000194/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325)
+	0.50627 a(1000,725) a(525,278) a(701,681) a(267,715) a(703,763) s(995,1000)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000196/libtiff/tif_dirwrite.c  s(719,723) a(276,297) a(267,715) a(377,417) a(1000,725) d(310) fails to compile
+	  0 s(719,723) a(276,297) a(267,715) a(377,417) a(1000,725) d(310)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000197/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(363,326) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(363,326)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000198/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) a(701,681) a(267,715) a(703,763) a(547,270) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) a(701,681) a(267,715) a(703,763) a(547,270)
+	0.124978 d(547) s(786,791) d(794) s(379,285) d(547) a(996,330)
+	0.130488 d(547) d(283) d(547) s(786,791) s(753,755)
+	0.130574 d(283) d(547) s(786,791) a(527,542) d(794) a(690,789)
+	0.128458 s(379,285) d(683) d(547) a(688,538) d(280)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000203/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) s(337,268) s(546,528) a(547,1116) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) s(337,268) s(546,528) a(547,1116)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000204/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(434,339) d(262) a(361,510) fails to compile
+	  0 s(423,334) a(263,1000) s(434,339) d(262) a(361,510)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000205/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(322) s(320,288) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(322) s(320,288)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000206/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470)
+	0.126825 a(682,286) a(701,681) d(283) s(290,453) s(702,722) a(247,317)
+	0.124953 s(470,303) d(791) s(317,286) a(755,259) d(725)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000208/libtiff/tif_dirwrite.c  d(303) s(423,334) a(701,681) s(255,318) s(720,711) fails to compile
+	  0 d(303) s(423,334) a(701,681) s(255,318) s(720,711)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000209/libtiff/tif_dirwrite.c  a(701,681) d(283) a(525,278) s(423,334) a(263,1000) d(545) fails to compile
+	  0 a(701,681) d(283) a(525,278) s(423,334) a(263,1000) d(545)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000210/libtiff/tif_dirwrite.c  s(336,991) s(337,268) d(303) s(423,334) a(263,1000) a(546,366) a(791,352) fails to compile
+	  0 s(336,991) s(337,268) d(303) s(423,334) a(263,1000) a(546,366) a(791,352)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000211/libtiff/tif_dirwrite.c  a(701,681) d(283) a(525,278) a(276,297) s(255,318) a(547,316) fails to compile
+	  0 a(701,681) d(283) a(525,278) a(276,297) s(255,318) a(547,316)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000212/libtiff/tif_dirwrite.c  a(377,417) d(307) fails to compile
+	  0 a(377,417) d(307)
+	0.50478 d(794) s(423,334) a(377,417) a(1000,725) s(320,379)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000214/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(717) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(717)
+	0.161795 d(283) d(547) s(786,791) a(527,542) d(794) d(516)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000216/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000217/libtiff/tif_dirwrite.c  d(377) s(981,998) s(275,497) a(525,278) d(546) a(299,498) fails to compile
+	  0 d(377) s(981,998) s(275,497) a(525,278) d(546) a(299,498)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000218/libtiff/tif_dirwrite.c  a(276,297) d(546) d(348) fails to compile
+	  0 a(276,297) d(546) d(348)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000219/libtiff/tif_dirwrite.c  d(377) s(981,998) s(275,497) a(525,278) d(711) d(298) s(299,507) fails to compile
+	  0 d(377) s(981,998) s(275,497) a(525,278) d(711) d(298) s(299,507)
+	0.124978 s(379,285) d(683) d(547) a(688,538) d(361)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000221/libtiff/tif_dirwrite.c  s(343,297) s(691,687) s(547,681) a(1057,1079) s(465,464) fails to compile
+	  0 s(343,297) s(691,687) s(547,681) a(1057,1079) s(465,464)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000222/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) a(701,681) a(267,715) a(703,763) a(255,284) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) a(701,681) a(267,715) a(703,763) a(255,284)
+	0.124527 d(547) s(786,791) s(981,998) a(527,542) d(288) s(274,316)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000224/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) a(752,1110) d(325) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) a(752,1110) d(325)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000225/libtiff/tif_dirwrite.c  s(275,497) a(525,278) a(718,712) s(1000,763) a(725,1081) fails to compile
+	  0 s(275,497) a(525,278) a(718,712) s(1000,763) a(725,1081)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000226/libtiff/tif_dirwrite.c  s(423,334) d(262) d(547) s(786,791) d(288) d(465) fails to compile
+	  0 s(423,334) d(262) d(547) s(786,791) d(288) d(465)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000227/libtiff/tif_dirwrite.c  d(547) s(786,791) s(981,998) s(434,339) s(525,535) fails to compile
+	  0 d(547) s(786,791) s(981,998) s(434,339) s(525,535)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000228/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(434,339) d(262) s(547,542) fails to compile
+	  0 s(423,334) a(263,1000) s(434,339) d(262) s(547,542)
+	0.124527 d(547) s(786,791) s(981,998) a(527,542) d(288) d(546)
+Elite size: 4
+	0.907302 d(275)
+	0.907302 s(710,725) d(247)
+	0.905971 a(266,285)
+	0.901685 s(336,991)
+Best individual (Elite U Pop'):
+ 0.907302 d(275) 
+search: generation 5 (sizeof one variant = 0.431749 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000230/libtiff/tif_dirwrite.c  a(276,297) d(546) d(348) a(1084,286) fails to compile
+	  0 a(276,297) d(546) d(348) a(1084,286)
+	0.164688 a(525,278) s(791,790) d(1000) s(750,752) a(317,288)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000232/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790)
+	0.12719 s(357,332) s(1081,471) s(547,681) a(322,1075) d(794) a(472,336)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000234/libtiff/tif_dirwrite.c  a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) s(337,508) fails to compile
+	  0 a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) s(337,508)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000235/libtiff/tif_dirwrite.c  s(719,723) a(276,297) a(267,715) a(377,417) a(1000,725) d(310) d(308) fails to compile
+	  0 s(719,723) a(276,297) a(267,715) a(377,417) a(1000,725) d(310) d(308)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000236/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) a(752,1110) d(304) d(696) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) a(752,1110) d(304) d(696)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000237/libtiff/tif_dirwrite.c  s(423,334) d(262) d(547) s(786,791) d(288) d(465) d(264) fails to compile
+	  0 s(423,334) d(262) d(547) s(786,791) d(288) d(465) d(264)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000238/libtiff/tif_dirwrite.c  a(701,681) d(283) a(525,278) a(276,297) s(255,318) a(547,316) s(692,795) fails to compile
+	  0 a(701,681) d(283) a(525,278) a(276,297) s(255,318) a(547,316) s(692,795)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000239/libtiff/tif_dirwrite.c  s(275,497) a(525,278) a(718,712) s(1000,763) a(725,1081) d(1076) fails to compile
+	  0 s(275,497) a(525,278) a(718,712) s(1000,763) a(725,1081) d(1076)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000240/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000241/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(322) a(363,320) s(346,410) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(322) a(363,320) s(346,410)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000242/libtiff/tif_dirwrite.c  d(377) s(981,998) s(275,497) a(525,278) d(711) d(298) s(299,507) s(285,358) fails to compile
+	  0 d(377) s(981,998) s(275,497) a(525,278) d(711) d(298) s(299,507) s(285,358)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000243/libtiff/tif_dirwrite.c  s(343,297) s(691,687) s(547,681) a(1057,1079) s(465,464) a(326,763) fails to compile
+	  0 s(343,297) s(691,687) s(547,681) a(1057,1079) s(465,464) a(326,763)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000244/libtiff/tif_dirwrite.c  s(423,334) s(423,334) s(255,318) d(1076) fails to compile
+	  0 s(423,334) s(423,334) s(255,318) d(1076)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000245/libtiff/tif_dirwrite.c  s(423,334) a(377,417) d(277) fails to compile
+	  0 s(423,334) a(377,417) d(277)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000246/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) s(547,639) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(547,639)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000247/libtiff/tif_dirwrite.c  d(303) s(423,334) a(701,681) s(255,318) s(720,711) a(525,330) fails to compile
+	  0 d(303) s(423,334) a(701,681) s(255,318) s(720,711) a(525,330)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000248/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(267,464) d(791) s(317,286) a(755,259) d(725) a(713,1081) fails to compile
+	  0 a(525,278) s(719,723) a(267,464) d(791) s(317,286) a(755,259) d(725) a(713,1081)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000249/libtiff/tif_dirwrite.c  s(317,286) a(755,259) d(725) a(525,278) a(752,1110) a(267,464) s(546,542) fails to compile
+	  0 s(317,286) a(755,259) d(725) a(525,278) a(752,1110) a(267,464) s(546,542)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000250/libtiff/tif_dirwrite.c  a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) d(545) fails to compile
+	  0 a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) d(545)
+	0.124953 s(470,303) d(791) s(317,286) a(755,259) d(725) a(682,807)
+	0.128458 s(379,285) d(683) d(547) a(688,538) d(280) d(265)
+	0.124527 d(547) s(786,791) s(981,998) a(527,542) d(288) d(546) a(317,1110)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000254/libtiff/tif_dirwrite.c  d(547) s(786,791) s(981,998) s(434,339) s(525,535) a(281,538) fails to compile
+	  0 d(547) s(786,791) s(981,998) s(434,339) s(525,535) a(281,538)
+	  0 a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000255/libtiff/tif_dirwrite.c  a(377,417) a(263,1000) a(546,642) fails to compile
+	  0 a(377,417) a(263,1000) a(546,642)
+	0.503589 a(263,1000) a(542,779) s(363,326) d(547)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000257/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(363,326) a(321,287) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(363,326) a(321,287)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000258/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000259/libtiff/tif_dirwrite.c  s(786,791) s(336,991) s(337,268) s(423,334) a(540,639) fails to compile
+	  0 s(786,791) s(336,991) s(337,268) s(423,334) a(540,639)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000260/libtiff/tif_dirwrite.c  s(336,991) s(337,268) a(263,1000) a(546,366) d(283) d(547) a(527,542) s(546,531) d(357) fails to compile
+	  0 s(336,991) s(337,268) a(263,1000) a(546,366) d(283) d(547) a(527,542) s(546,531) d(357)
+	0.127157 d(283) d(547) s(786,791) a(527,542) d(794) s(546,531) a(792,339)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000262/libtiff/tif_dirwrite.c  s(336,991) s(337,268) d(303) s(423,334) a(263,1000) a(546,366) a(791,352) s(263,377) fails to compile
+	  0 s(336,991) s(337,268) d(303) s(423,334) a(263,1000) a(546,366) a(791,352) s(263,377)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000263/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(752,1110) a(525,278) s(719,723) a(276,297) d(322) d(722) s(1000,493) fails to compile
+	  0 a(525,278) s(719,723) a(752,1110) a(525,278) s(719,723) a(276,297) d(322) d(722) s(1000,493)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000264/libtiff/tif_dirwrite.c  s(336,991) s(337,268) d(303) s(423,334) a(263,1000) a(546,366) a(791,352) d(547) fails to compile
+	  0 s(336,991) s(337,268) d(303) s(423,334) a(263,1000) a(546,366) a(791,352) d(547)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000265/libtiff/tif_dirwrite.c  s(343,297) s(691,687) s(547,681) a(1057,1079) s(465,464) d(264) fails to compile
+	  0 s(343,297) s(691,687) s(547,681) a(1057,1079) s(465,464) d(264)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000266/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) d(267) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) d(267)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000267/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) s(343,251) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(343,251)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000268/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) a(752,1110) d(304) d(526) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) a(752,1110) d(304) d(526)
+	0.493333 a(1000,725) d(546) d(348) d(300)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000270/libtiff/tif_dirwrite.c  a(377,417) a(1000,725) d(717) a(296,449) fails to compile
+	  0 a(377,417) a(1000,725) d(717) a(296,449)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000271/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(717) d(688) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(717) d(688)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000272/libtiff/tif_dirwrite.c  a(276,297) d(546) d(348) d(358) fails to compile
+	  0 a(276,297) d(546) d(348) d(358)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000273/libtiff/tif_dirwrite.c  a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) s(698,694) fails to compile
+	  0 a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) s(698,694)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000274/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(717) s(282,503) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(717) s(282,503)
+Elite size: 4
+	0.907302 d(275)
+	0.907302 s(710,725) d(247)
+	0.905971 a(266,285)
+	0.901685 s(336,991)
+Best individual (Elite U Pop'):
+ 0.907302 d(275) 
+search: generation 6 (sizeof one variant = 0.431972 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000275/libtiff/tif_dirwrite.c  d(546) s(275,497) d(711) d(1084) a(263,1000) d(283) d(547) a(527,542) s(546,531) s(320,317) fails to compile
+	  0 d(546) s(275,497) d(711) d(1084) a(263,1000) d(283) d(547) a(527,542) s(546,531) s(320,317)
+	0.162859 d(283) d(377) d(711) d(1084) s(547,535) a(300,818)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000277/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000278/libtiff/tif_dirwrite.c  s(336,991) s(337,268) a(263,1000) a(546,366) d(283) d(547) a(527,542) s(546,531) d(357) s(307,243) fails to compile
+	  0 s(336,991) s(337,268) a(263,1000) a(546,366) d(283) d(547) a(527,542) s(546,531) d(357) s(307,243)
+	0.50644 d(322) a(752,1110) s(786,791) a(271,284)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000280/libtiff/tif_dirwrite.c  d(547) a(527,542) s(546,531) a(525,278) a(752,1110) a(267,464) s(698,694) s(690,683) fails to compile
+	  0 d(547) a(527,542) s(546,531) a(525,278) a(752,1110) a(267,464) s(698,694) s(690,683)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000281/libtiff/tif_dirwrite.c  a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) s(698,694) a(327,498) fails to compile
+	  0 a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) s(698,694) a(327,498)
+	0.131842 d(283) d(547) s(786,791) a(527,542) d(794) s(546,531) a(792,339) d(265)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000283/libtiff/tif_dirwrite.c  a(1000,725) d(688) s(423,334) a(377,417) s(273,325) a(752,790) s(296,415) fails to compile
+	  0 a(1000,725) d(688) s(423,334) a(377,417) s(273,325) a(752,790) s(296,415)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000284/libtiff/tif_dirwrite.c  a(1000,725) s(273,325) a(752,790) a(1000,725) a(754,755) fails to compile
+	  0 a(1000,725) s(273,325) a(752,790) a(1000,725) a(754,755)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000285/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(717) d(688) d(464) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(717) d(688) d(464)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000286/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(547,536) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(547,536)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000287/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) d(267) a(351,416) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) d(267) a(351,416)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000288/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) s(547,639) d(720) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(547,639) d(720)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000289/libtiff/tif_dirwrite.c  a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) s(698,694) a(684,317) fails to compile
+	  0 a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) s(698,694) a(684,317)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000290/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) s(547,639) a(307,455) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(547,639) a(307,455)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000291/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(1080,1066) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(1080,1066)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000292/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) a(752,1110) d(304) d(526) d(362) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) a(752,1110) d(304) d(526) d(362)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000293/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(720,713) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(720,713)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000294/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(363,326) a(321,287) a(469,681) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(363,326) a(321,287) a(469,681)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000295/libtiff/tif_dirwrite.c  s(423,334) s(357,332) s(268,259) a(546,642) d(723) fails to compile
+	  0 s(423,334) s(357,332) s(268,259) a(546,642) d(723)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000296/libtiff/tif_dirwrite.c  a(546,642) s(423,334) a(263,1000) s(357,332) s(546,638) fails to compile
+	  0 a(546,642) s(423,334) a(263,1000) s(357,332) s(546,638)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000297/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000298/libtiff/tif_dirwrite.c  a(377,417) a(263,1000) a(546,642) a(993,767) fails to compile
+	  0 a(377,417) a(263,1000) a(546,642) a(993,767)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000299/libtiff/tif_dirwrite.c  a(701,681) d(283) a(525,278) a(276,297) s(255,318) a(547,316) s(692,795) d(327) fails to compile
+	  0 a(701,681) d(283) a(525,278) a(276,297) s(255,318) a(547,316) s(692,795) d(327)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000300/libtiff/tif_dirwrite.c  s(275,497) a(525,278) a(718,712) s(1000,763) a(725,1081) d(1076) a(700,465) fails to compile
+	  0 s(275,497) a(525,278) a(718,712) s(1000,763) a(725,1081) d(1076) a(700,465)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000301/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(696) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(696)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000302/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) a(752,1110) d(304) d(526) d(320) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) a(752,1110) d(304) d(526) d(320)
+	0.493333 a(525,278) a(525,278) a(752,1110) d(348) a(362,290)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000304/libtiff/tif_dirwrite.c  a(1000,725) d(300) a(267,464) s(698,694) s(703,723) fails to compile
+	  0 a(1000,725) d(300) a(267,464) s(698,694) s(703,723)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000305/libtiff/tif_dirwrite.c  a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) s(698,694) s(720,710) fails to compile
+	  0 a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) s(698,694) s(720,710)
+	0.493333 a(1000,725) d(546) d(348) d(300) s(346,408)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000307/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) s(547,639) d(309) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(547,639) d(309)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000308/libtiff/tif_dirwrite.c  a(377,417) a(263,1000) a(546,642) a(263,287) fails to compile
+	  0 a(377,417) a(263,1000) a(546,642) a(263,287)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000309/libtiff/tif_dirwrite.c  s(336,991) s(337,268) d(303) s(423,334) a(263,1000) a(546,366) a(791,352) d(547) a(996,270) fails to compile
+	  0 s(336,991) s(337,268) d(303) s(423,334) a(263,1000) a(546,366) a(791,352) d(547) a(996,270)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000310/libtiff/tif_dirwrite.c  s(423,334) a(377,417) d(277) a(547,269) fails to compile
+	  0 s(423,334) a(377,417) d(277) a(547,269)
+	0.901685 s(719,723) d(322) d(300) a(317,1085)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000312/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000313/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000314/libtiff/tif_dirwrite.c  s(423,334) a(377,417) d(277) d(692) fails to compile
+	  0 s(423,334) a(377,417) d(277) d(692)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000315/libtiff/tif_dirwrite.c  a(377,417) a(525,278) s(719,723) d(545) d(350) fails to compile
+	  0 a(377,417) a(525,278) s(719,723) d(545) d(350)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000316/libtiff/tif_dirwrite.c  a(525,278) d(322) s(719,723) d(545) a(377,417) s(544,643) fails to compile
+	  0 a(525,278) d(322) s(719,723) d(545) a(377,417) s(544,643)
+	  0 a(377,417) a(263,1000) a(546,642) s(262,538)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000317/libtiff/tif_dirwrite.c  a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) d(545) s(755,750) fails to compile
+	  0 a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) d(545) s(755,750)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000318/libtiff/tif_dirwrite.c  a(755,259) d(725) a(525,278) a(752,1110) s(719,723) a(267,464) d(791) s(317,286) a(713,1081) a(465,283) fails to compile
+	  0 a(755,259) d(725) a(525,278) a(752,1110) s(719,723) a(267,464) d(791) s(317,286) a(713,1081) a(465,283)
+	0.880782 d(791) d(725) a(713,1081) s(317,286) d(725) a(525,278) d(715)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000320/libtiff/tif_dirwrite.c  s(317,286) a(755,259) d(725) a(525,278) a(752,1110) a(267,464) s(546,542) s(247,271) fails to compile
+	  0 s(317,286) a(755,259) d(725) a(525,278) a(752,1110) a(267,464) s(546,542) s(247,271)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000321/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(267,464) d(791) s(317,286) a(755,259) d(725) a(713,1081) a(280,270) fails to compile
+	  0 a(525,278) s(719,723) a(267,464) d(791) s(317,286) a(755,259) d(725) a(713,1081) a(280,270)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000322/libtiff/tif_dirwrite.c  a(701,681) d(283) a(525,278) a(276,297) s(255,318) a(547,316) s(692,795) a(526,286) fails to compile
+	  0 a(701,681) d(283) a(525,278) a(276,297) s(255,318) a(547,316) s(692,795) a(526,286)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000323/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(363,326) a(321,287) a(694,776) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(363,326) a(321,287) a(694,776)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000324/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) s(343,251) s(546,538) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(343,251) s(546,538)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000325/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(363,326) a(321,287) s(308,256) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(363,326) a(321,287) s(308,256)
+Elite size: 4
+	0.907302 d(275)
+	0.907302 s(710,725) d(247)
+	0.905971 a(266,285)
+	0.901685 s(336,991)
+Best individual (Elite U Pop'):
+ 0.907302 d(275) 
+search: generation 7 (sizeof one variant = 0.432129 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000326/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(547,536) a(319,320) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(547,536) a(319,320)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000327/libtiff/tif_dirwrite.c  a(525,278) d(322) s(719,723) d(545) a(377,417) s(544,643) d(267) fails to compile
+	  0 a(525,278) d(322) s(719,723) d(545) a(377,417) s(544,643) d(267)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000328/libtiff/tif_dirwrite.c  a(280,725) s(275,497) a(525,278) a(541,1000) fails to compile
+	  0 a(280,725) s(275,497) a(525,278) a(541,1000)
+	0.162646 a(525,278) a(718,712) s(1000,763) d(1076) a(700,465) d(546) d(377) d(711) d(298) d(1084) a(280,725) a(790,790)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000330/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(692) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(692)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000331/libtiff/tif_dirwrite.c  s(275,497) a(525,278) a(718,712) s(1000,763) a(725,1081) d(1076) a(700,465) a(304,303) fails to compile
+	  0 s(275,497) a(525,278) a(718,712) s(1000,763) a(725,1081) d(1076) a(700,465) a(304,303)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000332/libtiff/tif_dirwrite.c  s(423,334) a(377,417) d(470) d(791) d(725) a(713,1081) s(317,286) d(725) a(525,278) s(245,298) fails to compile
+	  0 s(423,334) a(377,417) d(470) d(791) d(725) a(713,1081) s(317,286) d(725) a(525,278) s(245,298)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000333/libtiff/tif_dirwrite.c  d(791) d(725) a(713,1081) s(317,286) a(525,278) d(715) s(423,334) d(470) a(307,455) s(343,293) fails to compile
+	  0 d(791) d(725) a(713,1081) s(317,286) a(525,278) d(715) s(423,334) d(470) a(307,455) s(343,293)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000334/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) s(547,639) a(307,455) s(277,329) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(547,639) a(307,455) s(277,329)
+	0.880782 d(791) d(725) a(713,1081) s(317,286) d(725) a(525,278) d(715) a(995,287)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000336/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434) a(329,476) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434) a(329,476)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000337/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) s(348,280) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(348,280)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000338/libtiff/tif_dirwrite.c  a(546,642) s(423,334) a(263,1000) s(357,332) s(546,638) a(348,409) fails to compile
+	  0 a(546,642) s(423,334) a(263,1000) s(357,332) s(546,638) a(348,409)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000339/libtiff/tif_dirwrite.c  s(317,286) a(755,259) d(725) a(525,278) a(752,1110) a(267,464) s(546,542) s(247,271) d(1076) fails to compile
+	  0 s(317,286) a(755,259) d(725) a(525,278) a(752,1110) a(267,464) s(546,542) s(247,271) d(1076)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000340/libtiff/tif_dirwrite.c  s(423,334) a(377,417) d(720) s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) a(322,249) fails to compile
+	  0 s(423,334) a(377,417) d(720) s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) a(322,249)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000341/libtiff/tif_dirwrite.c  a(377,417) s(273,325) s(423,334) a(377,417) s(547,639) d(720) s(277,379) fails to compile
+	  0 a(377,417) s(273,325) s(423,334) a(377,417) s(547,639) d(720) s(277,379)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000342/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) s(547,639) d(720) s(274,456) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(547,639) d(720) s(274,456)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000343/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(720,713) s(546,535) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(720,713) s(546,535)
+	0.854189 d(688) a(752,790) d(322) a(525,278) s(719,723) s(698,694) s(720,710) d(715)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000345/libtiff/tif_dirwrite.c  d(322) a(525,278) a(267,464) a(1000,725) d(688) s(296,415) a(547,346) fails to compile
+	  0 d(322) a(525,278) a(267,464) a(1000,725) d(688) s(296,415) a(547,346)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000346/libtiff/tif_dirwrite.c  a(1000,725) d(688) s(423,334) a(377,417) s(273,325) a(752,790) s(296,415) a(751,710) fails to compile
+	  0 a(1000,725) d(688) s(423,334) a(377,417) s(273,325) a(752,790) s(296,415) a(751,710)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000347/libtiff/tif_dirwrite.c  a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) s(698,694) s(720,710) a(526,373) fails to compile
+	  0 a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) s(698,694) s(720,710) a(526,373)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000348/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) s(546,640) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(546,640)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000349/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000350/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(997,993) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(997,993)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000351/libtiff/tif_dirwrite.c  a(755,259) d(725) a(525,278) a(752,1110) s(719,723) a(267,464) d(791) s(317,286) a(713,1081) a(465,283) d(292) fails to compile
+	  0 a(755,259) d(725) a(525,278) a(752,1110) s(719,723) a(267,464) d(791) s(317,286) a(713,1081) a(465,283) d(292)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000352/libtiff/tif_dirwrite.c  s(423,334) a(377,417) d(277) d(692) s(344,464) fails to compile
+	  0 s(423,334) a(377,417) d(277) d(692) s(344,464)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000353/libtiff/tif_dirwrite.c  a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) d(545) s(755,750) d(786) fails to compile
+	  0 a(525,278) d(322) a(525,278) s(719,723) a(752,1110) a(267,464) d(545) s(755,750) d(786)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000354/libtiff/tif_dirwrite.c  a(276,297) s(423,334) a(377,417) d(540) fails to compile
+	  0 a(276,297) s(423,334) a(377,417) d(540)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000355/libtiff/tif_dirwrite.c  s(423,334) a(377,417) s(273,325) a(752,790) s(720,713) a(276,297) s(361,297) fails to compile
+	  0 s(423,334) a(377,417) s(273,325) a(752,790) s(720,713) a(276,297) s(361,297)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000356/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) d(545) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) d(545)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000357/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(720,713) s(464,292) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(720,713) s(464,292)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000358/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000359/libtiff/tif_dirwrite.c  s(423,334) a(377,417) d(470) s(343,251) s(546,538) s(423,334) s(357,332) a(546,642) s(992,981) fails to compile
+	  0 s(423,334) a(377,417) d(470) s(343,251) s(546,538) s(423,334) s(357,332) a(546,642) s(992,981)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000360/libtiff/tif_dirwrite.c  s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) fails to compile
+	  0 s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000361/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) s(343,251) s(546,538) s(310,256) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(343,251) s(546,538) s(310,256)
+	  0 a(701,681) d(283) a(525,278) a(276,297) s(255,318) a(547,316) s(692,795) a(526,286) d(725)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000362/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(1063,1099) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(1063,1099)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000363/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) a(465,692) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) a(465,692)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000364/libtiff/tif_dirwrite.c  a(525,278) d(322) s(719,723) d(545) a(377,417) s(544,643) s(691,684) fails to compile
+	  0 a(525,278) d(322) s(719,723) d(545) a(377,417) s(544,643) s(691,684)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000365/libtiff/tif_dirwrite.c  d(547) s(546,531) a(752,1110) a(267,464) s(698,694) s(690,683) a(377,417) a(276,332) fails to compile
+	  0 d(547) s(546,531) a(752,1110) a(267,464) s(698,694) s(690,683) a(377,417) a(276,332)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000366/libtiff/tif_dirwrite.c  a(377,417) a(263,1000) d(547) a(525,278) a(752,1110) a(267,464) d(792) fails to compile
+	  0 a(377,417) a(263,1000) d(547) a(525,278) a(752,1110) a(267,464) d(792)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000367/libtiff/tif_dirwrite.c  d(547) a(527,542) s(546,531) a(525,278) a(752,1110) a(267,464) s(698,694) s(690,683) a(726,991) fails to compile
+	  0 d(547) a(527,542) s(546,531) a(525,278) a(752,1110) a(267,464) s(698,694) s(690,683) a(726,991)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000368/libtiff/tif_dirwrite.c  a(377,417) a(263,1000) a(546,642) a(263,287) d(547) fails to compile
+	  0 a(377,417) a(263,1000) a(546,642) a(263,287) d(547)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000369/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(547,536) d(540) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(547,536) d(540)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000370/libtiff/tif_dirwrite.c  a(377,417) a(263,1000) a(546,642) a(263,287) a(363,250) fails to compile
+	  0 a(377,417) a(263,1000) a(546,642) a(263,287) a(363,250)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000371/libtiff/tif_dirwrite.c  a(525,278) a(276,297) s(755,753) s(423,334) s(546,638) d(265) fails to compile
+	  0 a(525,278) a(276,297) s(755,753) s(423,334) s(546,638) d(265)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000372/libtiff/tif_dirwrite.c  a(263,1000) s(357,332) s(546,638) a(525,278) a(276,297) s(755,753) a(547,498) fails to compile
+	  0 a(263,1000) s(357,332) s(546,638) a(525,278) a(276,297) s(755,753) a(547,498)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000373/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) s(282,336) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(282,336)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000374/libtiff/tif_dirwrite.c  a(546,642) s(423,334) a(263,1000) s(357,332) s(546,638) a(795,1084) fails to compile
+	  0 a(546,642) s(423,334) a(263,1000) s(357,332) s(546,638) a(795,1084)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000375/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434) a(999,807) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434) a(999,807)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000376/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) d(267) a(351,416) a(791,781) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) d(267) a(351,416) a(791,781)
+Elite size: 4
+	0.907302 d(275)
+	0.907302 s(710,725) d(247)
+	0.905971 a(266,285)
+	0.901685 s(336,991)
+Best individual (Elite U Pop'):
+ 0.907302 d(275) 
+search: generation 8 (sizeof one variant = 0.432238 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000377/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) a(280,725) a(546,642) s(423,334) s(546,638) a(795,1084) s(688,682) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) a(280,725) a(546,642) s(423,334) s(546,638) a(795,1084) s(688,682)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000378/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(546,638) d(546) s(275,497) d(298) s(547,535) s(288,408) fails to compile
+	  0 s(423,334) a(263,1000) s(546,638) d(546) s(275,497) d(298) s(547,535) s(288,408)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000379/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(304,457) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(304,457)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000380/libtiff/tif_dirwrite.c  a(546,642) s(423,334) a(263,1000) s(357,332) s(546,638) a(795,1084) a(526,528) fails to compile
+	  0 a(546,642) s(423,334) a(263,1000) s(357,332) s(546,638) a(795,1084) a(526,528)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000381/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) s(546,640) d(246) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(546,640) d(246)
+	0.85304 a(377,417) a(263,1000) a(546,642) a(263,287) a(363,250) d(320)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000383/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) d(545) s(343,270) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) d(545) s(343,270)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000384/libtiff/tif_dirwrite.c  d(322) a(525,278) a(267,464) a(1000,725) d(688) s(296,415) a(547,346) s(994,998) fails to compile
+	  0 d(322) a(525,278) a(267,464) a(1000,725) d(688) s(296,415) a(547,346) s(994,998)
+	0.85304 s(1000,763) a(700,465) d(377) d(711) d(298) d(1084) a(377,417) a(263,1000) a(546,642) a(263,287) d(545)
+	0.85304 a(263,1000) s(1000,763) a(700,465) d(546) d(298) a(790,790) s(469,274)
+	0.162646 a(525,278) a(718,712) s(1000,763) d(1076) a(700,465) d(546) d(377) d(711) d(298) d(1084) a(280,725) a(790,790) a(996,994)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000388/libtiff/tif_dirwrite.c  a(377,417) a(263,1000) a(546,642) a(263,287) d(547) d(793) fails to compile
+	  0 a(377,417) a(263,1000) a(546,642) a(263,287) d(547) d(793)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000389/libtiff/tif_dirwrite.c  a(525,278) s(719,723) d(322) a(363,320) d(300) s(997,993) a(377,417) a(1000,725) s(273,325) s(546,535) d(684) fails to compile
+	  0 a(525,278) s(719,723) d(322) a(363,320) d(300) s(997,993) a(377,417) a(1000,725) s(273,325) s(546,535) d(684)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000390/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) s(546,535) a(276,297) d(300) s(997,993) d(293) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) s(546,535) a(276,297) d(300) s(997,993) d(293)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000391/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(997,993) a(358,508) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(997,993) a(358,508)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000392/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(720,713) s(546,535) s(246,507) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) a(752,790) s(720,713) s(546,535) s(246,507)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000393/libtiff/tif_dirwrite.c  d(547) a(752,1110) s(698,694) s(690,683) a(726,991) a(276,297) s(755,753) a(379,289) fails to compile
+	  0 d(547) a(752,1110) s(698,694) s(690,683) a(726,991) a(276,297) s(755,753) a(379,289)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000394/libtiff/tif_dirwrite.c  a(525,278) a(363,320) s(755,753) d(545) a(527,542) a(525,278) a(267,464) s(690,683) a(726,991) a(692,339) fails to compile
+	  0 a(525,278) a(363,320) s(755,753) d(545) a(527,542) a(525,278) a(267,464) s(690,683) a(726,991) a(692,339)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000395/libtiff/tif_dirwrite.c  d(547) a(527,542) s(546,531) a(525,278) a(752,1110) a(267,464) s(698,694) s(690,683) a(726,991) a(1057,725) fails to compile
+	  0 d(547) a(527,542) s(546,531) a(525,278) a(752,1110) a(267,464) s(698,694) s(690,683) a(726,991) a(1057,725)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000396/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) d(545) d(995) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) d(545) d(995)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000397/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) s(547,639) a(307,455) s(277,329) a(287,320) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(547,639) a(307,455) s(277,329) a(287,320)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000398/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(329,283) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(329,283)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000399/libtiff/tif_dirwrite.c  d(791) d(725) a(713,1081) s(317,286) a(525,278) d(715) s(423,334) d(470) a(307,455) s(343,293) s(274,258) fails to compile
+	  0 d(791) d(725) a(713,1081) s(317,286) a(525,278) d(715) s(423,334) d(470) a(307,455) s(343,293) s(274,258)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000400/libtiff/tif_dirwrite.c  s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(327,310) fails to compile
+	  0 s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(327,310)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000401/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(997,993) s(996,1000) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(997,993) s(996,1000)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000402/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) s(546,640) s(352,365) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(546,640) s(352,365)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000403/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) s(282,336) a(268,257) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(282,336) a(268,257)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000404/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) s(546,640) s(722,719) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(546,640) s(722,719)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000405/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) s(348,280) a(377,417) s(542,525) s(546,537) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(348,280) a(377,417) s(542,525) s(546,537)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000406/libtiff/tif_dirwrite.c  s(423,334) a(1000,725) s(542,525) s(348,280) a(717,286) fails to compile
+	  0 s(423,334) a(1000,725) s(542,525) s(348,280) a(717,286)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000407/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) s(348,280) s(720,703) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(348,280) s(720,703)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000408/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) s(470,274) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) s(470,274)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000409/libtiff/tif_dirwrite.c  a(263,1000) a(542,779) d(1063) d(377) s(275,497) d(711) d(298) d(1084) a(280,725) a(465,692) d(752) fails to compile
+	  0 a(263,1000) a(542,779) d(1063) d(377) s(275,497) d(711) d(298) d(1084) a(280,725) a(465,692) d(752)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000410/libtiff/tif_dirwrite.c  s(275,497) d(711) d(298) a(280,725) a(465,692) s(423,334) s(357,332) a(542,779) s(268,259) a(999,807) d(1062) fails to compile
+	  0 s(275,497) d(711) d(298) a(280,725) a(465,692) s(423,334) s(357,332) a(542,779) s(268,259) a(999,807) d(1062)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000411/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434) a(999,807) a(546,641) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434) a(999,807) a(546,641)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000412/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) a(465,692) a(715,701) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) a(465,692) a(715,701)
+	  0 a(377,417) a(263,1000) a(546,642) a(263,287) d(547) d(317)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000413/libtiff/tif_dirwrite.c  a(263,1000) s(357,332) s(546,638) a(525,278) a(276,297) s(755,753) a(547,498) s(696,698) fails to compile
+	  0 a(263,1000) s(357,332) s(546,638) a(525,278) a(276,297) s(755,753) a(547,498) s(696,698)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000414/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(1063,1099) a(540,418) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(1063,1099) a(540,418)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000415/libtiff/tif_dirwrite.c  s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(347,254) fails to compile
+	  0 s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(347,254)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000416/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434) a(999,807) a(333,332) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434) a(999,807) a(333,332)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000417/libtiff/tif_dirwrite.c  s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(255,451) fails to compile
+	  0 s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(255,451)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000418/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) s(547,639) d(720) s(274,456) s(781,788) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(547,639) d(720) s(274,456) s(781,788)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000419/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(997,993) d(547) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(997,993) d(547)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000420/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) d(545) a(791,700) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) d(545) a(791,700)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000421/libtiff/tif_dirwrite.c  d(547) s(546,531) a(752,1110) a(267,464) s(698,694) s(690,683) a(377,417) a(276,332) d(304) fails to compile
+	  0 d(547) s(546,531) a(752,1110) a(267,464) s(698,694) s(690,683) a(377,417) a(276,332) d(304)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000422/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) a(687,346) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) a(687,346)
+	  0 a(377,417) s(273,325) s(423,334) a(377,417) s(547,639) d(720) s(277,379) s(352,251)
+Elite size: 4
+	0.907302 d(275)
+	0.907302 s(710,725) d(247)
+	0.905971 a(266,285)
+	0.901685 s(336,991)
+Best individual (Elite U Pop'):
+ 0.907302 d(275) 
+search: generation 9 (sizeof one variant = 0.43233 MB)
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(282,336) a(268,257) d(286)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000423/libtiff/tif_dirwrite.c  s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(327,310) s(997,991) fails to compile
+	  0 s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(327,310) s(997,991)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000424/libtiff/tif_dirwrite.c  a(525,278) a(276,297) d(545) s(423,334) a(1000,725) s(542,525) d(701) fails to compile
+	  0 a(525,278) a(276,297) d(545) s(423,334) a(1000,725) s(542,525) d(701)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000425/libtiff/tif_dirwrite.c  s(423,334) a(1000,725) s(343,251) s(542,525) a(687,346) d(545) a(330,320) fails to compile
+	  0 s(423,334) a(1000,725) s(343,251) s(542,525) a(687,346) d(545) a(330,320)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000426/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) d(545) a(791,700) a(547,306) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) d(545) a(791,700) a(547,306)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000427/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) a(687,346) a(296,350) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) a(687,346) a(296,350)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000428/libtiff/tif_dirwrite.c  s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(347,254) s(546,639) fails to compile
+	  0 s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(347,254) s(546,639)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000429/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) d(545) a(791,700) s(996,994) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) d(545) a(791,700) s(996,994)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000430/libtiff/tif_dirwrite.c  a(377,417) a(377,417) s(547,639) s(352,251) a(363,320) s(755,753) a(527,542) a(267,464) s(690,683) s(293,291) fails to compile
+	  0 a(377,417) a(377,417) s(547,639) s(352,251) a(363,320) s(755,753) a(527,542) a(267,464) s(690,683) s(293,291)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000431/libtiff/tif_dirwrite.c  s(755,753) d(545) a(525,278) s(690,683) a(377,417) s(547,639) d(720) s(277,379) d(1060) fails to compile
+	  0 s(755,753) d(545) a(525,278) s(690,683) a(377,417) s(547,639) d(720) s(277,379) d(1060)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000432/libtiff/tif_dirwrite.c  a(377,417) s(273,325) s(423,334) a(377,417) s(547,639) d(720) s(277,379) s(352,251) a(795,262) fails to compile
+	  0 a(377,417) s(273,325) s(423,334) a(377,417) s(547,639) d(720) s(277,379) s(352,251) a(795,262)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000433/libtiff/tif_dirwrite.c  a(525,278) a(363,320) s(755,753) d(545) a(527,542) a(525,278) a(267,464) s(690,683) a(726,991) a(692,339) a(327,255) fails to compile
+	  0 a(525,278) a(363,320) s(755,753) d(545) a(527,542) a(525,278) a(267,464) s(690,683) a(726,991) a(692,339) a(327,255)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000434/libtiff/tif_dirwrite.c  d(545) d(377) s(275,497) a(546,642) s(546,638) a(795,1084) d(781) fails to compile
+	  0 d(545) d(377) s(275,497) a(546,642) s(546,638) a(795,1084) d(781)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000435/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) a(546,642) s(688,682) a(525,278) a(276,297) a(363,320) s(755,753) d(545) d(995) s(752,750) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) a(546,642) s(688,682) a(525,278) a(276,297) a(363,320) s(755,753) d(545) d(995) s(752,750)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000436/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) d(545) d(995) d(243) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) d(545) d(995) d(243)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000437/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) a(280,725) a(546,642) s(423,334) s(546,638) a(795,1084) s(688,682) d(793) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) a(280,725) a(546,642) s(423,334) s(546,638) a(795,1084) s(688,682) d(793)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000438/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(304,457) d(273) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(304,457) d(273)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000439/libtiff/tif_dirwrite.c  s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(255,451) d(470) fails to compile
+	  0 s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(255,451) d(470)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000440/libtiff/tif_dirwrite.c  s(423,334) s(348,280) s(357,332) d(1063) s(268,259) a(999,807) a(333,332) s(683,690) fails to compile
+	  0 s(423,334) s(348,280) s(357,332) d(1063) s(268,259) a(999,807) a(333,332) s(683,690)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000441/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) a(542,779) d(1063) s(268,259) d(434) a(999,807) s(423,334) a(1000,725) s(1077,1114) fails to compile
+	  0 s(423,334) a(263,1000) a(542,779) d(1063) s(268,259) d(434) a(999,807) s(423,334) a(1000,725) s(1077,1114)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000442/libtiff/tif_dirwrite.c  s(423,334) a(1000,725) s(542,525) s(348,280) a(717,286) s(471,364) fails to compile
+	  0 s(423,334) a(1000,725) s(542,525) s(348,280) a(717,286) s(471,364)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000443/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434) a(999,807) a(333,332) s(327,468) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434) a(999,807) a(333,332) s(327,468)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000444/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(1063,1099) a(540,418) a(1059,1075) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(1063,1099) a(540,418) a(1059,1075)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000445/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) a(687,346) s(690,688) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) a(687,346) s(690,688)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000446/libtiff/tif_dirwrite.c  a(525,278) s(755,753) s(348,280) d(546) s(275,497) d(298) s(547,535) a(280,725) d(754) fails to compile
+	  0 a(525,278) s(755,753) s(348,280) d(546) s(275,497) d(298) s(547,535) a(280,725) d(754)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000447/libtiff/tif_dirwrite.c  d(546) d(298) d(1084) s(547,535) a(465,692) a(276,297) s(755,753) s(379,288) fails to compile
+	  0 d(546) d(298) d(1084) s(547,535) a(465,692) a(276,297) s(755,753) s(379,288)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000448/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) s(348,280) s(720,703) a(308,710) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(348,280) s(720,703) a(308,710)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000449/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) a(465,692) a(715,701) s(528,544) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) a(465,692) a(715,701) s(528,544)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000450/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(273,325) s(546,535) a(276,297) d(300) s(997,993) d(293) d(717) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(273,325) s(546,535) a(276,297) d(300) s(997,993) d(293) d(717)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000451/libtiff/tif_dirwrite.c  s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(255,451) d(1077) fails to compile
+	  0 s(423,334) s(357,332) s(268,259) a(546,642) d(723) s(434,453) a(255,451) d(1077)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000452/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) s(547,639) a(307,455) s(277,329) a(287,320) s(349,325) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(547,639) a(307,455) s(277,329) a(287,320) s(349,325)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000453/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) s(470,274) d(469) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) s(470,274) d(469)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000454/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) a(465,692) a(715,701) a(344,319) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) a(465,692) a(715,701) a(344,319)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000455/libtiff/tif_dirwrite.c  d(547) a(527,542) s(546,531) a(525,278) a(752,1110) a(267,464) s(698,694) s(690,683) a(726,991) a(1057,725) a(465,285) fails to compile
+	  0 d(547) a(527,542) s(546,531) a(525,278) a(752,1110) a(267,464) s(698,694) s(690,683) a(726,991) a(1057,725) a(465,285)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000456/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(275,497) s(288,408) d(547) s(546,531) a(377,417) a(726,339) fails to compile
+	  0 s(423,334) a(263,1000) s(275,497) s(288,408) d(547) s(546,531) a(377,417) a(726,339)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000457/libtiff/tif_dirwrite.c  d(547) a(752,1110) a(377,417) a(276,332) a(263,1000) d(546) s(275,497) s(547,535) s(288,408) d(465) fails to compile
+	  0 d(547) a(752,1110) a(377,417) a(276,332) a(263,1000) d(546) s(275,497) s(547,535) s(288,408) d(465)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000458/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(546,638) d(546) s(275,497) d(298) s(547,535) s(288,408) s(264,273) fails to compile
+	  0 s(423,334) a(263,1000) s(546,638) d(546) s(275,497) d(298) s(547,535) s(288,408) s(264,273)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000459/libtiff/tif_dirwrite.c  d(547) s(546,531) a(752,1110) a(267,464) s(698,694) s(690,683) a(377,417) a(276,332) d(304) a(691,251) fails to compile
+	  0 d(547) s(546,531) a(752,1110) a(267,464) s(698,694) s(690,683) a(377,417) a(276,332) d(304) a(691,251)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000460/libtiff/tif_dirwrite.c  a(525,278) a(547,498) a(267,464) s(296,415) a(547,346) d(693) fails to compile
+	  0 a(525,278) a(547,498) a(267,464) s(296,415) a(547,346) d(693)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000461/libtiff/tif_dirwrite.c  a(525,278) a(1000,725) s(994,998) a(263,1000) s(357,332) s(546,638) a(525,278) a(276,297) s(755,753) s(696,698) s(719,726) fails to compile
+	  0 a(525,278) a(1000,725) s(994,998) a(263,1000) s(357,332) s(546,638) a(525,278) a(276,297) s(755,753) s(696,698) s(719,726)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000462/libtiff/tif_dirwrite.c  a(263,1000) s(357,332) s(546,638) a(525,278) a(276,297) s(755,753) a(547,498) s(696,698) s(281,280) fails to compile
+	  0 a(263,1000) s(357,332) s(546,638) a(525,278) a(276,297) s(755,753) a(547,498) s(696,698) s(281,280)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000463/libtiff/tif_dirwrite.c  d(322) a(525,278) a(267,464) a(1000,725) d(688) s(296,415) a(547,346) s(994,998) s(434,270) fails to compile
+	  0 d(322) a(525,278) a(267,464) a(1000,725) d(688) s(296,415) a(547,346) s(994,998) s(434,270)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000464/libtiff/tif_dirwrite.c  a(525,278) s(719,723) d(322) a(363,320) d(300) s(997,993) a(377,417) a(1000,725) s(273,325) s(546,535) d(684) s(712,722) fails to compile
+	  0 a(525,278) s(719,723) d(322) a(363,320) d(300) s(997,993) a(377,417) a(1000,725) s(273,325) s(546,535) d(684) s(712,722)
+	  0 a(263,1000) a(542,779) d(1063) d(377) s(275,497) d(711) d(298) d(1084) a(280,725) a(465,692) d(752) s(245,296)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000465/libtiff/tif_dirwrite.c  s(275,497) d(298) d(1084) a(280,725) d(285) s(546,531) a(267,464) s(698,694) a(276,332) s(325,270) fails to compile
+	  0 s(275,497) d(298) d(1084) a(280,725) d(285) s(546,531) a(267,464) s(698,694) a(276,332) s(325,270)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000466/libtiff/tif_dirwrite.c  a(752,1110) a(267,464) s(698,694) a(377,417) a(276,332) d(304) d(377) s(275,497) d(711) d(298) a(280,725) d(285) d(277) fails to compile
+	  0 a(752,1110) a(267,464) s(698,694) a(377,417) a(276,332) d(304) d(377) s(275,497) d(711) d(298) a(280,725) d(285) d(277)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000467/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(329,283) s(786,788) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(329,283) s(786,788)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000468/libtiff/tif_dirwrite.c  d(547) s(546,531) a(752,1110) a(267,464) s(698,694) s(690,683) a(377,417) a(276,332) d(304) s(711,701) fails to compile
+	  0 d(547) s(546,531) a(752,1110) a(267,464) s(698,694) s(690,683) a(377,417) a(276,332) d(304) s(711,701)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000469/libtiff/tif_dirwrite.c  a(525,278) a(276,297) s(755,753) d(246) s(755,753) a(267,464) s(690,683) d(794) fails to compile
+	  0 a(525,278) a(276,297) s(755,753) d(246) s(755,753) a(267,464) s(690,683) d(794)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000470/libtiff/tif_dirwrite.c  a(525,278) a(363,320) s(755,753) a(267,464) s(690,683) a(726,991) a(525,278) a(363,320) s(546,640) s(285,475) fails to compile
+	  0 a(525,278) a(363,320) s(755,753) a(267,464) s(690,683) a(726,991) a(525,278) a(363,320) s(546,640) s(285,475)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000471/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) s(546,640) d(246) a(357,319) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(546,640) d(246) a(357,319)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000472/libtiff/tif_dirwrite.c  a(525,278) a(363,320) s(755,753) d(545) a(527,542) a(525,278) a(267,464) s(690,683) a(726,991) a(692,339) a(702,1099) fails to compile
+	  0 a(525,278) a(363,320) s(755,753) d(545) a(527,542) a(525,278) a(267,464) s(690,683) a(726,991) a(692,339) a(702,1099)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000473/libtiff/tif_dirwrite.c  a(542,779) d(711) d(298) d(1084) a(280,725) a(525,278) a(363,320) s(343,270) a(282,418) fails to compile
+	  0 a(542,779) d(711) d(298) d(1084) a(280,725) a(525,278) a(363,320) s(343,270) a(282,418)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000474/libtiff/tif_dirwrite.c  a(525,278) a(276,297) d(545) a(263,1000) a(542,779) d(1063) s(275,497) d(298) d(1084) d(752) s(246,361) fails to compile
+	  0 a(525,278) a(276,297) d(545) a(263,1000) a(542,779) d(1063) s(275,497) d(298) d(1084) d(752) s(246,361)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000475/libtiff/tif_dirwrite.c  a(263,1000) a(542,779) d(1063) d(377) s(275,497) d(711) d(298) d(1084) a(280,725) a(465,692) d(752) d(780) fails to compile
+	  0 a(263,1000) a(542,779) d(1063) d(377) s(275,497) d(711) d(298) d(1084) a(280,725) a(465,692) d(752) d(780)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000476/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) d(545) s(343,270) d(255) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) d(545) s(343,270) d(255)
+Elite size: 4
+	0.907302 d(275)
+	0.907302 s(710,725) d(247)
+	0.905971 a(266,285)
+	0.901685 s(336,991)
+Best individual (Elite U Pop'):
+ 0.907302 d(275) 
+search: generation 10 (sizeof one variant = 0.432439 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000477/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) s(282,336) a(268,257) d(286) d(303) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(282,336) a(268,257) d(286) d(303)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000478/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) a(687,346) a(296,350) d(1000) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) a(687,346) a(296,350) d(1000)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000479/libtiff/tif_dirwrite.c  s(755,753) d(545) a(525,278) s(690,683) a(377,417) s(547,639) d(720) s(277,379) d(1060) a(525,1081) fails to compile
+	  0 s(755,753) d(545) a(525,278) s(690,683) a(377,417) s(547,639) d(720) s(277,379) d(1060) a(525,1081)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000480/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(304,457) d(273) s(682,692) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(304,457) d(273) s(682,692)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000481/libtiff/tif_dirwrite.c  d(298) d(1084) s(547,535) a(465,692) a(525,278) a(276,297) s(755,753) s(755,753) s(690,683) s(712,722) fails to compile
+	  0 d(298) d(1084) s(547,535) a(465,692) a(525,278) a(276,297) s(755,753) s(755,753) s(690,683) s(712,722)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000482/libtiff/tif_dirwrite.c  a(276,297) s(755,753) a(267,464) s(690,683) d(794) d(546) d(298) s(755,753) d(999) fails to compile
+	  0 a(276,297) s(755,753) a(267,464) s(690,683) d(794) d(546) d(298) s(755,753) d(999)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000483/libtiff/tif_dirwrite.c  d(546) d(298) d(1084) s(547,535) a(465,692) a(276,297) s(755,753) s(379,288) a(273,452) fails to compile
+	  0 d(546) d(298) d(1084) s(547,535) a(465,692) a(276,297) s(755,753) s(379,288) a(273,452)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000484/libtiff/tif_dirwrite.c  a(525,278) a(276,297) s(755,753) d(246) s(755,753) a(267,464) s(690,683) d(794) s(994,1000) fails to compile
+	  0 a(525,278) a(276,297) s(755,753) d(246) s(755,753) a(267,464) s(690,683) d(794) s(994,1000)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000485/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) s(470,274) d(469) s(752,754) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) s(470,274) d(469) s(752,754)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000486/libtiff/tif_dirwrite.c  s(423,334) a(1000,725) s(343,251) s(542,525) a(687,346) d(545) a(330,320) s(996,994) fails to compile
+	  0 s(423,334) a(1000,725) s(343,251) s(542,525) a(687,346) d(545) a(330,320) s(996,994)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000487/libtiff/tif_dirwrite.c  a(525,278) a(547,498) a(267,464) a(547,346) a(525,278) a(276,297) a(267,464) s(690,683) d(794) a(546,818) fails to compile
+	  0 a(525,278) a(547,498) a(267,464) a(547,346) a(525,278) a(276,297) a(267,464) s(690,683) d(794) a(546,818)
+	0.12674 s(755,753) d(246) s(755,753) a(267,464) a(547,346) s(379,509)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000489/libtiff/tif_dirwrite.c  a(525,278) a(547,498) a(267,464) s(296,415) a(547,346) d(693) s(266,362) fails to compile
+	  0 a(525,278) a(547,498) a(267,464) s(296,415) a(547,346) d(693) s(266,362)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000490/libtiff/tif_dirwrite.c  a(525,278) a(276,297) s(755,753) d(246) s(755,753) a(267,464) s(690,683) d(794) d(343) fails to compile
+	  0 a(525,278) a(276,297) s(755,753) d(246) s(755,753) a(267,464) s(690,683) d(794) d(343)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000491/libtiff/tif_dirwrite.c  a(542,779) d(711) d(298) d(1084) a(280,725) a(525,278) a(363,320) s(343,270) a(282,418) d(526) fails to compile
+	  0 a(542,779) d(711) d(298) d(1084) a(280,725) a(525,278) a(363,320) s(343,270) a(282,418) d(526)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000492/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(1063,1099) a(540,418) a(1059,1075) d(266) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(1063,1099) a(540,418) a(1059,1075) d(266)
+	  0 a(263,1000) a(542,779) d(1063) d(377) s(275,497) d(711) d(298) d(1084) a(280,725) a(465,692) d(752) s(245,296) d(435)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000493/libtiff/tif_dirwrite.c  d(546) d(298) d(1084) s(547,535) a(465,692) a(276,297) s(755,753) s(379,288) s(683,687) fails to compile
+	  0 d(546) d(298) d(1084) s(547,535) a(465,692) a(276,297) s(755,753) s(379,288) s(683,687)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000494/libtiff/tif_dirwrite.c  d(547) s(546,531) a(752,1110) a(267,464) s(698,694) s(690,683) a(377,417) a(276,332) d(304) a(691,251) a(719,424) fails to compile
+	  0 d(547) s(546,531) a(752,1110) a(267,464) s(698,694) s(690,683) a(377,417) a(276,332) d(304) a(691,251) a(719,424)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000495/libtiff/tif_dirwrite.c  d(322) a(525,278) a(267,464) a(1000,725) d(688) s(296,415) a(547,346) s(994,998) s(434,270) s(1060,1090) fails to compile
+	  0 d(322) a(525,278) a(267,464) a(1000,725) d(688) s(296,415) a(547,346) s(994,998) s(434,270) s(1060,1090)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000496/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(329,283) s(786,788) s(365,476) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(329,283) s(786,788) s(365,476)
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(547,639) a(307,455) s(277,329) a(287,320) s(349,325) d(725)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000497/libtiff/tif_dirwrite.c  a(525,278) a(276,297) d(545) a(263,1000) a(542,779) d(1063) s(275,497) d(298) d(1084) d(752) s(246,361) d(470) fails to compile
+	  0 a(525,278) a(276,297) d(545) a(263,1000) a(542,779) d(1063) s(275,497) d(298) d(1084) d(752) s(246,361) d(470)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000498/libtiff/tif_dirwrite.c  a(263,1000) a(542,779) d(1063) d(377) s(275,497) d(711) d(298) d(1084) a(280,725) a(465,692) d(752) d(780) a(717,503) fails to compile
+	  0 a(263,1000) a(542,779) d(1063) d(377) s(275,497) d(711) d(298) d(1084) a(280,725) a(465,692) d(752) d(780) a(717,503)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000499/libtiff/tif_dirwrite.c  a(263,1000) d(546) s(275,497) d(465) s(423,334) s(348,280) a(464,507) fails to compile
+	  0 a(263,1000) d(546) s(275,497) d(465) s(423,334) s(348,280) a(464,507)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000500/libtiff/tif_dirwrite.c  s(423,334) s(268,259) s(683,690) a(752,1110) a(377,417) d(546) s(547,535) d(465) d(713) fails to compile
+	  0 s(423,334) s(268,259) s(683,690) a(752,1110) a(377,417) d(546) s(547,535) d(465) d(713)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000501/libtiff/tif_dirwrite.c  d(547) a(752,1110) a(377,417) a(276,332) a(263,1000) d(546) s(275,497) s(547,535) s(288,408) d(465) s(690,688) fails to compile
+	  0 d(547) a(752,1110) a(377,417) a(276,332) a(263,1000) d(546) s(275,497) s(547,535) s(288,408) d(465) s(690,688)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000502/libtiff/tif_dirwrite.c  s(423,334) s(348,280) s(357,332) d(1063) s(268,259) a(999,807) a(333,332) s(683,690) d(546) fails to compile
+	  0 s(423,334) s(348,280) s(357,332) d(1063) s(268,259) a(999,807) a(333,332) s(683,690) d(546)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000503/libtiff/tif_dirwrite.c  s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434) a(999,807) a(333,332) s(327,468) a(465,772) fails to compile
+	  0 s(423,334) a(263,1000) s(357,332) a(542,779) d(1063) s(268,259) d(434) a(999,807) a(333,332) s(327,468) a(465,772)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000504/libtiff/tif_dirwrite.c  d(322) a(525,278) a(267,464) a(1000,725) d(688) s(296,415) a(547,346) s(994,998) s(434,270) a(465,513) fails to compile
+	  0 d(322) a(525,278) a(267,464) a(1000,725) d(688) s(296,415) a(547,346) s(994,998) s(434,270) a(465,513)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000505/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) d(545) a(791,700) a(547,306) a(547,763) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) d(545) a(791,700) a(547,306) a(547,763)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000506/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) d(545) d(995) d(243) a(275,332) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) d(545) d(995) d(243) a(275,332)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000507/libtiff/tif_dirwrite.c  a(525,278) a(276,297) s(423,334) s(542,525) d(701) a(525,278) a(276,297) d(695) fails to compile
+	  0 a(525,278) a(276,297) s(423,334) s(542,525) d(701) a(525,278) a(276,297) d(695)
+	0.125948 s(755,753) s(546,640) d(545) d(701) a(1075,1000)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000509/libtiff/tif_dirwrite.c  a(525,278) a(276,297) d(545) s(423,334) a(1000,725) s(542,525) d(701) s(328,348) fails to compile
+	  0 a(525,278) a(276,297) d(545) s(423,334) a(1000,725) s(542,525) d(701) s(328,348)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000510/libtiff/tif_dirwrite.c  a(525,278) a(276,297) a(363,320) s(755,753) s(546,640) d(246) a(357,319) a(700,503) fails to compile
+	  0 a(525,278) a(276,297) a(363,320) s(755,753) s(546,640) d(246) a(357,319) a(700,503)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000511/libtiff/tif_dirwrite.c  a(377,417) a(307,455) a(287,320) s(349,325) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) s(304,449) fails to compile
+	  0 a(377,417) a(307,455) a(287,320) s(349,325) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) s(304,449)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000512/libtiff/tif_dirwrite.c  d(546) d(377) s(547,535) a(280,725) s(304,457) d(273) a(377,417) d(470) s(547,639) a(307,455) s(277,329) s(349,325) d(994) fails to compile
+	  0 d(546) d(377) s(547,535) a(280,725) s(304,457) d(273) a(377,417) d(470) s(547,639) a(307,455) s(277,329) s(349,325) d(994)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000513/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) d(470) s(547,639) a(307,455) s(277,329) a(287,320) s(349,325) a(546,418) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) d(470) s(547,639) a(307,455) s(277,329) a(287,320) s(349,325) a(546,418)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000514/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(304,457) d(273) a(344,291) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) d(285) s(304,457) d(273) a(344,291)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000515/libtiff/tif_dirwrite.c  d(547) a(267,464) s(690,683) a(465,285) d(546) s(275,497) d(711) s(547,535) a(715,701) d(434) fails to compile
+	  0 d(547) a(267,464) s(690,683) a(465,285) d(546) s(275,497) d(711) s(547,535) a(715,701) d(434)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000516/libtiff/tif_dirwrite.c  d(377) d(711) d(1084) s(547,535) a(280,725) d(547) a(525,278) a(267,464) s(698,694) a(726,991) a(1057,725) a(424,334) fails to compile
+	  0 d(377) d(711) d(1084) s(547,535) a(280,725) d(547) a(525,278) a(267,464) s(698,694) a(726,991) a(1057,725) a(424,334)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000517/libtiff/tif_dirwrite.c  d(547) a(527,542) s(546,531) a(525,278) a(752,1110) a(267,464) s(698,694) s(690,683) a(726,991) a(1057,725) a(465,285) s(540,526) fails to compile
+	  0 d(547) a(527,542) s(546,531) a(525,278) a(752,1110) a(267,464) s(698,694) s(690,683) a(726,991) a(1057,725) a(465,285) s(540,526)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000518/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) a(465,692) a(715,701) a(344,319) a(794,352) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) a(465,692) a(715,701) a(344,319) a(794,352)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000519/libtiff/tif_dirwrite.c  s(423,334) s(470,274) d(469) s(423,334) a(377,417) s(343,251) s(542,525) s(690,688) a(292,453) fails to compile
+	  0 s(423,334) s(470,274) d(469) s(423,334) a(377,417) s(343,251) s(542,525) s(690,688) a(292,453)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000520/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(343,251) s(470,274) d(469) a(700,695) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(343,251) s(470,274) d(469) a(700,695)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000521/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) s(470,274) d(469) s(540,528) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) s(470,274) d(469) s(540,528)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000522/libtiff/tif_dirwrite.c  s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) a(687,346) s(690,688) s(681,411) fails to compile
+	  0 s(423,334) a(377,417) a(1000,725) s(343,251) s(542,525) a(687,346) s(690,688) s(681,411)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000523/libtiff/tif_dirwrite.c  d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) a(465,692) a(715,701) a(344,319) s(469,280) fails to compile
+	  0 d(546) d(377) s(275,497) d(711) d(298) d(1084) s(547,535) a(280,725) a(465,692) a(715,701) a(344,319) s(469,280)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2006-02-23-b2ce5d8-207c78a/000524/libtiff/tif_dirwrite.c  a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(1063,1099) a(540,418) a(1059,1075) a(311,246) fails to compile
+	  0 a(525,278) s(719,723) a(276,297) d(322) a(363,320) d(300) a(243,339) s(1063,1099) a(540,418) a(1059,1075) a(311,246)
+Elite size: 4
+	0.907302 d(275)
+	0.907302 s(710,725) d(247)
+	0.905971 a(266,285)
+	0.901685 s(336,991)
+Best individual (Elite U Pop'):
+ 0.907302 d(275) 
+search: genetic algorithm ends
+
+No repair found.
+
+Variant Test Case Queries: 594
+"Test Suite Evaluations": 16.9714
+
+Compile Failures: 348
+Wall-Clock Seconds Elapsed: 4736.13
+  Activity Name                     Count Seconds = Percent of Total Time
+  rebuild files                     67395  17.788 = 0.38246%
+  compile                             527 909.161 = 19.5481%
+  test                                247 3723.872 = 80.068%
+  TOTAL                                   4650.887 = 98.2001% (avg CPU usage)

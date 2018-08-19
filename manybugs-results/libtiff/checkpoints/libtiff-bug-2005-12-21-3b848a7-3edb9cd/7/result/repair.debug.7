@@ -1,0 +1,315 @@
+GenProg Version: Tue Sep 26 23:50:02 EDT 2017
+
+--allow-coverage-fail false
+--appp 0.33333
+--asm-code-only false
+--best-edit-rule "1 * fault_loc_weight ; 1 * max_test_fail_prob ; -1 * num_tests"
+--best-test-rule "1 * test_fail_prob ; 1 * test_fail_count ; -1 * test_pass_count"
+--checkpoints true
+--clone-file ""
+--compiler "gcc"
+--compiler-command "perl compile.pl __EXE_NAME__ > /dev/null"
+--compiler-opts ""
+--continue false
+--coverage-info ""
+--coverage-per-test false
+--crossover "subset"
+--crossp 0.5
+--delp 0.33333
+--describe-machine false
+--diversity-selection 0
+--edit-script false
+--elf-risc false
+--elitism 4
+--exclude-edits ""
+--exp-diff false
+--fault-file ""
+--fault-path "coverage.path.neg"
+--fault-scheme "path"
+--fitness-in-parallel 1
+--fix-file ""
+--fix-oracle ""
+--fix-path "coverage.path.pos"
+--fix-scheme "default"
+--flatten-path ""
+--format "txt"
+--gen-per-exchange 1
+--generations 10
+--geomp 0.5
+--gui false
+--hostname "127.0.0.1"
+--ignore-dead-code false
+--ignore-equiv-appends false
+--ignore-standard-headers false
+--ignore-string-equiv-fixes false
+--ignore-untyped-returns false
+--incoming-pop ""
+--keep-source false
+--label-repair false
+--lase-deallocation-api "free"
+--lase-paired-functions ""
+--lasep 0
+--max-evals 0
+--minimization false
+--mt-cov false
+--multiopt-minimize false
+--multiopt-no-inf false
+--neg-tests 2
+--neg-weight 1
+--negative-test-weight 2
+--nested false
+--neutral-walk-max-size 0
+--neutral-walk-weight ""
+--nht-id "global"
+--nht-port 51000
+--nht-server ""
+--no-rep-cache true
+--no-test-cache true
+--num-comps 2
+--num-objectives 2
+--oracle-genome ""
+--pd-mutp 0.25
+--popsize 40
+--port 60000
+--pos-tests 33
+--pos-weight 0.1
+--prefix "preprocessed"
+--preprocessor ""
+--print-incremental-evals false
+--print-source-name false
+--program "bugged-program.txt"
+--promut 1
+--quiet false
+--regen-paths false
+--rep "cilpatch"
+--rep-cache ""
+--repp 0
+--samp-strat "variant"
+--sample 1
+--sample-runs 100
+--sanity "default"
+--search "ga"
+--seed 7
+--semantic-check "exact"
+--single-fitness true
+--skip-failed-sanity-tests false
+--skip-tests ""
+--split-search 0
+--sport 65000
+--subatom-constp 0.5
+--subatom-mutp 0
+--swap-bug false
+--swapp 0.33333
+--template-cache ""
+--templates ""
+--test-command "__TEST_SCRIPT__ __TEST_NAME__ __EXE_NAME__ __FITNESS_FILE__ >& /dev/null"
+--test-script "/root/src/Python/python /root/checkpoints/test/test_checkpoints.py"
+--tournament-size 2
+--uniq false
+--use-partition -1
+--valgrind false
+--variants-exchanged 50
+--version false
+cilRep: preprocessing IO function signatures: /tmp/tmp1e800b.c /tmp/tmped554c.c
+cilRep: done preprocessing IO function signatures
+cilrep: from_source: pre: stmt_count = 0
+cilRep: preprocessed/libtiff/tif_dirread.c: parsing
+cilRep: preprocessed/libtiff/tif_dirread.c: parsed (0.207781 MB)
+cilrep: from_source: post: stmt_count: 1392
+cilRep: shared size: 0.302495 MB
+cilRep: private size: 0.00644588 MB
+cachingRepresentation: sanity checking begins
+	p1: true (1)
+	p2: true (1)
+	p3: true (1)
+	p4: true (1)
+	p5: true (1)
+	p6: true (1)
+	p7: true (1)
+	p8: true (1)
+	p9: true (1)
+	p10: true (1)
+	p11: true (1)
+	p12: true (1)
+	p13: true (1)
+	p14: true (1)
+	p15: true (1)
+	p16: true (1)
+	p17: true (1)
+	p18: true (1)
+	p19: true (1)
+	p20: true (1)
+	p21: true (1)
+	p22: true (1)
+	p23: true (1)
+	p24: true (1)
+	p25: true (1)
+	p26: true (1)
+	p27: true (1)
+	p28: true (1)
+	p29: true (1)
+	p30: true (1)
+	p31: true (1)
+	p32: true (1)
+	p33: true (1)
+	n1: false (0)
+	n2: false (0)
+cachingRepresentation: sanity checking passed (time_taken = 33.2119)
+faultLocRep: compute_localization: fault_scheme: path, fix_scheme: default
+Rep: coverage_sourcename: /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-21-3b848a7-3edb9cd/coverage/coverage.c
+cilRep: instrumenting for fault localization
+cilRep: done instrumenting for fault localization
+coverage negative:
+	test: 1
+	test: 2
+coverage positive:
+	test: 1
+	test: 2
+	test: 3
+	test: 4
+	test: 5
+	test: 6
+	test: 7
+	test: 8
+	test: 9
+	test: 10
+	test: 11
+	test: 12
+	test: 13
+	test: 14
+	test: 15
+	test: 16
+	test: 17
+	test: 18
+	test: 19
+	test: 20
+	test: 21
+	test: 22
+	test: 23
+	test: 24
+	test: 25
+	test: 26
+	test: 27
+	test: 28
+	test: 29
+	test: 30
+	test: 31
+	test: 32
+	test: 33
+cilRep: bugged-program.cache: saved
+cachingRep: bugged-program.cache: saved
+faultlocRep: bugged-program.cache: saved
+cilrep done serialize
+cilRep: stmt_count = 1392
+cilRep: stmts in weighted_path = 399
+cilRep: total weight = 54.8
+cilRep: stmts in weighted_path with weight >= 1.0 = 24
+cilRep: libtiff/tif_dirread.c (code bank/base file; atoms [1,1578])
+cilRep: 1 file(s) total in representation
+search: genetic algorithm begins (|original| = 0.254295 MB)
+search: initial population (sizeof one variant = 0.256893 MB)
+	0.828638 a(1028,350)
+	0.820066 s(306,399)
+	0.820066 s(900,891)
+	0.30389 s(1487,1488)
+	0.820066 a(649,665)
+	0.820066 d(540)
+	0.0560295 d(370)
+	0.479047 d(914)
+	0.3038 s(1448,1488)
+	0.820066 a(930,356)
+	0.820066 s(646,350)
+	0.820066 s(651,356)
+	0.806039 d(844)
+	0.820066 a(1005,330)
+	0.054005 s(390,264)
+	0.820066 a(649,673)
+	0.303727 d(706)
+	0.830951 d(675)
+	0.820066 d(888)
+	0.830889 d(561)
+	0.830889 s(687,560)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-21-3b848a7-3edb9cd/000021/libtiff/tif_dirread.c  a(649,402) fails to compile
+	  0 a(649,402)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-21-3b848a7-3edb9cd/000022/libtiff/tif_dirread.c  a(417,619) fails to compile
+	  0 a(417,619)
+	0.300474 s(394,300)
+	0.820066 s(893,408)
+	0.0580998 a(501,494)
+	0.820066 d(846)
+	0.820066 a(850,350)
+	0.820066 a(594,472)
+	0.820066 a(895,367)
+	0.806059 s(888,848)
+	0.806039 d(844)
+	0.820066 d(356)
+	0.820066 a(893,896)
+	0.820066 s(420,342)
+	0.820066 a(849,677)
+	0.830951 d(397)
+	0.820066 d(888)
+	0.830889 s(560,485)
+	0.820066 original
+search: generation 1 (sizeof one variant = 0.422131 MB)
+	0.820066 d(510)
+	0.303727 d(706) a(844,912)
+	0.820066 d(888) a(930,915)
+	0.304382 d(706) s(423,335)
+	0.30389 s(1487,1488) s(888,850)
+	0.806059 d(848)
+	0.30389 s(1487,1488) s(342,325)
+	0.820066 a(849,677) d(897)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-21-3b848a7-3edb9cd/000041/libtiff/tif_dirread.c  d(914) a(417,619) a(299,315) fails to compile
+	  0 d(914) a(417,619) a(299,315)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-21-3b848a7-3edb9cd/000042/libtiff/tif_dirread.c  a(417,619) a(647,499) fails to compile
+	  0 a(417,619) a(647,499)
+	0.0555325 d(914) s(1262,1238)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-21-3b848a7-3edb9cd/000044/libtiff/tif_dirread.c  a(417,619) a(1268,356) fails to compile
+	  0 a(417,619) a(1268,356)
+	0.300474 s(394,300) d(624)
+	  0 a(649,402) s(900,653)
+	0.820066 a(895,367) s(887,895)
+	0.300474 s(394,300) a(550,244)
+	0.300474 s(394,300) s(646,363)
+	0.30079 a(895,367) s(702,429)
+	0.0592293 s(900,891) d(258)
+	0.830972 d(846) d(850)
+	0.820066 a(594,472) a(269,243)
+	0.820066 a(594,472) a(317,429)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-21-3b848a7-3edb9cd/000054/libtiff/tif_dirread.c  a(649,402) a(651,706) fails to compile
+	  0 a(649,402) a(651,706)
+	0.820066 a(594,472) d(651)
+	0.806059 d(540) d(892)
+	0.3038 d(540) s(1488,1441)
+	0.830951 d(540) s(898,845)
+	0.820066 d(540) a(900,845)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-21-3b848a7-3edb9cd/000059/libtiff/tif_dirread.c  a(649,402) d(666) fails to compile
+	  0 a(649,402) d(666)
+	0.479047 d(914) a(1280,363)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-21-3b848a7-3edb9cd/000061/libtiff/tif_dirread.c  a(649,402) s(391,258) fails to compile
+	  0 a(649,402) s(391,258)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-21-3b848a7-3edb9cd/000062/libtiff/tif_dirread.c  d(914) s(649,364) fails to compile
+	  0 d(914) s(649,364)
+	0.0560295 d(370) d(849)
+	0.0570155 d(499)
+	0.0546827 d(370) s(1169,1238)
+	0.830889 a(649,665) s(568,424)
+	  1 s(651,356) d(644)
+
+Repair Found: s(651,356) d(644)
+Repair Name: s(651,356) d(644)
+Test Cases Skipped: ""
+Current Time: 1506485939.434585
+cilRep: shared size: 0.305573 MB
+cilRep: private size: 0.361461 MB
+
+Variant Test Case Queries: 77
+"Test Suite Evaluations": 2.2
+
+Compile Failures: 9
+Wall-Clock Seconds Elapsed: 1736.42
+  Activity Name                     Count Seconds = Percent of Total Time
+  rebuild files                     32872   1.824 = 0.107082%
+  compile                              70 375.594 = 22.056%
+  test                                129 1325.410 = 77.8321%
+  TOTAL                                   1702.909 = 98.0695% (avg CPU usage)

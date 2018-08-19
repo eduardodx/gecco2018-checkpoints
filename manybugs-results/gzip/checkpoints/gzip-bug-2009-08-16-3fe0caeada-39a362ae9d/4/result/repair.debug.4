@@ -1,0 +1,244 @@
+GenProg Version: Sun Oct  8 12:22:49 EDT 2017
+
+--allow-coverage-fail false
+--appp 0.33333
+--asm-code-only false
+--best-edit-rule "1 * fault_loc_weight ; 1 * max_test_fail_prob ; -1 * num_tests"
+--best-test-rule "1 * test_fail_prob ; 1 * test_fail_count ; -1 * test_pass_count"
+--checkpoints true
+--clone-file ""
+--compiler "gcc"
+--compiler-command "perl compile.pl __EXE_NAME__ > /dev/null"
+--compiler-opts ""
+--continue false
+--coverage-info ""
+--coverage-per-test false
+--crossover "subset"
+--crossp 0.5
+--delp 0.33333
+--describe-machine false
+--diversity-selection 0
+--edit-script false
+--elf-risc false
+--elitism 4
+--exclude-edits ""
+--exp-diff false
+--fault-file ""
+--fault-path "coverage.path.neg"
+--fault-scheme "path"
+--fitness-in-parallel 1
+--fix-file ""
+--fix-oracle ""
+--fix-path "coverage.path.pos"
+--fix-scheme "default"
+--flatten-path ""
+--format "txt"
+--gen-per-exchange 1
+--generations 10
+--geomp 0.5
+--gui false
+--hostname "127.0.0.1"
+--ignore-dead-code false
+--ignore-equiv-appends false
+--ignore-standard-headers false
+--ignore-string-equiv-fixes false
+--ignore-untyped-returns false
+--incoming-pop ""
+--keep-source false
+--label-repair false
+--lase-deallocation-api "free"
+--lase-paired-functions ""
+--lasep 0
+--max-evals 0
+--minimization false
+--mt-cov false
+--multiopt-minimize false
+--multiopt-no-inf false
+--neg-tests 1
+--neg-weight 1
+--negative-test-weight 2
+--nested false
+--neutral-walk-max-size 0
+--neutral-walk-weight ""
+--nht-id "global"
+--nht-port 51000
+--nht-server ""
+--no-rep-cache true
+--no-test-cache true
+--num-comps 2
+--num-objectives 2
+--oracle-genome ""
+--pd-mutp 0.25
+--popsize 40
+--port 60000
+--pos-tests 2
+--pos-weight 0.1
+--prefix "preprocessed"
+--preprocessor ""
+--print-incremental-evals false
+--print-source-name false
+--program "bugged-program.txt"
+--promut 1
+--quiet false
+--regen-paths false
+--rep "cilpatch"
+--rep-cache ""
+--repp 0
+--samp-strat "variant"
+--sample 1
+--sample-runs 100
+--sanity "default"
+--search "ga"
+--seed 4
+--semantic-check "exact"
+--single-fitness true
+--skip-failed-sanity-tests false
+--skip-tests ""
+--split-search 0
+--sport 65000
+--subatom-constp 0.5
+--subatom-mutp 0
+--swap-bug false
+--swapp 0.33333
+--template-cache ""
+--templates ""
+--test-command "__TEST_SCRIPT__ __TEST_NAME__ __EXE_NAME__ __FITNESS_FILE__ >& /dev/null"
+--test-script "/root/src/Python/python /root/checkpoints/test/test_checkpoints.py"
+--tournament-size 2
+--uniq false
+--use-partition -1
+--valgrind false
+--variants-exchanged 50
+--version false
+cilRep: preprocessing IO function signatures: /tmp/tmpdb12b8.c /tmp/tmp9a28bb.c
+cilRep: done preprocessing IO function signatures
+cilrep: from_source: pre: stmt_count = 0
+cilRep: preprocessed/inflate.c: parsing
+cilRep: preprocessed/inflate.c: parsed (0.124838 MB)
+cilrep: from_source: post: stmt_count: 1006
+cilRep: shared size: 0.194025 MB
+cilRep: private size: 0.00644588 MB
+cachingRepresentation: sanity checking begins
+	p1: true (1)
+	p2: true (1)
+	n1: false (0)
+cachingRepresentation: sanity checking passed (time_taken = 7.30732)
+faultLocRep: compute_localization: fault_scheme: path, fix_scheme: default
+Rep: coverage_sourcename: /root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-08-16-3fe0caeada-39a362ae9d/coverage/coverage.c
+cilRep: instrumenting for fault localization
+cilRep: done instrumenting for fault localization
+coverage negative:
+	test: 1
+coverage positive:
+	test: 1
+	test: 2
+cilRep: bugged-program.cache: saved
+cachingRep: bugged-program.cache: saved
+faultlocRep: bugged-program.cache: saved
+cilrep done serialize
+cilRep: stmt_count = 1006
+cilRep: stmts in weighted_path = 439
+cilRep: total weight = 46.6
+cilRep: stmts in weighted_path with weight >= 1.0 = 14
+cilRep: inflate.c (code bank/base file; atoms [1,1090])
+cilRep: 1 file(s) total in representation
+search: genetic algorithm begins (|original| = 0.185267 MB)
+search: initial population (sizeof one variant = 0.187884 MB)
+	0.45 a(894,300)
+	0.483176 a(1020,1048)
+	0.483294 a(283,313)
+	0.483059 a(1036,486)
+	0.483294 a(307,281)
+	0.651829 s(805,975)
+	0.651098 s(328,302)
+	0.483294 a(446,290)
+	0.483059 s(465,319)
+	0.483294 s(876,999)
+	0.671585 d(478)
+	0.483294 d(274)
+	0.483294 d(450)
+	0.483294 d(270)
+	0.483294 d(292)
+	0.483294 s(270,962)
+	0.142868 d(625)
+	0.118123 d(358)
+	0.483176 d(417)
+	0.483294 d(427)
+	0.655854 d(344)
+	0.483294 d(275)
+	0.483294 a(267,317)
+	0.483294 a(405,432)
+	0.483294 s(271,830)
+	0.124024 d(898)
+	0.483294 a(267,294)
+	0.480824 d(853)
+	0.657683 s(859,870)
+	0.103653 s(277,324)
+	0.0955222 s(282,259)
+	0.483294 s(465,321)
+	0.483294 d(450)
+	0.483294 a(821,292)
+	0.115829 d(363)
+	0.651098 d(1048)
+	0.1436 d(598)
+	0.128918 s(268,452)
+	0.483294 d(271)
+	0.483294 original
+search: generation 1 (sizeof one variant = 0.307021 MB)
+	0.135362 a(307,281) d(899)
+	0.652195 a(446,290) d(850)
+	0.652195 a(1036,486) a(430,456)
+	0.111947 d(274) s(430,438)
+	0.483294 s(271,830) a(276,273)
+	0.651829 a(1036,486) d(836)
+	0.118123 d(358) d(614)
+	0.0955222 s(282,259) a(271,426)
+	0.1436 d(598) s(273,276)
+	0.130231 a(894,300) s(468,473)
+	0.663171 d(598) s(427,467)
+	0.65622 a(894,300) d(842)
+	0.0955222 s(282,259) a(358,1071)
+	0.0955222 a(267,317) s(282,259) s(268,435)
+	0.0858163 s(282,259) s(806,986)
+	0.667195 a(267,317) d(481)
+	0.115829 d(363) a(271,265)
+	0.133597 a(1020,1048) s(1009,992)
+	0.483294 s(465,321) d(270)
+	0.65878 s(268,452) d(465)
+	0.483294 a(307,281) d(273)
+	0.663171 a(307,281) a(1020,1048) a(891,974)
+	0.483176 a(1020,1048) a(303,385)
+	0.483294 a(307,281) d(1032)
+	0.483294 d(271) a(1071,962)
+	0.652195 a(1036,486) a(1035,1025)
+	0.101006 d(450) s(341,402)
+	0.19809 d(625) d(853)
+	0.651463 a(894,300) d(847)
+	0.483176 d(417) a(894,300) a(892,867)
+	0.483294 a(894,300) d(615)
+	0.483176 d(417) a(468,999)
+	0.483059 a(1020,1048) d(382)
+	0.483294 d(270)
+	0.0934046 a(1020,1048) s(855,895)
+	0.483294 a(405,432) a(277,382)
+	0.142868 d(625) d(525)
+	  1 a(267,317) d(465)
+
+Repair Found: a(267,317) d(465)
+Repair Name: a(267,317) d(465)
+Test Cases Skipped: ""
+Current Time: 1507480253.901328
+cilRep: shared size: 0.197269 MB
+cilRep: private size: 0.404232 MB
+
+Variant Test Case Queries: 78
+"Test Suite Evaluations": 26
+
+Compile Failures: 0
+Wall-Clock Seconds Elapsed: 483.42
+  Activity Name                     Count Seconds = Percent of Total Time
+  sanity_check                          1   0.078 = 0.0179511%
+  rebuild files                     23722   1.026 = 0.235703%
+  compile                              71 103.554 = 23.7955%
+  test                                 75 330.526 = 75.9509%
+  TOTAL                                   435.184 = 90.0209% (avg CPU usage)

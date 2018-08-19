@@ -1,0 +1,1047 @@
+GenProg Version: Tue Sep 26 22:57:17 EDT 2017
+
+--allow-coverage-fail false
+--appp 0.33333
+--asm-code-only false
+--best-edit-rule "1 * fault_loc_weight ; 1 * max_test_fail_prob ; -1 * num_tests"
+--best-test-rule "1 * test_fail_prob ; 1 * test_fail_count ; -1 * test_pass_count"
+--checkpoints true
+--clone-file ""
+--compiler "gcc"
+--compiler-command "perl compile.pl __EXE_NAME__ > /dev/null"
+--compiler-opts ""
+--continue false
+--coverage-info ""
+--coverage-per-test false
+--crossover "subset"
+--crossp 0.5
+--delp 0.33333
+--describe-machine false
+--diversity-selection 0
+--edit-script false
+--elf-risc false
+--elitism 4
+--exclude-edits ""
+--exp-diff false
+--fault-file ""
+--fault-path "coverage.path.neg"
+--fault-scheme "path"
+--fitness-in-parallel 1
+--fix-file ""
+--fix-oracle ""
+--fix-path "coverage.path.pos"
+--fix-scheme "default"
+--flatten-path ""
+--format "txt"
+--gen-per-exchange 1
+--generations 10
+--geomp 0.5
+--gui false
+--hostname "127.0.0.1"
+--ignore-dead-code false
+--ignore-equiv-appends false
+--ignore-standard-headers false
+--ignore-string-equiv-fixes false
+--ignore-untyped-returns false
+--incoming-pop ""
+--keep-source false
+--label-repair false
+--lase-deallocation-api "free"
+--lase-paired-functions ""
+--lasep 0
+--max-evals 0
+--minimization false
+--mt-cov false
+--multiopt-minimize false
+--multiopt-no-inf false
+--neg-tests 2
+--neg-weight 1
+--negative-test-weight 2
+--nested false
+--neutral-walk-max-size 0
+--neutral-walk-weight ""
+--nht-id "global"
+--nht-port 51000
+--nht-server ""
+--no-rep-cache true
+--no-test-cache true
+--num-comps 2
+--num-objectives 2
+--oracle-genome ""
+--pd-mutp 0.25
+--popsize 40
+--port 60000
+--pos-tests 33
+--pos-weight 0.1
+--prefix "preprocessed"
+--preprocessor ""
+--print-incremental-evals false
+--print-source-name false
+--program "bugged-program.txt"
+--promut 1
+--quiet false
+--regen-paths false
+--rep "cilpatch"
+--rep-cache ""
+--repp 0
+--samp-strat "variant"
+--sample 1
+--sample-runs 100
+--sanity "default"
+--search "ga"
+--seed 10
+--semantic-check "exact"
+--single-fitness true
+--skip-failed-sanity-tests false
+--skip-tests ""
+--split-search 0
+--sport 65000
+--subatom-constp 0.5
+--subatom-mutp 0
+--swap-bug false
+--swapp 0.33333
+--template-cache ""
+--templates ""
+--test-command "__TEST_SCRIPT__ __TEST_NAME__ __EXE_NAME__ __FITNESS_FILE__ >& /dev/null"
+--test-script "/root/src/Python/python /root/checkpoints/test/test_checkpoints.py"
+--tournament-size 2
+--uniq false
+--use-partition -1
+--valgrind false
+--variants-exchanged 50
+--version false
+cilRep: preprocessing IO function signatures: /tmp/tmp0f59a0.c /tmp/tmpf0743a.c
+cilRep: done preprocessing IO function signatures
+cilrep: from_source: pre: stmt_count = 0
+cilRep: preprocessed/tools/tiffcp.c: parsing
+cilRep: preprocessed/tools/tiffcp.c: parsed (0.230062 MB)
+cilrep: from_source: post: stmt_count: 1761
+cilRep: shared size: 0.359393 MB
+cilRep: private size: 0.00644588 MB
+cachingRepresentation: sanity checking begins
+	p1: true (1)
+	p2: true (1)
+	p3: true (1)
+	p4: true (1)
+	p5: true (1)
+	p6: true (1)
+	p7: true (1)
+	p8: true (1)
+	p9: true (1)
+	p10: true (1)
+	p11: true (1)
+	p12: true (1)
+	p13: true (1)
+	p14: true (1)
+	p15: true (1)
+	p16: true (1)
+	p17: true (1)
+	p18: true (1)
+	p19: true (1)
+	p20: true (1)
+	p21: true (1)
+	p22: true (1)
+	p23: true (1)
+	p24: true (1)
+	p25: true (1)
+	p26: true (1)
+	p27: true (1)
+	p28: true (1)
+	p29: true (1)
+	p30: true (1)
+	p31: true (1)
+	p32: true (1)
+	p33: true (1)
+	n1: false (0)
+	n2: false (0)
+cachingRepresentation: sanity checking passed (time_taken = 27.6851)
+faultLocRep: compute_localization: fault_scheme: path, fix_scheme: default
+Rep: coverage_sourcename: /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/coverage/coverage.c
+cilRep: instrumenting for fault localization
+cilRep: done instrumenting for fault localization
+coverage negative:
+	test: 1
+	test: 2
+coverage positive:
+	test: 1
+	test: 2
+	test: 3
+	test: 4
+	test: 5
+	test: 6
+	test: 7
+	test: 8
+	test: 9
+	test: 10
+	test: 11
+	test: 12
+	test: 13
+	test: 14
+	test: 15
+	test: 16
+	test: 17
+	test: 18
+	test: 19
+	test: 20
+	test: 21
+	test: 22
+	test: 23
+	test: 24
+	test: 25
+	test: 26
+	test: 27
+	test: 28
+	test: 29
+	test: 30
+	test: 31
+	test: 32
+	test: 33
+cilRep: bugged-program.cache: saved
+cachingRep: bugged-program.cache: saved
+faultlocRep: bugged-program.cache: saved
+cilrep done serialize
+cilRep: stmt_count = 1761
+cilRep: stmts in weighted_path = 271
+cilRep: total weight = 32.5
+cilRep: stmts in weighted_path with weight >= 1.0 = 14
+cilRep: tools/tiffcp.c (code bank/base file; atoms [1,1902])
+cilRep: 1 file(s) total in representation
+search: genetic algorithm begins (|original| = 0.32956 MB)
+search: initial population (sizeof one variant = 0.332122 MB)
+	0.369041 s(900,1021)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000001/tools/tiffcp.c  s(1225,1206) fails to compile
+	  0 s(1225,1206)
+	0.820066 a(855,636)
+	0.820066 a(1050,946)
+	0.820066 a(985,851)
+	0.820066 d(962)
+	0.820066 a(855,497)
+	0.373338 s(532,539)
+	0.830188 s(1872,1870)
+	0.820066 s(855,871)
+	0.820066 d(848)
+	0.915129 s(1235,497)
+	0.914974 a(1019,533)
+	0.820066 s(856,854)
+	0.372885 s(905,1061)
+	0.820066 a(1203,1218)
+	0.830326 s(1208,1230)
+	  0 s(921,903)
+	  0 a(1051,915)
+	  0 d(1872)
+	  0 d(919)
+	  0 a(533,634)
+	  0 s(491,504)
+	  0 d(533)
+	  0 s(961,1044)
+	  0 d(1235)
+	  0 d(888)
+	  0 d(1065)
+	  0 d(1049)
+	  0 s(876,884)
+	  0 d(1050)
+	  0 d(522)
+	  0 s(1235,636)
+	  0 s(940,960)
+	  0 s(1227,1231)
+	  0 s(921,913)
+	  0 s(1835,1834)
+	  0 a(1220,1205)
+	  0 s(543,313)
+	0.820066 original
+search: generation 1 (sizeof one variant = 0.522676 MB)
+	  0 s(1835,1834) a(1063,494)
+	  0 a(1220,1205) s(919,902)
+	0.820066 s(855,871) d(962)
+	  0 d(1872) s(507,543)
+	  0 d(1235) d(1049)
+	  0 s(961,1044) d(532)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000043/tools/tiffcp.c  s(1225,1206) s(855,847) fails to compile
+	  0 s(1225,1206) s(855,847)
+	  0 a(533,634) s(1230,1235)
+	  0 d(962) d(1216)
+	  0 s(940,960) s(914,1016)
+	  0 s(940,960) s(973,988)
+	  0 d(962) s(844,876)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000049/tools/tiffcp.c  s(1225,1206) s(1056,1014) fails to compile
+	  0 s(1225,1206) s(1056,1014)
+	  0 d(1235)
+	  0 s(855,871) s(963,1056)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000051/tools/tiffcp.c  s(1225,1206) a(544,539) fails to compile
+	  0 s(1225,1206) a(544,539)
+	  0 s(919,910)
+	  0 d(1872) d(1050) s(855,875)
+	  0 d(1050) a(497,520)
+	  0 d(1872) d(497)
+	  0 d(888) d(915)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000056/tools/tiffcp.c  d(522) s(1220,861) fails to compile
+	  0 d(522) s(1220,861)
+	  0 d(1049) d(1049) d(490)
+	  0 d(855)
+	  0 d(1049) s(532,317)
+	  0 d(1049) s(963,920)
+	  0 a(1877,1050)
+	  0 s(921,913) a(855,496)
+	  0 s(921,913) a(857,871)
+	  0 s(855,871) d(948)
+	  0 d(1872) d(311)
+	  0 d(919) d(1215)
+	  0 s(543,313) a(921,546)
+	  0 s(900,1021) s(1838,1834)
+	  0 s(900,1021) s(1839,1878)
+	  0 s(543,313) a(500,532)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000070/tools/tiffcp.c  s(1225,1206) s(920,1058) fails to compile
+	  0 s(1225,1206) s(920,1058)
+	  0 d(1235) a(1205,1228)
+	  0 d(1872) a(1216,1205)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000073/tools/tiffcp.c  d(1872) s(1225,1206) d(1023) fails to compile
+	  0 d(1872) s(1225,1206) d(1023)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000074/tools/tiffcp.c  s(1225,1206) d(533) fails to compile
+	  0 s(1225,1206) d(533)
+	  0 d(1872) d(517)
+	  0 s(921,903) s(1235,1056)
+	  0 s(921,903) d(533)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000078/tools/tiffcp.c  s(1225,1206) s(1055,1009) fails to compile
+	  0 s(1225,1206) s(1055,1009)
+	  0 s(921,903) d(900)
+	  0 d(1050) d(847)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000081/tools/tiffcp.c  a(1051,915) s(1220,851) fails to compile
+	  0 a(1051,915) s(1220,851)
+	  0 d(524)
+	  0 d(533) a(289,1235)
+	  0 d(533) d(1838)
+	  0 a(1220,1205) s(853,883)
+	  0 d(1065) d(490)
+	  0 a(1220,1205) d(920)
+Elite size: 4
+	0.915129 s(1235,497)
+	0.914974 a(1019,533)
+	0.830326 s(1208,1230)
+	0.830188 s(1872,1870)
+Best individual (Elite U Pop'):
+ 0.915129 s(1235,497) 
+search: generation 2 (sizeof one variant = 0.772499 MB)
+	  0 s(919,910) d(532) s(507,527)
+	  0 s(961,1044) s(1051,1062)
+	  0 s(919,910) a(940,911)
+	  0 s(961,1044) d(532) s(948,1023)
+	  0 s(290,292)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000092/tools/tiffcp.c  d(888) d(915) s(1225,1206) d(533) a(921,884) fails to compile
+	  0 d(888) d(915) s(1225,1206) d(533) a(921,884)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000093/tools/tiffcp.c  s(1225,1206) d(533) a(525,321) fails to compile
+	  0 s(1225,1206) d(533) a(525,321)
+	  0 d(888) d(915) s(515,1223)
+	  0 d(1235) d(1049) d(1235) d(1049) d(870)
+	  0 d(1235) d(1049) d(1235) d(1049) a(975,515)
+	  0 d(1235) d(1049) a(1051,744)
+	  0 d(1235) d(1049) a(311,494)
+	  0 d(1872) s(507,543) a(1050,988)
+	  0 d(1872) a(1216,1205) a(1214,634)
+	  0 s(940,960) s(973,988) s(1046,1015)
+	  0 s(1835,1834) a(1063,494) d(1220)
+	  0 a(1220,1205) s(919,902) d(1055)
+	  0 d(1050) a(497,520) a(1218,1227)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000104/tools/tiffcp.c  d(1872) s(1225,1206) d(973) fails to compile
+	  0 d(1872) s(1225,1206) d(973)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000105/tools/tiffcp.c  s(1225,1206) d(1872) s(1225,1206) d(920) fails to compile
+	  0 s(1225,1206) d(1872) s(1225,1206) d(920)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000106/tools/tiffcp.c  d(1872) s(1225,1206) d(1023) a(986,1021) fails to compile
+	  0 d(1872) s(1225,1206) d(1023) a(986,1021)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000107/tools/tiffcp.c  s(1225,1206) a(544,539) s(1053,1051) fails to compile
+	  0 s(1225,1206) a(544,539) s(1053,1051)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000108/tools/tiffcp.c  s(1220,851) s(1225,1206) s(1056,1014) s(1044,921) fails to compile
+	  0 s(1220,851) s(1225,1206) s(1056,1014) s(1044,921)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000109/tools/tiffcp.c  s(1225,1206) s(914,975) fails to compile
+	  0 s(1225,1206) s(914,975)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000110/tools/tiffcp.c  a(1051,915) s(1220,851) a(876,900) fails to compile
+	  0 a(1051,915) s(1220,851) a(876,900)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000111/tools/tiffcp.c  s(1225,1206) s(1056,1014) s(1018,949) fails to compile
+	  0 s(1225,1206) s(1056,1014) s(1018,949)
+	  0 d(1235) a(1205,1228) a(855,843)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000113/tools/tiffcp.c  d(1872) s(1225,1206) d(1023) s(917,988) fails to compile
+	  0 d(1872) s(1225,1206) d(1023) s(917,988)
+	  0 d(1872) d(311) a(1049,988)
+	  0 d(1235) d(1049) d(315)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000116/tools/tiffcp.c  s(1056,1014) a(1220,1205) s(853,883) s(1220,856) fails to compile
+	  0 s(1056,1014) a(1220,1205) s(853,883) s(1220,856)
+	  0 s(1056,1014) a(1023,959)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000118/tools/tiffcp.c  s(1225,1206) s(1056,1014) d(849) fails to compile
+	  0 s(1225,1206) s(1056,1014) d(849)
+	  0 a(1220,1205) s(853,883) a(919,903)
+	  0 d(1872) d(1023) a(1220,1205) s(867,636)
+	  0 a(1220,1205) d(1872) a(920,1062)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000122/tools/tiffcp.c  d(1872) s(1225,1206) d(1023) s(1833,1877) fails to compile
+	  0 d(1872) s(1225,1206) d(1023) s(1833,1877)
+	  0 a(1220,1205) s(919,902) d(973)
+	  0 d(1872) s(507,543) a(532,543)
+	  0 d(1235) a(1205,1228) a(938,744)
+	  0 d(919)
+	  0 d(524)
+	  0 d(1872) s(507,543) a(920,923)
+	  0 d(1065) d(490) s(1051,1018)
+	  0 d(1872) s(507,543) d(1049) d(1049) d(490) d(1205)
+	  0 d(1049) d(1049) d(490) d(1872) d(1835)
+	  0 d(1872) s(507,543) a(1214,884)
+	  0 d(1049) d(1049) d(490) a(1235,1216)
+	  0 d(1872) a(1216,1205) s(502,532)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000133/tools/tiffcp.c  d(522) s(1220,861) s(495,315) fails to compile
+	  0 d(522) s(1220,861) s(495,315)
+	  0 s(940,960) d(533) a(871,524)
+	  0 s(940,960) a(974,744)
+	  0 s(940,960) s(973,988) a(1235,637)
+	  0 d(533) d(1838) d(960)
+	  0 s(961,1044) d(532) a(946,907)
+	  0 s(940,960) s(914,1016) d(1060)
+Elite size: 4
+	0.915129 s(1235,497)
+	0.914974 a(1019,533)
+	0.830326 s(1208,1230)
+	0.830188 s(1872,1870)
+Best individual (Elite U Pop'):
+ 0.915129 s(1235,497) 
+search: generation 3 (sizeof one variant = 0.772915 MB)
+	  0 s(940,960) s(973,988) a(1235,637) s(1216,1227)
+	  0 d(1049) d(1049) d(490) d(1872) d(1835) a(907,914)
+	  0 d(1235) d(1049) a(311,494) d(1209)
+	  0 d(1872) s(507,543) d(1049) d(1049) d(490) d(1205) a(309,1231)
+	  0 d(1235) a(1205,1228) a(855,843) s(507,525)
+	  0 d(1872) a(1216,1205) a(1214,634) s(938,1009)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000146/tools/tiffcp.c  s(1225,1206) s(1056,1014) s(1044,921) d(1872) s(507,543) a(1220,884) fails to compile
+	  0 s(1225,1206) s(1056,1014) s(1044,921) d(1872) s(507,543) a(1220,884)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000147/tools/tiffcp.c  d(1872) a(1214,884) s(1220,851) s(1225,1206) s(921,919) fails to compile
+	  0 d(1872) a(1214,884) s(1220,851) s(1225,1206) s(921,919)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000148/tools/tiffcp.c  s(1220,851) s(1225,1206) s(1056,1014) s(1044,921) s(960,949) fails to compile
+	  0 s(1220,851) s(1225,1206) s(1056,1014) s(1044,921) s(960,949)
+	  0 d(1872) s(507,543) a(1214,884) d(1051)
+	  0 d(1872) s(507,543) a(532,543) d(516)
+	  0 d(1235) d(1049) a(311,494) d(523)
+	  0 d(888) d(915) d(533) a(921,884) d(1231)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000153/tools/tiffcp.c  d(888) d(915) s(1225,1206) d(533) a(921,884) d(888) d(915) s(1225,1206) d(533) a(857,1211) fails to compile
+	  0 d(888) d(915) s(1225,1206) d(533) a(921,884) d(888) d(915) s(1225,1206) d(533) a(857,1211)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000154/tools/tiffcp.c  d(888) d(915) s(1225,1206) d(533) a(921,884) s(1051,1007) fails to compile
+	  0 d(888) d(915) s(1225,1206) d(533) a(921,884) s(1051,1007)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000155/tools/tiffcp.c  d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047) fails to compile
+	  0 d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047)
+	  0 d(1049) d(1049) d(490) d(1872) d(1835) a(988,963)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000157/tools/tiffcp.c  d(1872) s(1225,1206) d(1023) a(986,1021) a(1839,1872) fails to compile
+	  0 d(1872) s(1225,1206) d(1023) a(986,1021) a(1839,1872)
+	  0 s(961,1044) s(1051,1062) s(500,1227)
+	  0 s(940,960) a(974,744) s(318,488)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000159/tools/tiffcp.c  d(1872) s(1225,1206) d(1023) a(986,1021) d(920) fails to compile
+	  0 d(1872) s(1225,1206) d(1023) a(986,1021) d(920)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000160/tools/tiffcp.c  d(522) s(1220,861) s(495,315) d(1216) fails to compile
+	  0 d(522) s(1220,861) s(495,315) d(1216)
+	  0 s(507,543) a(920,923) s(517,321)
+	  0 s(507,543) d(867)
+	  0 d(524) s(1209,1227)
+	  0 d(1872) s(507,543) a(920,923) a(533,1223)
+	  0 d(1872) a(986,1021) a(961,1016)
+	  0 d(532) a(946,907) a(1220,1056)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000167/tools/tiffcp.c  d(1872) s(1225,1206) d(1023) a(986,1021) a(532,526) fails to compile
+	  0 d(1872) s(1225,1206) d(1023) a(986,1021) a(532,526)
+	  0 s(961,1044) d(532) a(946,907) s(1203,1231)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000169/tools/tiffcp.c  s(1225,1206) a(544,539) s(1053,1051) a(919,356) fails to compile
+	  0 s(1225,1206) a(544,539) s(1053,1051) a(919,356)
+	  0 d(1235) d(1049) d(1235) d(1049) d(870) s(316,502)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000171/tools/tiffcp.c  s(940,960) a(1235,637) s(1220,861) s(495,315) a(317,636) fails to compile
+	  0 s(940,960) a(1235,637) s(1220,861) s(495,315) a(317,636)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000172/tools/tiffcp.c  s(1220,861) s(495,315) s(940,960) s(973,988) a(1235,637) d(1216) fails to compile
+	  0 s(1220,861) s(495,315) s(940,960) s(973,988) a(1235,637) d(1216)
+	  0 s(940,960) s(973,988) a(1235,637) s(921,903)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000174/tools/tiffcp.c  d(522) s(1220,861) s(495,315) d(1054) fails to compile
+	  0 d(522) s(1220,861) s(495,315) d(1054)
+	  0 d(1872) s(507,543) a(532,543) d(1049) d(490) a(1220,1218)
+	  0 d(1049) d(1049) d(490) d(1872) a(532,543) d(921)
+	  0 d(1872) s(507,543) a(532,543) d(1218)
+	  0 d(1049) d(1049) d(490) a(1235,1216) s(532,318)
+	  0 d(1235) a(1205,1228) a(938,744) s(962,744)
+	  0 d(1049) d(1049) d(490) a(1235,1216) a(497,319)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000181/tools/tiffcp.c  d(1872) s(1225,1206) d(1023) s(917,988) a(315,1223) fails to compile
+	  0 d(1872) s(1225,1206) d(1023) s(917,988) a(315,1223)
+	  0 d(1872) s(507,543) a(532,543) s(533,492)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000183/tools/tiffcp.c  s(1225,1206) a(875,629) fails to compile
+	  0 s(1225,1206) a(875,629)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000184/tools/tiffcp.c  s(1225,1206) a(544,539) s(919,910) s(507,527) a(1049,988) fails to compile
+	  0 s(1225,1206) a(544,539) s(919,910) s(507,527) a(1049,988)
+	  0 s(919,910) d(532) s(507,527) a(1216,604)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000186/tools/tiffcp.c  s(1225,1206) a(544,539) s(1053,1051) d(855) fails to compile
+	  0 s(1225,1206) a(544,539) s(1053,1051) d(855)
+	  0 s(290,292) s(1216,1217)
+	  0 d(1872) d(1023) a(1220,1205) s(867,636) s(855,874)
+Elite size: 4
+	0.915129 s(1235,497)
+	0.914974 a(1019,533)
+	0.830326 s(1208,1230)
+	0.830188 s(1872,1870)
+Best individual (Elite U Pop'):
+ 0.915129 s(1235,497) 
+search: generation 4 (sizeof one variant = 0.773163 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000189/tools/tiffcp.c  d(888) d(915) s(1225,1206) d(533) a(921,884) d(888) d(915) s(1225,1206) d(533) a(857,1211) d(1230) fails to compile
+	  0 d(888) d(915) s(1225,1206) d(533) a(921,884) d(888) d(915) s(1225,1206) d(533) a(857,1211) d(1230)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000190/tools/tiffcp.c  d(888) d(915) s(1225,1206) d(533) a(921,884) s(1051,1007) d(919) fails to compile
+	  0 d(888) d(915) s(1225,1206) d(533) a(921,884) s(1051,1007) d(919)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000191/tools/tiffcp.c  s(507,543) d(490) s(1225,1206) d(1049) fails to compile
+	  0 s(507,543) d(490) s(1225,1206) d(1049)
+	  0 a(875,629) s(507,543) d(1049) a(309,1231) s(855,884)
+	  0 d(1872) s(507,543) d(1049) d(1049) d(490) d(1205) a(309,1231) d(1235)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000194/tools/tiffcp.c  s(1225,1206) a(875,629) s(532,310) fails to compile
+	  0 s(1225,1206) a(875,629) s(532,310)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000195/tools/tiffcp.c  d(1872) s(1225,1206) d(1023) s(917,988) a(315,1223) a(961,1009) fails to compile
+	  0 d(1872) s(1225,1206) d(1023) s(917,988) a(315,1223) a(961,1009)
+	  0 d(1872) d(1023) a(1220,1205) s(867,636) s(855,874) d(1223)
+	  0 d(522) d(1054) s(1209,1227) s(919,921)
+	  0 s(1209,1227) d(522) s(940,1051)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000198/tools/tiffcp.c  d(522) s(1220,861) s(495,315) d(1054) a(1051,861) fails to compile
+	  0 d(522) s(1220,861) s(495,315) d(1054) a(1051,861)
+	  0 d(524) s(1209,1227) a(919,914)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000200/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000201/tools/tiffcp.c  d(888) s(1225,1206) a(921,884) a(907,1047) s(1051,1062) s(500,1227) s(1838,1873) fails to compile
+	  0 d(888) s(1225,1206) a(921,884) a(907,1047) s(1051,1062) s(500,1227) s(1838,1873)
+	  0 s(961,1044) s(1051,1062) s(500,1227) s(1063,938)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000203/tools/tiffcp.c  d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047) d(1871) fails to compile
+	  0 d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047) d(1871)
+	  0 d(1049) d(1049) d(490) d(1872) d(1835) a(988,963) s(292,289)
+	  0 d(1049) d(1049) d(490) d(1872) d(1835) a(988,963) a(497,523)
+	  0 s(507,543) a(920,923) s(517,321) d(948)
+	  0 d(1872) s(507,543) a(532,543) d(1049) d(490) a(1220,1218) s(321,492)
+	  0 d(1872) s(507,543) a(532,543) d(516) s(1046,981)
+	  0 d(1049) d(1049) d(490) a(1235,1216) a(497,319) s(883,857)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000210/tools/tiffcp.c  d(1872) s(1225,1206) d(1023) a(986,1021) d(920) s(855,867) fails to compile
+	  0 d(1872) s(1225,1206) d(1023) a(986,1021) d(920) s(855,867)
+	  0 d(1235) a(1205,1228) a(938,744) s(962,744) s(855,887)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000212/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634)
+	  0 s(1209,1227) d(1872) d(1023) s(867,636) s(855,874) d(1235)
+	  0 d(1872) d(1023) a(1220,1205) s(867,636) s(855,874) a(1216,506)
+	  0 d(524) s(1209,1227) s(291,307)
+	  0 d(1872) s(507,543) d(1049) d(1049) d(490) d(1205) a(309,1231) s(989,986)
+	  0 d(1235) d(1049) d(1235) d(1049) d(870) s(316,502) a(1878,323)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000218/tools/tiffcp.c  a(1205,1228) a(938,744) s(962,744) d(888) d(915) s(1225,1206) s(1051,1007) s(861,848) fails to compile
+	  0 a(1205,1228) a(938,744) s(962,744) d(888) d(915) s(1225,1206) s(1051,1007) s(861,848)
+	  0 d(915) a(921,884) s(1051,1007) a(1205,1228) a(938,744) s(962,744) d(495)
+	  0 d(1235) a(1205,1228) a(938,744) s(962,744) a(857,852)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000221/tools/tiffcp.c  d(888) d(915) s(1225,1206) d(533) a(921,884) s(1051,1007) s(855,843) fails to compile
+	  0 d(888) d(915) s(1225,1206) d(533) a(921,884) s(1051,1007) s(855,843)
+	  0 d(1049) d(1049) d(490) s(940,960) s(973,988) s(921,903) s(1053,902)
+	  0 s(940,960) a(1235,637) d(1049) d(1049) a(1235,1216) s(532,318) d(497)
+	  0 d(1049) d(1049) d(490) a(1235,1216) s(532,318) s(497,543)
+	  0 s(940,960) s(973,988) a(1235,637) s(921,903) d(876)
+	  0 d(516) s(507,543) d(1051) d(1055)
+	  0 s(507,543) a(1214,884) d(1872) s(921,1011)
+	  0 d(1872) s(507,543) a(532,543) d(516) s(962,500)
+	  0 d(1872) s(507,543) a(1214,884) d(1051) d(909)
+	  0 d(1049) d(1209) s(507,543) s(517,321) d(962)
+	  0 s(507,543) a(920,923) d(1235) d(1049) d(1209) d(524)
+	  0 d(1235) d(1049) a(311,494) d(1209) s(910,917)
+	  0 s(507,543) a(920,923) s(517,321) d(901)
+	  0 d(1235) a(1205,1228) s(507,525) d(1872) a(532,543) s(533,492) a(962,918)
+	  0 s(507,543) d(1235) a(855,843) a(1225,765)
+	  0 d(1235) a(1205,1228) a(855,843) s(507,525) d(1065)
+	  0 d(1872) s(507,543) a(532,543) s(533,492) d(945)
+	  0 s(940,960) s(973,988) a(1235,637) s(1216,1227) d(1050)
+	  0 d(1235) a(1205,1228) a(855,843) s(507,525) d(962)
+	  0 d(1235) a(1205,1228) a(855,843) s(507,525) a(1220,1201)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000239/tools/tiffcp.c  s(1225,1206) a(544,539) s(1053,1051) d(855) a(1050,1051) fails to compile
+	  0 s(1225,1206) a(544,539) s(1053,1051) d(855) a(1050,1051)
+Elite size: 4
+	0.915129 s(1235,497)
+	0.914974 a(1019,533)
+	0.830326 s(1208,1230)
+	0.830188 s(1872,1870)
+Best individual (Elite U Pop'):
+ 0.915129 s(1235,497) 
+search: generation 5 (sizeof one variant = 0.773385 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000240/tools/tiffcp.c  d(1872) s(1225,1206) d(1023) s(917,988) d(1872) d(1235) d(1220) fails to compile
+	  0 d(1872) s(1225,1206) d(1023) s(917,988) d(1872) d(1235) d(1220)
+	  0 s(1209,1227) d(1872) s(855,874) d(1235) d(1872) d(1023) s(917,988) a(315,1223) a(961,1009) s(532,526)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000242/tools/tiffcp.c  d(1872) s(1225,1206) d(1023) s(917,988) a(315,1223) a(961,1009) s(528,523) fails to compile
+	  0 d(1872) s(1225,1206) d(1023) s(917,988) a(315,1223) a(961,1009) s(528,523)
+	  0 s(1209,1227) d(1872) d(1023) s(867,636) s(855,874) d(1235) s(319,492)
+	  0 d(1054) a(502,637)
+	  0 s(507,543) d(1054) s(1209,1227) s(945,940)
+	  0 d(522) d(1054) s(1209,1227) s(919,921) a(1050,519)
+	  0 s(507,543) d(1235) a(855,843) a(1225,765) a(516,496)
+	  0 a(1205,1228) a(855,843) a(1220,1201) d(1049) d(1835) a(988,963) s(292,289) d(524)
+	  0 d(490) d(1872) a(988,963) d(1235) a(921,1006)
+	  0 d(1235) a(1205,1228) a(855,843) s(507,525) a(1220,1201) a(962,1004)
+	  0 d(1049) d(1049) d(490) d(1872) d(1835) a(988,963) s(292,289) s(1235,867)
+	  0 d(888) a(921,884) a(907,1047) s(1209,1227) d(522) s(940,1051) a(919,1058)
+	  0 d(522) d(888) a(921,884) a(907,1047) d(1871) a(962,515)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000254/tools/tiffcp.c  d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047) d(1871) d(532) fails to compile
+	  0 d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047) d(1871) d(532)
+	  0 s(1209,1227) d(522) s(940,1051) d(920)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000256/tools/tiffcp.c  s(962,744) s(1225,1206) s(861,848) a(855,843) d(313) fails to compile
+	  0 s(962,744) s(1225,1206) s(861,848) a(855,843) d(313)
+	  0 s(507,525) d(1065) a(938,744) s(962,744) d(888) d(915) s(1051,1007) s(861,848) a(1835,765)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000258/tools/tiffcp.c  a(1205,1228) a(938,744) s(962,744) d(888) d(915) s(1225,1206) s(1051,1007) s(861,848) a(533,516) fails to compile
+	  0 a(1205,1228) a(938,744) s(962,744) d(888) d(915) s(1225,1206) s(1051,1007) s(861,848) a(533,516)
+	  0 d(1235) a(1205,1228) a(855,843) s(507,525) d(1065) a(1220,1230)
+	  0 d(1235) a(1205,1228) a(938,744) s(962,744) a(857,852) s(544,517)
+	  0 s(507,543) a(920,923) d(1235) d(1049) d(1209) d(524) s(1832,634)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000261/tools/tiffcp.c  s(1225,1206) a(544,539) s(1053,1051) d(855) a(1050,1051) d(1235) fails to compile
+	  0 s(1225,1206) a(544,539) s(1053,1051) d(855) a(1050,1051) d(1235)
+	  0 d(1049) d(1049) d(490) s(940,960) s(973,988) s(921,903) s(1053,902) d(533)
+	  0 d(870) d(1054) a(921,1019)
+	  0 d(1054) s(919,921) d(1235) d(1049) d(1235) d(870) s(316,502) a(1216,1229)
+	  0 d(1235) d(1049) d(1235) d(1049) d(870) s(316,502) a(1878,323) s(1018,960)
+	  0 d(522) d(1054) s(1209,1227) s(919,921) a(1053,985)
+	  0 d(1049) d(1049) d(490) a(1235,1216) s(532,318) s(497,543) s(1235,1205)
+	  0 d(1235) a(1205,1228) a(938,744) s(962,744) a(857,852) d(523)
+	  0 d(1235) d(1049) a(311,494) d(1209) s(910,917) d(517)
+	  0 d(1235) a(1205,1228) a(938,744) s(962,744) s(855,887) a(1203,629)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000271/tools/tiffcp.c  d(1235) a(1205,1228) a(855,843) s(507,525) a(1220,1201) s(1225,1206) d(533) a(921,884) d(532) s(1216,1205) fails to compile
+	  0 d(1235) a(1205,1228) a(855,843) s(507,525) a(1220,1201) s(1225,1206) d(533) a(921,884) d(532) s(1216,1205)
+	  0 s(1051,1062) d(533) a(921,884) d(1235) a(1205,1228) s(507,525) a(1220,1201) s(492,319)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000273/tools/tiffcp.c  d(1235) a(1205,1228) a(855,843) s(507,525) a(1220,1201) s(1220,529) fails to compile
+	  0 d(1235) a(1205,1228) a(855,843) s(507,525) a(1220,1201) s(1220,529)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000274/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832)
+	  0 s(961,1044) s(1051,1062) s(500,1227) s(1063,938) s(1204,1205)
+	  0 s(1209,1227) d(1872) d(1023) s(867,636) s(855,874) d(1235) d(1050)
+	  0 d(1049) s(507,543) s(517,321) d(948) a(488,310)
+	  0 s(507,543) s(507,543) d(1049) d(921)
+	  0 a(875,629) s(507,543) d(1049) a(309,1231) s(855,884) d(532)
+	  0 s(507,543) a(920,923) s(517,321) d(948) a(1051,1059)
+	  0 d(1049) d(1209) s(507,543) s(517,321) d(962) s(919,938)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000282/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) s(1878,1835) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) s(1878,1835)
+	  0 s(961,1044) s(1051,1062) s(500,1227) s(1063,938) s(497,317)
+	  0 s(507,543) a(920,923) s(517,321) d(948) d(940)
+	  0 d(1235) d(1049) s(316,502) s(883,857) s(498,320)
+	  0 a(497,319) d(1049) a(1878,323) s(919,982)
+	  0 d(1235) d(1049) d(1235) d(1049) d(870) s(316,502) a(1878,323) a(540,1009)
+	  0 d(1049) d(1049) d(490) a(1235,1216) a(497,319) s(883,857) d(497)
+	  0 d(1054) s(1209,1227) s(940,960) s(973,988) a(1235,637) s(1216,1227) s(959,963)
+	  0 s(973,988) s(1216,1227) d(1050) d(522) s(1209,1227) d(1220)
+	  0 d(522) d(1054) s(1209,1227) s(919,921) a(855,356)
+	  0 s(940,960) s(973,988) a(1235,637) s(1216,1227) d(1050) d(1049)
+	  0 d(1872) s(507,543) a(532,543) d(516) s(1046,981) a(1220,1215)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000293/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061)
+Elite size: 4
+	0.915129 s(1235,497)
+	0.914974 a(1019,533)
+	0.830326 s(1208,1230)
+	0.830188 s(1872,1870)
+Best individual (Elite U Pop'):
+ 0.915129 s(1235,497) 
+search: generation 6 (sizeof one variant = 0.773591 MB)
+	  0 d(1054) s(945,940) s(1051,1062) d(533) a(921,884) a(1220,1201) s(1050,1223)
+	  0 d(533) a(921,884) a(1205,1228) a(1220,1201) s(507,543) s(497,495)
+	  0 s(507,543) d(1054) s(1209,1227) s(945,940) a(1235,1211)
+	  0 s(1051,1062) d(533) a(921,884) d(1235) a(1205,1228) s(507,525) a(1220,1201) s(492,319) s(1218,1200)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000298/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) s(1878,1835) s(855,878) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) s(1878,1835) s(855,878)
+	  0 s(507,543) a(920,923) s(517,321) d(948) a(1051,1059) a(915,984)
+	  0 s(507,543) a(920,923) d(1235) d(1049) d(1209) d(524) s(1832,634) d(921)
+	  0 s(961,1044) s(1051,1062) s(500,1227) s(1063,938) s(1204,1205) s(981,1054)
+	  0 d(1235) a(516,496) s(1209,1227) d(1023) d(1235) s(503,518)
+	  0 s(1209,1227) d(1023) s(867,636) d(1235) s(919,949)
+	  0 s(507,543) d(1235) a(855,843) a(1225,765) a(516,496) d(1832)
+	  0 s(1209,1227) d(1872) d(1023) s(867,636) s(855,874) d(1235) s(319,492) d(920)
+	  0 a(907,1047) d(532) d(1872) a(1220,1215) a(962,1012)
+	  0 s(507,543) a(532,543) d(516) d(1838)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000307/tools/tiffcp.c  d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047) d(1871) d(532) d(318) fails to compile
+	  0 d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047) d(1871) d(532) d(318)
+	  0 d(1872) s(507,543) a(532,543) d(516) s(1046,981) a(1220,1215) s(867,1235)
+	  0 s(1209,1227) d(1872) d(1023) s(867,636) s(855,874) d(1235) d(1050) a(962,976)
+	  0 a(497,319) d(1049) a(1878,323) s(919,982) d(1833)
+	  0 d(1054) s(1209,1227) s(940,960) s(973,988) a(1235,637) s(1216,1227) s(959,963) s(1230,1235)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000312/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014)
+	  0 s(867,636) a(875,629) s(507,543) a(309,1231) d(532) a(921,901)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000314/tools/tiffcp.c  s(507,543) d(1049) d(532) d(1872) s(1220,634) d(848) fails to compile
+	  0 s(507,543) d(1049) d(532) d(1872) s(1220,634) d(848)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000315/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824)
+	  0 a(875,629) s(507,543) d(1049) a(309,1231) s(855,884) d(532) s(887,851)
+	  0 s(1209,1227) s(855,874) d(1023) a(961,1009) s(1235,524)
+	  0 d(1872) d(1023) s(917,988) a(961,1009) s(528,523) s(1209,1227) s(867,636) d(1050) d(1062)
+	  0 s(1209,1227) d(1872) d(1023) s(867,636) s(855,874) d(1235) d(1050) s(1049,1046)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000320/tools/tiffcp.c  d(1872) s(1225,1206) d(1023) s(917,988) a(315,1223) a(961,1009) s(528,523) a(1050,1006) fails to compile
+	  0 d(1872) s(1225,1206) d(1023) s(917,988) a(315,1223) a(961,1009) s(528,523) a(1050,1006)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000321/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(1056,1004) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(1056,1004)
+	  0 d(522) d(888) a(921,884) a(907,1047) d(1871) a(962,515) d(497)
+	  0 s(507,525) d(1065) a(938,744) s(962,744) d(888) d(915) s(1051,1007) s(861,848) a(1835,765) d(289)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000323/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) s(1878,1835) s(318,317) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) s(1878,1835) s(318,317)
+	  0 s(507,543) a(920,923) s(517,321) d(948) d(940) a(1833,900)
+	  0 d(490) d(1872) a(988,963) d(1235) a(921,1006) d(1871)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000326/tools/tiffcp.c  a(875,629) s(507,543) a(309,1231) d(888) s(1225,1206) d(533) d(1049) fails to compile
+	  0 a(875,629) s(507,543) a(309,1231) d(888) s(1225,1206) d(533) d(1049)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000327/tools/tiffcp.c  d(888) d(915) s(1225,1206) a(907,1047) d(1871) a(875,629) d(1049) a(309,1231) d(532) s(919,901) fails to compile
+	  0 d(888) d(915) s(1225,1206) a(907,1047) d(1871) a(875,629) d(1049) a(309,1231) d(532) s(919,901)
+	  0 a(875,629) s(507,543) d(1049) a(309,1231) s(855,884) d(532) d(1834)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000329/tools/tiffcp.c  d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047) d(1871) d(532) s(917,959) fails to compile
+	  0 d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047) d(1871) d(532) s(917,959)
+	  0 d(1235) a(1205,1228) s(962,744) s(855,887) s(973,988) s(1216,1227) d(522) s(1209,1227) s(532,495)
+	  0 d(522) d(1220) a(1205,1228) a(938,744) s(962,744) s(855,887) s(1054,1011)
+	  0 d(1235) a(1205,1228) a(938,744) s(962,744) s(855,887) a(1203,629) a(532,311)
+	  0 s(973,988) s(1216,1227) d(1050) d(522) s(1209,1227) d(1220) d(1838)
+	  0 s(507,543) d(1235) d(1049) d(1209) s(1832,634) s(1225,1206) s(1053,1051) d(855) d(1235) a(919,1047)
+	  0 a(544,539) s(1053,1051) a(1050,1051) d(1235) a(920,923) d(1049) d(524) d(962)
+	  0 s(507,543) a(920,923) d(1235) d(1049) d(1209) d(524) s(1832,634) a(1047,765)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000337/tools/tiffcp.c  s(1225,1206) a(544,539) s(1053,1051) d(855) a(1050,1051) d(1235) a(962,923) fails to compile
+	  0 s(1225,1206) a(544,539) s(1053,1051) d(855) a(1050,1051) d(1235) a(962,923)
+	  0 s(1209,1227) d(1872) s(855,874) d(1235) d(1872) d(1023) s(917,988) a(315,1223) a(961,1009) s(532,526) a(982,1018)
+	  0 s(507,543) d(1235) a(855,843) a(1225,765) a(516,496) s(1216,1227)
+	  0 d(1049) d(1049) d(490) a(1235,1216) a(497,319) s(883,857) d(497) a(919,878)
+	  0 a(497,319) d(1049) a(1878,323) s(919,982) a(1216,1217)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000342/tools/tiffcp.c  d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047) d(1871) d(532) d(1216) fails to compile
+	  0 d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047) d(1871) d(532) d(1216)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000343/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(870,490) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(870,490)
+Elite size: 4
+	0.915129 s(1235,497)
+	0.914974 a(1019,533)
+	0.830326 s(1208,1230)
+	0.830188 s(1872,1870)
+Best individual (Elite U Pop'):
+ 0.915129 s(1235,497) 
+search: generation 7 (sizeof one variant = 0.773733 MB)
+	  0 s(507,543) a(920,923) d(1235) d(1049) d(1209) d(524) s(1832,634) a(1047,765) a(882,1050)
+	  0 s(1209,1227) d(1872) d(1023) s(867,636) s(855,874) d(1235) d(1050) s(1049,1046) s(919,962)
+	  0 s(940,960) s(973,988) s(1230,1235) d(1872) s(867,636) d(1061) d(1824) d(524)
+	  0 d(1061) d(1824) s(1209,1227) s(940,960) a(1235,637) s(1216,1227) s(959,963) a(499,829)
+	  0 d(1054) s(1209,1227) s(940,960) s(973,988) a(1235,637) s(1216,1227) s(959,963) s(1230,1235) a(847,884)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000349/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) d(1050) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) d(1050)
+	  0 a(875,629) s(507,543) d(1049) a(309,1231) s(855,884) d(532) d(1834) a(1211,1200)
+	  0 s(961,1044) s(1051,1062) s(500,1227) s(1063,938) s(1204,1205) s(981,1054) a(914,1019)
+	  0 s(507,543) d(1235) d(1049) d(1209) s(1832,634) s(1225,1206) s(1053,1051) d(855) d(1235) a(919,1047) a(1839,1838)
+	  0 d(1235) a(1205,1228) s(962,744) s(855,887) s(973,988) s(1216,1227) d(522) s(1209,1227) s(532,495) d(307)
+	  0 a(310,1832) a(1056,1004) d(888) d(915) d(532) s(917,959) d(528)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000355/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) s(920,903) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) s(920,903)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000356/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(1056,1004) d(921) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(1056,1004) d(921)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000357/tools/tiffcp.c  d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047) d(1871) d(532) s(917,959) d(870) fails to compile
+	  0 d(888) d(915) s(1225,1206) d(533) a(921,884) a(907,1047) d(1871) d(532) s(917,959) d(870)
+	  0 s(507,543) d(1235) a(855,843) a(1225,765) a(516,496) s(1216,1227) s(911,1009)
+	  0 s(507,525) d(1065) a(938,744) s(962,744) d(888) d(915) s(1051,1007) s(861,848) a(1835,765) d(289) d(961)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000360/tools/tiffcp.c  s(507,543) d(1049) d(532) d(1872) s(1220,634) d(848) a(533,528) fails to compile
+	  0 s(507,543) d(1049) d(532) d(1872) s(1220,634) d(848) a(533,528)
+	  0 d(522) d(888) a(921,884) a(907,1047) d(1871) a(962,515) d(497) d(533)
+	  0 s(507,543) a(532,543) d(516) d(1838) a(1216,890)
+	  0 s(1209,1227) d(1023) s(867,636) d(1235) s(919,949) d(533)
+	  0 a(1205,1228) a(938,744) s(855,887) s(1054,1011) d(1054) s(1209,1227) a(1235,1211) a(540,873)
+	  0 s(507,543) d(1054) s(1209,1227) a(1235,1211) d(522) s(962,744) s(1050,1021)
+	  0 d(522) d(1220) a(1205,1228) a(938,744) s(962,744) s(855,887) s(1054,1011) d(1021)
+	  0 s(507,543) d(1054) s(1209,1227) s(945,940) a(1235,1211) a(985,634)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000367/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) a(1051,867) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) a(1051,867)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000368/tools/tiffcp.c  a(497,319) d(1049) a(1878,323) s(919,982) d(1833) s(1235,1219) fails to compile
+	  0 a(497,319) d(1049) a(1878,323) s(919,982) d(1833) s(1235,1219)
+	  0 d(1235) a(1205,1228) a(1220,1201) s(492,319) s(1218,1200) s(855,878) a(1049,938)
+	  0 s(1051,1062) d(532) s(1878,1835) s(855,878) s(1051,1062) d(1235) a(1205,1228) s(507,525) s(1218,1200) a(519,525)
+	  0 s(1051,1062) d(533) a(921,884) d(1235) a(1205,1228) s(507,525) a(1220,1201) s(492,319) s(1218,1200) s(865,855)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000372/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) s(1878,1835) s(855,878) a(852,744) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) s(1878,1835) s(855,878) a(852,744)
+	  0 s(507,543) a(920,923) s(517,321) d(948) a(1051,1059) a(915,984) a(878,1009)
+	  0 d(1054) s(1209,1227) s(940,960) s(973,988) a(1235,637) s(1216,1227) s(959,963) s(1230,1235) d(314)
+	  0 d(1872) a(1220,1205) d(1824) a(920,923) a(1229,1230)
+	  0 s(507,543) a(920,923) s(517,321) d(948) a(1051,1059) a(1220,1205) s(867,636) d(1824) a(959,1048)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000377/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829)
+	  0 s(507,543) a(920,923) s(517,321) d(948) a(1051,1059) a(915,984) s(859,855)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000379/tools/tiffcp.c  s(507,543) s(945,940) d(1049) s(1220,634) s(1211,629) fails to compile
+	  0 s(507,543) s(945,940) d(1049) s(1220,634) s(1211,629)
+	  0 d(532) d(1872) d(848) s(945,940) a(1235,1211) d(492)
+	  0 s(507,543) d(1054) s(1209,1227) s(945,940) a(1235,1211) a(882,876)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000382/tools/tiffcp.c  s(507,543) d(1049) d(532) d(1872) s(1220,634) d(848) s(533,317) fails to compile
+	  0 s(507,543) d(1049) d(532) d(1872) s(1220,634) d(848) s(533,317)
+	  0 d(1054) s(1051,1062) a(921,884) a(1220,1201) s(1050,1223) d(490) d(1872) a(988,963) d(1230)
+	  0 d(490) d(1872) d(1054) d(533) a(1220,1201) s(849,870)
+	  0 d(1054) s(945,940) s(1051,1062) d(533) a(921,884) a(1220,1201) s(1050,1223) s(1216,1230)
+	  0 d(490) d(1872) a(988,963) d(1235) a(921,1006) d(1871) s(1055,1015)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000387/tools/tiffcp.c  s(1225,1206) d(533) a(921,884) a(310,1832) d(490) s(883,857) a(919,878) d(847) fails to compile
+	  0 s(1225,1206) d(533) a(921,884) a(310,1832) d(490) s(883,857) a(919,878) d(847)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000388/tools/tiffcp.c  d(490) a(497,319) s(883,857) d(497) a(919,878) s(1051,1062) s(1225,1206) d(533) d(525) fails to compile
+	  0 d(490) a(497,319) s(883,857) d(497) a(919,878) s(1051,1062) s(1225,1206) d(533) d(525)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000389/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(1218) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(1218)
+	  0 d(1049) d(1049) d(490) a(1235,1216) a(497,319) s(883,857) d(497) a(919,878) d(322)
+	  0 a(875,629) s(507,543) a(309,1231) d(888) s(1225,1206) d(533) d(1049) d(497)
+	  0 a(497,319) d(1049) a(1878,323) s(919,982) d(1833) a(498,504)
+	  0 a(875,629) d(1049) a(309,1231) s(855,884) d(532) d(1834) d(533) d(497)
+	  0 s(1051,1062) d(533) d(532) a(310,1832) a(919,1014) a(875,629) s(507,543) d(532) a(497,873)
+	  0 a(875,629) s(507,543) d(1049) a(309,1231) s(855,884) d(532) d(1834) a(504,1009)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000395/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858)
+Elite size: 4
+	0.915129 s(1235,497)
+	0.914974 a(1019,533)
+	0.830326 s(1208,1230)
+	0.830188 s(1872,1870)
+Best individual (Elite U Pop'):
+ 0.915129 s(1235,497) 
+search: generation 8 (sizeof one variant = 0.774004 MB)
+	  0 a(875,629) d(1049) a(309,1231) s(855,884) s(940,960) s(973,988) s(1230,1235) s(867,636) d(1824) d(524) s(528,320)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000397/tools/tiffcp.c  s(940,960) s(973,988) s(1230,1235) d(1872) d(1824) d(524) s(507,543) d(1049) s(855,884) d(532) s(1216,1219) fails to compile
+	  0 s(940,960) s(973,988) s(1230,1235) d(1872) d(1824) d(524) s(507,543) d(1049) s(855,884) d(532) s(1216,1219)
+	  0 a(875,629) s(507,543) d(1049) a(309,1231) s(855,884) d(532) d(1834) a(1211,1200) d(1878)
+	  0 s(940,960) s(973,988) s(1230,1235) d(1872) s(867,636) d(1061) d(1824) d(524) s(1206,1202)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000400/tools/tiffcp.c  s(507,543) d(1049) d(532) d(1872) s(1220,634) d(848) s(533,317) s(502,496) fails to compile
+	  0 s(507,543) d(1049) d(532) d(1872) s(1220,634) d(848) s(533,317) s(502,496)
+	  0 s(507,543) d(1235) a(855,843) a(1225,765) a(516,496) s(1216,1227) s(911,1009) a(1204,1050)
+	  0 a(497,319) d(1049) a(1878,323) s(919,982) d(1833) a(498,504) s(855,846)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000403/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) s(497,318) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) s(497,318)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000404/tools/tiffcp.c  d(1872) s(867,636) s(1220,634) d(1050) d(1049) s(1832,634) d(855) a(919,1047) s(856,873) fails to compile
+	  0 d(1872) s(867,636) s(1220,634) d(1050) d(1049) s(1832,634) d(855) a(919,1047) s(856,873)
+	  0 s(507,543) d(1049) d(1209) s(1832,634) s(1225,1206) s(1053,1051) a(1839,1838) d(1872) s(1220,634) d(1061) d(1824) d(1050) a(497,856)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000406/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) d(1050) s(1235,851) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) d(1050) s(1235,851)
+	  0 s(507,543) d(1235) d(1049) d(1209) s(1832,634) s(1225,1206) s(1053,1051) d(855) d(1235) a(919,1047) a(1839,1838) d(905)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000408/tools/tiffcp.c  s(507,543) d(1049) d(532) d(1872) s(1220,634) d(848) a(533,528) s(962,629) fails to compile
+	  0 s(507,543) d(1049) d(532) d(1872) s(1220,634) d(848) a(533,528) s(962,629)
+	  0 d(490) d(1872) d(1054) d(533) a(1220,1201) s(849,870) s(878,1832)
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) s(1021,1056)
+	  0 d(490) d(1872) a(988,963) d(1235) a(921,1006) d(1871) s(1055,1015) a(920,974)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000410/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) a(1213,1228) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) a(1213,1228)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000411/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(1056,1004) d(921) d(882) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(1056,1004) d(921) d(882)
+	  0 s(507,543) d(1054) s(1209,1227) s(945,940) a(1235,1211) a(882,876) s(498,317)
+	  0 d(1054) s(1209,1227) s(940,960) s(973,988) a(1235,637) s(1216,1227) s(959,963) s(1230,1235) d(314) s(855,857)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000414/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) s(1049,911) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) s(1049,911)
+	  0 d(1054) s(945,940) s(1051,1062) d(533) a(921,884) a(1220,1201) s(1050,1223) s(1216,1230) d(498)
+	  0 d(490) d(1872) a(988,963) d(1235) a(921,1006) d(1871) s(1055,1015) a(920,1004)
+	  0 s(940,960) s(973,988) s(1230,1235) d(1872) s(867,636) d(1061) d(1824) d(524) d(533)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000418/tools/tiffcp.c  a(310,1832) a(1056,1004) d(888) d(915) d(532) s(917,959) d(528) s(1219,1220) fails to compile
+	  0 a(310,1832) a(1056,1004) d(888) d(915) d(532) s(917,959) d(528) s(1219,1220)
+	  0 d(1235) a(1205,1228) s(962,744) s(855,887) s(973,988) s(1216,1227) d(522) s(1209,1227) s(532,495) d(307) a(544,867)
+	  0 d(1872) a(1220,1205) d(1824) a(920,923) a(1229,1230) d(1231)
+	  0 s(507,543) a(920,923) s(517,321) d(948) a(1051,1059) a(915,984) a(878,1009) d(986)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000422/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) d(1050) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) d(1050)
+	  0 d(490) d(1872) a(988,963) d(1235) a(921,1006) d(1871) s(1055,1015) d(976)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000423/tools/tiffcp.c  a(497,319) d(1049) a(1878,323) s(919,982) d(1833) s(1235,1219) d(1051) fails to compile
+	  0 a(497,319) d(1049) a(1878,323) s(919,982) d(1833) s(1235,1219) d(1051)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000424/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) s(920,903) a(919,546) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) s(920,903) a(919,546)
+	  0 s(1209,1227) d(1023) s(867,636) d(533) a(920,923) s(517,321) a(915,984) s(986,961)
+	  0 s(517,321) d(948) a(1051,1059) a(878,1009) d(1023) d(1235) s(919,949) d(533) d(1220)
+	  0 s(1209,1227) d(1023) s(867,636) d(1235) s(919,949) d(533) a(1870,1869)
+	  0 s(507,543) a(920,923) s(517,321) d(948) a(1051,1059) a(915,984) a(878,1009) s(1201,1223)
+	  0 a(1220,1205) d(1061) s(945,940) d(533) a(921,884) a(1220,1201) s(1050,1223) d(1229)
+	  0 s(945,940) s(1051,1062) d(533) a(921,884) s(1050,1223) s(1216,1230) d(1061) d(1824) d(1050) s(859,890)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000431/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) d(1050) a(846,1056) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) d(1050) a(846,1056)
+	  0 d(1054) s(945,940) s(1051,1062) d(533) a(921,884) a(1220,1201) s(1050,1223) s(1216,1230) a(959,1014)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000433/tools/tiffcp.c  d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914) fails to compile
+	  0 d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000434/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(532) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(1018) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(532) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(1018)
+	  0 d(1054) s(1051,1062) a(921,884) a(1220,1201) s(1050,1223) d(490) d(1872) a(988,963) d(1230) d(523)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000436/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) s(920,903) s(529,309) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) s(920,903) s(529,309)
+	  0 s(507,543) a(1051,1059) a(915,984) d(1824) s(1209,1227) a(1235,637) s(959,963) s(919,914)
+	  0 d(1061) s(1209,1227) s(1216,1227) a(499,829) s(507,543) a(1051,1059) a(915,984) s(859,855) d(1873)
+	  0 s(507,543) a(920,923) s(517,321) d(948) a(1051,1059) a(915,984) s(859,855) d(1021)
+	  0 d(1061) d(1824) s(1209,1227) s(940,960) a(1235,637) s(1216,1227) s(959,963) a(499,829) s(497,532)
+Elite size: 4
+	0.915129 s(1235,497)
+	0.914974 a(1019,533)
+	0.830326 s(1208,1230)
+	0.830188 s(1872,1870)
+Best individual (Elite U Pop'):
+ 0.915129 s(1235,497) 
+search: generation 9 (sizeof one variant = 0.774161 MB)
+	  0 s(940,960) s(973,988) s(1230,1235) d(1872) s(867,636) d(1061) d(1824) d(524) s(1206,1202) d(497)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000440/tools/tiffcp.c  a(497,319) d(1049) a(1878,323) s(919,982) d(1833) s(1235,1219) d(1051) a(518,528) fails to compile
+	  0 a(497,319) d(1049) a(1878,323) s(919,982) d(1833) s(1235,1219) d(1051) a(518,528)
+	  0 d(1872) d(1050) d(1049) d(855) s(856,873) a(921,884) d(1061) d(1824) a(1051,1016)
+	  0 s(1050,1223) s(1216,1230) d(1061) s(859,890) d(1872) s(867,636) d(1050) d(1049) d(855) a(919,1047) d(901)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000443/tools/tiffcp.c  d(1872) s(867,636) s(1220,634) d(1050) d(1049) s(1832,634) d(855) a(919,1047) s(856,873) s(533,527) fails to compile
+	  0 d(1872) s(867,636) s(1220,634) d(1050) d(1049) s(1832,634) d(855) a(919,1047) s(856,873) s(533,527)
+	  0 s(945,940) s(1051,1062) d(533) a(921,884) s(1050,1223) s(1216,1230) d(1061) d(1824) d(1050) s(859,890) d(1206)
+	  0 a(875,629) s(507,543) d(1049) a(309,1231) s(855,884) d(532) d(1834) a(1211,1200) d(1878) a(914,905)
+	  0 s(940,960) s(973,988) s(1230,1235) d(1872) s(867,636) d(1061) d(1824) d(524) s(1206,1202) s(507,521)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000447/tools/tiffcp.c  s(940,960) d(1872) d(1061) d(1824) a(1220,1205) s(1220,634) d(1061) d(1824) s(520,515) fails to compile
+	  0 s(940,960) d(1872) d(1061) d(1824) a(1220,1205) s(1220,634) d(1061) d(1824) s(520,515)
+	  0 d(1872) s(962,829) d(1050) s(940,960) s(973,988) s(867,636) a(525,579)
+	  0 s(940,960) s(973,988) s(1230,1235) d(1872) s(867,636) d(1061) d(1824) d(524) s(1206,1202) s(507,316)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000450/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) d(1050) d(502) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) d(1050) d(502)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000451/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(1061) s(945,940) d(533) a(921,884) a(1220,1201) s(917,923) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(1061) s(945,940) d(533) a(921,884) a(1220,1201) s(917,923)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000452/tools/tiffcp.c  a(1220,1205) d(1061) a(921,884) a(1220,1201) s(1050,1223) s(1225,1206) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(915) fails to compile
+	  0 a(1220,1205) d(1061) a(921,884) a(1220,1201) s(1050,1223) s(1225,1206) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(915)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000453/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(532) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(1018) d(311) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(532) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(1018) d(311)
+	  0 a(1220,1205) d(1061) s(945,940) d(533) a(921,884) a(1220,1201) s(1050,1223) d(1229) d(516)
+	  0 a(921,884) a(919,1014) s(1209,1227) d(1023) s(867,636) d(533) s(517,321) s(986,961) d(988)
+	  0 s(1209,1227) s(867,636) d(533) s(517,321) s(1051,1062) d(533) d(532) a(310,1832) a(1213,1228) a(884,1235)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000457/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) a(1213,1228) a(1050,984) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) a(1213,1228) a(1050,984)
+	  0 s(1209,1227) d(1023) s(867,636) d(533) a(920,923) s(517,321) a(915,984) s(986,961) s(532,316)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000459/tools/tiffcp.c  s(1225,1206) a(921,884) d(532) a(310,1832) a(919,1014) d(858) s(1051,1062) d(533) a(921,884) s(1216,1230) d(1824) d(1050) s(859,890) a(1049,917) fails to compile
+	  0 s(1225,1206) a(921,884) d(532) a(310,1832) a(919,1014) d(858) s(1051,1062) d(533) a(921,884) s(1216,1230) d(1824) d(1050) s(859,890) a(1049,917)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000460/tools/tiffcp.c  s(945,940) s(1051,1062) s(1216,1230) d(1050) s(1051,1062) s(1225,1206) a(919,1014) d(991) fails to compile
+	  0 s(945,940) s(1051,1062) s(1216,1230) d(1050) s(1051,1062) s(1225,1206) a(919,1014) d(991)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000461/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) s(497,318) s(1216,1211) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) s(497,318) s(1216,1211)
+	  0 s(945,940) s(1051,1062) d(533) a(921,884) s(1050,1223) s(1216,1230) d(1061) d(1824) d(1050) s(859,890) d(1049)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000463/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) s(1021,1056) a(1231,765) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) s(1021,1056) a(1231,765)
+	  0 a(875,629) d(1049) a(309,1231) s(855,884) s(940,960) s(973,988) s(1230,1235) s(867,636) d(1824) d(524) s(528,320) d(901)
+	  0 d(1872) a(1220,1205) d(1824) a(920,923) a(1229,1230) d(1231) a(307,551)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000466/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(532) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(1018) d(1051) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(532) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(1018) d(1051)
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) s(1049,911) d(497)
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) a(1213,1228) s(497,890)
+	  0 s(945,940) d(533) d(1061) d(1824) d(1235)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000468/tools/tiffcp.c  a(1220,1205) s(1220,634) d(1061) d(1050) d(533) s(1050,1223) d(1824) d(1050) s(1207,1214) fails to compile
+	  0 a(1220,1205) s(1220,634) d(1061) d(1050) d(533) s(1050,1223) d(1824) d(1050) s(1207,1214)
+	  0 s(945,940) s(1051,1062) d(533) a(921,884) s(1050,1223) s(1216,1230) d(1061) d(1824) d(1050) s(859,890) a(1235,1021)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000470/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) d(1050) s(1235,851) a(907,989) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) d(1050) s(1235,851) a(907,989)
+	  0 a(921,884) s(1216,1230) s(1051,1062) d(490) a(988,963) d(1230) a(859,1044)
+	  0 s(1051,1062) s(1050,1223) d(490) d(1872) d(1230) d(1054) s(945,940) d(533) a(921,884) a(1220,1201) a(870,1050)
+	  0 d(1054) s(945,940) s(1051,1062) d(533) a(921,884) a(1220,1201) s(1050,1223) s(1216,1230) d(498) a(855,356)
+	  0 d(1054) s(1051,1062) a(921,884) a(1220,1201) s(1050,1223) d(490) d(1872) a(988,963) d(1230) d(523) a(906,974)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000475/tools/tiffcp.c  d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914) s(1216,1209) fails to compile
+	  0 d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914) s(1216,1209)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000476/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) a(1213,1228) s(919,1023) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) a(1213,1228) s(919,1023)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000477/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) a(310,1832) a(921,884) a(988,963) d(1235) a(921,1006) d(1871) s(1049,1059) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) a(310,1832) a(921,884) a(988,963) d(1235) a(921,1006) d(1871) s(1049,1059)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000478/tools/tiffcp.c  d(490) d(1872) d(1235) a(921,1006) d(1871) s(1055,1015) d(915) s(1225,1206) a(921,884) s(1050,1223) d(975) fails to compile
+	  0 d(490) d(1872) d(1235) a(921,1006) d(1871) s(1055,1015) d(915) s(1225,1206) a(921,884) s(1050,1223) d(975)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000479/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(532) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(1018) s(497,526) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(532) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(1018) s(497,526)
+	  0 d(490) d(1872) a(988,963) d(1235) a(921,1006) d(1871) s(1055,1015) a(920,1004) a(532,317)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000481/tools/tiffcp.c  d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914) s(522,534) fails to compile
+	  0 d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914) s(522,534)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000482/tools/tiffcp.c  s(507,543) d(1049) d(532) d(1872) s(1220,634) d(848) s(533,317) s(502,496) a(843,867) fails to compile
+	  0 s(507,543) d(1049) d(532) d(1872) s(1220,634) d(848) s(533,317) s(502,496) a(843,867)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000483/tools/tiffcp.c  d(1054) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(920,903) s(976,914) s(940,960) s(973,988) s(1230,1235) d(1824) s(1206,1202) a(498,539) fails to compile
+	  0 d(1054) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(920,903) s(976,914) s(940,960) s(973,988) s(1230,1235) d(1824) s(1206,1202) a(498,539)
+	  0 s(1230,1235) d(1824) d(524) s(1206,1202) s(1051,1062) a(1220,1201) d(490) d(1872) s(1225,1206) a(921,884) d(532) d(532) s(920,903) s(976,914) s(1836,1871)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000485/tools/tiffcp.c  d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914) s(867,518) fails to compile
+	  0 d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914) s(867,518)
+	  0 s(940,960) s(973,988) s(1230,1235) d(1872) s(867,636) d(1061) d(1824) d(524) s(1206,1202) a(873,962)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000487/tools/tiffcp.c  s(1225,1206) a(921,884) s(1050,1223) a(988,963) s(1225,1206) s(1225,1206) d(533) a(310,1832) s(920,903) a(919,546) s(1235,529) fails to compile
+	  0 s(1225,1206) a(921,884) s(1050,1223) a(988,963) s(1225,1206) s(1225,1206) d(533) a(310,1832) s(920,903) a(919,546) s(1235,529)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000488/tools/tiffcp.c  d(915) s(1225,1206) d(532) d(532) s(920,903) a(919,546) s(1225,1206) a(921,884) d(532) s(1050,1223) d(1018) a(534,1832) fails to compile
+	  0 d(915) s(1225,1206) d(532) d(532) s(920,903) a(919,546) s(1225,1206) a(921,884) d(532) s(1050,1223) d(1018) a(534,1832)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000489/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(532) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(1018) d(854) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(532) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(1018) d(854)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000490/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) s(920,903) a(919,546) d(1051) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) s(920,903) a(919,546) d(1051)
+	  0 s(507,543) d(948) a(1051,1059) s(1201,1223) a(920,923) a(1051,1059) a(878,1009) d(986) d(528)
+	  0 s(517,321) d(948) a(878,1009) d(986) s(507,543) a(920,923) s(517,321) s(1201,1223) s(533,314)
+	  0 s(507,543) a(920,923) s(517,321) d(948) a(1051,1059) a(915,984) a(878,1009) s(1201,1223) a(1220,867)
+	  0 s(507,543) a(920,923) s(517,321) d(948) a(1051,1059) a(915,984) a(878,1009) d(986) a(1235,1050)
+Elite size: 4
+	0.915129 s(1235,497)
+	0.914974 a(1019,533)
+	0.830326 s(1208,1230)
+	0.830188 s(1872,1870)
+Best individual (Elite U Pop'):
+ 0.915129 s(1235,497) 
+search: generation 10 (sizeof one variant = 0.774351 MB)
+	  0 a(497,319) d(1049) a(1878,323) s(919,982) d(1833) a(518,528) s(945,940) s(1051,1062) d(533) a(921,884) s(1050,1223) s(1216,1230) d(1061) d(1824) d(1050) s(859,890) a(522,873)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000496/tools/tiffcp.c  s(1050,1223) d(1061) s(859,890) a(497,319) d(1833) s(1235,1219) d(1051) a(518,528) s(314,490) fails to compile
+	  0 s(1050,1223) d(1061) s(859,890) a(497,319) d(1833) s(1235,1219) d(1051) a(518,528) s(314,490)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000497/tools/tiffcp.c  a(497,319) d(1049) a(1878,323) s(919,982) d(1833) s(1235,1219) d(1051) a(518,528) a(988,1018) fails to compile
+	  0 a(497,319) d(1049) a(1878,323) s(919,982) d(1833) s(1235,1219) d(1051) a(518,528) a(988,1018)
+	  0 s(945,940) s(1051,1062) d(533) a(921,884) s(1050,1223) s(1216,1230) d(1061) d(1824) d(1050) s(859,890) a(1235,1021) d(920)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000499/tools/tiffcp.c  d(1061) a(921,884) s(1225,1206) a(921,884) a(310,1832) a(921,884) a(988,963) s(1051,1062) d(533) s(1050,1223) d(1061) a(1235,1021) a(1202,497) fails to compile
+	  0 d(1061) a(921,884) s(1225,1206) a(921,884) a(310,1832) a(921,884) a(988,963) s(1051,1062) d(533) s(1050,1223) d(1061) a(1235,1021) a(1202,497)
+	  0 s(945,940) s(1050,1223) d(1061) d(1050) a(1220,1201) a(921,884) a(310,1832) s(1050,1223) d(915) d(1216)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000501/tools/tiffcp.c  a(1220,1205) d(1061) a(921,884) a(1220,1201) s(1050,1223) s(1225,1206) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(915) s(1218,1215) fails to compile
+	  0 a(1220,1205) d(1061) a(921,884) a(1220,1201) s(1050,1223) s(1225,1206) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(915) s(1218,1215)
+	  0 s(945,940) s(1051,1062) d(533) a(921,884) s(1050,1223) s(1216,1230) d(1061) d(1824) d(1050) s(859,890) a(1235,1021) s(1235,515)
+	  0 a(875,629) s(507,543) d(1049) a(309,1231) s(855,884) d(532) d(1834) a(1211,1200) d(1878) a(914,905) a(519,317)
+	  0 d(490) d(1872) a(988,963) d(1235) a(921,1006) d(1871) s(1055,1015) a(920,1004) a(532,317) a(532,544)
+	  0 d(1872) a(1220,1205) d(1824) a(920,923) a(1229,1230) d(1231) a(307,551) s(492,312)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000506/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(1061) s(945,940) d(533) a(921,884) a(1220,1201) s(917,923) a(1235,1205) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(1061) s(945,940) d(533) a(921,884) a(1220,1201) s(917,923) a(1235,1205)
+	  0 d(1054) s(1051,1062) a(921,884) a(1220,1201) s(1050,1223) d(490) d(1872) a(988,963) d(1230) d(523) a(906,974) a(1049,962)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000508/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) s(920,903) a(919,546) d(1051) d(986) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) s(920,903) a(919,546) d(1051) d(986)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000509/tools/tiffcp.c  d(533) d(1824) s(1225,1206) d(533) d(858) s(919,1023) s(855,853) fails to compile
+	  0 d(533) d(1824) s(1225,1206) d(533) d(858) s(919,1023) s(855,853)
+	  0 d(533) d(532) a(919,1014) a(1213,1228) s(919,1023) s(945,940) d(533) d(1824) s(946,974)
+	  0 s(945,940) d(533) d(1061) d(1824) d(1235) d(919)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000512/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) a(1213,1228) s(919,1023) s(1053,906) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) a(1213,1228) s(919,1023) s(1053,906)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000513/tools/tiffcp.c  d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914) s(1216,1209) a(844,550) fails to compile
+	  0 d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914) s(1216,1209) a(844,550)
+	  0 s(945,940) s(1051,1062) d(533) a(921,884) s(1050,1223) s(1216,1230) d(1061) d(1824) d(1050) s(859,890) d(1206) a(973,917)
+	  0 s(945,940) s(1051,1062) d(533) a(921,884) s(1050,1223) s(1216,1230) d(1061) d(1824) d(1050) s(859,890) d(1049) a(888,854)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000516/tools/tiffcp.c  d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914) s(1216,1209) s(919,1015) fails to compile
+	  0 d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914) s(1216,1209) s(919,1015)
+	  0 a(875,629) a(309,1231) s(940,960) s(1230,1235) s(867,636) s(528,320) d(490) a(988,963) s(1055,1015) a(532,317) d(909)
+	  0 d(490) d(1872) a(988,963) a(920,1004) a(532,317) d(1049) a(309,1231) s(855,884) s(1230,1235) s(867,636) d(1824) d(901) s(1869,1838)
+	  0 a(875,629) d(1049) a(309,1231) s(855,884) s(940,960) s(973,988) s(1230,1235) s(867,636) d(1824) d(524) s(528,320) d(901) d(1223)
+	  0 d(490) d(1872) a(988,963) d(1235) a(921,1006) d(1871) s(1055,1015) a(920,1004) a(532,317) a(919,500)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000520/tools/tiffcp.c  d(915) d(532) d(532) s(920,903) a(919,546) s(1225,1206) a(921,884) d(915) s(1225,1206) a(921,884) a(310,1832) a(921,884) a(921,1006) s(919,1004) fails to compile
+	  0 d(915) d(532) d(532) s(920,903) a(919,546) s(1225,1206) a(921,884) d(915) s(1225,1206) a(921,884) a(310,1832) a(921,884) a(921,1006) s(919,1004)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000521/tools/tiffcp.c  a(921,884) a(310,1832) d(1235) a(921,1006) d(1871) d(915) s(1225,1206) d(532) s(920,903) s(1225,1206) a(921,884) d(532) s(1050,1223) a(534,1832) a(1049,1832) fails to compile
+	  0 a(921,884) a(310,1832) d(1235) a(921,1006) d(1871) d(915) s(1225,1206) d(532) s(920,903) s(1225,1206) a(921,884) d(532) s(1050,1223) a(534,1832) a(1049,1832)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000522/tools/tiffcp.c  d(915) s(1225,1206) d(532) d(532) s(920,903) a(919,546) s(1225,1206) a(921,884) d(532) s(1050,1223) d(1018) a(534,1832) a(1049,982) fails to compile
+	  0 d(915) s(1225,1206) d(532) d(532) s(920,903) a(919,546) s(1225,1206) a(921,884) d(532) s(1050,1223) d(1018) a(534,1832) a(1049,982)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000523/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) a(310,1832) a(921,884) a(988,963) d(1235) a(921,1006) d(1871) s(1049,1059) d(291) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) a(310,1832) a(921,884) a(988,963) d(1235) a(921,1006) d(1871) s(1049,1059) d(291)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000524/tools/tiffcp.c  d(1872) s(867,636) s(1220,634) d(1050) d(1049) s(1832,634) d(855) a(919,1047) s(856,873) s(533,527) a(949,518) fails to compile
+	  0 d(1872) s(867,636) s(1220,634) d(1050) d(1049) s(1832,634) d(855) a(919,1047) s(856,873) s(533,527) a(949,518)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000525/tools/tiffcp.c  s(940,960) d(1872) d(1061) d(1824) a(1220,1205) s(1220,634) d(1061) d(1824) s(520,515) a(875,546) fails to compile
+	  0 s(940,960) d(1872) d(1061) d(1824) a(1220,1205) s(1220,634) d(1061) d(1824) s(520,515) a(875,546)
+	  0 s(1050,1223) s(1216,1230) d(1061) s(859,890) d(1872) s(867,636) d(1050) d(1049) d(855) a(919,1047) d(901) s(920,918)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000527/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) s(1049,911) d(497) s(543,526) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) s(1049,911) d(497) s(543,526)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000528/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) d(1050) d(502) a(920,1009) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) d(1050) d(502) a(920,1009)
+	  0 s(1209,1227) d(1023) s(867,636) d(533) a(920,923) s(517,321) a(915,984) s(986,961) s(532,316) s(923,911)
+	  0 d(948) a(878,1009) d(528) s(1050,1223) d(1061) s(859,890) d(1872) s(867,636) a(919,1047) d(522)
+	  0 s(1050,1223) d(1061) d(1872) d(1049) d(855) a(919,1047) a(1051,1059) a(920,923) a(878,1009) d(986) d(528) a(527,499)
+	  0 s(507,543) d(948) a(1051,1059) s(1201,1223) a(920,923) a(1051,1059) a(878,1009) d(986) d(528) s(882,848)
+	  0 s(1050,1223) s(1216,1230) d(1061) s(859,890) d(1872) s(867,636) d(1050) d(1049) d(855) a(919,1047) d(901) a(523,765)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000534/tools/tiffcp.c  s(1225,1206) d(1061) a(921,884) s(940,960) d(1872) d(1061) d(1824) s(1220,634) d(1824) d(883) fails to compile
+	  0 s(1225,1206) d(1061) a(921,884) s(940,960) d(1872) d(1061) d(1824) s(1220,634) d(1824) d(883)
+	  0 d(1872) d(1824) a(1220,1205) d(1061) s(520,515) a(921,884) a(921,884) s(878,634)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000536/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(1061) s(945,940) d(533) a(921,884) a(1220,1201) s(917,923) a(1051,551) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(1061) s(945,940) d(533) a(921,884) a(1220,1201) s(917,923) a(1051,551)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000537/tools/tiffcp.c  s(940,960) d(1872) d(1061) d(1824) a(1220,1205) s(1220,634) d(1061) d(1824) s(520,515) s(488,491) fails to compile
+	  0 s(940,960) d(1872) d(1061) d(1824) a(1220,1205) s(1220,634) d(1061) d(1824) s(520,515) s(488,491)
+	  0 a(1220,1205) s(1220,634) d(1061) d(1050) d(533) s(1050,1223) d(1824) d(1050) s(1207,1214) d(962)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000538/tools/tiffcp.c  d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914) s(522,534) a(1216,976) fails to compile
+	  0 d(1054) s(1051,1062) a(1220,1201) d(490) d(1872) d(1230) s(1225,1206) a(921,884) d(532) s(1225,1206) d(533) d(532) s(920,903) s(976,914) s(522,534) a(1216,976)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000539/tools/tiffcp.c  a(1220,1205) s(1220,634) d(1824) s(962,829) d(1050) d(1054) s(1051,1062) d(533) a(921,884) a(1220,1201) s(1050,1223) s(1216,1230) a(855,356) a(1046,890) fails to compile
+	  0 a(1220,1205) s(1220,634) d(1824) s(962,829) d(1050) d(1054) s(1051,1062) d(533) a(921,884) a(1220,1201) s(1050,1223) s(1216,1230) a(855,356) a(1046,890)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000540/tools/tiffcp.c  d(1054) s(1051,1062) s(1050,1223) a(855,356) s(867,636) s(1220,634) d(1824) s(962,829) d(887) fails to compile
+	  0 d(1054) s(1051,1062) s(1050,1223) a(855,356) s(867,636) s(1220,634) d(1824) s(962,829) d(887)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000541/tools/tiffcp.c  d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) d(1050) d(502) s(915,949) fails to compile
+	  0 d(1872) a(1220,1205) s(867,636) s(1220,634) d(1061) d(1824) s(962,829) d(1050) d(502) s(915,949)
+	  0 d(1054) s(945,940) s(1051,1062) d(533) a(921,884) a(1220,1201) s(1050,1223) s(1216,1230) d(498) a(855,356) a(1227,1223)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000543/tools/tiffcp.c  d(915) s(1225,1206) a(921,884) d(532) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(1018) d(1051) d(920) fails to compile
+	  0 d(915) s(1225,1206) a(921,884) d(532) a(921,884) a(310,1832) a(921,884) s(1050,1223) a(988,963) d(1018) d(1051) d(920)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2005-12-14-6746b87-0d3d51d/000544/tools/tiffcp.c  s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) s(497,318) s(1216,1211) s(518,829) fails to compile
+	  0 s(1051,1062) s(1225,1206) d(533) a(921,884) d(532) a(310,1832) a(919,1014) d(858) s(497,318) s(1216,1211) s(518,829)
+Elite size: 4
+	0.915129 s(1235,497)
+	0.914974 a(1019,533)
+	0.830326 s(1208,1230)
+	0.830188 s(1872,1870)
+Best individual (Elite U Pop'):
+ 0.915129 s(1235,497) 
+search: genetic algorithm ends
+
+No repair found.
+
+Variant Test Case Queries: 614
+"Test Suite Evaluations": 17.5429
+
+Compile Failures: 169
+Wall-Clock Seconds Elapsed: 1951.01
+  Activity Name                     Count Seconds = Percent of Total Time
+  rebuild files                     45913  31.752 = 1.75142%
+  compile                             547 454.711 = 25.0818%
+  test                                446 1326.347 = 73.1612%
+  TOTAL                                   1812.911 = 92.9213% (avg CPU usage)

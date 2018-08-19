@@ -1,0 +1,413 @@
+GenProg Version: Thu Dec 28 11:40:00 EST 2017
+
+--allow-coverage-fail false
+--appp 0.33333
+--asm-code-only false
+--best-edit-rule "1 * fault_loc_weight ; 1 * max_test_fail_prob ; -1 * num_tests"
+--best-test-rule "1 * test_fail_prob ; 1 * test_fail_count ; -1 * test_pass_count"
+--checkpoints false
+--clone-file ""
+--compiler "gcc"
+--compiler-command "perl compile.pl __EXE_NAME__ > /dev/null"
+--compiler-opts ""
+--continue false
+--coverage-info ""
+--coverage-per-test false
+--crossover "subset"
+--crossp 0.5
+--delp 0.33333
+--describe-machine false
+--diversity-selection 0
+--edit-script false
+--elf-risc false
+--elitism 4
+--exclude-edits ""
+--exp-diff false
+--fault-file ""
+--fault-path "coverage.path.neg"
+--fault-scheme "path"
+--fitness-in-parallel 1
+--fix-file ""
+--fix-oracle ""
+--fix-path "coverage.path.pos"
+--fix-scheme "default"
+--flatten-path ""
+--format "txt"
+--gen-per-exchange 1
+--generations 10
+--geomp 0.5
+--gui false
+--hostname "127.0.0.1"
+--ignore-dead-code false
+--ignore-equiv-appends false
+--ignore-standard-headers false
+--ignore-string-equiv-fixes false
+--ignore-untyped-returns false
+--incoming-pop ""
+--keep-source false
+--label-repair false
+--lase-deallocation-api "free"
+--lase-paired-functions ""
+--lasep 0
+--max-evals 0
+--minimization false
+--mt-cov false
+--multiopt-minimize false
+--multiopt-no-inf false
+--neg-tests 2
+--neg-weight 1
+--negative-test-weight 2
+--nested false
+--neutral-walk-max-size 0
+--neutral-walk-weight ""
+--nht-id "global"
+--nht-port 51000
+--nht-server ""
+--no-rep-cache true
+--no-test-cache true
+--num-comps 2
+--num-objectives 2
+--oracle-genome ""
+--pd-mutp 0.25
+--popsize 40
+--port 60000
+--pos-tests 59
+--pos-weight 0.1
+--prefix "preprocessed"
+--preprocessor ""
+--print-incremental-evals false
+--print-source-name false
+--program "bugged-program.txt"
+--promut 1
+--quiet false
+--regen-paths false
+--rep "cilpatch"
+--rep-cache ""
+--repp 0
+--samp-strat "variant"
+--sample 1
+--sample-runs 100
+--sanity "default"
+--search "ga"
+--seed 5
+--semantic-check "exact"
+--single-fitness false
+--skip-failed-sanity-tests false
+--skip-tests ""
+--split-search 0
+--sport 65000
+--subatom-constp 0.5
+--subatom-mutp 0
+--swap-bug false
+--swapp 0.33333
+--template-cache ""
+--templates ""
+--test-command "__TEST_SCRIPT__ __TEST_NAME__ __EXE_NAME__ __FITNESS_FILE__ >& /dev/null"
+--test-script "/root/src/Python/python /root/checkpoints/test/test_checkpoints.py"
+--tournament-size 2
+--uniq false
+--use-partition -1
+--valgrind false
+--variants-exchanged 50
+--version false
+cilRep: preprocessing IO function signatures: /tmp/tmpa92559.c /tmp/tmpb4dfbf.c
+cilRep: done preprocessing IO function signatures
+cilrep: from_source: pre: stmt_count = 0
+cilRep: preprocessed/dumpcap.c: parsing
+cilRep: preprocessed/dumpcap.c: parsed (0.600901 MB)
+cilrep: from_source: post: stmt_count: 2046
+cilRep: shared size: 0.780426 MB
+cilRep: private size: 0.00644588 MB
+cachingRepresentation: sanity checking begins
+	p1: true (1)
+	p2: true (1)
+	p3: true (1)
+	p4: true (1)
+	p5: true (1)
+	p6: true (1)
+	p7: true (1)
+	p8: true (1)
+	p9: true (1)
+	p10: true (1)
+	p11: true (1)
+	p12: true (1)
+	p13: true (1)
+	p14: true (1)
+	p15: true (1)
+	p16: true (1)
+	p17: true (1)
+	p18: true (1)
+	p19: true (1)
+	p20: true (1)
+	p21: true (1)
+	p22: true (1)
+	p23: true (1)
+	p24: true (1)
+	p25: true (1)
+	p26: true (1)
+	p27: true (1)
+	p28: true (1)
+	p29: true (1)
+	p30: true (1)
+	p31: true (1)
+	p32: true (1)
+	p33: true (1)
+	p34: true (1)
+	p35: true (1)
+	p36: true (1)
+	p37: true (1)
+	p38: true (1)
+	p39: true (1)
+	p40: true (1)
+	p41: true (1)
+	p42: true (1)
+	p43: true (1)
+	p44: true (1)
+	p45: true (1)
+	p46: true (1)
+	p47: true (1)
+	p48: true (1)
+	p49: true (1)
+	p50: true (1)
+	p51: true (1)
+	p52: true (1)
+	p53: true (1)
+	p54: true (1)
+	p55: true (1)
+	p56: true (1)
+	p57: true (1)
+	p58: true (1)
+	p59: true (1)
+	n1: false (0)
+	n2: false (0)
+cachingRepresentation: sanity checking passed (time_taken = 343.261)
+faultLocRep: compute_localization: fault_scheme: path, fix_scheme: default
+Rep: coverage_sourcename: /root/experiments/wireshark-bug-37284-37285/5/coverage/coverage.c
+cilRep: instrumenting for fault localization
+cilRep: done instrumenting for fault localization
+coverage negative:
+	test: 1
+	test: 2
+coverage positive:
+	test: 1
+	test: 2
+	test: 3
+	test: 4
+	test: 5
+	test: 6
+	test: 7
+	test: 8
+	test: 9
+	test: 10
+	test: 11
+	test: 12
+	test: 13
+	test: 14
+	test: 15
+	test: 16
+	test: 17
+	test: 18
+	test: 19
+	test: 20
+	test: 21
+	test: 22
+	test: 23
+	test: 24
+	test: 25
+	test: 26
+	test: 27
+	test: 28
+	test: 29
+	test: 30
+	test: 31
+	test: 32
+	test: 33
+	test: 34
+	test: 35
+	test: 36
+	test: 37
+	test: 38
+	test: 39
+	test: 40
+	test: 41
+	test: 42
+	test: 43
+	test: 44
+	test: 45
+	test: 46
+	test: 47
+	test: 48
+	test: 49
+	test: 50
+	test: 51
+	test: 52
+	test: 53
+	test: 54
+	test: 55
+	test: 56
+	test: 57
+	test: 58
+	test: 59
+cilRep: bugged-program.cache: saved
+cachingRep: bugged-program.cache: saved
+faultlocRep: bugged-program.cache: saved
+cilrep done serialize
+cilRep: stmt_count = 2046
+cilRep: stmts in weighted_path = 710
+cilRep: total weight = 126.3
+cilRep: stmts in weighted_path with weight >= 1.0 = 107
+cilRep: dumpcap.c (code bank/base file; atoms [1,2190])
+cilRep: 1 file(s) total in representation
+search: genetic algorithm begins (|original| = 0.680066 MB)
+search: initial population (sizeof one variant = 0.700602 MB)
+	 59 a(657,1763)
+	 59 a(653,1966)
+	 53 s(1814,1584)
+	 59 s(585,588)
+	 59 d(600)
+	 51 d(468)
+	 59 s(663,599)
+	 59 d(2094)
+	 59 s(720,713)
+	 59 d(654)
+	 59 a(1957,2023)
+	 59 a(456,1253)
+	 59 a(599,1444)
+	 55 s(1813,1440)
+	 59 a(730,726)
+	 59 d(2115)
+	 59 a(2095,1221)
+	 59 a(649,1860)
+	 53 s(1813,1492)
+	 59 s(2174,2176)
+	 53 s(1436,2059)
+	 51 s(509,2077)
+	 59 d(713)
+	 59 s(718,1488)
+	 59 d(637)
+	 59 d(1135)
+	/root/experiments/wireshark-bug-37284-37285/5/000026/dumpcap.c  s(877,928) fails to compile
+	  0 s(877,928)
+	 59 a(726,721)
+	 59 d(716)
+	 59 a(1111,1061)
+	 59 a(1810,1784)
+	/root/experiments/wireshark-bug-37284-37285/5/000031/dumpcap.c  a(1450,1479) fails to compile
+	  0 a(1450,1479)
+	 59 a(2103,1773)
+	 59 s(1953,1963)
+	 59 a(1110,531)
+	 59 d(726)
+	 59 s(1938,1949)
+	 59 d(878)
+	 59 d(2086)
+	 59 original
+search: generation 1 (sizeof one variant = 1.30615 MB)
+	 59 a(599,1444) d(2088)
+	 53 s(1436,2059) s(640,656)
+	 59 a(599,1444) d(726)
+	 53 s(1436,2059) s(656,624)
+	 59 a(2175,813)
+	 53 s(1436,2059) a(2076,1864)
+	 53 s(1436,2059) d(720)
+	 59 s(720,713) d(1822)
+	 59 s(720,713) a(719,527)
+	 59 a(726,721) s(720,713) d(1821)
+	 59 s(720,713) d(2175)
+	 59 a(726,721) a(502,813)
+	 59 s(2146,2139)
+	 50 s(2088,1948)
+	 59 s(1938,1949) a(508,708)
+	 59 d(2086) a(726,814)
+	 59 s(718,1488) d(1435)
+	 59 a(2095,1221) a(650,1253)
+	 59 a(2095,1221) a(716,1557)
+	 59 s(718,1488) a(640,2104)
+	 59 a(726,721) d(878) a(877,1766)
+	 59 d(585)
+	 59 a(726,721) s(582,586)
+	 59 d(878) d(637)
+	 59 d(2086) d(508)
+	 59 s(2174,2176) d(507)
+	 59 d(654) s(2019,2023)
+	 59 a(728,1563)
+	 59 d(654) s(2083,1912)
+	 53 s(1814,1584) d(2000)
+	 51 d(468) a(2177,1773)
+	 59 d(600) d(2084)
+	 58 a(2095,1221) s(635,706)
+	 59 d(878) a(877,1564)
+	 53 s(1110,1092)
+	 59 d(600)
+	/root/experiments/wireshark-bug-37284-37285/5/000073/dumpcap.c  s(877,928) s(714,1555) fails to compile
+	  0 s(877,928) s(714,1555)
+	 59 d(713) d(1818)
+	 59 d(713) a(1957,2023) s(2000,2031)
+	 51 s(2090,1986)
+	 59 d(713) d(508)
+	 59 a(1957,2023) s(716,713)
+	 59 a(456,1253) d(589)
+	 59 a(599,1444) a(456,1253) d(2102)
+	 50 a(456,1253) a(2030,2090)
+	 59 a(599,1444) d(1818)
+	 51 s(1436,2059) d(468) a(1810,1104)
+	 51 d(468) s(1436,2059) s(661,648)
+	 50 s(1436,2059) s(886,1949)
+	 51 d(468) a(503,1133)
+	 59 s(720,713) a(2176,1553)
+	 59 s(663,599) a(586,2162)
+	 59 d(713)
+	/root/experiments/wireshark-bug-37284-37285/5/000089/dumpcap.c  a(1450,1479) a(2095,1221) s(659,592) fails to compile
+	  0 a(1450,1479) a(2095,1221) s(659,592)
+	 59 a(2095,1221) s(589,647)
+	/root/experiments/wireshark-bug-37284-37285/5/000091/dumpcap.c  a(1450,1479) d(507) fails to compile
+	  0 a(1450,1479) d(507)
+	 53 s(1813,1492) s(730,719)
+	 59 a(732,1123)
+	/root/experiments/wireshark-bug-37284-37285/5/000094/dumpcap.c  s(877,928) a(582,2190) fails to compile
+	  0 s(877,928) a(582,2190)
+	 59 a(599,1444) d(2000)
+Elite size: 4
+	 59 a(657,1763)
+	 59 a(653,1966)
+	 59 s(585,588)
+	 59 d(600)
+Best individual (Elite U Pop'):
+ 59 a(657,1763) 
+search: generation 2 (sizeof one variant = 1.30667 MB)
+	 53 s(2174,2176) d(507) s(732,532)
+	 59 s(1938,1949) s(2174,2176) d(507) s(660,610)
+	 59 s(2174,2176) d(507) d(611)
+	 59 s(1938,1949) a(508,708) d(506)
+	 57 a(726,721) a(2095,1221) a(1108,1103)
+	 51 s(659,592) s(2066,1963)
+	 59 a(726,721) a(502,813) a(1812,714)
+	/root/experiments/wireshark-bug-37284-37285/5/000103/dumpcap.c  a(1450,1479) a(2095,1221) s(659,592) d(2027) fails to compile
+	  0 a(1450,1479) a(2095,1221) s(659,592) d(2027)
+	 50 s(2088,1948) s(1085,1071)
+	 53 s(1436,2059) s(640,656) d(878)
+	 50 s(2088,1948) d(716)
+	 59 d(654) s(2083,1912) d(730)
+	 59 d(654) s(2083,1912) a(2099,1555)
+	 50 s(2088,1948) s(2095,2104)
+	/root/experiments/wireshark-bug-37284-37285/5/000110/dumpcap.c  s(877,928) s(714,1555) d(853) fails to compile
+	  0 s(877,928) s(714,1555) d(853)
+	/root/experiments/wireshark-bug-37284-37285/5/000111/dumpcap.c  a(1450,1479) d(507) a(1941,2060) fails to compile
+	  0 a(1450,1479) d(507) a(1941,2060)
+	 51 d(468) a(2089,1986)
+	 59 a(719,527) a(503,1133) a(611,1777)
+	 51 d(468) a(503,1133) d(582)
+	 59 s(720,713) a(719,527) a(576,1148)
+	 59 a(599,1444) d(1818) s(1953,1914)
+	 59 s(718,1488) a(640,2104) d(2085)
+	 53 s(1436,2059) s(640,656) s(588,578)
+	/root/experiments/wireshark-bug-37284-37285/5/000119/dumpcap.c  s(877,928) a(582,2190) s(638,636) fails to compile
+	  0 s(877,928) a(582,2190) s(638,636)
+	 59 a(732,1123) a(878,1763)
+	 59 s(636,624)
+	/root/experiments/wireshark-bug-37284-37285/5/000122/dumpcap.c  s(877,928) a(582,2190) d(1813) fails to compile
+	  0 s(877,928) a(582,2190) d(1813)
+	 59 a(732,1123) a(508,1501)
+	/root/experiments/wireshark-bug-37284-37285/5/000124/dumpcap.c  s(877,928) a(582,2190) a(611,1050) fails to compile
+	  0 s(877,928) a(582,2190) a(611,1050)
+	 59 s(2174,2176) d(507) a(1814,968)

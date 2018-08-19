@@ -1,0 +1,275 @@
+GenProg Version: Sun Jan  7 23:46:13 UTC 2018
+
+--allow-coverage-fail false
+--appp 0.33333
+--asm-code-only false
+--best-edit-rule "1 * fault_loc_weight ; 1 * max_test_fail_prob ; -1 * num_tests"
+--best-test-rule "1 * test_fail_prob ; 1 * test_fail_count ; -1 * test_pass_count"
+--checkpoints false
+--clone-file ""
+--compiler "gcc"
+--compiler-command "python3 compile.py __EXE_NAME__ >& /dev/null"
+--compiler-opts ""
+--continue false
+--coverage-info ""
+--coverage-per-test false
+--crossover "one"
+--crossp 0.5
+--delp 0.33333
+--describe-machine false
+--diversity-selection 0
+--edit-script false
+--elf-risc false
+--elitism 4
+--exclude-edits ""
+--exp-diff false
+--fault-file ""
+--fault-path "coverage.path.neg"
+--fault-scheme "path"
+--fitness-in-parallel 1
+--fix-file ""
+--fix-oracle ""
+--fix-path "coverage.path.pos"
+--fix-scheme "default"
+--flatten-path ""
+--format "txt"
+--gen-per-exchange 1
+--generations 30
+--geomp 0.5
+--gui false
+--hostname "127.0.0.1"
+--ignore-dead-code false
+--ignore-equiv-appends false
+--ignore-standard-headers false
+--ignore-string-equiv-fixes false
+--ignore-untyped-returns false
+--incoming-pop ""
+--keep-source false
+--label-repair false
+--lase-deallocation-api "free"
+--lase-paired-functions ""
+--lasep 0
+--max-evals 0
+--minimization false
+--mt-cov false
+--multiopt-minimize false
+--multiopt-no-inf false
+--neg-tests 3
+--neg-weight 1
+--negative-test-weight 2
+--nested false
+--neutral-walk-max-size 0
+--neutral-walk-weight ""
+--nht-id "global"
+--nht-port 51000
+--nht-server ""
+--no-rep-cache true
+--no-test-cache true
+--num-comps 2
+--num-objectives 2
+--oracle-genome ""
+--pd-mutp 0.25
+--popsize 40
+--port 60000
+--pos-tests 7
+--pos-weight 0.1
+--prefix "./"
+--preprocessor ""
+--print-incremental-evals false
+--print-source-name false
+--program "checksum.i"
+--promut 1
+--quiet false
+--regen-paths false
+--rep ""
+--rep-cache ""
+--repp 0
+--samp-strat "variant"
+--sample 1
+--sample-runs 100
+--sanity "default"
+--search "ga"
+--seed 18
+--semantic-check "exact"
+--single-fitness false
+--skip-failed-sanity-tests true
+--skip-tests ""
+--split-search 0
+--sport 65000
+--subatom-constp 0.5
+--subatom-mutp 0
+--swap-bug false
+--swapp 0.33333
+--template-cache ""
+--templates ""
+--test-command "__TEST_SCRIPT__ __TEST_NAME__ __EXE_NAME__ __FITNESS_FILE__ >& /dev/null"
+--test-script "python3 test.py"
+--tournament-size 2
+--uniq false
+--use-partition -1
+--valgrind false
+--variants-exchanged 50
+--version false
+cilRep: preprocessing IO function signatures: /tmp/tmp6d165b.c /tmp/tmp595641.c
+cilRep: done preprocessing IO function signatures
+cilrep: from_source: pre: stmt_count = 0
+cilRep: checksum.i: parsing
+cilRep: checksum.i: parsed (0.0269604 MB)
+cilrep: from_source: post: stmt_count: 22
+cilRep: shared size: 0.0327129 MB
+cilRep: private size: 0.00689983 MB
+cachingRepresentation: sanity checking begins
+	p1: true (1)
+	p2: true (1)
+	p3: true (1)
+	p4: true (1)
+	p5: true (1)
+	p6: true (1)
+	p7: true (1)
+	n1: false (0)
+	n2: false (0)
+	n3: false (0)
+cachingRepresentation: sanity checking passed (time_taken = 10.2375)
+faultLocRep: compute_localization: fault_scheme: path, fix_scheme: default
+Rep: coverage_sourcename: /workdir/experiment/checksum-1b31fa5c50f7725ce468ebf24282f2d080a83aed87e4ee35522ae7710c8e0136bc263cc460b8ec7bf2c3519cb59af4a138e114d36541515b2609ab56ad2b8ee9-18/./coverage.c
+cilRep: instrumenting for fault localization
+cilRep: done instrumenting for fault localization
+coverage negative:
+	test: 1
+	test: 2
+	test: 3
+coverage positive:
+	test: 1
+	test: 2
+	test: 3
+	test: 4
+	test: 5
+	test: 6
+	test: 7
+cilRep: checksum.cache: saved
+cachingRep: checksum.cache: saved
+faultlocRep: checksum.cache: saved
+cilrep done serialize
+cilRep: stmt_count = 22
+cilRep: stmts in weighted_path = 21
+cilRep: total weight = 2.1
+cilRep: stmts in weighted_path with weight >= 1.0 = 0
+cilRep: checksum.i (code bank/base file; atoms [1,23])
+cilRep: 1 file(s) total in representation
+search: genetic algorithm begins (|original| = 0.0348587 MB)
+search: initial population (sizeof one variant = 0.0370588 MB)
+	  0 s(4,9)
+	  7 a(2,18)
+	  7 a(1,18)
+	  7 d(8)
+	  0 d(10)
+	  0 a(20,23)
+	  7 s(16,13)
+	  0 s(19,20)
+	  7 a(2,1)
+	  0 s(22,18)
+	  0 a(3,9)
+	  0 d(11)
+	  0 d(11)
+	  0 s(12,21)
+	  0 s(19,15)
+	  0 s(12,8)
+	  7 a(23,2)
+	  0 d(6)
+	  0 s(7,15)
+	  7 a(6,4)
+	  0 d(22)
+	  0 s(8,18)
+	  0 a(22,22)
+	  0 a(16,12)
+	  7 a(3,7)
+	  0 s(20,23)
+	  7 a(8,12)
+	  7 a(9,18)
+	  7 a(21,15)
+	  0 d(6)
+	  7 a(23,18)
+	  7 d(8)
+	  0 s(10,23)
+	  0 s(1,2)
+	  0 d(21)
+	  0 d(9)
+	  1 d(5)
+	  7 d(7)
+	  7 a(2,9)
+	  7 original
+search: generation 1 (sizeof one variant = 0.0533009 MB)
+	  0 a(16,12) d(21)
+	  0 d(21) d(16)
+	  0 a(16,12) d(23)
+	  0 d(21) d(1)
+	  0 a(22,22) s(6,7)
+	  0 d(11) a(9,15)
+	  0 a(22,22) a(6,4)
+	  0 d(11) s(23,4)
+	  0 s(12,21) s(6,7)
+	  0 a(22,22) s(2,4)
+	  0 s(12,21) a(3,4)
+	  0 a(22,22) a(18,10)
+	  0 a(22,22) s(19,8)
+	  0 d(11) d(5)
+	  0 a(3,9) s(11,15)
+	  0 a(8,12) s(22,18)
+	  0 a(3,9) d(8)
+	  0 a(8,12) s(12,18)
+	  0 s(12,8) s(19,9)
+	  0 d(11) s(19,16)
+	4.66667 d(5) d(12)
+	  0 s(4,9) a(22,16)
+	  0 d(5) a(20,7)
+	  0 s(4,9) s(21,20)
+	  0 d(21) d(7)
+	  0 s(10,23) a(20,15)
+	  0 d(21) s(22,19)
+	  0 s(10,23) d(9)
+	  0 a(2,9) d(20)
+	  0 d(9) a(18,9)
+	  7 a(2,9) a(2,1)
+	  0 d(9) s(19,8)
+	  0 d(6) a(22,22)
+	  0 d(22) s(10,23)
+	  0 d(6) d(16)
+	  0 d(22) s(6,7)
+	  0 d(10) a(2,4)
+	  0 s(7,15) a(19,8)
+	  0 a(3,9) a(5,4)
+	  0 d(9) s(20,12)
+	  0 d(10) d(20)
+	  0 s(12,8) d(16)
+	  0 s(7,15) d(23)
+	  7 a(23,18) a(10,21)
+	  0 s(7,15) s(1,2)
+	  0 s(4,9) s(18,23)
+	  0 s(7,15) a(5,23)
+	  0 s(4,9) d(6)
+	  0 s(22,18) d(3)
+	  0 s(12,8) s(7,5)
+	  0 s(22,18) s(4,7)
+	  0 s(12,8) s(6,5)
+	  0 s(12,8) d(9)
+	  0 s(4,9) d(8)
+	  0 s(12,8) d(7)
+	  0 s(4,9) s(11,13)
+	  0 a(3,9) s(21,16)
+	  0 d(6) s(8,20)
+	  0 a(3,9) d(1)
+	  0 d(6) d(9)
+Elite size: 4
+	  7 a(2,18)
+	  7 a(1,18)
+	  7 d(8)
+	  7 s(16,13)
+Best individual (Elite U Pop'):
+ 7 a(2,18) 
+search: generation 2 (sizeof one variant = 0.0533352 MB)
+	  0 s(7,15) d(23) a(16,2)
+	  0 a(16,12) s(1,2) d(6)
+	  0 s(7,15) s(1,2) s(22,16)
+	  0 a(16,12) d(23) d(1)
+	  0 s(7,15) a(5,23) a(3,3)
+	  0 a(3,9) d(1) s(8,10)

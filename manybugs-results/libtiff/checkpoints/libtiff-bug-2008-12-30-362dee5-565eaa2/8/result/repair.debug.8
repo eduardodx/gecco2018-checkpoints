@@ -1,0 +1,416 @@
+GenProg Version: Tue Sep 26 22:08:09 EDT 2017
+
+--allow-coverage-fail false
+--appp 0.33333
+--asm-code-only false
+--best-edit-rule "1 * fault_loc_weight ; 1 * max_test_fail_prob ; -1 * num_tests"
+--best-test-rule "1 * test_fail_prob ; 1 * test_fail_count ; -1 * test_pass_count"
+--checkpoints true
+--clone-file ""
+--compiler "gcc"
+--compiler-command "perl compile.pl __EXE_NAME__ > /dev/null"
+--compiler-opts ""
+--continue false
+--coverage-info ""
+--coverage-per-test false
+--crossover "subset"
+--crossp 0.5
+--delp 0.33333
+--describe-machine false
+--diversity-selection 0
+--edit-script false
+--elf-risc false
+--elitism 4
+--exclude-edits ""
+--exp-diff false
+--fault-file ""
+--fault-path "coverage.path.neg"
+--fault-scheme "path"
+--fitness-in-parallel 1
+--fix-file ""
+--fix-oracle ""
+--fix-path "coverage.path.pos"
+--fix-scheme "default"
+--flatten-path ""
+--format "txt"
+--gen-per-exchange 1
+--generations 10
+--geomp 0.5
+--gui false
+--hostname "127.0.0.1"
+--ignore-dead-code false
+--ignore-equiv-appends false
+--ignore-standard-headers false
+--ignore-string-equiv-fixes false
+--ignore-untyped-returns false
+--incoming-pop ""
+--keep-source false
+--label-repair false
+--lase-deallocation-api "free"
+--lase-paired-functions ""
+--lasep 0
+--max-evals 0
+--minimization false
+--mt-cov false
+--multiopt-minimize false
+--multiopt-no-inf false
+--neg-tests 1
+--neg-weight 1
+--negative-test-weight 2
+--nested false
+--neutral-walk-max-size 0
+--neutral-walk-weight ""
+--nht-id "global"
+--nht-port 51000
+--nht-server ""
+--no-rep-cache true
+--no-test-cache true
+--num-comps 2
+--num-objectives 2
+--oracle-genome ""
+--pd-mutp 0.25
+--popsize 40
+--port 60000
+--pos-tests 63
+--pos-weight 0.1
+--prefix "preprocessed"
+--preprocessor ""
+--print-incremental-evals false
+--print-source-name false
+--program "bugged-program.txt"
+--promut 1
+--quiet false
+--regen-paths false
+--rep "cilpatch"
+--rep-cache ""
+--repp 0
+--samp-strat "variant"
+--sample 1
+--sample-runs 100
+--sanity "default"
+--search "ga"
+--seed 8
+--semantic-check "exact"
+--single-fitness true
+--skip-failed-sanity-tests false
+--skip-tests ""
+--split-search 0
+--sport 65000
+--subatom-constp 0.5
+--subatom-mutp 0
+--swap-bug false
+--swapp 0.33333
+--template-cache ""
+--templates ""
+--test-command "__TEST_SCRIPT__ __TEST_NAME__ __EXE_NAME__ __FITNESS_FILE__ >& /dev/null"
+--test-script "/root/src/Python/python /root/checkpoints/test/test_checkpoints.py"
+--tournament-size 2
+--uniq false
+--use-partition -1
+--valgrind false
+--variants-exchanged 50
+--version false
+cilRep: preprocessing IO function signatures: /tmp/tmpb4c709.c /tmp/tmpf77780.c
+cilRep: done preprocessing IO function signatures
+cilrep: from_source: pre: stmt_count = 0
+cilRep: preprocessed/libtiff/tif_dirwrite.c: parsing
+cilRep: preprocessed/libtiff/tif_dirwrite.c: parsed (0.244802 MB)
+cilRep: preprocessed/tools/thumbnail.c: parsing
+cilRep: preprocessed/tools/thumbnail.c: parsed (0.207696 MB)
+cilrep: from_source: post: stmt_count: 2892
+cilRep: shared size: 0.676906 MB
+cilRep: private size: 0.00644588 MB
+cachingRepresentation: sanity checking begins
+	p1: true (1)
+	p2: true (1)
+	p3: true (1)
+	p4: true (1)
+	p5: true (1)
+	p6: true (1)
+	p7: true (1)
+	p8: true (1)
+	p9: true (1)
+	p10: true (1)
+	p11: true (1)
+	p12: true (1)
+	p13: true (1)
+	p14: true (1)
+	p15: true (1)
+	p16: true (1)
+	p17: true (1)
+	p18: true (1)
+	p19: true (1)
+	p20: true (1)
+	p21: true (1)
+	p22: true (1)
+	p23: true (1)
+	p24: true (1)
+	p25: true (1)
+	p26: true (1)
+	p27: true (1)
+	p28: true (1)
+	p29: true (1)
+	p30: true (1)
+	p31: true (1)
+	p32: true (1)
+	p33: true (1)
+	p34: true (1)
+	p35: true (1)
+	p36: true (1)
+	p37: true (1)
+	p38: true (1)
+	p39: true (1)
+	p40: true (1)
+	p41: true (1)
+	p42: true (1)
+	p43: true (1)
+	p44: true (1)
+	p45: true (1)
+	p46: true (1)
+	p47: true (1)
+	p48: true (1)
+	p49: true (1)
+	p50: true (1)
+	p51: true (1)
+	p52: true (1)
+	p53: true (1)
+	p54: true (1)
+	p55: true (1)
+	p56: true (1)
+	p57: true (1)
+	p58: true (1)
+	p59: true (1)
+	p60: true (1)
+	p61: true (1)
+	p62: true (1)
+	p63: true (1)
+	n1: false (0)
+cachingRepresentation: sanity checking passed (time_taken = 56.796)
+faultLocRep: compute_localization: fault_scheme: path, fix_scheme: default
+Rep: coverage_sourcename: /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/coverage/coverage.c
+cilRep: instrumenting for fault localization
+cilRep: done instrumenting for fault localization
+coverage negative:
+	test: 1
+coverage positive:
+	test: 1
+	test: 2
+	test: 3
+	test: 4
+	test: 5
+	test: 6
+	test: 7
+	test: 8
+	test: 9
+	test: 10
+	test: 11
+	test: 12
+	test: 13
+	test: 14
+	test: 15
+	test: 16
+	test: 17
+	test: 18
+	test: 19
+	test: 20
+	test: 21
+	test: 22
+	test: 23
+	test: 24
+	test: 25
+	test: 26
+	test: 27
+	test: 28
+	test: 29
+	test: 30
+	test: 31
+	test: 32
+	test: 33
+	test: 34
+	test: 35
+	test: 36
+	test: 37
+	test: 38
+	test: 39
+	test: 40
+	test: 41
+	test: 42
+	test: 43
+	test: 44
+	test: 45
+	test: 46
+	test: 47
+	test: 48
+	test: 49
+	test: 50
+	test: 51
+	test: 52
+	test: 53
+	test: 54
+	test: 55
+	test: 56
+	test: 57
+	test: 58
+	test: 59
+	test: 60
+	test: 61
+	test: 62
+	test: 63
+cilRep: bugged-program.cache: saved
+cachingRep: bugged-program.cache: saved
+faultlocRep: bugged-program.cache: saved
+cilrep done serialize
+cilRep: stmt_count = 2892
+cilRep: stmts in weighted_path = 924
+cilRep: total weight = 275
+cilRep: stmts in weighted_path with weight >= 1.0 = 246
+cilRep: libtiff/tif_dirwrite.c (code bank/base file; atoms [1,2130])
+cilRep: tools/thumbnail.c (code bank/base file; atoms [2131,3130])
+cilRep: 2 file(s) total in representation
+search: genetic algorithm begins (|original| = 0.60375 MB)
+search: initial population (sizeof one variant = 0.606288 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000000/tools/thumbnail.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000000/libtiff/tif_dirwrite.c  d(3026) fails to compile
+	  0 d(3026)
+	0.477499 s(365,481)
+	0.946644 s(3107,3095)
+	0.946644 s(3101,3074)
+	0.946651 s(2921,2910)
+	0.946644 s(2912,2920)
+	0.94677 d(2815)
+	0.946644 d(2619)
+	0.946647 s(3112,3073)
+	0.0698044 s(366,917)
+	0.946644 s(3068,3094)
+	0.946654 a(2450,558)
+	0.946682 d(2928)
+	0.946658 s(2846,2848)
+	0.541756 s(1042,1041)
+	0.946644 a(3062,1692)
+	0.946651 s(2700,2701)
+	0.946651 d(2949)
+	0.946651 d(2621)
+	0.946658 a(3046,3048)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000020/tools/thumbnail.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000020/libtiff/tif_dirwrite.c  s(2635,2634) fails to compile
+	  0 s(2635,2634)
+	0.946654 d(1393)
+	0.946644 a(376,1511)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000023/tools/thumbnail.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000023/libtiff/tif_dirwrite.c  s(2449,2635) fails to compile
+	  0 s(2449,2635)
+	0.946689 d(3025)
+	0.946658 d(1394)
+	0.946644 a(3102,431)
+	0.946644 d(377)
+	0.946644 a(3058,1933)
+	0.946644 d(2919)
+	0.946682 d(2928)
+	0.946644 a(3100,1961)
+	0.946644 s(1387,435)
+	0.946644 s(2839,473)
+	0.946644 a(3056,3030)
+	0.946644 a(3093,2075)
+	0.946675 d(2972)
+	0.946658 d(2450)
+	0.946651 d(2964)
+	0.946644 original
+search: generation 1 (sizeof one variant = 1.08214 MB)
+	0.946682 a(3046,3048) s(3048,3035)
+	0.946658 a(3046,3048) a(2976,509)
+	0.946658 a(3046,3048) s(3036,483)
+	0.946651 d(3026) d(2940)
+	0.477499 s(365,481) a(2826,1971)
+	0.94671 d(2949) s(2815,2840)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000041/tools/thumbnail.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000041/libtiff/tif_dirwrite.c  s(2449,2635) a(2954,618) fails to compile
+	  0 s(2449,2635) a(2954,618)
+	0.946644 s(3068,3094) a(2962,2981)
+	0.946658 d(1394) d(2634)
+	0.477499 s(365,481) s(3088,612)
+	0.946644 a(3100,1961) a(1401,520)
+	0.946654 s(3112,3073) s(3076,3107)
+	0.946675 s(2921,2910) s(3046,3055)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000046/tools/thumbnail.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000046/libtiff/tif_dirwrite.c  s(2921,2910) s(354,813) fails to compile
+	  0 s(2921,2910) s(354,813)
+	0.946661 a(3093,2075) d(2837)
+	0.946654 s(2921,2910) s(3094,3114)
+	0.946644 s(3101,3074) s(3084,3105)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000050/tools/thumbnail.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000050/libtiff/tif_dirwrite.c  s(2449,2635) s(3101,3074) d(1455) fails to compile
+	  0 s(2449,2635) s(3101,3074) d(1455)
+	0.946644 s(3101,3074) a(354,2619)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000052/tools/thumbnail.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2008-12-30-362dee5-565eaa2/000052/libtiff/tif_dirwrite.c  s(2449,2635) a(1687,1687) fails to compile
+	  0 s(2449,2635) a(1687,1687)
+	0.946644 a(3093,3071)
+	0.946644 a(3093,2075) a(3102,1511)
+	0.946654 a(3102,431) a(2937,692)
+	0.946651 a(3093,2075) d(3107)
+	0.946658 d(2450) s(3017,2970)
+	0.946668 a(376,1511) s(2949,2943)
+	0.946658 s(2846,2848) s(3099,3090)
+	0.946658 s(2846,2848) a(2962,399)
+	0.946658 s(2846,2848) d(2625)
+	0.946651 a(3058,1933) s(3028,3025)
+	0.477499 s(365,481) d(1694)
+	0.946651 d(2949) d(558)
+	0.946651 d(2949) s(2889,2869)
+	0.477499 s(365,481) d(3060)
+	0.946644 a(3058,1933) a(2628,1517)
+	0.9467 a(3102,431) a(2934,2932)
+	0.946675 a(376,1511) d(2621) d(2962)
+	0.946703 a(376,1511) d(2913)
+	0.946644 a(376,1511) d(3052)
+	0.946651 d(2621) a(2836,483)
+	0.946651 s(3068,3094) d(3034)
+	0.946682 d(2928) d(2895)
+	0.477499 s(365,481) d(2964) s(2823,2826)
+	0.946644 d(1402)
+	0.477499 s(365,481) s(2814,2840)
+	0.946651 d(2964) a(1389,1805)
+	0.946644 d(2816)
+	0.946679 s(3112,3073) s(2951,2954)
+	0.946644 s(3083,1957)
+	0.946679 s(3112,3073) d(2825)
+	0.946651 d(3026) a(1393,1521)
+	0.946651 a(3102,431) d(3026) d(2827)
+	0.946651 d(3026) d(3066)
+	0.946651 a(3102,431) s(2818,2843)
+	0.946651 a(3062,1692) d(2964) s(3059,3061)
+	0.946644 a(2979,1539)
+	0.946637 a(3062,1692) s(1457,1463)
+	0.946651 d(2964) a(2923,3073)
+Elite size: 4
+	0.94677 d(2815)
+	0.946689 d(3025)
+	0.946682 d(2928)
+	0.946682 d(2928)
+Best individual (Elite U Pop'):
+ 0.94677 d(2815) 
+search: generation 2 (sizeof one variant = 1.34035 MB)
+	0.946644 a(3058,787)
+	0.946675 d(2816) d(1394) s(2831,2836)
+	0.946658 d(1394) d(2634) a(3023,2839)
+	0.946644 d(2816) s(3111,3088)
+	0.946651 d(2816) d(3101)
+	0.946644 d(2816) a(2889,2895)
+	0.946651 s(3017,2970) s(2814,2840) s(3085,3090)
+	0.477499 s(365,481) s(2814,2840) d(2450) s(3017,2970) a(3032,1980)
+	0.946658 d(2450) s(3017,2970) d(3027)
+	0.477499 s(365,481) s(2814,2840) d(3086)
+	0.946651 d(3026) d(2940) a(3059,399)
+	0.946654 d(1402) a(2450,1040)
+	  1 a(3058,1933) s(2921,2910) d(2635)
+
+Repair Found: a(3058,1933) s(2921,2910) d(2635)
+Repair Name: a(3058,1933) s(2921,2910) d(2635)
+Test Cases Skipped: ""
+Current Time: 1506483027.795489
+cilRep: shared size: 0.683892 MB
+cilRep: private size: 0.745943 MB
+
+Variant Test Case Queries: 115
+"Test Suite Evaluations": 1.79688
+
+Compile Failures: 7
+Wall-Clock Seconds Elapsed: 4937.74
+  Activity Name                     Count Seconds = Percent of Total Time
+  rebuild files                     29638   6.772 = 0.13903%
+  compile                             100 693.554 = 14.2383%
+  test                                219 4170.574 = 85.62%
+  TOTAL                                   4871.028 = 98.6489% (avg CPU usage)

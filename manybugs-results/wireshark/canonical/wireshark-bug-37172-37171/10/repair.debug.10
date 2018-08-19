@@ -1,0 +1,422 @@
+GenProg Version: Thu Dec 28 11:40:00 EST 2017
+
+--allow-coverage-fail false
+--appp 0.33333
+--asm-code-only false
+--best-edit-rule "1 * fault_loc_weight ; 1 * max_test_fail_prob ; -1 * num_tests"
+--best-test-rule "1 * test_fail_prob ; 1 * test_fail_count ; -1 * test_pass_count"
+--checkpoints false
+--clone-file ""
+--compiler "gcc"
+--compiler-command "perl compile.pl __EXE_NAME__ > /dev/null"
+--compiler-opts ""
+--continue false
+--coverage-info ""
+--coverage-per-test false
+--crossover "subset"
+--crossp 0.5
+--delp 0.33333
+--describe-machine false
+--diversity-selection 0
+--edit-script false
+--elf-risc false
+--elitism 4
+--exclude-edits ""
+--exp-diff false
+--fault-file ""
+--fault-path "coverage.path.neg"
+--fault-scheme "path"
+--fitness-in-parallel 1
+--fix-file ""
+--fix-oracle ""
+--fix-path "coverage.path.pos"
+--fix-scheme "default"
+--flatten-path ""
+--format "txt"
+--gen-per-exchange 1
+--generations 10
+--geomp 0.5
+--gui false
+--hostname "127.0.0.1"
+--ignore-dead-code false
+--ignore-equiv-appends false
+--ignore-standard-headers false
+--ignore-string-equiv-fixes false
+--ignore-untyped-returns false
+--incoming-pop ""
+--keep-source false
+--label-repair false
+--lase-deallocation-api "free"
+--lase-paired-functions ""
+--lasep 0
+--max-evals 0
+--minimization false
+--mt-cov false
+--multiopt-minimize false
+--multiopt-no-inf false
+--neg-tests 2
+--neg-weight 1
+--negative-test-weight 2
+--nested false
+--neutral-walk-max-size 0
+--neutral-walk-weight ""
+--nht-id "global"
+--nht-port 51000
+--nht-server ""
+--no-rep-cache true
+--no-test-cache true
+--num-comps 2
+--num-objectives 2
+--oracle-genome ""
+--pd-mutp 0.25
+--popsize 40
+--port 60000
+--pos-tests 55
+--pos-weight 0.1
+--prefix "preprocessed"
+--preprocessor ""
+--print-incremental-evals false
+--print-source-name false
+--program "bugged-program.txt"
+--promut 1
+--quiet false
+--regen-paths false
+--rep "cilpatch"
+--rep-cache ""
+--repp 0
+--samp-strat "variant"
+--sample 1
+--sample-runs 100
+--sanity "default"
+--search "ga"
+--seed 10
+--semantic-check "exact"
+--single-fitness false
+--skip-failed-sanity-tests false
+--skip-tests ""
+--split-search 0
+--sport 65000
+--subatom-constp 0.5
+--subatom-mutp 0
+--swap-bug false
+--swapp 0.33333
+--template-cache ""
+--templates ""
+--test-command "__TEST_SCRIPT__ __TEST_NAME__ __EXE_NAME__ __FITNESS_FILE__ >& /dev/null"
+--test-script "/root/src/Python/python /root/checkpoints/test/test_checkpoints.py"
+--tournament-size 2
+--uniq false
+--use-partition -1
+--valgrind false
+--variants-exchanged 50
+--version false
+cilRep: preprocessing IO function signatures: /tmp/tmp3f6a07.c /tmp/tmp076d74.c
+cilRep: done preprocessing IO function signatures
+cilrep: from_source: pre: stmt_count = 0
+cilRep: preprocessed/dumpcap.c: parsing
+cilRep: preprocessed/dumpcap.c: parsed (0.593027 MB)
+cilrep: from_source: post: stmt_count: 1923
+cilRep: shared size: 0.763879 MB
+cilRep: private size: 0.00644588 MB
+cachingRepresentation: sanity checking begins
+	p1: true (1)
+	p2: true (1)
+	p3: true (1)
+	p4: true (1)
+	p5: true (1)
+	p6: true (1)
+	p7: true (1)
+	p8: true (1)
+	p9: true (1)
+	p10: true (1)
+	p11: true (1)
+	p12: true (1)
+	p13: true (1)
+	p14: true (1)
+	p15: true (1)
+	p16: true (1)
+	p17: true (1)
+	p18: true (1)
+	p19: true (1)
+	p20: true (1)
+	p21: true (1)
+	p22: true (1)
+	p23: true (1)
+	p24: true (1)
+	p25: true (1)
+	p26: true (1)
+	p27: true (1)
+	p28: true (1)
+	p29: true (1)
+	p30: true (1)
+	p31: true (1)
+	p32: true (1)
+	p33: true (1)
+	p34: true (1)
+	p35: true (1)
+	p36: true (1)
+	p37: true (1)
+	p38: true (1)
+	p39: true (1)
+	p40: true (1)
+	p41: true (1)
+	p42: true (1)
+	p43: true (1)
+	p44: true (1)
+	p45: true (1)
+	p46: true (1)
+	p47: true (1)
+	p48: true (1)
+	p49: true (1)
+	p50: true (1)
+	p51: true (1)
+	p52: true (1)
+	p53: true (1)
+	p54: true (1)
+	p55: true (1)
+	n1: false (0)
+	n2: false (0)
+cachingRepresentation: sanity checking passed (time_taken = 187.81)
+faultLocRep: compute_localization: fault_scheme: path, fix_scheme: default
+Rep: coverage_sourcename: /root/experiments/wireshark-bug-37172-37171/10/coverage/coverage.c
+cilRep: instrumenting for fault localization
+cilRep: done instrumenting for fault localization
+coverage negative:
+	test: 1
+	test: 2
+coverage positive:
+	test: 1
+	test: 2
+	test: 3
+	test: 4
+	test: 5
+	test: 6
+	test: 7
+	test: 8
+	test: 9
+	test: 10
+	test: 11
+	test: 12
+	test: 13
+	test: 14
+	test: 15
+	test: 16
+	test: 17
+	test: 18
+	test: 19
+	test: 20
+	test: 21
+	test: 22
+	test: 23
+	test: 24
+	test: 25
+	test: 26
+	test: 27
+	test: 28
+	test: 29
+	test: 30
+	test: 31
+	test: 32
+	test: 33
+	test: 34
+	test: 35
+	test: 36
+	test: 37
+	test: 38
+	test: 39
+	test: 40
+	test: 41
+	test: 42
+	test: 43
+	test: 44
+	test: 45
+	test: 46
+	test: 47
+	test: 48
+	test: 49
+	test: 50
+	test: 51
+	test: 52
+	test: 53
+	test: 54
+	test: 55
+cilRep: bugged-program.cache: saved
+cachingRep: bugged-program.cache: saved
+faultlocRep: bugged-program.cache: saved
+cilrep done serialize
+cilRep: stmt_count = 1923
+cilRep: stmts in weighted_path = 693
+cilRep: total weight = 126.5
+cilRep: stmts in weighted_path with weight >= 1.0 = 107
+cilRep: dumpcap.c (code bank/base file; atoms [1,2062])
+cilRep: 1 file(s) total in representation
+search: genetic algorithm begins (|original| = 0.664325 MB)
+search: initial population (sizeof one variant = 0.685497 MB)
+	 51 s(1728,1496)
+	 55 s(1964,2040)
+	 55 a(658,1060)
+	 55 a(590,1980)
+	 55 a(1985,1780)
+	 55 d(1949)
+	 55 a(659,1164)
+	 55 s(1090,1110)
+	 55 s(655,622)
+	 55 s(658,635)
+	 55 d(653)
+	 55 s(1970,1956)
+	 55 a(508,1268)
+	 51 s(1717,1499)
+	 55 s(1730,1724)
+	 55 a(1821,1959)
+	 53 s(1870,1812)
+	 55 s(731,1719)
+	 55 a(597,1782)
+	 55 d(655)
+	 55 d(715)
+	 55 a(583,1413)
+	 51 s(474,457)
+	 55 d(583)
+	 55 s(1406,1410)
+	 55 d(1972)
+	 55 d(1727)
+	 55 d(635)
+	 55 d(1101)
+	 55 s(1724,1502)
+	 55 d(1104)
+	 55 d(2054)
+	 50 s(1972,1775)
+	 54 s(1777,1892)
+	 55 s(1964,1858)
+	 55 s(728,718)
+	 55 s(636,646)
+	 55 a(1959,1842)
+	 55 s(608,662)
+	 55 original
+search: generation 1 (sizeof one variant = 1.28276 MB)
+	 55 s(636,646) a(634,1976)
+	 51 s(1728,1496) s(717,1474)
+	 55 s(658,635) d(1941)
+	 55 d(655) s(507,502)
+	 55 a(1985,1780) d(588)
+	 55 s(1406,1410) d(576)
+	 55 s(1964,2040) s(659,622)
+	 51 a(659,1164) s(1968,1940)
+	 55 d(1949) d(885)
+	 55 s(1777,1892) s(718,724)
+	 54 s(1777,1892) s(1964,1228)
+	 55 d(1949) s(653,650)
+	 51 s(1964,2040) s(1122,1128)
+	 55 d(1974)
+	 55 s(658,635) s(1954,1837)
+	 55 s(1964,2040) a(609,886)
+	 55 s(720,729)
+	 55 a(1985,1780) d(1104) s(657,647)
+	 55 d(1104) a(502,1169)
+	 55 a(1985,1780) d(2017)
+	 55 d(1727) d(715)
+	 55 d(2054) s(1956,1787)
+	 53 d(1949) s(1870,1812) d(472)
+	 55 d(657)
+	 55 d(1949) s(578,577)
+	 53 s(1870,1812) s(1953,1822)
+	 55 a(1717,1506)
+	 55 a(508,1268) a(660,662)
+	/root/experiments/wireshark-bug-37172-37171/10/000066/dumpcap.c  a(508,1268) a(1720,1450) fails to compile
+	  0 a(508,1268) a(1720,1450)
+	 53 s(1870,1812) d(1783)
+	 54 s(1777,1892) d(645)
+	 55 d(715) d(360)
+	 51 s(1728,1496) a(728,1974)
+	 51 s(1728,1496) s(637,662)
+	 51 s(1728,1496) s(639,658)
+	 51 s(1728,1496) a(506,2019)
+	 54 s(1964,2040) s(723,725)
+	 55 d(1972) a(851,886)
+	 55 a(590,1980) a(876,1695)
+	 55 a(590,1980) s(658,635) d(2047)
+	 55 s(658,635) d(580)
+	 55 a(590,1980) d(2048)
+	 51 s(731,1719) s(1972,1858)
+	 55 s(731,1719) d(583)
+	 55 s(1964,2040) s(610,655)
+	 55 s(731,1719) d(1730)
+	 55 a(590,1980) d(649)
+	 51 a(597,1782) s(1956,1780)
+	 55 d(2054)
+	 55 d(583) a(599,1500)
+	 55 d(583) d(635)
+	 51 s(474,457) s(656,654)
+	 51 d(635) d(2007)
+	 51 s(1728,1496) d(723)
+Elite size: 4
+	 55 s(1964,2040)
+	 55 a(658,1060)
+	 55 a(590,1980)
+	 55 a(1985,1780)
+Best individual (Elite U Pop'):
+ 55 s(1964,2040) 
+search: generation 2 (sizeof one variant = 1.26486 MB)
+	 53 s(720,729) s(1870,1812) s(1953,1822) s(715,717)
+	 53 s(1870,1812) s(1953,1822) a(591,589)
+	 55 s(720,729) d(647)
+	 53 s(1870,1812) s(1953,1822) a(712,1729)
+	 54 s(1964,2040) s(1870,1969)
+	 55 d(1727) d(715) d(1729)
+	 51 a(1985,1780) d(588) s(474,457) s(656,654) s(610,598)
+	 51 s(474,457) a(725,719)
+	 51 a(1985,1780) d(588) a(1069,1119)
+	 51 s(474,457) s(656,654) s(2047,2054)
+	 54 d(1721)
+	 51 s(1728,1496) a(728,1974) d(655) s(507,502) a(1970,1451)
+	 55 d(655) s(507,502) a(1105,1119)
+	 49 s(1728,1496) a(728,1974) a(637,832)
+	 55 s(1777,1892) s(1964,1228) a(591,1821)
+	 55 s(717,1474) s(1964,1228) a(1885,1530)
+	 55 s(1777,1892) s(1964,1228) s(587,585)
+	 51 s(1728,1496) s(717,1474) d(1959)
+	 54 s(717,1474) d(1104) a(502,1169) d(622)
+	 54 d(1104) a(1953,885)
+	 51 s(1728,1496) s(717,1474) d(1965)
+	 55 d(1104) a(502,1169) d(725)
+	 53 d(1949) s(1870,1812) d(472) a(1985,1503)
+	 51 s(474,457) s(656,654) s(608,530)
+	 51 a(597,1782) s(1956,1780) s(585,576)
+	 51 s(1964,2040) s(1122,1128) s(715,723)
+	 55 a(590,1980) s(658,635) d(2047) a(1728,1657)
+	 50 a(1985,1780) s(508,1892)
+	 55 a(1985,1780) a(659,623)
+	 55 a(590,1980) s(658,635) d(2047) s(718,721)
+	 55 s(1777,1892) d(645) a(588,1120)
+	 55 a(1985,1780) d(588) d(646)
+	 50 s(1964,2040) s(1122,1128) s(1955,1841)
+	 50 s(474,457) s(656,654) a(2046,1114)
+	 47 s(658,635) s(1728,1496) s(717,1474) d(653)
+	 53 s(717,1474) d(1941) a(715,1502)
+	 52 s(658,635) d(1941) s(1721,1690)
+	 51 s(1728,1496) s(717,1474) a(721,728)
+	 50 a(1985,1780) s(1147,1164)
+	 51 s(1728,1496) a(728,1974) d(1964)
+	 50 s(1728,1496) d(723) a(578,1153)
+	 49 d(635) d(2007) a(1821,1105)
+	 53 d(1949) s(1870,1812) d(472) s(1870,1812) d(717)
+	 55 d(2054)
+	 51 d(1949) s(1870,1812) d(472) a(723,984)
+	 53 d(1949) s(1870,1812) d(472) s(608,1533)
+	 54 s(1964,2040) s(723,725) d(1824)
+	 54 s(1964,2040) s(723,725) a(590,1980) a(876,1695) d(623)
+	 53 a(590,1980) a(876,1695) a(359,1161)
+	 55 s(1964,2040) s(723,725) a(1972,1930)
+	 55 s(1777,1892) s(1964,2040) s(506,507)
+	 54 s(480,507)
+	 53 s(1777,1892) s(1964,1228) a(1721,526)
+	 54 s(1964,2040) a(1965,1505)
+	 55 a(658,1060) a(1970,1946)
+	 54 s(1777,1892) s(1964,1228) d(1888)
+Elite size: 4
+	 55 s(1964,2040)
+	 55 a(658,1060)
+	 55 a(590,1980)
+	 55 a(1985,1780)
+Best individual (Elite U Pop'):
+ 55 s(1964,2040) 
+search: generation 3 (sizeof one variant = 1.26528 MB)

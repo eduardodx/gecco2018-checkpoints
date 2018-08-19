@@ -1,0 +1,947 @@
+GenProg Version: Tue Sep 26 22:08:11 EDT 2017
+
+--allow-coverage-fail false
+--appp 0.33333
+--asm-code-only false
+--best-edit-rule "1 * fault_loc_weight ; 1 * max_test_fail_prob ; -1 * num_tests"
+--best-test-rule "1 * test_fail_prob ; 1 * test_fail_count ; -1 * test_pass_count"
+--checkpoints true
+--clone-file ""
+--compiler "gcc"
+--compiler-command "perl compile.pl __EXE_NAME__ > /dev/null"
+--compiler-opts ""
+--continue false
+--coverage-info ""
+--coverage-per-test false
+--crossover "subset"
+--crossp 0.5
+--delp 0.33333
+--describe-machine false
+--diversity-selection 0
+--edit-script false
+--elf-risc false
+--elitism 4
+--exclude-edits ""
+--exp-diff false
+--fault-file ""
+--fault-path "coverage.path.neg"
+--fault-scheme "path"
+--fitness-in-parallel 1
+--fix-file ""
+--fix-oracle ""
+--fix-path "coverage.path.pos"
+--fix-scheme "default"
+--flatten-path ""
+--format "txt"
+--gen-per-exchange 1
+--generations 10
+--geomp 0.5
+--gui false
+--hostname "127.0.0.1"
+--ignore-dead-code false
+--ignore-equiv-appends false
+--ignore-standard-headers false
+--ignore-string-equiv-fixes false
+--ignore-untyped-returns false
+--incoming-pop ""
+--keep-source false
+--label-repair false
+--lase-deallocation-api "free"
+--lase-paired-functions ""
+--lasep 0
+--max-evals 0
+--minimization false
+--mt-cov false
+--multiopt-minimize false
+--multiopt-no-inf false
+--neg-tests 44
+--neg-weight 1
+--negative-test-weight 2
+--nested false
+--neutral-walk-max-size 0
+--neutral-walk-weight ""
+--nht-id "global"
+--nht-port 51000
+--nht-server ""
+--no-rep-cache true
+--no-test-cache true
+--num-comps 2
+--num-objectives 2
+--oracle-genome ""
+--pd-mutp 0.25
+--popsize 40
+--port 60000
+--pos-tests 16
+--pos-weight 0.1
+--prefix "preprocessed"
+--preprocessor ""
+--print-incremental-evals false
+--print-source-name false
+--program "bugged-program.txt"
+--promut 1
+--quiet false
+--regen-paths false
+--rep "cilpatch"
+--rep-cache ""
+--repp 0
+--samp-strat "variant"
+--sample 1
+--sample-runs 100
+--sanity "default"
+--search "ga"
+--seed 3
+--semantic-check "exact"
+--single-fitness true
+--skip-failed-sanity-tests false
+--skip-tests ""
+--split-search 0
+--sport 65000
+--subatom-constp 0.5
+--subatom-mutp 0
+--swap-bug false
+--swapp 0.33333
+--template-cache ""
+--templates ""
+--test-command "__TEST_SCRIPT__ __TEST_NAME__ __EXE_NAME__ __FITNESS_FILE__ >& /dev/null"
+--test-script "/root/src/Python/python /root/checkpoints/test/test_checkpoints.py"
+--tournament-size 2
+--uniq false
+--use-partition -1
+--valgrind false
+--variants-exchanged 50
+--version false
+cilRep: preprocessing IO function signatures: /tmp/tmpcd9515.c /tmp/tmp0c4810.c
+cilRep: done preprocessing IO function signatures
+cilrep: from_source: pre: stmt_count = 0
+cilRep: preprocessed/libtiff/tif_dir.c: parsing
+cilRep: preprocessed/libtiff/tif_dir.c: parsed (0.163122 MB)
+cilRep: preprocessed/libtiff/tif_dirinfo.c: parsing
+cilRep: preprocessed/libtiff/tif_dirinfo.c: parsed (0.189621 MB)
+cilRep: preprocessed/libtiff/tif_dirread.c: parsing
+cilRep: preprocessed/libtiff/tif_dirread.c: parsed (0.295135 MB)
+cilRep: preprocessed/libtiff/tif_fax3.c: parsing
+cilRep: preprocessed/libtiff/tif_fax3.c: parsed (0.273648 MB)
+cilRep: preprocessed/libtiff/tif_jpeg.c: parsing
+cilRep: preprocessed/libtiff/tif_jpeg.c: parsed (0.0886917 MB)
+cilRep: preprocessed/libtiff/tif_luv.c: parsing
+cilRep: preprocessed/libtiff/tif_luv.c: parsed (0.24499 MB)
+cilRep: preprocessed/libtiff/tif_ojpeg.c: parsing
+cilRep: preprocessed/libtiff/tif_ojpeg.c: parsed (0.0886936 MB)
+cilRep: preprocessed/libtiff/tif_pixarlog.c: parsing
+cilRep: preprocessed/libtiff/tif_pixarlog.c: parsed (0.269541 MB)
+cilRep: preprocessed/libtiff/tif_predict.c: parsing
+cilRep: preprocessed/libtiff/tif_predict.c: parsed (0.126453 MB)
+cilRep: preprocessed/libtiff/tif_print.c: parsing
+cilRep: preprocessed/libtiff/tif_print.c: parsed (0.121243 MB)
+cilRep: preprocessed/libtiff/tif_zip.c: parsing
+cilRep: preprocessed/libtiff/tif_zip.c: parsed (0.141523 MB)
+cilrep: from_source: post: stmt_count: 14350
+cilRep: shared size: 3.16235 MB
+cilRep: private size: 0.00644588 MB
+cachingRepresentation: sanity checking begins
+	p1: true (1)
+	p2: true (1)
+	p3: true (1)
+	p4: true (1)
+	p5: true (1)
+	p6: true (1)
+	p7: true (1)
+	p8: true (1)
+	p9: true (1)
+	p10: true (1)
+	p11: true (1)
+	p12: true (1)
+	p13: true (1)
+	p14: true (1)
+	p15: true (1)
+	p16: true (1)
+	n1: false (0)
+	n2: false (0)
+	n3: false (0)
+	n4: false (0)
+	n5: false (0)
+	n6: false (0)
+	n7: false (0)
+	n8: false (0)
+	n9: false (0)
+	n10: false (0)
+	n11: false (0)
+	n12: false (0)
+	n13: false (0)
+	n14: false (0)
+	n15: false (0)
+	n16: false (0)
+	n17: false (0)
+	n18: false (0)
+	n19: false (0)
+	n20: false (0)
+	n21: false (0)
+	n22: false (0)
+	n23: false (0)
+	n24: false (0)
+	n25: false (0)
+	n26: false (0)
+	n27: false (0)
+	n28: false (0)
+	n29: false (0)
+	n30: false (0)
+	n31: false (0)
+	n32: false (0)
+	n33: false (0)
+	n34: false (0)
+	n35: false (0)
+	n36: false (0)
+	n37: false (0)
+	n38: false (0)
+	n39: false (0)
+	n40: false (0)
+	n41: false (0)
+	n42: false (0)
+	n43: false (0)
+	n44: false (0)
+cachingRepresentation: sanity checking passed (time_taken = 72.9205)
+faultLocRep: compute_localization: fault_scheme: path, fix_scheme: default
+Rep: coverage_sourcename: /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/coverage/coverage.c
+cilRep: instrumenting for fault localization
+cilRep: done instrumenting for fault localization
+coverage negative:
+	test: 1
+	test: 2
+	test: 3
+	test: 4
+	test: 5
+	test: 6
+	test: 7
+	test: 8
+	test: 9
+	test: 10
+	test: 11
+	test: 12
+	test: 13
+	test: 14
+	test: 15
+	test: 16
+	test: 17
+	test: 18
+	test: 19
+	test: 20
+	test: 21
+	test: 22
+	test: 23
+	test: 24
+	test: 25
+	test: 26
+	test: 27
+	test: 28
+	test: 29
+	test: 30
+	test: 31
+	test: 32
+	test: 33
+	test: 34
+	test: 35
+	test: 36
+	test: 37
+	test: 38
+	test: 39
+	test: 40
+	test: 41
+	test: 42
+	test: 43
+	test: 44
+coverage positive:
+	test: 1
+	test: 2
+	test: 3
+	test: 4
+	test: 5
+	test: 6
+	test: 7
+	test: 8
+	test: 9
+	test: 10
+	test: 11
+	test: 12
+	test: 13
+	test: 14
+	test: 15
+	test: 16
+cilRep: bugged-program.cache: saved
+cachingRep: bugged-program.cache: saved
+faultlocRep: bugged-program.cache: saved
+cilrep done serialize
+cilRep: stmt_count = 14350
+cilRep: stmts in weighted_path = 342
+cilRep: total weight = 38.2
+cilRep: stmts in weighted_path with weight >= 1.0 = 5
+cilRep: libtiff/tif_dir.c (code bank/base file; atoms [1,1431])
+cilRep: libtiff/tif_dirinfo.c (code bank/base file; atoms [1432,2155])
+cilRep: libtiff/tif_dirread.c (code bank/base file; atoms [2156,6471])
+cilRep: libtiff/tif_fax3.c (code bank/base file; atoms [6472,9909])
+cilRep: libtiff/tif_jpeg.c (code bank/base file; atoms [9910,10151])
+cilRep: libtiff/tif_luv.c (code bank/base file; atoms [10152,11851])
+cilRep: libtiff/tif_ojpeg.c (code bank/base file; atoms [11852,12093])
+cilRep: libtiff/tif_pixarlog.c (code bank/base file; atoms [12094,13963])
+cilRep: libtiff/tif_predict.c (code bank/base file; atoms [13964,14822])
+cilRep: libtiff/tif_print.c (code bank/base file; atoms [14823,15549])
+cilRep: libtiff/tif_zip.c (code bank/base file; atoms [15550,16043])
+cilRep: 11 file(s) total in representation
+search: genetic algorithm begins (|original| = 2.80356 MB)
+search: initial population (sizeof one variant = 2.81115 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000000/libtiff/tif_zip.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000000/libtiff/tif_print.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000000/libtiff/tif_predict.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000000/libtiff/tif_pixarlog.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000000/libtiff/tif_ojpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000000/libtiff/tif_luv.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000000/libtiff/tif_jpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000000/libtiff/tif_fax3.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000000/libtiff/tif_dirread.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000000/libtiff/tif_dirinfo.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000000/libtiff/tif_dir.c  s(5762,5759) fails to compile
+	  0 s(5762,5759)
+	0.127458 a(1132,1128)
+	0.127458 d(1173)
+	0.141116 a(5366,4963)
+	0.127458 s(5645,1726)
+	0.23167 a(5751,5657)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000006/libtiff/tif_zip.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000006/libtiff/tif_print.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000006/libtiff/tif_predict.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000006/libtiff/tif_pixarlog.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000006/libtiff/tif_ojpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000006/libtiff/tif_luv.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000006/libtiff/tif_jpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000006/libtiff/tif_fax3.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000006/libtiff/tif_dirread.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000006/libtiff/tif_dirinfo.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000006/libtiff/tif_dir.c  s(4979,4971) fails to compile
+	  0 s(4979,4971)
+	0.146063 d(1120)
+	0.127458 a(5748,5734)
+	0.234447 s(4629,5861)
+	0.127458 a(5709,1835)
+	0.230975 s(5750,5642)
+	0.135398 d(5558)
+	0.127458 s(1841,1788)
+	0.146063 d(1120)
+	0.231901 s(5697,5714)
+	0.234447 d(5859)
+	0.234447 d(5781)
+	0.127458 a(5782,5719)
+	0.231901 a(4974,4966)
+	0.239578 s(1118,1091)
+	0.127458 a(4965,4960)
+	0.127458 s(1164,1159)
+	0.127458 d(1806)
+	0.127458 s(1153,1146)
+	0.140299 a(4973,5329)
+	0.127458 s(1152,1158)
+	0.127458 s(5759,2475)
+	0.233059 a(5780,5537)
+	0.127458 s(5759,1075)
+	0.15851 s(1170,5690)
+	0.24722 s(782,781)
+	0.127458 a(5748,2462)
+	0.152904 s(1733,1729)
+	0.127458 d(1802)
+	0.127458 s(1168,1167)
+	0.135943 s(5577,5760)
+	0.136487 s(5754,5641)
+	0.0275911 a(5577,5751)
+	0.127458 original
+search: generation 1 (sizeof one variant = 5.84864 MB)
+	0.135398 d(5558) d(5336)
+	0.15851 a(1162,5331)
+	0.127458 d(1806) s(1830,1797)
+	0.229818 a(5748,2462) s(5763,5688)
+	0.127458 s(1841,1788) s(5343,5336)
+	0.234447 s(5762,5759) a(5551,1174)
+	0.152904 s(5759,2475) s(1152,1158) s(1847,1837)
+	0.127458 s(1152,1158) d(5748)
+	0.135398 s(5759,2475) s(5560,5550)
+	0.127458 s(1152,1158) a(4971,4974)
+	0.127458 a(5709,1835) s(5748,1083)
+	0.127458 s(5759,2475) s(5748,1107)
+	0.127458 s(1830,1823)
+	0.149538 d(5558) s(1733,1736)
+	0.135398 d(5558) a(5753,5346)
+	0.127458 a(1132,1128) s(5540,5557)
+	0.127458 d(1173) d(4629)
+	0.127458 s(5762,5759) d(1837)
+	0.152904 s(5762,5759) s(1800,1856)
+	0.152597 d(1173) s(2010,1835)
+	0.127458 a(5709,1835) d(1083)
+	0.138666 a(5782,5719) d(5739)
+	0.127458 d(1806) s(5753,5337)
+	0.140299 a(4973,5329) s(5777,5858)
+	0.152904 s(1733,1729) d(1796)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000056/libtiff/tif_zip.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000056/libtiff/tif_print.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000056/libtiff/tif_predict.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000056/libtiff/tif_pixarlog.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000056/libtiff/tif_ojpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000056/libtiff/tif_luv.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000056/libtiff/tif_jpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000056/libtiff/tif_fax3.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000056/libtiff/tif_dirread.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000056/libtiff/tif_dirinfo.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000056/libtiff/tif_dir.c  s(1153,1146) s(4961,4979) fails to compile
+	  0 s(1153,1146) s(4961,4979)
+	0.0275911 a(5577,5751) s(5697,5693)
+	0.234447 d(5777)
+	0.127458 a(5748,2462) a(5659,5337)
+	0.0275911 a(5577,5751) a(1843,5753)
+	0.127458 d(1806) d(779)
+	0.0275911 a(5577,5751) s(1115,1726)
+	0.127458 s(1084,1108)
+	0.141116 a(5366,4963) a(5738,5689)
+	0.141116 a(5366,4963) d(5778)
+	0.13676 s(5651,5760)
+	0.127458 a(4965,4960) a(768,5785)
+	0.127458 d(1806) a(4965,4960) a(5748,5744)
+	0.152904 a(4965,4960) s(1851,1848)
+	0.127458 d(1806) d(1132)
+	0.135398 d(5558) a(1132,1128) d(5720)
+	0.127458 a(1145,4970)
+	0.135398 d(5558) a(1838,1832)
+	0.127458 a(1132,1128) a(5720,5708)
+	0.140844 s(5762,5759) a(5362,5690)
+	0.127458 s(1152,1158) a(1860,1802)
+	0.127458 a(5748,5734) a(5753,4629)
+	0.246698 s(1841,1788) s(1730,1736)
+	0.127458 s(1841,1788) d(1108)
+	0.127458 s(1841,1788) a(5647,5712)
+	0.127458 s(5762,5759) a(1158,5738)
+	0.127458 s(1841,1788) a(1801,5738)
+Elite size: 4
+	0.24722 s(782,781)
+	0.239578 s(1118,1091)
+	0.234447 s(4629,5861)
+	0.234447 d(5859)
+Best individual (Elite U Pop'):
+ 0.24722 s(782,781) 
+search: generation 2 (sizeof one variant = 5.93615 MB)
+	0.140299 a(4973,5329) s(5777,5858) d(5356)
+	0.127458 s(1841,1788) a(5647,5712) d(5346)
+	0.229818 a(5748,2462) s(5763,5688) a(5753,5708)
+	0.24722 a(5709,1835) s(5748,1083) d(782)
+	0.0275911 a(5577,5751) s(1153,1146) a(5760,5757)
+	0.158925 a(5577,5751) a(1099,5346)
+	0.147198 a(5577,5751) a(1843,5753) s(5772,5641)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000088/libtiff/tif_zip.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000088/libtiff/tif_print.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000088/libtiff/tif_predict.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000088/libtiff/tif_pixarlog.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000088/libtiff/tif_ojpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000088/libtiff/tif_luv.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000088/libtiff/tif_jpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000088/libtiff/tif_fax3.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000088/libtiff/tif_dirread.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000088/libtiff/tif_dirinfo.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000088/libtiff/tif_dir.c  s(1153,1146) s(4961,4979) a(5755,5556) fails to compile
+	  0 s(1153,1146) s(4961,4979) a(5755,5556)
+	0.127458 a(1801,5738) d(1173) d(1104)
+	0.234447 d(5746)
+	0.24722 s(1841,1788) a(1801,5738) a(764,5331)
+	0.20786 d(1173) s(2010,1835) d(1831)
+	0.127458 a(1132,1128) s(5540,5557) a(5748,1835)
+	0.127458 a(1132,1128) a(5720,5708) a(1818,1828)
+	0.153581 s(1841,1788) s(5343,5336) s(1103,768)
+	0.234447 a(5709,1835) d(1083) s(5719,5717)
+	0.127458 a(5709,1835) s(5748,1083) a(767,1103)
+	0.127458 a(5748,5734) a(5753,4629) a(5743,5719)
+	0.152597 s(2010,1835) s(5343,5336) s(1072,1075)
+	0.152597 s(5343,5336) d(1173) s(2010,1835) a(1111,5851)
+	0.152597 d(1173) s(2010,1835) s(1131,5738)
+	0.152904 s(1841,1788) s(5343,5336) s(1843,1849)
+	0.127458 a(1145,4970) a(1814,1846)
+	0.127458 s(1152,1158) d(5748) d(1846)
+	0.148015 s(4629,5861) s(5746,5688)
+	0.127458 a(1132,1128) s(5540,5557) d(1080)
+	0.228429 s(4629,5861) s(4961,5331)
+	0.231901 a(1132,1128) s(5540,5557) d(5755)
+	0.127458 a(5709,1835) d(1083) a(1843,5753) a(1806,1075)
+	0.150466 a(5577,5751) a(5709,1835) d(5750)
+	0.127458 a(5709,1835) d(1083) d(1116)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748)
+	0.229355 d(1173) d(4629) d(5647)
+	0.127458 d(4629) d(1819)
+	0.127458 a(5709,1835) d(1083) a(5748,5342)
+	0.239091 d(1173) d(4629) a(1095,5346)
+	0.145491 a(4965,4960) a(768,5785) s(1075,1070)
+	0.234216 a(4965,4960) a(768,5785) d(5373)
+	0.127458 a(5748,2462) s(1823,1791)
+	0.127458 a(5659,5337) a(5748,2462) d(5759)
+	0.127458 a(5748,2462) a(5659,5337) a(5377,5759)
+	0.152904 a(5748,2462) a(5659,5337) s(1791,1847)
+	0.0275911 a(1843,5753) a(5577,5751) d(5748)
+	0.0275911 a(5577,5751) s(1115,1726) a(5706,1726)
+	0.0275911 a(5577,5751) a(1843,5753) d(1837)
+	0.0275911 a(5577,5751) s(1115,1726) d(1146)
+	0.127458 a(5709,1835) d(5719)
+	0.147416 d(1083) s(1851,1848) s(4959,5329)
+	0.152904 a(4965,4960) s(1851,1848) a(5657,5717)
+	0.127458 a(5709,1835) d(1083) a(1820,5365)
+	0.0275911 a(5748,5734) a(5753,4629) a(5577,5751) a(5738,5709)
+	0.149921 a(5577,5751) a(1843,5753) s(5759,5756)
+	0.141116 a(5748,5734) a(5753,4629) s(1684,1724)
+	0.0275911 a(5577,5751) a(1843,5753) s(1790,1800)
+	0.127458 s(5762,5759) a(1158,5738) a(4627,5854)
+	0.152904 s(5762,5759) s(1800,1856) d(5576)
+Elite size: 4
+	0.24722 s(782,781)
+	0.246698 s(1841,1788) s(1730,1736)
+	0.239578 s(1118,1091)
+	0.234447 s(4629,5861)
+Best individual (Elite U Pop'):
+ 0.24722 s(782,781) 
+search: generation 3 (sizeof one variant = 5.93682 MB)
+	0.127458 a(5709,1835) d(1083) a(1820,5365) a(5759,5691)
+	0.147416 d(1083) s(1851,1848) s(4959,5329) a(5739,5746)
+	0.239578 s(1118,1091) s(1835,1784)
+	0.234216 a(4965,4960) a(768,5785) d(5373) s(4629,5369)
+	0.147416 d(1083) s(1851,1848) s(4959,5329) a(5787,5556)
+	0.127458 a(5709,1835) d(1083) a(5748,5342) d(5763)
+	0.145491 a(5748,5734) a(5753,4629) a(5738,5709) s(1075,1070) d(1835)
+	0.145491 a(768,5785) s(1075,1070) a(5577,5751) a(5688,5761)
+	0.0275911 a(5748,5734) a(5753,4629) a(5577,5751) a(5738,5709) d(5748)
+	0.145491 a(4965,4960) a(768,5785) s(1075,1070) a(5659,5746)
+	0.0275911 a(5577,5751) s(1115,1726) d(1146) s(1080,1104)
+	0.127458 s(1152,1158) d(5748) d(1846) a(5360,5342)
+	0.236314 d(1173) d(4629) a(1095,5346) d(5349)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111)
+	0.127458 a(5709,1835) d(1083) a(1820,5365) a(1826,1825)
+	0.127458 a(1132,1128) s(5540,5557) d(1080) a(1731,1131)
+	0.137304 a(5577,5751) s(1115,1726) a(5706,1726) a(5646,5762)
+	0.0275911 a(5577,5751) s(1115,1726) d(1146) d(5748)
+	0.231901 s(4629,5861) d(5356) s(1831,1810)
+	0.148015 a(4973,5329) s(5777,5858) s(4629,5861) s(5746,5688) a(1153,1087)
+	0.148015 s(4629,5861) s(5746,5688) d(5714)
+	0.140299 a(4973,5329) s(5777,5858) d(5356) d(4629)
+	0.127458 a(1801,5738) d(1173) d(1104) d(1071)
+	0.149377 a(5577,5751) s(1153,1146) a(5760,5757) a(5748,5690)
+	0.140844 a(1843,5753) a(5577,5751) d(5748) s(5359,5372)
+	0.127458 a(5748,5734) a(5753,4629) a(5743,5719) d(1148)
+	0.127458 a(5709,1835) d(1083) a(1132,1128) a(1818,1828) s(2462,5337)
+	0.140844 a(1132,1128) a(5720,5708) a(5709,1835) d(5370)
+	0.234447 a(5709,1835) d(1083) s(5719,5717) d(1099)
+	0.127458 a(1132,1128) a(5720,5708) a(1818,1828) d(5720)
+	0.0275911 a(5577,5751) a(1843,5753) s(5748,1083) a(767,1103) s(1115,1092)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837)
+	0.147198 a(5577,5751) a(1843,5753) s(5772,5641) d(1076)
+	0.127458 a(5709,1835) s(5748,1083) a(767,1103) a(1723,1103)
+	0.150418 s(2010,1835) s(5343,5336) s(1072,1075) a(5688,5861)
+	0.127458 s(1841,1788) a(5647,5712) d(5346) d(1723)
+	0.127458 a(1843,5753) a(5659,5337) d(1785)
+	0.0275911 a(5659,5337) a(5377,5759) a(5577,5751) a(1843,5753) a(1115,5355)
+	0.141116 a(5577,5751) a(1843,5753) d(1837) d(5367)
+	0.127458 a(5748,2462) a(5659,5337) a(5377,5759) d(4629)
+	0.147198 a(5748,5734) s(1684,1724) a(5577,5751) a(1843,5753) s(5772,5641) s(5719,5707)
+	0.127458 a(5748,5734) a(5354,5573)
+	0.141116 a(5748,5734) a(5753,4629) s(1684,1724) a(767,1091)
+	0.147198 a(5577,5751) a(1843,5753) s(5772,5641) d(1084)
+	0.153461 a(5577,5751) s(1115,1726) d(1146) d(5853)
+	0.149921 a(5577,5751) a(1843,5753) s(5759,5756) d(1817)
+	0.234216 s(5762,5759) a(1158,5738) a(4627,5854) d(5856)
+	0.228429 s(4629,5861) s(4961,5331) s(1807,1805)
+Elite size: 4
+	0.24722 s(782,781)
+	0.24722 a(5709,1835) s(5748,1083) d(782)
+	0.24722 s(1841,1788) a(1801,5738) a(764,5331)
+	0.246698 s(1841,1788) s(1730,1736)
+Best individual (Elite U Pop'):
+ 0.24722 s(782,781) 
+search: generation 4 (sizeof one variant = 5.93722 MB)
+	0.140572 a(1843,5753) a(5577,5751) d(5748) s(5359,5372) a(5552,1132)
+	0.147416 d(1083) s(1851,1848) s(4959,5329) a(5739,5746) a(1156,1157)
+	0.147198 a(5577,5751) a(1843,5753) s(5772,5641) d(1084) s(1795,1801)
+	0.136487 a(5709,1835) d(1083) a(5748,5342) d(5763) s(5742,5645)
+	0.213509 a(5709,1835) d(1083) a(1820,5365) a(1826,1825) a(5329,5382)
+	0.231901 s(4629,5861) d(5356) s(1831,1810) a(1162,5369)
+	0.140844 a(1132,1128) a(5709,1835) d(5370) s(5540,5557) s(5577,5738)
+	0.140844 a(1731,1131) a(5720,5708) d(5370) d(1793)
+	0.140844 a(1132,1128) a(5720,5708) a(5709,1835) d(5370) a(4976,4965)
+	0.127458 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784)
+	0.231901 a(5709,1835) d(1083) a(1820,5365) a(1826,1825) s(5750,5692)
+	0.150418 s(2010,1835) s(5343,5336) s(1072,1075) a(5688,5861) d(5718)
+	0.141116 a(5748,5734) a(5743,5719) d(1837) d(5367) d(4629)
+	0.140844 d(1837) a(5748,5734) a(5743,5719) d(5372)
+	0.232364 a(5748,5734) a(5753,4629) a(5743,5719) d(1148) d(4977)
+	0.141116 a(5577,5751) a(1843,5753) d(1837) d(5367) d(4970)
+	0.127458 d(1083) a(5748,5342) a(1843,5753) d(1076) a(5854,5573)
+	0.127458 a(5709,1835) a(5748,5342) d(5763) d(1153)
+	0.234216 a(5709,1835) d(1083) a(5748,5342) d(5763) s(5760,5754)
+	0.147198 a(5577,5751) a(1843,5753) s(5772,5641) d(1076) s(4629,4630)
+	0.240449 s(1841,1788) s(1730,1736) d(5553)
+	0.145491 a(768,5785) s(1075,1070) a(5577,5751) a(5688,5761) s(4972,4964)
+	0.150418 s(2010,1835) s(5343,5336) s(1072,1075) a(5688,5861) a(5347,1091)
+	0.148015 s(4629,5861) s(5746,5688) d(5714) a(1856,1795)
+	0.127458 s(1152,1158) d(5748) d(1846) a(5360,5342) d(4629)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342)
+	0.141116 a(5748,5734) a(5753,4629) s(1684,1724) a(767,1091) a(4979,5738)
+	0.155257 a(5709,1835) d(1083) a(1820,5365) a(5759,5691) s(1789,1842)
+	0.0275911 a(5748,5734) a(5753,4629) a(5577,5751) a(5738,5709) d(5748) d(5665)
+	0.127458 a(1132,1128) a(5720,5708) a(1818,1828) d(5720) a(1735,5369)
+	0.147743 s(5540,5557) d(1080) a(1731,1131) a(5577,5751) a(1843,5753) d(1111) s(5346,5661)
+	0.127458 a(1843,5753) d(5748) a(1132,1128) s(5540,5557) a(1731,1131) d(5716)
+	0.152904 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) d(1730)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111)
+	0.135943 a(5577,5751) a(1843,5753) d(1837) d(5367) s(4965,5329)
+	0.15851 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) a(1168,5861)
+	0.148505 a(5577,5751) a(5577,5751) d(5748) d(1111) s(1853,1815)
+	0.147198 a(5577,5751) a(1843,5753) s(5772,5641) d(1076) d(5356)
+	0.148505 a(5577,5751) a(1843,5753) s(5772,5641) d(1076) d(1850)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342)
+	0.145491 s(1075,1070) a(5577,5751) a(5688,5761) a(768,5785) d(5753)
+	0.152904 s(4629,5369) s(1854,1784)
+	0.143312 a(768,5785) s(1075,1070) a(5577,5751) a(5688,5761) s(5719,5654)
+	0.234216 a(4965,4960) a(768,5785) d(5373) s(4629,5369) s(5748,5342)
+	0.127458 a(5709,1835) d(1083) a(5748,5342) s(1115,1726) d(5748) d(1084)
+	0.150194 a(5577,5751) d(1146) d(1083) a(5748,5342) d(5763) a(5746,5654)
+	0.127458 a(5709,1835) d(1083) a(5748,5342) d(5763) a(1115,5782)
+	0.148198 a(5577,5751) s(1115,1726) d(1146) d(5748) s(1682,1846)
+	0.150285 a(5577,5751) a(1843,5753) d(1084) a(5577,5751) d(5367) s(5861,1170)
+	0.147198 a(1843,5753) d(1837) a(5577,5751) s(5772,5641) a(1104,4970)
+	0.147198 a(5577,5751) a(1843,5753) s(5772,5641) d(1084) d(5359)
+	0.141116 a(5577,5751) a(1843,5753) d(1837) d(5367) a(5851,1846)
+Elite size: 4
+	0.24722 s(782,781)
+	0.24722 a(5709,1835) s(5748,1083) d(782)
+	0.24722 s(1841,1788) a(1801,5738) a(764,5331)
+	0.246698 s(1841,1788) s(1730,1736)
+Best individual (Elite U Pop'):
+ 0.24722 s(782,781) 
+search: generation 5 (sizeof one variant = 5.93769 MB)
+	0.149427 a(5577,5751) a(1843,5753) d(1084) a(5577,5751) d(5367) s(5861,1170) s(1095,4963)
+	0.154949 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111) a(1817,4630)
+	0.140844 d(1837) a(5748,5734) a(5743,5719) d(5372) a(1158,1146)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111) a(5371,1079)
+	0.228661 a(5709,1835) d(1083) a(5748,5342) s(1115,1726) d(5748) d(1084) a(5577,5537)
+	0.231901 s(1152,1158) d(5748) d(1846) a(5360,5342) d(4629) s(5749,5718)
+	0.140844 d(1837) a(5748,5734) a(5743,5719) d(5372) a(1813,1079)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099)
+	0.127458 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784) a(5361,1083)
+	0.240449 s(1841,1788) s(1730,1736) d(5553) a(1076,1828)
+	0.136487 a(5748,5342) d(5763) s(5742,5645) s(5540,5557) d(1080) a(5577,5751) d(1150)
+	0.14856 a(1843,5753) s(5346,5661) a(5735,1174)
+	0.136487 a(5709,1835) d(1083) a(5748,5342) d(5763) s(5742,5645) a(1859,2010)
+	0.147743 s(5540,5557) d(1080) a(1731,1131) a(5577,5751) a(1843,5753) d(1111) s(5346,5661) a(5371,1111)
+	0.228429 a(5577,5751) a(1843,5753) d(5367) s(4965,5329) a(5577,5751) a(1843,5753) a(5851,1846) s(5753,5561)
+	0.141116 d(1837) a(1843,5753) d(1837) d(5367) d(4629)
+	0.135943 a(5577,5751) a(1843,5753) d(1837) d(5367) s(4965,5329) a(5706,5718)
+	0.141116 a(5577,5751) a(1843,5753) d(1837) d(5367) a(5851,1846) s(1788,1805)
+	0.140299 a(1731,1131) a(5720,5708) d(5370) d(1793) s(5780,5776)
+	0.135943 a(5577,5751) a(1843,5753) d(1837) d(5367) s(4965,5329) s(5691,5577)
+	0.137849 a(5577,5751) a(1843,5753) d(1837) d(5367) d(4970) s(5719,5742)
+	0.127458 a(5709,1835) a(5748,5342) d(5763) d(1153) a(5350,5748)
+	0.240449 s(1841,1788) s(1730,1736) d(5553) a(5662,5774)
+	0.147198 a(1843,5753) d(1837) a(5577,5751) s(5772,5641) a(1104,4970) a(5329,5351)
+	0.127458 a(1731,1131) d(1793) a(1843,5753) d(5748) a(1731,1131) a(5366,1115)
+	0.127458 a(1843,5753) d(5748) a(1132,1128) s(5540,5557) d(5716) a(5720,5708) d(1793) a(4964,4968)
+	0.17651 a(1731,1131) a(5720,5708) d(5370) d(1793) s(5759,5747)
+	0.127458 a(1843,5753) d(5748) a(1132,1128) s(5540,5557) a(1731,1131) d(5716) d(5691)
+	0.140844 a(1843,5753) a(5577,5751) d(5748) s(5359,5372) a(5709,1835) a(5748,5342) d(5763) d(1153) d(5329)
+	0.140844 a(5709,1835) a(5748,5342) d(5763) a(1843,5753) a(5577,5751) d(5748) s(5359,5372) s(5361,5381)
+	0.140572 a(1843,5753) a(5577,5751) d(5748) s(5359,5372) a(5552,1132) d(5558)
+	0.127458 a(5709,1835) a(5748,5342) d(5763) d(1153) s(1092,1075)
+	0.127458 a(1132,1128) a(5720,5708) a(1818,1828) d(5720) a(1735,5369) d(1830)
+	0.140844 a(1132,1128) a(5709,1835) d(5370) s(5540,5557) s(5577,5738) a(1841,1809)
+	0.127458 d(5720) d(5748) a(5651,1111) a(1847,1848)
+	0.127458 d(5748) a(5651,1111) a(1132,1128) a(5720,5708) a(1818,1828) a(1735,5369) a(5734,5710)
+	0.127458 a(1132,1128) a(5720,5708) a(1818,1828) d(5720) a(1735,5369) d(5753)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111) a(4629,1851)
+	0.240449 s(1841,1788) s(1730,1736) d(5553) s(5710,5572)
+	0.127458 a(5709,1835) d(1083) a(5748,5342) d(5763) a(1115,5782) s(5748,1107)
+	0.149734 a(5748,5734) a(5753,4629) a(5577,5751) a(5738,5709) d(5748) d(5665) d(763)
+	0.147416 d(1083) s(1851,1848) s(4959,5329) a(5739,5746) a(1156,1157) s(5751,5572)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000256/libtiff/tif_zip.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000256/libtiff/tif_print.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000256/libtiff/tif_predict.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000256/libtiff/tif_pixarlog.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000256/libtiff/tif_ojpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000256/libtiff/tif_luv.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000256/libtiff/tif_jpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000256/libtiff/tif_fax3.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000256/libtiff/tif_dirread.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000256/libtiff/tif_dirinfo.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000256/libtiff/tif_dir.c  a(5709,1835) d(5370) s(5540,5557) d(1083) d(5763) a(1115,5782) s(4966,4977) fails to compile
+	  0 a(5709,1835) d(5370) s(5540,5557) d(1083) d(5763) a(1115,5782) s(4966,4977)
+	0.127458 d(1083) d(5763) a(1115,5782) d(5748)
+	0.140844 a(1132,1128) a(5709,1835) d(5370) s(5540,5557) s(5577,5738) s(5753,1111)
+	0.127458 a(5709,1835) d(1083) a(5748,5342) d(5763) a(1115,5782) d(5707)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719)
+	0.127458 a(5709,1835) d(1083) a(5748,5342) s(1115,1726) d(5748) d(1084) a(5365,5759)
+Elite size: 4
+	0.24722 s(782,781)
+	0.24722 a(5709,1835) s(5748,1083) d(782)
+	0.24722 s(1841,1788) a(1801,5738) a(764,5331)
+	0.246698 s(1841,1788) s(1730,1736)
+Best individual (Elite U Pop'):
+ 0.24722 s(782,781) 
+search: generation 6 (sizeof one variant = 5.93809 MB)
+	0.127458 a(5709,1835) a(5748,5342) d(5763) d(1153) a(5350,5748) d(5759)
+	0.127458 d(5720) d(5748) a(5651,1111) a(1847,1848) a(1144,1723)
+	0.127458 a(1843,5753) a(5651,1111) a(4629,1851) a(5709,1835) s(1115,1726) a(5365,5759) s(1794,1803)
+	0.141116 d(1083) a(5748,5342) s(1115,1726) d(1084) a(1843,5753) d(5748) d(1111) a(5651,1111) s(1858,1815)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111) a(4629,1851) s(1857,1792)
+	0.127458 a(5709,1835) d(1083) a(5748,5342) s(1115,1726) d(5748) d(1084) a(5365,5759) a(1143,5854)
+	0.127458 a(1843,5753) d(5748) a(1132,1128) s(5540,5557) a(1731,1131) d(5716) d(5691) s(5342,1851)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111) a(4629,1851) d(5753)
+	0.140844 a(1132,1128) a(5709,1835) d(5370) s(5540,5557) s(5577,5738) s(5753,1111) d(1103)
+	0.127458 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784) a(5361,1083) s(1127,1071)
+	0.127458 a(1132,1128) s(5577,5738) a(1841,1809) d(1837) d(1837) d(1792)
+	0.140844 d(1837) a(1843,5753) d(1837) d(4629) d(5370) d(1099)
+	0.140844 a(1132,1128) a(5709,1835) d(5370) s(5540,5557) s(5577,5738) a(1841,1809) a(5645,5763)
+	0.141116 d(1837) a(1843,5753) d(1837) d(5367) d(4629) d(5359)
+	0.149734 a(5748,5734) a(5753,4629) a(5577,5751) a(5738,5709) d(5748) d(5665) d(763) d(5332)
+	0.127458 a(5709,1835) a(5748,5342) d(5763) d(1153) a(5350,5748) d(1787)
+	0.127458 s(5540,5557) d(1080) s(783,784) a(5748,5342) d(1153) d(1166)
+	0.127458 a(5709,1835) a(5748,5342) d(5763) d(1153) s(1092,1075) a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784) s(5709,5660)
+	0.127458 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784) a(5361,1083) s(1790,1822)
+	0.127458 a(5709,1835) a(5748,5342) d(5763) d(1153) s(1092,1075) d(5336)
+	0.239334 a(1731,1131) d(1793) a(1843,5753) d(5748) a(1731,1131) a(5366,1115) d(1119)
+	0.234447 d(5720) d(5748) a(5651,1111) a(1847,1848) d(5717)
+	0.190923 a(5709,1835) a(5748,5342) d(5763) d(5720) d(5748) a(5651,1111) s(1842,1835)
+	0.127458 d(5720) a(1847,1848) a(5709,1835) a(5748,5342) d(1153) s(1092,1075) s(1145,1167)
+	0.127458 a(5709,1835) a(5748,5342) d(5763) d(1153) s(1092,1075) d(788)
+	0.228661 d(5720) d(5748) a(5651,1111) a(1847,1848) s(4972,4966)
+	0.136487 a(5748,5342) d(5763) s(5742,5645) s(5540,5557) d(1080) a(5577,5751) d(1150) a(5712,5772)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709)
+	0.17651 a(5709,1835) d(5370) d(1083) d(5763) d(1083) a(5748,5342) d(5748) a(5365,5759) d(5374)
+	0.127458 a(5709,1835) a(5748,5342) d(5763) a(1115,5782) a(768,5782)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000286/libtiff/tif_zip.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000286/libtiff/tif_print.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000286/libtiff/tif_predict.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000286/libtiff/tif_pixarlog.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000286/libtiff/tif_ojpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000286/libtiff/tif_luv.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000286/libtiff/tif_jpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000286/libtiff/tif_fax3.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000286/libtiff/tif_dirread.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000286/libtiff/tif_dirinfo.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000286/libtiff/tif_dir.c  a(5709,1835) d(5370) s(5540,5557) d(1083) d(5763) a(1115,5782) s(4966,4977) s(1849,1831) fails to compile
+	  0 a(5709,1835) d(5370) s(5540,5557) d(1083) d(5763) a(1115,5782) s(4966,4977) s(1849,1831)
+	0.127458 a(5709,1835) d(1083) a(5748,5342) s(1115,1726) d(5748) d(1084) a(5365,5759) a(1818,5369)
+	0.134853 a(1843,5753) a(5577,5751) d(5748) s(5359,5372) a(5552,1132) d(5558) a(4959,4978)
+	0.140844 a(5577,5751) a(1843,5753) d(1837) d(5367) a(5851,1846) s(1788,1805) s(5763,5662)
+	0.140299 a(1731,1131) a(5720,5708) d(5370) d(1793) s(5780,5776) s(1805,1822)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556)
+	0.140844 d(1837) a(5748,5734) a(5743,5719) d(5372) a(1813,1079) s(1088,1107)
+	0.127458 a(1731,1131) d(1793) a(1843,5753) d(5748) a(1731,1131) a(5366,1115) a(5367,5661)
+	0.0275911 s(5540,5557) a(1731,1131) a(5361,1083) a(5577,5751) d(1837) d(5712)
+	0.150697 a(5577,5751) d(5367) s(4965,5329) a(1132,1128) d(1080) a(1731,1131) a(5361,1083) s(1786,1838)
+	0.127458 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784) a(5361,1083) a(1841,1831)
+	0.135943 a(5577,5751) a(1843,5753) d(1837) d(5367) s(4965,5329) a(5706,5718) a(5719,4962)
+	0.127458 a(1843,5753) a(1132,1128) a(1731,1131) d(5691) a(1843,5753) d(5748) s(5540,5557) d(5716) d(5712)
+	0.229355 a(1132,1128) s(5540,5557) d(5716) d(1793) a(4964,4968) a(1843,5753) d(5748) d(5716) d(5647)
+	0.111525 a(1843,5753) d(5748) a(1132,1128) s(5540,5557) a(1731,1131) d(5716) d(5691) d(4967)
+	0.232827 a(1843,5753) d(5748) a(1132,1128) s(5540,5557) d(5716) a(5720,5708) d(1793) a(4964,4968) a(5359,768)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111) a(5371,1079) a(4972,5785)
+	0.140844 d(1837) a(5748,5734) a(5743,5719) d(5372) a(1158,1146) d(5370)
+	0.228661 d(5748) a(1818,1828) a(1735,5369) a(5734,5710) s(5540,5557) d(5716) d(5691) d(5579)
+	0.127458 a(1843,5753) d(5716) d(5691) a(5651,1111) a(5720,5708) a(1818,1828) a(1735,5369) a(5734,5710) a(5746,1087)
+	0.127458 d(5748) a(5651,1111) a(1132,1128) a(5720,5708) a(1818,1828) a(1735,5369) a(5734,5710) a(1856,1828)
+	0.234447 a(1843,5753) d(5748) a(1132,1128) s(5540,5557) a(1731,1131) d(5716) d(5691) d(5746)
+Elite size: 4
+	0.24722 s(782,781)
+	0.24722 a(5709,1835) s(5748,1083) d(782)
+	0.24722 s(1841,1788) a(1801,5738) a(764,5331)
+	0.246698 s(1841,1788) s(1730,1736)
+Best individual (Elite U Pop'):
+ 0.24722 s(782,781) 
+search: generation 7 (sizeof one variant = 5.93847 MB)
+	0.127458 a(5651,1111) a(4972,5785) s(5577,5738) s(4629,1726)
+	0.127458 a(1132,1128) a(1841,1809) d(1837) d(1111) a(5651,1111) a(4972,5785) a(4973,5369)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111) a(5371,1079) a(4972,5785) d(1104)
+	0.127458 a(1132,1128) s(5577,5738) a(1841,1809) d(1837) d(1837) d(1792) s(1796,1806)
+	0.149734 a(5748,5734) a(5753,4629) a(5577,5751) a(5738,5709) d(5748) d(5665) d(763) d(5332) d(4628)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111) a(4629,1851) s(1857,1792) d(781)
+	0.171269 a(5361,1083) a(5577,5751) d(1837) a(5651,1111) a(1847,1848) a(1144,1723) s(2010,5369)
+	0.127458 a(5651,1111) a(1847,1848) s(5540,5557) a(1731,1131) d(1837) d(5712) s(5573,5785)
+	0.0275911 s(5540,5557) a(1731,1131) a(5361,1083) a(5577,5751) d(1837) d(5712) s(1127,1116)
+	0.231901 d(5720) d(5748) a(5651,1111) a(1847,1848) a(1144,1723) d(5749)
+	0.154133 a(5753,4629) d(5748) d(763) d(5332) a(1843,5753) d(5748) d(1111) a(5651,1111) s(5759,5693)
+	0.149734 d(5748) d(1111) a(4629,1851) a(5748,5734) a(5577,5751) d(763) d(5332) a(1132,1099)
+	0.149734 a(5748,5734) a(5753,4629) a(5577,5751) a(5738,5709) d(5748) d(5665) d(763) d(5332) d(5861)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111) a(4629,1851) d(5753) s(1100,1104)
+	0.127458 d(5720) d(5748) a(5651,1111) a(1847,1848) a(1144,1723) d(1843)
+	0.138393 a(1843,5753) a(1132,1128) a(1731,1131) d(5691) a(1843,5753) d(5748) s(5540,5557) d(5716) d(5712) s(5709,5775)
+	0.140844 d(1837) a(5748,5734) a(5743,5719) d(5372) a(1813,1079) s(1088,1107) s(5759,5661)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) a(5646,5755)
+	0.140844 a(5577,5751) a(1843,5753) d(1837) d(5367) a(5851,1846) s(1788,1805) s(5763,5662) d(1822)
+	0.140299 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111) a(4629,1851) d(5753) s(5759,1728)
+	0.229355 a(1132,1128) s(5540,5557) d(5716) d(1793) a(4964,4968) a(1843,5753) d(5748) d(5716) d(5647) a(1723,1726)
+	0.140844 d(1837) a(5748,5734) a(5743,5719) d(5372) a(1813,1079) s(1088,1107) d(5373)
+	0.154949 a(5709,1835) a(5748,5342) d(1153) a(1806,768)
+	0.127458 s(5540,5557) d(1080) s(783,784) d(1153) a(767,1103) a(1107,5342) a(4629,1099) a(1827,1842)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(5334)
+	0.127458 s(5540,5557) d(1080) s(783,784) a(5748,5342) d(1153) d(1166) d(1798)
+	0.231901 d(4629) d(5370) d(1099) d(5763) a(1115,5782) d(5693)
+	0.228661 a(5709,1835) a(1115,5782) d(1837) a(1843,5753) d(4629) s(5579,5716)
+	0.140844 d(1837) a(1843,5753) d(1837) d(4629) d(5370) d(1099) a(5771,5749)
+	0.135398 a(5709,1835) a(5748,5342) d(5763) a(1115,5782) a(768,5782) s(5560,5550)
+	0.234447 a(5709,1835) d(1083) a(5748,5342) s(1115,1726) d(5748) d(1084) a(5365,5759) a(1818,5369) d(5662)
+	0.159211 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111) a(4629,1851) d(5753) s(1119,1096)
+	0.152904 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784) a(5361,1083) s(1127,1071) d(1856)
+	0.20786 a(1843,5753) d(5748) a(1132,1128) s(5540,5557) a(1731,1131) d(5716) d(5691) s(5342,1851) s(2010,1828)
+	0.152904 a(5709,1835) a(767,1103) a(1843,5753) d(5748) a(5651,1111) a(5371,1079) a(4972,5785) s(1854,1821)
+	0.0275911 a(5577,5751) a(1843,5753) d(1111) a(5651,1111) a(1799,1837) a(4629,1099) d(4959)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846)
+	0.150466 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111) a(5371,1079) a(4972,5785) a(5759,5705)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) a(4972,1851)
+	0.234447 a(5709,1835) a(5748,5342) d(5763) d(1153) s(1092,1075) d(788) d(4961)
+	0.127458 a(5709,1835) d(1083) a(5748,5342) s(1115,1726) d(5748) d(1084) a(5365,5759) a(1143,5854) a(1156,1075)
+	0.136487 a(5748,5342) d(5763) s(5742,5645) s(5540,5557) d(1080) a(5577,5751) d(1150) a(5712,5772) s(5347,5349)
+	0.149734 a(5748,5734) a(5753,4629) a(5577,5751) a(5738,5709) d(5748) d(5665) d(763) d(5332) d(1154)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) s(1145,1173)
+	0.127458 a(1843,5753) d(5748) a(1132,1128) s(5540,5557) a(1731,1131) d(5716) d(5691) s(5342,1851) d(5759)
+	0.153189 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) s(5373,5365)
+	0.228661 s(5540,5557) s(783,784) a(1841,1831) s(4972,4966) a(5753,5734)
+	0.140844 d(5720) a(1731,1131) a(5361,1083) a(1841,1831) s(5374,5372)
+	0.127458 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784) a(5361,1083) a(1841,1831) s(1803,1796)
+	0.228661 d(5720) d(5748) a(5651,1111) a(1847,1848) s(4972,4966) a(1071,1846)
+Elite size: 4
+	0.24722 s(782,781)
+	0.24722 a(5709,1835) s(5748,1083) d(782)
+	0.24722 s(1841,1788) a(1801,5738) a(764,5331)
+	0.246698 s(1841,1788) s(1730,1736)
+Best individual (Elite U Pop'):
+ 0.24722 s(782,781) 
+search: generation 8 (sizeof one variant = 5.93868 MB)
+	0.136487 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) a(5641,5756)
+	0.239334 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) s(1119,1088)
+	0.127458 a(1843,5753) s(5540,5557) d(5691) a(5651,1111) a(1847,1848) s(5540,5557) a(1731,1131) d(5712) d(5748)
+	0.127458 s(5540,5557) s(5573,5785) s(5540,5557) d(5787)
+	0.20786 a(1843,5753) d(5748) a(1132,1128) s(5540,5557) a(1731,1131) d(5716) d(5691) s(5342,1851) s(2010,1828) s(1804,1847)
+	0.229818 a(5651,1111) a(1847,1848) s(5540,5557) a(1731,1131) d(1837) d(5712) s(5573,5785) d(5648)
+	0.20786 a(1843,5753) d(5748) a(1132,1128) s(5540,5557) a(1731,1131) d(5716) d(5691) s(5342,1851) s(2010,1828) a(5742,5714)
+	0.155257 a(1843,5753) d(5748) a(1132,1128) s(5540,5557) a(1731,1131) d(5716) d(5691) s(5342,1851) d(5759) d(1842)
+	0.0530907 a(1132,1128) a(1841,1809) d(1837) d(1111) a(5651,1111) a(4972,5785) a(4973,5369) s(5759,5346)
+	0.136487 a(5748,5342) d(5763) s(5742,5645) s(5540,5557) d(1080) a(5577,5751) d(1150) a(5712,5772) s(5347,5349) s(4629,5331)
+	0.147653 a(5709,1835) a(5748,5342) d(5763) a(1115,5782) a(768,5782) s(5560,5550) s(1855,1804)
+	0.229587 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) a(5659,1132)
+	0.151555 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) s(5373,5365) d(5776)
+	0.140844 d(5720) a(1731,1131) a(5361,1083) a(1841,1831) s(5374,5372) a(1808,5355)
+	0.127458 a(1132,1128) a(1841,1809) d(1792) a(1132,1128) s(5540,5557) d(1080) s(1127,1071) d(1807)
+	0.14905 d(1080) s(783,784) a(5361,1083) d(1856) a(1132,1128) s(1796,1806) s(5760,5645)
+	0.228661 a(1132,1128) s(5577,5738) a(1841,1809) d(1837) d(1837) d(1792) s(1796,1806) a(5575,5775)
+	0.152904 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784) a(5361,1083) s(1127,1071) d(1856) s(5353,5356)
+	0.148505 a(5577,5751) a(1843,5753) d(5748) d(1111) a(5651,1111) a(5371,1079) a(4972,5785) a(5759,5705) s(1730,1732)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(5334) s(5344,5343)
+	0.149734 a(5577,5751) d(5748) d(5665) d(763) d(5332) d(5861) a(767,1103) a(1799,1837) a(1107,5342) d(5733)
+	0.154133 a(767,1103) a(5748,5734) d(5665) d(763) s(1723,5355)
+	0.149734 a(5748,5734) a(5753,4629) a(5577,5751) a(5738,5709) d(5748) d(5665) d(763) d(5332) d(5861) s(1789,1791)
+	0.230281 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(5334) a(5717,5657)
+	0.137849 a(5577,5751) a(1843,5753) d(1111) a(5651,1111) a(1799,1837) a(4629,1099) d(4959) s(5742,5735)
+	0.140844 s(5540,5557) a(1731,1131) a(5361,1083) a(5577,5751) d(1837) d(5712) s(1127,1116) s(5366,5373)
+	0.0275911 a(5577,5751) d(5748) d(5719) a(5577,5751) a(1843,5753) d(1111) a(4629,1099) d(4959) s(4629,5691)
+	0.153461 a(5577,5751) d(1111) a(5651,1111) d(4959) a(5577,5751) a(1843,5753) d(1111) d(5719) a(5646,5755) d(5853)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) a(5646,5755) d(1154)
+	0.0275911 a(5577,5751) a(1843,5753) d(1111) a(5651,1111) a(1799,1837) a(4629,1099) d(4959) d(1147)
+	0.127458 a(1843,5753) d(5719) s(1145,1173) s(1841,1788) d(4629)
+	0.167874 s(1730,1736) a(5577,5751) a(5710,5709) s(1145,1173) d(4629)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) s(1145,1173) s(1791,1789)
+	0.246698 s(1841,1788) s(1730,1736) d(1075)
+	0.127458 s(5540,5557) d(1080) s(783,784) d(1153) a(767,1103) a(1107,5342) a(4629,1099) a(1827,1842) a(1850,1810)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(5334) s(4974,4973)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) a(4972,1851) a(1095,5778)
+	0.234216 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) a(4972,1851) s(5359,5373)
+	0.148505 a(5748,5734) a(5577,5751) d(5748) d(5665) d(4628) a(1132,1128) s(5540,5557) d(1080) s(783,784) s(1127,1071) d(1856) s(4972,4970)
+	0.150181 s(5540,5557) d(1080) s(783,784) d(1856) d(5748) d(5665) d(763) d(4628) a(5647,5735)
+	0.149734 a(5748,5734) a(5753,4629) a(5577,5751) a(5738,5709) d(5748) d(5665) d(763) d(5332) d(4628) d(5334)
+	0.152904 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784) a(5361,1083) s(1127,1071) d(1856) s(4967,4973)
+	0.152261 a(1132,1128) s(5540,5557) a(1731,1131) d(1837) d(1111) a(4972,5785) a(4973,5369) s(768,5691)
+	0.149867 d(1837) d(1111) a(4973,5369) d(1856) s(5692,5756)
+	0.152904 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784) a(5361,1083) s(1127,1071) d(1856) d(5347)
+	0.127458 a(1132,1128) a(1841,1809) d(1837) d(1111) a(5651,1111) a(4972,5785) a(4973,5369) d(1084)
+	0.127458 s(5540,5557) d(1080) s(783,784) a(5748,5342) d(1153) d(1166) d(1798) d(1804)
+	0.136487 a(5748,5342) d(5763) s(5742,5645) s(5540,5557) d(1080) a(5577,5751) d(1150) a(5712,5772) s(5347,5349) a(5647,5693)
+	0.140027 a(1107,5342) s(5753,5556) d(1846) d(5763) s(5540,5557) d(1080) d(1150) a(5712,5772) s(5347,5349) s(5693,5751)
+	0.140299 a(5748,5342) s(5540,5557) a(5577,5751) s(5347,5349) a(5709,1835) a(767,1103) d(1846) a(1831,1812)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) s(5744,1075)
+	0.136487 a(5748,5342) d(5763) s(5742,5645) s(5540,5557) d(1080) a(5577,5751) d(1150) a(5712,5772) s(5347,5349) s(5373,5365)
+Elite size: 4
+	0.24722 s(782,781)
+	0.24722 a(5709,1835) s(5748,1083) d(782)
+	0.24722 s(1841,1788) a(1801,5738) a(764,5331)
+	0.246698 s(1841,1788) s(1730,1736)
+Best individual (Elite U Pop'):
+ 0.24722 s(782,781) 
+search: generation 9 (sizeof one variant = 5.9389 MB)
+	0.127458 a(1132,1128) a(1841,1809) d(1792) a(1132,1128) s(5540,5557) d(1080) s(1127,1071) d(1807) d(5346)
+	0.155054 a(5748,5342) s(5540,5557) a(5577,5751) s(5347,5349) a(5709,1835) a(767,1103) d(1846) a(1831,1812) a(781,5561)
+	0.0275911 a(5577,5751) d(5748) d(5719) a(5577,5751) a(1843,5753) d(1111) a(4629,1099) d(4959) s(4629,5691) d(5343)
+	0.136487 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) a(5641,5756) a(4629,1723)
+	0.246698 a(767,1103) a(1107,5342) s(5753,5556) d(1846) s(1730,1736) a(5710,5709) s(1145,1173) d(1826)
+	0.167874 s(1730,1736) a(5577,5751) s(1145,1173) d(4629) a(767,1103) a(1799,1837) a(1107,5342) s(5753,5556) d(1846) d(5759)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) s(5744,1075) a(1795,1795)
+	0.167874 s(1730,1736) a(5577,5751) a(5710,5709) s(1145,1173) d(4629) d(1812)
+	0.149921 a(1107,5342) s(5753,5556) d(1846) d(5763) s(5540,5557) d(1080) d(1150) a(5712,5772) s(5347,5349) s(5693,5751) a(5773,768)
+	0.14905 d(1080) s(783,784) a(5361,1083) d(1856) a(1132,1128) s(1796,1806) s(5760,5645) d(5572)
+	0.0530907 a(1132,1128) a(1841,1809) d(1837) d(1111) a(5651,1111) a(4972,5785) a(4973,5369) s(5759,5346) d(1131)
+	0.127458 s(5540,5557) s(5573,5785) s(5540,5557) d(5787) d(1146)
+	0.140299 a(5577,5751) d(5748) d(5719) a(5577,5751) a(1843,5753) d(1111) a(4629,1099) d(4959) s(4629,5691) d(5774)
+	0.149364 a(5748,5734) a(5577,5751) d(5748) d(5665) d(4628) a(1132,1128) s(5540,5557) d(1080) s(783,784) s(1127,1071) d(1856) s(4972,4970) s(4962,1728)
+	0.135943 a(1107,5342) s(5753,5556) d(1846) d(5763) s(5540,5557) d(1080) d(1150) a(5712,5772) s(5347,5349) s(5693,5751) a(5575,5752)
+	0.136487 a(5748,5342) d(5763) s(5742,5645) s(5540,5557) d(1080) a(5577,5751) d(1150) a(5712,5772) s(5347,5349) a(5647,5693) a(1842,1079)
+	0.127458 a(5709,1835) a(1799,1837) a(4629,1099) s(5753,5556) a(4972,1851) a(1095,5778) a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(5334) s(4974,4973) a(5551,5785)
+	0.127458 a(5709,1835) a(1107,5342) a(5709,1835) a(4629,1099) a(1095,5778) a(5336,1091)
+	0.153825 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) a(4972,1851) a(1095,5778) s(1143,1172)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(5334) s(4974,4973) d(4629)
+	0.0275911 a(5577,5751) a(1843,5753) d(1111) a(5651,1111) a(1799,1837) a(4629,1099) d(4959) d(1147) d(1828)
+	0.234216 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) a(4972,1851) s(5359,5373) a(1818,1091)
+	0.152904 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784) a(5361,1083) s(1127,1071) d(1856) d(5347) d(1808)
+	0.227735 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(5334) s(5344,5343) s(4960,4969)
+	0.154133 a(767,1103) a(5748,5734) d(763) s(5540,5557) s(5573,5785) s(5540,5557) d(5787) d(5691)
+	0.154133 s(5540,5557) s(5573,5785) a(5748,5734) d(763) s(5719,5577)
+	0.154133 a(767,1103) a(5748,5734) d(5665) d(763) s(1723,5355) s(4629,1091)
+	0.127458 s(5540,5557) s(5573,5785) s(5540,5557) d(5787) s(4629,5661)
+	0.0275911 a(5577,5751) d(5748) d(5719) a(5577,5751) a(1843,5753) d(1111) a(4629,1099) d(4959) s(4629,5691) a(4967,1083)
+	0.136487 a(5748,5342) d(5763) s(5742,5645) s(5540,5557) d(1080) a(5577,5751) d(1150) a(5712,5772) s(5347,5349) s(4629,5331) s(1724,1723)
+	/root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000429/libtiff/tif_zip.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000429/libtiff/tif_print.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000429/libtiff/tif_predict.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000429/libtiff/tif_pixarlog.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000429/libtiff/tif_ojpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000429/libtiff/tif_luv.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000429/libtiff/tif_jpeg.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000429/libtiff/tif_fax3.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000429/libtiff/tif_dirread.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000429/libtiff/tif_dirinfo.c /root/mountpoint-genprog/genprog-many-bugs/libtiff-bug-2007-07-08-bd2f947-ccc10c7/000429/libtiff/tif_dir.c  a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) s(1145,1173) s(1791,1789) s(4979,4967) fails to compile
+	  0 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) s(1145,1173) s(1791,1789) s(4979,4967)
+	0.14905 d(1080) s(783,784) a(5361,1083) d(1856) a(1132,1128) s(1796,1806) s(5760,5645) d(1787)
+	0.127458 a(1132,1128) a(4972,5785) a(5709,1835) a(1799,1837) d(5692)
+	0.127458 a(767,1103) a(1799,1837) a(1107,5342) a(1132,1128) a(1841,1809) d(1837) a(5651,1111) a(4972,5785) a(4973,5369) s(4967,4974)
+	0.127458 a(1132,1128) a(1841,1809) d(1837) d(1111) a(5651,1111) a(4972,5785) a(4973,5369) d(1084) a(764,1723)
+	0.136487 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) a(5641,5756) d(1163)
+	0.234216 s(5540,5557) d(1080) s(783,784) d(1153) a(767,1103) a(1107,5342) a(4629,1099) a(1827,1842) a(1850,1810) s(5708,5660)
+	0.136487 a(5748,5342) d(5763) s(5742,5645) s(5540,5557) d(1080) a(5577,5751) d(1150) a(5712,5772) s(5347,5349) s(4629,5331) a(5734,5355)
+	0.152938 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) a(5646,5755) d(1154) s(4975,4961)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) s(5744,1075) a(4629,5778)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) s(1145,1173) s(1791,1789) a(4979,768)
+	0.136487 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) a(5641,5756) d(5748)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) a(5646,5755) d(1154) d(5577)
+	0.154949 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784) a(5361,1083) s(1127,1071) d(1856) s(5353,5356) s(1815,1860)
+Elite size: 4
+	0.24722 s(782,781)
+	0.24722 a(5709,1835) s(5748,1083) d(782)
+	0.24722 s(1841,1788) a(1801,5738) a(764,5331)
+	0.246698 s(1841,1788) s(1730,1736)
+Best individual (Elite U Pop'):
+ 0.24722 s(782,781) 
+search: generation 10 (sizeof one variant = 5.93911 MB)
+	0.136487 a(1799,1837) a(1107,5342) s(5753,5556) d(1846) a(5641,5756) d(5748) d(5719) a(5577,5751) d(1111) a(4629,1099) d(5343) s(1152,1145)
+	0.136487 d(5748) d(1111) a(4629,1099) s(4629,5691) a(767,1103) a(4629,1099) s(5753,5556) a(5641,5756) d(5665)
+	0.136487 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) a(5641,5756) d(5748) s(1173,1156)
+	0.0275911 a(5577,5751) d(5748) d(5719) a(5577,5751) a(1843,5753) d(1111) a(4629,1099) d(4959) s(4629,5691) d(5343) a(5554,5539)
+	0.231901 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(5334) s(4974,4973) d(4629) s(5750,5661)
+	0.153189 a(5577,5751) a(1843,5753) d(1111) a(5651,1111) a(1799,1837) a(4629,1099) d(4959) d(1147) d(1828) d(5856)
+	0.175149 a(1132,1128) a(1132,1128) s(5540,5557) d(1807) s(5540,5557) d(1153) a(4629,1099) a(1827,1842) a(1850,1810) s(5708,5660) s(5701,5738)
+	0.140844 d(1080) s(783,784) d(1153) a(767,1103) a(1107,5342) a(1132,1128) a(1841,1809) d(1792) d(1080) s(1127,1071) d(5346) s(5366,5376)
+	0.127458 a(1132,1128) a(1841,1809) d(1792) a(1132,1128) s(5540,5557) d(1080) s(1127,1071) d(1807) d(5346) d(779)
+	0.234216 s(5540,5557) d(1080) s(783,784) d(1153) a(767,1103) a(1107,5342) a(4629,1099) a(1827,1842) a(1850,1810) s(5708,5660) a(1835,5556)
+	0.228661 a(4629,1099) s(5753,5556) a(4629,5778) a(5577,5751) d(5748) d(4628) s(1127,1071) s(4962,1728) s(5707,5641)
+	0.0275911 a(5748,5734) a(5577,5751) d(5748) d(4628) a(1132,1128) s(5540,5557) d(1080) a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) s(5753,5556) a(5359,5738)
+	0.246698 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) s(5744,1075) a(4629,5778) d(1859)
+	0.149364 a(5748,5734) a(5577,5751) d(5748) d(5665) d(4628) a(1132,1128) s(5540,5557) d(1080) s(783,784) s(1127,1071) d(1856) s(4972,4970) s(4962,1728) d(1173)
+	0.136487 a(1132,1128) s(1796,1806) s(5760,5645) d(1787) a(5709,1835) a(1799,1837) a(4629,1099) s(5753,5556) a(4972,1851) a(1818,1091) s(1071,1115)
+	0.152597 a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) a(4972,1851) a(1818,1091) d(1080) s(783,784) a(5361,1083) d(1856) s(1796,1806) d(1682)
+	0.148505 d(1080) s(783,784) a(5361,1083) d(1856) a(1132,1128) s(1796,1806) s(5760,5645) d(1787) s(5577,5754)
+	0.234216 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) a(4972,1851) s(5359,5373) a(1818,1091) a(5719,1099)
+	0.153825 a(5748,5342) s(5347,5349) a(5709,1835) a(767,1103) d(1846) a(5709,1835) a(1107,5342) a(5709,1835) a(4629,1099) a(1095,5778) a(5336,1091) a(1144,4630)
+	0.155054 a(4629,1099) a(1095,5778) a(5748,5342) s(5540,5557) s(5347,5349) d(1846) a(1831,1812) a(781,5561) d(5761)
+	0.155054 a(5748,5342) s(5540,5557) a(5577,5751) s(5347,5349) a(5709,1835) a(767,1103) d(1846) a(1831,1812) a(781,5561) d(5342)
+	0.152904 a(5709,1835) a(1107,5342) a(5709,1835) a(4629,1099) a(1095,5778) a(5336,1091) s(1820,1847)
+	0.161339 s(1730,1736) a(5577,5751) a(5710,5709) s(1145,1173) d(4629) d(1812) a(5709,1835) a(1799,1837) s(5753,5556) a(4972,1851) a(1095,5778) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(5334) a(5645,5693)
+	0.246698 a(4629,1099) a(4972,1851) a(1095,5778) a(1799,1837) a(4629,1099) d(5334) s(4974,4973) a(5551,5785) s(1730,1736) a(5748,5572)
+	0.149734 s(1730,1736) a(5577,5751) a(5710,5709) s(1145,1173) d(4629) d(1812) d(1850)
+	0.127458 a(5709,1835) a(1799,1837) a(4629,1099) s(5753,5556) a(4972,1851) a(1095,5778) a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(5334) s(4974,4973) a(5551,5785) a(5738,5763)
+	0.138393 a(5748,5342) s(5742,5645) s(5540,5557) d(1080) a(5577,5751) d(1150) s(5347,5349) d(1111) s(2462,5342) d(5719) a(5710,5709) s(4975,4961) a(1809,1111)
+	0.136487 d(5748) d(1111) s(2462,5342) d(5719) a(5646,5755) d(1154) a(5748,5342) d(5763) s(5742,5645) s(5540,5557) d(1080) d(1150) a(5712,5772) s(5347,5349) s(4629,5331) d(5739)
+	0.136487 a(5748,5342) d(5763) s(5742,5645) s(5540,5557) d(1080) a(5577,5751) d(1150) a(5712,5772) s(5347,5349) s(4629,5331) a(5734,5355) a(5856,5776)
+	0.152938 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) a(5646,5755) d(1154) s(4975,4961) d(1787)
+	0.136487 a(5709,1835) d(1846) a(1831,1812) a(5709,1835) a(767,1103) a(1107,5342) d(1846) a(5641,5756) d(5748) a(5662,5576)
+	0.240971 a(5709,1835) a(1107,5342) a(4629,1099) d(5748) a(5577,5751) s(5347,5349) a(5709,1835) d(1846) a(781,5561) d(5552)
+	0.240971 a(5748,5342) s(5540,5557) a(5577,5751) s(5347,5349) a(5709,1835) a(767,1103) d(1846) a(1831,1812) a(781,5561) a(5558,5690)
+	0.136487 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) a(5641,5756) d(5748) a(1830,1814)
+	0.246235 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) a(4972,1851) s(5359,5373) a(1818,1091) d(1859)
+	0.135943 a(1107,5342) s(5753,5556) d(1846) d(5763) s(5540,5557) d(1080) d(1150) a(5712,5772) s(5347,5349) s(5693,5751) a(5575,5752) d(5647)
+	0.140299 a(1132,1128) d(1837) a(4972,5785) a(4973,5369) s(5759,5346) d(1131) s(783,784) a(5361,1083) s(1127,1071) d(5347) d(1808) s(1809,1792)
+	0.152904 a(1132,1128) d(1080) s(783,784) s(1127,1071) d(1856) d(5347) d(1808) a(1841,1809) d(1837) d(1111) a(4972,5785) a(4973,5369) s(5759,5346) s(4974,4976)
+	0.0530907 a(1132,1128) a(1841,1809) d(1837) d(1111) a(5651,1111) a(4972,5785) a(4973,5369) s(5759,5346) d(1131) a(1859,5342)
+	0.152904 a(1132,1128) s(5540,5557) d(1080) a(1731,1131) s(783,784) a(5361,1083) s(1127,1071) d(1856) d(5347) d(1808) d(1831)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) s(1145,1173) s(1791,1789) a(4979,768) d(5365)
+	0.155257 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) s(5744,1075) a(4629,5778) s(1841,1857)
+	0.152904 d(5748) d(1111) d(5719) a(5710,5709) a(5646,5755) a(767,1103) d(5665) d(763) s(1837,1847)
+	0.148812 a(5748,5734) d(5665) d(763) s(1723,5355) a(5577,5751) a(1843,5753) d(1111) a(5710,5709) d(5577) d(1841)
+	0.0275911 a(5577,5751) a(1843,5753) d(5748) d(1111) s(2462,5342) d(5719) a(5710,5709) a(5646,5755) d(1154) d(5577) a(5373,5854)
+	0.152904 a(767,1103) a(5748,5734) d(5665) d(763) s(1723,5355) s(4629,1091) a(1793,5346)
+	0.148505 d(1080) a(5361,1083) d(1856) s(1796,1806) d(5763) s(5540,5557) a(5577,5751) d(1150) s(5347,5349) s(4629,5331) a(5734,5355) d(1075)
+	0.136487 a(5748,5342) d(5763) s(5742,5645) s(5540,5557) d(1150) a(5712,5772) s(5347,5349) a(5734,5355) d(1080) s(783,784) a(5361,1083) s(1796,1806) d(1828)
+	0.14905 d(1080) s(783,784) a(5361,1083) d(1856) a(1132,1128) s(1796,1806) s(5760,5645) d(5572) s(1790,1819)
+	0.136487 a(5748,5342) d(5763) s(5742,5645) s(5540,5557) d(1080) a(5577,5751) d(1150) a(5712,5772) s(5347,5349) s(4629,5331) a(5734,5355) a(1160,1160)
+	0.149921 a(1107,5342) s(5753,5556) d(1846) d(5763) s(5540,5557) d(1080) d(1150) a(5712,5772) s(5347,5349) s(5693,5751) a(5773,768) s(1099,5744)
+	0.127458 s(5540,5557) s(5573,5785) s(5540,5557) d(5787) s(4629,5661) a(1731,1095)
+	0.0530907 a(1132,1128) a(1841,1809) d(1837) d(1111) a(5651,1111) a(4972,5785) a(4973,5369) s(5759,5346) d(1131) a(5777,1103)
+	0.151954 a(767,1103) a(5748,5734) d(5665) d(763) s(1723,5355) s(4629,1091) a(5705,1132)
+	0.141116 a(1132,1128) a(1841,1809) d(1837) d(1111) a(4972,5785) a(4973,5369) d(1084) a(1107,5342) a(4629,1099) d(1846) d(5360)
+	0.127458 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) s(5753,5556) a(1132,1128) d(1111) a(5651,1111) a(4972,5785) s(1128,1132)
+	0.127458 a(1132,1128) a(1841,1809) d(1837) d(1111) a(5651,1111) a(4972,5785) a(4973,5369) d(1084) a(764,1723) d(1148)
+	0.136487 a(5709,1835) a(767,1103) a(1799,1837) a(1107,5342) a(4629,1099) s(5753,5556) d(1846) a(5641,5756) d(5748) d(1115)
+	0.127458 d(5787) s(4629,5661) a(5361,1083) d(5572) d(4965)
+	0.127458 s(783,784) s(1796,1806) d(5572) s(5540,5557) s(5573,5785) s(5540,5557) d(5787) s(4629,5661) d(5355)
+	0.231901 s(5540,5557) s(5573,5785) s(5540,5557) d(5787) s(4629,5661) d(5354)
+	0.14905 d(1080) s(783,784) a(5361,1083) d(1856) a(1132,1128) s(1796,1806) s(5760,5645) d(5572) s(1153,1170)
+Elite size: 4
+	0.24722 s(782,781)
+	0.24722 a(5709,1835) s(5748,1083) d(782)
+	0.24722 s(1841,1788) a(1801,5738) a(764,5331)
+	0.246698 s(1841,1788) s(1730,1736)
+Best individual (Elite U Pop'):
+ 0.24722 s(782,781) 
+search: genetic algorithm ends
+
+No repair found.
+
+Variant Test Case Queries: 596
+"Test Suite Evaluations": 9.93333
+
+Compile Failures: 7
+Wall-Clock Seconds Elapsed: 34673.7
+  Activity Name                     Count Seconds = Percent of Total Time
+  rebuild files                     51327 195.579 = 0.577442%
+  compile                             502 12359.132 = 36.4901%
+  test                                613 21314.599 = 62.9309%
+  TOTAL                                   33869.838 = 97.6817% (avg CPU usage)

@@ -1,0 +1,1162 @@
+GenProg Version: Sun Oct  8 12:22:57 EDT 2017
+
+--allow-coverage-fail false
+--appp 0.33333
+--asm-code-only false
+--best-edit-rule "1 * fault_loc_weight ; 1 * max_test_fail_prob ; -1 * num_tests"
+--best-test-rule "1 * test_fail_prob ; 1 * test_fail_count ; -1 * test_pass_count"
+--checkpoints true
+--clone-file ""
+--compiler "gcc"
+--compiler-command "perl compile.pl __EXE_NAME__ > /dev/null"
+--compiler-opts ""
+--continue false
+--coverage-info ""
+--coverage-per-test false
+--crossover "subset"
+--crossp 0.5
+--delp 0.33333
+--describe-machine false
+--diversity-selection 0
+--edit-script false
+--elf-risc false
+--elitism 4
+--exclude-edits ""
+--exp-diff false
+--fault-file ""
+--fault-path "coverage.path.neg"
+--fault-scheme "path"
+--fitness-in-parallel 1
+--fix-file ""
+--fix-oracle ""
+--fix-path "coverage.path.pos"
+--fix-scheme "default"
+--flatten-path ""
+--format "txt"
+--gen-per-exchange 1
+--generations 10
+--geomp 0.5
+--gui false
+--hostname "127.0.0.1"
+--ignore-dead-code false
+--ignore-equiv-appends false
+--ignore-standard-headers false
+--ignore-string-equiv-fixes false
+--ignore-untyped-returns false
+--incoming-pop ""
+--keep-source false
+--label-repair false
+--lase-deallocation-api "free"
+--lase-paired-functions ""
+--lasep 0
+--max-evals 0
+--minimization false
+--mt-cov false
+--multiopt-minimize false
+--multiopt-no-inf false
+--neg-tests 1
+--neg-weight 1
+--negative-test-weight 2
+--nested false
+--neutral-walk-max-size 0
+--neutral-walk-weight ""
+--nht-id "global"
+--nht-port 51000
+--nht-server ""
+--no-rep-cache true
+--no-test-cache true
+--num-comps 2
+--num-objectives 2
+--oracle-genome ""
+--pd-mutp 0.25
+--popsize 40
+--port 60000
+--pos-tests 3
+--pos-weight 0.1
+--prefix "preprocessed"
+--preprocessor ""
+--print-incremental-evals false
+--print-source-name false
+--program "bugged-program.txt"
+--promut 1
+--quiet false
+--regen-paths false
+--rep "cilpatch"
+--rep-cache ""
+--repp 0
+--samp-strat "variant"
+--sample 1
+--sample-runs 100
+--sanity "default"
+--search "ga"
+--seed 9
+--semantic-check "exact"
+--single-fitness true
+--skip-failed-sanity-tests false
+--skip-tests ""
+--split-search 0
+--sport 65000
+--subatom-constp 0.5
+--subatom-mutp 0
+--swap-bug false
+--swapp 0.33333
+--template-cache ""
+--templates ""
+--test-command "__TEST_SCRIPT__ __TEST_NAME__ __EXE_NAME__ __FITNESS_FILE__ >& /dev/null"
+--test-script "/root/src/Python/python /root/checkpoints/test/test_checkpoints.py"
+--tournament-size 2
+--uniq false
+--use-partition -1
+--valgrind false
+--variants-exchanged 50
+--version false
+cilRep: preprocessing IO function signatures: /tmp/tmp850cd2.c /tmp/tmpc0b058.c
+cilRep: done preprocessing IO function signatures
+cilrep: from_source: pre: stmt_count = 0
+cilRep: preprocessed/gzip.c: parsing
+cilRep: preprocessed/gzip.c: parsed (0.234803 MB)
+cilrep: from_source: post: stmt_count: 1749
+cilRep: shared size: 0.353857 MB
+cilRep: private size: 0.00644588 MB
+cachingRepresentation: sanity checking begins
+	p1: true (1)
+	p2: true (1)
+	p3: true (1)
+	n1: false (0)
+cachingRepresentation: sanity checking passed (time_taken = 4.61795)
+faultLocRep: compute_localization: fault_scheme: path, fix_scheme: default
+Rep: coverage_sourcename: /root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/coverage/coverage.c
+cilRep: instrumenting for fault localization
+cilRep: done instrumenting for fault localization
+coverage negative:
+	test: 1
+coverage positive:
+	test: 1
+	test: 2
+	test: 3
+cilRep: bugged-program.cache: saved
+cachingRep: bugged-program.cache: saved
+faultlocRep: bugged-program.cache: saved
+cilrep done serialize
+cilRep: stmt_count = 1749
+cilRep: stmts in weighted_path = 296
+cilRep: total weight = 58
+cilRep: stmts in weighted_path with weight >= 1.0 = 34
+cilRep: gzip.c (code bank/base file; atoms [1,1858])
+cilRep: 1 file(s) total in representation
+search: genetic algorithm begins (|original| = 0.314713 MB)
+search: initial population (sizeof one variant = 0.317333 MB)
+	0.525 a(735,476)
+	0.543832 s(546,528)
+	0.544818 a(567,1215)
+	0.299113 a(531,347)
+	0.261527 a(1232,1287)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000005/gzip.c  s(974,966) fails to compile
+	  0 s(974,966)
+	0.544818 d(530)
+	0.544818 d(1817)
+	0.544818 d(530)
+	0.261381 d(1256)
+	0.544818 a(1267,1264)
+	0.544818 a(714,463)
+	0.544818 s(568,371)
+	0.544818 a(545,555)
+	0.131007 s(965,980)
+	0.544818 a(614,718)
+	0.544818 d(950)
+	0.544599 s(526,570)
+	0.544818 d(566)
+	0.544818 s(554,568)
+	0.544818 a(532,560)
+	0.544818 s(542,1219)
+	0.544818 a(525,837)
+	0.544708 s(528,578)
+	0.261527 a(1253,1285)
+	0.544818 a(1849,825)
+	0.544708 d(970)
+	0.299783 a(578,1220)
+	0.544708 a(568,635)
+	0.544818 d(576)
+	0.299053 s(527,578)
+	0.298152 s(554,561)
+	0.544708 d(743)
+	0.544818 a(545,575)
+	0.544489 d(484)
+	0.544818 a(787,452)
+	0.544818 s(790,1279)
+	0.299053 s(527,568)
+	0.544599 s(560,567)
+	0.544818 original
+search: generation 1 (sizeof one variant = 0.557955 MB)
+	0.543832 s(528,542)
+	0.544818 d(575)
+	0.544818 s(554,568) a(560,824)
+	0.0558596 a(787,452) s(1814,1823)
+	0.0676038 d(484) s(576,1232)
+	0.297336 d(484) s(527,568) d(1826)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000040/gzip.c  s(527,568) s(576,724) fails to compile
+	  0 s(527,568) s(576,724)
+	0.261527 d(484) s(778,769)
+	0.544818 d(530) d(575)
+	0.544599 d(530) d(551)
+	0.130861 s(965,980) d(579)
+	0.544708 d(530) d(774)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000045/gzip.c  s(974,966) a(458,1199) fails to compile
+	  0 s(974,966) a(458,1199)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000046/gzip.c  s(974,966) a(570,769) fails to compile
+	  0 s(974,966) a(570,769)
+	0.544818 a(545,555) d(530) a(791,458)
+	0.544818 d(530) a(545,555) d(555)
+	0.544599 a(545,555) d(567)
+	0.544818 d(530) a(579,1263)
+	0.544818 d(530) a(575,570)
+	0.299053 s(527,578) a(525,542)
+	0.544708 s(528,578) d(561)
+	0.544708 d(562)
+	0.260943 d(484) s(567,1283)
+	0.299053 s(528,578) s(527,566)
+	0.299113 a(531,347) a(570,531)
+	0.544708 a(735,476) d(579)
+	0.544708 d(577)
+	0.38258 d(576) s(1262,1420)
+	0.299053 s(527,578) a(717,1847)
+	0.544818 d(576) a(1281,510)
+	0.544818 s(554,568) a(512,514)
+	0.544489 s(560,567) d(552)
+	0.544708 a(735,476) d(472)
+	0.544708 d(970) a(1190,766)
+	0.261527 a(1253,1285) a(546,563)
+	0.544708 s(542,1219) s(566,767)
+	0.543832 a(528,1436)
+	0.383389 d(512)
+	0.123571 s(527,578) s(576,1220)
+	0.0513995 s(546,528) d(379)
+	0.543613 a(1267,1264) d(1819)
+	0.299783 a(578,1220) a(526,741)
+	0.261381 a(1232,1287) a(787,452) s(577,551)
+	0.050146 d(376)
+	0.261527 a(1232,1287) a(580,1847)
+	0.544818 a(787,452) d(563)
+	0.544489 d(484) s(555,575)
+	0.544818 a(545,555) d(1274)
+	0.544818 d(576) a(567,1283)
+	0.261381 d(1256) d(563)
+	0.261381 d(1256) a(37,495)
+	0.544818 d(576) d(741)
+	0.299053 s(527,568) s(577,575)
+	0.544818 d(563)
+	0.544818 d(576) a(1199,512)
+	0.298006 s(527,568) s(714,638)
+Elite size: 4
+	0.544818 a(567,1215)
+	0.544818 d(530)
+	0.544818 d(1817)
+	0.544818 d(530)
+Best individual (Elite U Pop'):
+ 0.544818 a(567,1215) 
+search: generation 2 (sizeof one variant = 0.87359 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000088/gzip.c  d(484) s(555,575) s(527,568) s(576,724) s(736,458) fails to compile
+	  0 d(484) s(555,575) s(527,568) s(576,724) s(736,458)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000089/gzip.c  s(576,724) s(555,575) d(567) fails to compile
+	  0 s(576,724) s(555,575) d(567)
+	0.0513995 d(484) s(555,575) s(457,379)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000091/gzip.c  s(527,568) s(576,724) a(562,638) fails to compile
+	  0 s(527,568) s(576,724) a(562,638)
+	0.120256 s(527,578) s(576,1220) d(484) d(1256)
+	0.0758494 s(576,1232) s(527,578) s(576,1220) d(965)
+	0.123571 s(527,578) s(576,1220) s(635,1353)
+	0.050146 d(484) s(576,1232) d(376)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000096/gzip.c  d(484) s(527,568) d(1826) a(573,724) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000097/gzip.c  s(974,966) a(458,1199) a(37,777) fails to compile
+	  0 s(974,966) a(458,1199) a(37,777)
+	0.544599 d(562) d(552)
+	0.0558596 a(787,452) s(1814,1823) a(551,479)
+	0.260797 d(484) s(567,1283) s(953,946)
+	0.544489 d(970) a(1190,766) s(563,567)
+	0.261527 d(484) s(778,769) a(1337,381)
+	0.261381 d(1256) a(37,495) a(818,1283)
+	0.54438 d(579) d(484) a(571,1850)
+	0.261089 s(567,1283) d(579) s(551,560)
+	0.128651 s(965,980) d(579) s(1215,566)
+	0.260943 d(484) s(567,1283) a(1193,1279)
+	0.0633703 a(1232,1287) a(580,1847) a(723,1851)
+	0.543613 s(542,1219) s(566,767) s(528,552)
+	0.544489 d(774) s(531,571)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000111/gzip.c  s(527,568) s(576,724) s(573,1219) fails to compile
+	  0 s(527,568) s(576,724) s(573,1219)
+	0.544708 d(530) d(774) s(566,726)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000113/gzip.c  s(527,568) s(576,724) a(563,1419) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419)
+	0.299053 s(527,568) a(562,508)
+	0.544818 a(971,1215)
+	0.544708 d(577) d(976)
+	0.297482 s(527,568) s(714,638) s(737,771)
+	0.050146 d(376) a(571,777)
+	0.050146 s(546,528) d(379) d(376) a(526,1219)
+	0.050146 d(376) a(951,1821)
+	0.0513995 s(546,528) d(379) a(634,638)
+	0.299053 d(563) s(560,567) d(527)
+	0.544708 d(552) a(528,1382)
+	0.544818 d(563) a(777,656)
+	0.54438 s(560,567) d(552) d(562)
+	0.544708 s(542,1219) s(566,767) d(546)
+	0.0844143 d(530) d(773)
+	0.261381 d(1256) a(570,769) d(634)
+	0.261381 d(1256) d(568)
+	0.260943 d(1256) a(37,495) s(485,468)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000130/gzip.c  s(974,966) a(570,769) s(567,1808) fails to compile
+	  0 s(974,966) a(570,769) s(567,1808)
+	0.299637 a(578,1220) a(526,741) s(545,575)
+	0.111077 a(578,1220) a(526,741) d(484) s(567,1283) d(1193)
+	0.260943 d(484) s(567,1283) d(530)
+	0.299783 a(578,1220) a(526,741) a(561,1348)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000135/gzip.c  s(527,568) s(576,724) d(552) fails to compile
+	  0 s(527,568) s(576,724) d(552)
+	0.0513995 s(546,528) d(379) d(635)
+	0.543613 a(528,1436) d(1240)
+	0.0513995 s(546,528) d(379) s(526,552)
+	0.050146 d(376) a(546,726)
+	0.299783 a(578,1220) a(526,741) a(528,570)
+Elite size: 4
+	0.544818 a(567,1215)
+	0.544818 d(530)
+	0.544818 d(1817)
+	0.544818 d(530)
+Best individual (Elite U Pop'):
+ 0.544818 a(567,1215) 
+search: generation 3 (sizeof one variant = 0.873925 MB)
+	0.544818 a(971,1215) s(1253,1201)
+	0.130861 a(971,1215) s(965,980) d(579) d(561)
+	0.0610949 s(965,980) d(579) s(1215,566) d(614)
+	0.544818 a(971,1215) a(528,571)
+	0.544708 a(526,741) a(561,1348) s(375,1202)
+	0.544489 d(484) a(526,741) a(561,1348) a(1260,472)
+	0.050146 a(578,1220) a(526,741) a(561,1348) s(1395,376)
+	0.260797 d(484) s(567,1283) s(953,946) d(561)
+	0.078442 s(576,1220) s(576,724) d(965)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000150/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420)
+	0.123571 s(527,578) s(576,1220) s(635,1353) s(552,545)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000152/gzip.c  s(527,568) s(576,724) d(552) a(1826,1200) fails to compile
+	  0 s(527,568) s(576,724) d(552) a(1826,1200)
+	0.123571 s(527,578) s(576,1220) s(635,1353) d(787)
+	0.174905 d(530) d(773) s(555,562)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000155/gzip.c  d(484) d(1826) a(573,724) d(530) a(766,634) fails to compile
+	  0 d(484) d(1826) a(573,724) d(530) a(766,634)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000156/gzip.c  d(530) s(527,568) a(573,724) d(546) fails to compile
+	  0 d(530) s(527,568) a(573,724) d(546)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000157/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347)
+	0.544708 d(530) s(545,573)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000159/gzip.c  d(484) s(576,724) a(1232,1201) fails to compile
+	  0 d(484) s(576,724) a(1232,1201)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000160/gzip.c  s(576,724) d(376) a(951,1821) a(635,656) fails to compile
+	  0 s(576,724) d(376) a(951,1821) a(635,656)
+	0.050146 d(376) a(951,1821) a(542,1353)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000162/gzip.c  d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(954) fails to compile
+	  0 d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(954)
+	0.0513995 d(484) d(1826) s(546,528) d(379) d(567)
+	0.296289 d(484) s(527,568) d(451)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000165/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200)
+	0.0513995 s(546,528) d(379) s(526,552) a(578,510)
+	0.544818 d(530) d(532)
+	0.111077 a(578,1220) a(526,741) d(484) s(567,1283) d(1193) d(634)
+	0.050146 d(376) a(546,726) s(577,1279)
+	  0 s(527,568) s(576,724) d(552) d(1821)
+	0.128505 s(965,980) d(579) s(1215,566) d(545)
+	0.050146 d(376) a(951,1821) s(567,1851)
+	0.0513995 s(546,528) d(379) s(526,552) d(1842)
+	0.124286 s(965,980) d(579) s(1215,566) s(1394,576)
+	0.105223 s(965,980) d(579) s(1215,566) d(1193) d(546)
+	0.0891165 a(578,1220) s(567,1283) s(965,980) d(579) a(1395,1416)
+	0.062726 s(965,980) d(579) s(1215,566) s(571,517)
+	0.111077 a(578,1220) a(526,741) d(484) s(567,1283) d(1193) a(1255,451)
+	0.543613 a(528,1436) d(1240) s(542,471)
+	0.0513995 s(546,528) d(379) d(635) d(567)
+	0.543613 s(546,528) d(635) s(546,528) a(571,961)
+	0.0513995 s(546,528) d(635) s(546,528) d(379) s(512,1831)
+	0.0513995 s(546,528) d(379) d(635) a(575,462)
+	0.0513995 s(546,528) d(379) d(635) d(567)
+	0.544818 a(546,726) a(571,777) s(562,530)
+	0.050146 d(376) a(571,777) d(376) d(559)
+	0.050146 d(376) a(546,726) s(554,528)
+	0.050146 d(376) a(571,777) s(542,818)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000185/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(372,1307) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(372,1307)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000186/gzip.c  d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(525) fails to compile
+	  0 d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(525)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000187/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000188/gzip.c  s(527,568) s(576,724) d(552) d(1204) fails to compile
+	  0 s(527,568) s(576,724) d(552) d(1204)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000189/gzip.c  s(576,724) s(555,575) d(567) d(560) fails to compile
+	  0 s(576,724) s(555,575) d(567) d(560)
+	0.261235 d(1256) d(568) d(525)
+Elite size: 4
+	0.544818 a(567,1215)
+	0.544818 d(530)
+	0.544818 d(1817)
+	0.544818 d(530)
+Best individual (Elite U Pop'):
+ 0.544818 a(567,1215) 
+search: generation 4 (sizeof one variant = 0.874222 MB)
+	0.297336 d(484) s(527,568) d(1826) a(974,571)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000192/gzip.c  s(576,1220) s(576,724) d(965) s(527,568) a(573,724) a(578,726) fails to compile
+	  0 s(576,1220) s(576,724) d(965) s(527,568) a(573,724) a(578,726)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000193/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545)
+	0.078296 s(576,1220) s(576,724) d(965) s(381,479)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000195/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(526,573) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(526,573)
+	0.0513995 s(546,528) d(379) d(635) d(567) d(561)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000197/gzip.c  s(527,568) d(1821) a(573,724) d(530) s(559,837) fails to compile
+	  0 s(527,568) d(1821) a(573,724) d(530) s(559,837)
+	0.282671 d(530) d(1821) a(578,517)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000199/gzip.c  s(527,568) s(576,724) d(552) d(1821) a(1336,1200) fails to compile
+	  0 s(527,568) s(576,724) d(552) d(1821) a(1336,1200)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000200/gzip.c  d(484) d(1826) a(573,724) d(530) a(766,634) a(750,560) fails to compile
+	  0 d(484) d(1826) a(573,724) d(530) a(766,634) a(750,560)
+	0.050146 d(376) a(546,726) s(527,568) s(579,1263) a(375,1239)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000202/gzip.c  s(576,724) s(579,1263) d(376) a(546,726) s(554,528) a(527,471) fails to compile
+	  0 s(576,724) s(579,1263) d(376) a(546,726) s(554,528) a(527,471)
+	0.050146 d(376) a(546,726) s(554,528) d(571)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000204/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000205/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000206/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) a(542,741) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) a(542,741)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000207/gzip.c  s(527,568) s(576,724) d(552) d(1204) d(452) fails to compile
+	  0 s(527,568) s(576,724) d(552) d(1204) d(452)
+	0.050146 a(578,1220) a(526,741) a(561,1348) s(1395,376) a(526,717)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000209/gzip.c  s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) fails to compile
+	  0 s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000210/gzip.c  s(527,568) s(576,724) s(965,980) s(946,961) fails to compile
+	  0 s(527,568) s(576,724) s(965,980) s(946,961)
+	0.105223 s(965,980) d(579) s(1215,566) d(1193) d(546) a(734,381)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000212/gzip.c  s(527,568) s(576,724) d(552) a(1826,1200) d(1275) fails to compile
+	  0 s(527,568) s(576,724) d(552) a(1826,1200) d(1275)
+	0.0558596 s(576,1220) s(576,724) d(965) d(530) s(527,568) d(546) s(1824,1814)
+	0.078442 d(546) s(576,1220) d(965) d(791)
+	0.078296 s(576,1220) s(576,724) d(965) s(571,1834)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000216/gzip.c  d(530) s(527,568) a(573,724) d(546) a(379,497) fails to compile
+	  0 d(530) s(527,568) a(573,724) d(546) a(379,497)
+	0.050146 d(376) s(567,1851) d(376) a(546,726) s(1839,566)
+	0.186261 a(546,726) s(577,1279) s(567,1851) a(561,1220)
+	0.050146 d(376) a(951,1821) s(567,1851) d(531)
+	0.050146 d(376) a(546,726) s(577,1279) a(635,1837)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000221/gzip.c  s(527,568) a(573,724) d(376) a(951,1821) s(560,462) fails to compile
+	  0 s(527,568) a(573,724) d(376) a(951,1821) s(560,462)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000222/gzip.c  d(376) a(951,1821) s(567,1851) s(527,568) d(1826) a(573,724) a(578,371) fails to compile
+	  0 d(376) a(951,1821) s(567,1851) s(527,568) d(1826) a(573,724) a(578,371)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000223/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(372,1307) s(778,824) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(372,1307) s(778,824)
+	0.050146 d(376) a(951,1821) s(567,1851) d(1167)
+	0.050146 a(578,1220) a(526,741) a(561,1348) s(1395,376) s(1222,1232)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000226/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276)
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) d(575)
+	0.050146 d(376) a(546,726) s(577,1279) d(499)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000228/gzip.c  d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(954) a(570,961) fails to compile
+	  0 d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(954) a(570,961)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000229/gzip.c  s(527,568) s(576,724) d(552) d(1821) d(36) fails to compile
+	  0 s(527,568) s(576,724) d(552) d(1821) d(36)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000230/gzip.c  s(527,568) s(736,458) d(525) s(576,724) d(376) a(635,656) d(1836) fails to compile
+	  0 s(527,568) s(736,458) d(525) s(576,724) d(376) a(635,656) d(1836)
+	0.162215 a(635,656) s(555,575) s(736,458) d(525) d(561)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000232/gzip.c  d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(525) a(1219,642) fails to compile
+	  0 d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(525) a(1219,642)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000233/gzip.c  s(576,724) d(376) a(951,1821) a(635,656) d(531) fails to compile
+	  0 s(576,724) d(376) a(951,1821) a(635,656) d(531)
+	0.544818 s(542,818) d(573)
+	0.128434 s(527,568) a(563,1419) s(579,1263) d(542)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000236/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559)
+	0.050146 d(376) a(571,777) s(542,818) s(546,566)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000238/gzip.c  d(1826) a(573,724) s(555,575) d(954) d(554) fails to compile
+	  0 d(1826) a(573,724) s(555,575) d(954) d(554)
+	0.297336 d(484) s(555,575) s(527,568) d(484) s(527,568) d(1826) s(373,501)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000240/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) a(1228,1224) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) a(1228,1224)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000241/gzip.c  d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(954) a(531,1223) fails to compile
+	  0 d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(954) a(531,1223)
+	0.050146 d(376) a(571,777) d(376) d(559) d(568)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000243/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) a(573,571) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) a(573,571)
+	0.0513995 s(546,528) d(379) s(526,552) d(1842) d(580)
+	  0 d(484) s(576,724) a(1232,1201) d(381)
+Elite size: 4
+	0.544818 a(567,1215)
+	0.544818 d(530)
+	0.544818 d(1817)
+	0.544818 d(530)
+Best individual (Elite U Pop'):
+ 0.544818 a(567,1215) 
+search: generation 5 (sizeof one variant = 0.874556 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000245/gzip.c  s(1215,566) d(546) s(576,724) d(546) d(551) fails to compile
+	  0 s(1215,566) d(546) s(576,724) d(546) d(551)
+	0.130861 d(546) d(552) s(965,980) d(546) a(978,498) d(567)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000247/gzip.c  s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(1254,513) fails to compile
+	  0 s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(1254,513)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000248/gzip.c  s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(580,530) fails to compile
+	  0 s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(580,530)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000249/gzip.c  s(576,724) d(376) a(951,1821) a(635,656) d(531) d(1832) fails to compile
+	  0 s(576,724) d(376) a(951,1821) a(635,656) d(531) d(1832)
+	0.050146 d(376) a(571,777) s(542,818) s(546,566) d(570)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000251/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(372,1307) s(778,824) d(576) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(372,1307) s(778,824) d(576)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000252/gzip.c  s(527,568) s(576,724) d(552) a(1826,1200) d(1275) a(1274,1437) fails to compile
+	  0 s(527,568) s(576,724) d(552) a(1826,1200) d(1275) a(1274,1437)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000253/gzip.c  s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(571,642) fails to compile
+	  0 s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(571,642)
+	0.050146 d(376) a(951,1821) s(567,1851) d(1167) s(545,573)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000255/gzip.c  s(527,568) d(1826) a(573,724) a(1307,1347) s(579,1263) s(554,528) a(527,471) d(531) fails to compile
+	  0 s(527,568) d(1826) a(573,724) a(1307,1347) s(579,1263) s(554,528) a(527,471) d(531)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000256/gzip.c  s(576,724) s(579,1263) d(376) d(484) s(527,568) a(1307,1347) d(562) fails to compile
+	  0 s(576,724) s(579,1263) d(376) d(484) s(527,568) a(1307,1347) d(562)
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000257/gzip.c  s(576,724) s(579,1263) d(376) a(546,726) s(554,528) a(527,471) s(567,551) fails to compile
+	  0 s(576,724) s(579,1263) d(376) a(546,726) s(554,528) a(527,471) s(567,551)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000258/gzip.c  s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(562,477) fails to compile
+	  0 s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(562,477)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000259/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) d(575) d(555) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) d(575) d(555)
+	0.050146 d(376) a(546,726) s(554,528) d(571) d(530)
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000261/gzip.c  d(954) d(554) s(527,568) a(573,724) s(718,542) fails to compile
+	  0 d(954) d(554) s(527,568) a(573,724) s(718,542)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000262/gzip.c  s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530) fails to compile
+	  0 s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000263/gzip.c  d(1826) a(573,724) s(555,575) d(954) d(554) s(1184,1383) fails to compile
+	  0 d(1826) a(573,724) s(555,575) d(954) d(554) s(1184,1383)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000264/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000265/gzip.c  d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(954) a(570,961) d(1826) fails to compile
+	  0 d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(954) a(570,961) d(1826)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000266/gzip.c  d(484) d(1826) a(573,724) d(530) a(766,634) a(750,560) d(531) fails to compile
+	  0 d(484) d(1826) a(573,724) d(530) a(766,634) a(750,560) d(531)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000267/gzip.c  s(576,724) a(563,1419) s(579,1263) d(1826) s(561,532) fails to compile
+	  0 s(576,724) a(563,1419) s(579,1263) d(1826) s(561,532)
+	0.121658 d(484) a(542,741) s(527,568) s(579,1263) s(718,657) s(495,1200)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000269/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000270/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) a(542,741) d(634) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) a(542,741) d(634)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000271/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(579,1263) a(546,726) s(525,561) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(579,1263) a(546,726) s(525,561)
+	0.050146 s(579,1263) d(376) d(484) s(527,568) d(1826) a(634,1851)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000273/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) a(1228,1224) d(562) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) a(1228,1224) d(562)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000274/gzip.c  s(576,724) s(579,1263) d(376) a(546,726) s(554,528) a(527,471) d(567) fails to compile
+	  0 s(576,724) s(579,1263) d(376) a(546,726) s(554,528) a(527,471) d(567)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000275/gzip.c  s(527,568) s(576,724) d(552) d(1204) d(452) d(978) fails to compile
+	  0 s(527,568) s(576,724) d(552) d(1204) d(452) d(978)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000276/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(570) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(570)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000277/gzip.c  d(484) d(1826) a(573,724) a(1307,1347) s(576,724) s(579,1263) d(376) s(554,528) a(527,471) s(563,550) fails to compile
+	  0 d(484) d(1826) a(573,724) a(1307,1347) s(576,724) s(579,1263) d(376) s(554,528) a(527,471) s(563,550)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000278/gzip.c  s(576,724) s(579,1263) d(376) a(546,726) a(527,471) d(484) s(527,568) s(954,952) d(978) fails to compile
+	  0 s(576,724) s(579,1263) d(376) a(546,726) a(527,471) d(484) s(527,568) s(954,952) d(978)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000279/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) s(458,1210) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) s(458,1210)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000280/gzip.c  s(576,724) s(579,1263) d(376) a(546,726) s(554,528) a(527,471) s(635,1283) fails to compile
+	  0 s(576,724) s(579,1263) d(376) a(546,726) s(554,528) a(527,471) s(635,1283)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000281/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) a(542,1215) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) a(542,1215)
+	0.050146 a(578,1220) a(526,741) a(561,1348) s(1395,376) a(526,717) s(635,1239)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000283/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) a(573,571) a(1847,454) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) a(573,571) a(1847,454)
+	0.050146 d(376) a(546,726) s(577,1279) a(635,1837) d(542)
+	0.123571 s(576,1220) a(570,1420) s(555,575) s(527,568) a(570,961) d(1307)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000285/gzip.c  d(484) s(555,575) s(736,458) d(954) s(527,568) s(576,724) s(576,1220) a(570,1420) a(1253,1850) fails to compile
+	  0 d(484) s(555,575) s(736,458) d(954) s(527,568) s(576,724) s(576,1220) a(570,1420) a(1253,1850)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000286/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(1286) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(1286)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000287/gzip.c  d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(954) a(570,961) s(554,530) fails to compile
+	  0 d(484) s(555,575) s(527,568) s(576,724) s(736,458) d(954) a(570,961) s(554,530)
+	0.050146 s(527,568) d(376) a(951,1821) d(376) a(951,1821) d(531) s(575,1839)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000289/gzip.c  s(576,724) d(376) a(635,656) d(531) s(527,568) a(573,724) d(376) a(951,1821) s(560,462) d(559) fails to compile
+	  0 s(576,724) d(376) a(635,656) d(531) s(527,568) a(573,724) d(376) a(951,1821) s(560,462) d(559)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000290/gzip.c  s(527,568) a(573,724) d(376) a(951,1821) s(560,462) a(767,1838) fails to compile
+	  0 s(527,568) a(573,724) d(376) a(951,1821) s(560,462) a(767,1838)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000291/gzip.c  s(576,724) d(376) a(951,1821) a(635,656) d(531) d(579) fails to compile
+	  0 s(576,724) d(376) a(951,1821) a(635,656) d(531) d(579)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000292/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000293/gzip.c  s(527,568) s(576,724) d(552) d(1821) a(1336,1200) a(1836,1246) fails to compile
+	  0 s(527,568) s(576,724) d(552) d(1821) a(1336,1200) a(1836,1246)
+Elite size: 4
+	0.544818 a(567,1215)
+	0.544818 d(530)
+	0.544818 d(1817)
+	0.544818 d(530)
+Best individual (Elite U Pop'):
+ 0.544818 a(567,1215) 
+search: generation 6 (sizeof one variant = 0.874697 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000294/gzip.c  s(527,568) s(576,724) d(552) d(1204) d(452) d(978) a(980,1837) fails to compile
+	  0 s(527,568) s(576,724) d(552) d(1204) d(452) d(978) a(980,1837)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000295/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) d(575) d(555) d(458) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) d(575) d(555) d(458)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000296/gzip.c  s(576,724) s(579,1263) d(376) a(546,726) a(527,471) d(484) s(527,568) s(954,952) d(978) d(634) fails to compile
+	  0 s(576,724) s(579,1263) d(376) a(546,726) a(527,471) d(484) s(527,568) s(954,952) d(978) d(634)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000297/gzip.c  s(527,568) a(573,724) d(376) a(951,1821) s(560,462) a(767,1838) s(717,579) fails to compile
+	  0 s(527,568) a(573,724) d(376) a(951,1821) s(560,462) a(767,1838) s(717,579)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000298/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000299/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) d(1200) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) d(1200)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000300/gzip.c  a(567,1215) d(484) d(1826) a(573,724) a(573,571) d(546) fails to compile
+	  0 a(567,1215) d(484) d(1826) a(573,724) a(573,571) d(546)
+	0.544708 d(1826) a(1847,454) d(563)
+	0.544818 a(567,1215) a(1394,1202)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000303/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) a(573,571) a(1847,454) a(347,1838) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) a(573,571) a(1847,454) a(347,1838)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000304/gzip.c  d(546) d(484) s(527,568) d(1826) a(573,724) s(778,824) d(576) a(1281,1849) fails to compile
+	  0 d(546) d(484) s(527,568) d(1826) a(573,724) s(778,824) d(576) a(1281,1849)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000305/gzip.c  d(484) s(527,568) a(372,1307) s(778,824) s(1215,566) d(546) s(576,724) a(1838,818) fails to compile
+	  0 d(484) s(527,568) a(372,1307) s(778,824) s(1215,566) d(546) s(576,724) a(1838,818)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000306/gzip.c  s(1215,566) d(546) s(576,724) d(546) d(551) s(635,577) fails to compile
+	  0 s(1215,566) d(546) s(576,724) d(546) d(551) s(635,577)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000307/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(372,1307) s(778,824) d(576) a(577,514) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(372,1307) s(778,824) d(576) a(577,514)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000308/gzip.c  s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530) s(545,577) fails to compile
+	  0 s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530) s(545,577)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000309/gzip.c  d(1826) a(573,724) s(555,575) d(954) d(554) s(1184,1383) a(838,778) fails to compile
+	  0 d(1826) a(573,724) s(555,575) d(954) d(554) s(1184,1383) a(838,778)
+	0.260505 d(484) d(1826) s(642,1200) s(512,1263) a(546,726) s(577,1279) a(635,1837) d(542) d(498)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000311/gzip.c  d(376) s(577,1279) d(484) s(527,568) a(573,724) s(642,1200) s(819,1219) fails to compile
+	  0 d(376) s(577,1279) d(484) s(527,568) a(573,724) s(642,1200) s(819,1219)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000312/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576)
+	0.050146 d(376) a(546,726) s(577,1279) a(635,1837) d(542) a(555,1202)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000314/gzip.c  s(527,568) a(573,724) s(579,1263) s(554,528) d(531) s(527,568) s(576,724) s(579,1263) s(1193,559) a(578,551) d(551) fails to compile
+	  0 s(527,568) a(573,724) s(579,1263) s(554,528) d(531) s(527,568) s(576,724) s(579,1263) s(1193,559) a(578,551) d(551)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000315/gzip.c  s(527,568) s(576,724) a(563,1419) a(578,551) s(527,568) d(1826) a(1307,1347) a(527,471) d(531) s(575,1838) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) a(578,551) s(527,568) d(1826) a(1307,1347) a(527,471) d(531) s(575,1838)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000316/gzip.c  s(527,568) d(1826) a(573,724) a(1307,1347) s(579,1263) s(554,528) a(527,471) d(531) d(774) fails to compile
+	  0 s(527,568) d(1826) a(573,724) a(1307,1347) s(579,1263) s(554,528) a(527,471) d(531) d(774)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000317/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000318/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000319/gzip.c  s(576,724) s(579,1263) d(376) a(546,726) s(554,528) a(527,471) s(635,1283) d(734) fails to compile
+	  0 s(576,724) s(579,1263) d(376) a(546,726) s(554,528) a(527,471) s(635,1283) d(734)
+	0.119854 d(452) s(576,1220) a(570,1420) s(1270,1276) d(532)
+	0.09225 s(576,1220) d(1286) s(527,568) d(552) d(452) d(978) s(1807,1814)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000322/gzip.c  s(527,568) s(576,724) d(552) d(1204) d(452) d(978) d(551) fails to compile
+	  0 s(527,568) s(576,724) d(552) d(1204) d(452) d(978) d(551)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000323/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(1286) s(635,454) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(1286) s(635,454)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000324/gzip.c  s(965,980) d(546) s(576,724) d(552) a(978,498) s(576,1220) d(371) a(573,347) fails to compile
+	  0 s(965,980) d(546) s(576,724) d(552) a(978,498) s(576,1220) d(371) a(573,347)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000325/gzip.c  s(527,568) s(576,724) s(1215,566) s(576,724) a(978,498) a(571,642) a(546,528) fails to compile
+	  0 s(527,568) s(576,724) s(1215,566) s(576,724) a(978,498) a(571,642) a(546,528)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000326/gzip.c  s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(571,642) s(1203,1190) fails to compile
+	  0 s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(571,642) s(1203,1190)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000327/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) d(635) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) d(635)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000328/gzip.c  s(1215,566) d(546) s(576,724) d(546) d(551) s(550,561) fails to compile
+	  0 s(1215,566) d(546) s(576,724) d(546) d(551) s(550,561)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000329/gzip.c  s(1215,566) d(546) s(576,724) d(546) d(551) s(545,580) fails to compile
+	  0 s(1215,566) d(546) s(576,724) d(546) d(551) s(545,580)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000330/gzip.c  s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(571,642) d(347) fails to compile
+	  0 s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(571,642) d(347)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000331/gzip.c  d(484) s(555,575) s(736,458) d(954) s(527,568) s(576,724) s(576,1220) a(570,1420) a(1253,1850) d(1843) fails to compile
+	  0 d(484) s(555,575) s(736,458) d(954) s(527,568) s(576,724) s(576,1220) a(570,1420) a(1253,1850) d(1843)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000332/gzip.c  s(576,724) s(579,1263) d(376) a(546,726) s(554,528) a(527,471) s(567,551) a(1282,1184) fails to compile
+	  0 s(576,724) s(579,1263) d(376) a(546,726) s(554,528) a(527,471) s(567,551) a(1282,1184)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000333/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) a(542,1215) d(550) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) a(542,1215) d(550)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000334/gzip.c  s(527,568) d(1826) d(1826) a(573,724) d(530) s(527,568) s(642,1200) s(573,381) fails to compile
+	  0 s(527,568) d(1826) d(1826) a(573,724) d(530) s(527,568) s(642,1200) s(573,381)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000335/gzip.c  s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) fails to compile
+	  0 s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000336/gzip.c  s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530) s(1232,1215) fails to compile
+	  0 s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530) s(1232,1215)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000337/gzip.c  s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530) d(963) fails to compile
+	  0 s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530) d(963)
+	0.544161 a(951,1821) d(559) d(484) s(954,952) d(542) a(578,1808)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000339/gzip.c  a(573,724) s(954,952) s(527,568) a(573,724) a(951,1821) d(559) d(1248) fails to compile
+	  0 a(573,724) s(954,952) s(527,568) a(573,724) a(951,1821) d(559) d(1248)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000340/gzip.c  s(576,724) d(376) a(635,656) d(531) s(527,568) a(573,724) d(376) a(951,1821) s(560,462) d(559) a(546,562) fails to compile
+	  0 s(576,724) d(376) a(635,656) d(531) s(527,568) a(573,724) d(376) a(951,1821) s(560,462) d(559) a(546,562)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000341/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000342/gzip.c  d(1826) a(573,724) s(555,575) d(954) d(554) s(1184,1383) d(1199) fails to compile
+	  0 d(1826) a(573,724) s(555,575) d(954) d(554) s(1184,1383) d(1199)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000343/gzip.c  s(527,568) s(576,724) d(552) a(1826,1200) d(1275) a(1274,1437) s(563,573) fails to compile
+	  0 s(527,568) s(576,724) d(552) a(1826,1200) d(1275) a(1274,1437) s(563,573)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000344/gzip.c  s(576,724) a(563,1419) s(579,1263) d(1826) s(561,532) d(545) fails to compile
+	  0 s(576,724) a(563,1419) s(579,1263) d(1826) s(561,532) d(545)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000345/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) a(542,741) d(634) d(345) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) a(542,741) d(634) d(345)
+Elite size: 4
+	0.544818 a(567,1215)
+	0.544818 d(530)
+	0.544818 d(1817)
+	0.544818 d(530)
+Best individual (Elite U Pop'):
+ 0.544818 a(567,1215) 
+search: generation 7 (sizeof one variant = 0.874985 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000346/gzip.c  s(576,724) s(1270,1276) d(371) a(580,724) s(527,568) a(978,498) d(495) fails to compile
+	  0 s(576,724) s(1270,1276) d(371) a(580,724) s(527,568) a(978,498) d(495)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000347/gzip.c  s(576,724) s(576,724) a(571,642) s(576,724) s(576,1220) a(580,724) d(577) fails to compile
+	  0 s(576,724) s(576,724) a(571,642) s(576,724) s(576,1220) a(580,724) d(577)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000348/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) s(580,715) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) s(580,715)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000349/gzip.c  s(527,568) s(576,724) s(1215,566) s(576,724) a(978,498) a(571,642) a(546,528) d(1842) fails to compile
+	  0 s(527,568) s(576,724) s(1215,566) s(576,724) a(978,498) a(571,642) a(546,528) d(1842)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000350/gzip.c  d(376) a(573,724) d(376) s(560,462) d(559) a(546,562) d(484) d(545) a(381,1223) fails to compile
+	  0 d(376) a(573,724) d(376) s(560,462) d(559) a(546,562) d(484) d(545) a(381,1223)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000351/gzip.c  d(484) s(527,568) s(576,724) d(376) a(635,656) d(531) d(376) s(560,462) d(554) fails to compile
+	  0 d(484) s(527,568) s(576,724) d(376) a(635,656) d(531) d(376) s(560,462) d(554)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000352/gzip.c  s(576,724) d(376) a(635,656) d(531) s(527,568) a(573,724) d(376) a(951,1821) s(560,462) d(559) a(546,562) s(580,837) fails to compile
+	  0 s(576,724) d(376) a(635,656) d(531) s(527,568) a(573,724) d(376) a(951,1821) s(560,462) d(559) a(546,562) s(580,837)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000353/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576) s(1253,1189) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576) s(1253,1189)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000354/gzip.c  s(527,568) s(576,724) d(552) d(1204) d(452) d(978) a(980,1837) s(561,559) fails to compile
+	  0 s(527,568) s(576,724) d(552) d(1204) d(452) d(978) a(980,1837) s(561,559)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000355/gzip.c  s(527,568) a(573,724) d(376) a(951,1821) s(560,462) a(767,1838) s(717,579) s(634,778) fails to compile
+	  0 s(527,568) a(573,724) d(376) a(951,1821) s(560,462) a(767,1838) s(717,579) s(634,778)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000356/gzip.c  s(965,980) d(546) s(576,724) d(552) a(978,498) s(576,1220) d(371) a(573,347) d(525) fails to compile
+	  0 s(965,980) d(546) s(576,724) d(552) a(978,498) s(576,1220) d(371) a(573,347) d(525)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000357/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000358/gzip.c  s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) d(570) fails to compile
+	  0 s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) d(570)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000359/gzip.c  s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(571,642) s(1203,1190) a(778,1821) fails to compile
+	  0 s(965,980) s(1215,566) d(546) s(576,724) d(552) a(978,498) a(571,642) s(1203,1190) a(778,1821)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000360/gzip.c  d(484) s(527,568) d(1826) a(1281,1849) s(527,568) s(576,724) s(579,1263) s(718,657) a(577,750) s(578,1821) fails to compile
+	  0 d(484) s(527,568) d(1826) a(1281,1849) s(527,568) s(576,724) s(579,1263) s(718,657) a(577,750) s(578,1821)
+	0.128434 s(527,568) a(563,1419) s(579,1263) a(577,750) d(546) s(778,824) d(576) a(551,1232)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000362/gzip.c  d(546) d(484) s(527,568) d(1826) a(573,724) s(778,824) d(576) a(1281,1849) d(560) fails to compile
+	  0 d(546) d(484) s(527,568) d(1826) a(573,724) s(778,824) d(576) a(1281,1849) d(560)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000363/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(1823,1263) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(1823,1263)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000364/gzip.c  s(576,724) s(579,1263) d(376) a(546,726) a(527,471) d(634) a(573,724) a(527,471) d(531) d(774) s(1382,1194) fails to compile
+	  0 s(576,724) s(579,1263) d(376) a(546,726) a(527,471) d(634) a(573,724) a(527,471) d(531) d(774) s(1382,1194)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000365/gzip.c  a(573,724) a(1307,1347) s(579,1263) a(527,471) d(774) s(579,1263) a(527,471) s(527,568) d(634) d(531) fails to compile
+	  0 a(573,724) a(1307,1347) s(579,1263) a(527,471) d(774) s(579,1263) a(527,471) s(527,568) d(634) d(531)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000366/gzip.c  s(576,724) s(579,1263) d(376) a(546,726) a(527,471) d(484) s(527,568) s(954,952) d(978) d(634) s(974,966) fails to compile
+	  0 s(576,724) s(579,1263) d(376) a(546,726) a(527,471) d(484) s(527,568) s(954,952) d(978) d(634) s(974,966)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000367/gzip.c  s(527,568) d(1826) a(573,724) a(1307,1347) s(579,1263) s(554,528) a(527,471) d(531) d(774) a(976,1220) fails to compile
+	  0 s(527,568) d(1826) a(573,724) a(1307,1347) s(579,1263) s(554,528) a(527,471) d(531) d(774) a(976,1220)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000368/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(550,1202) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(550,1202)
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(575)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000369/gzip.c  s(527,568) a(1307,1347) a(571,714) s(1215,566) d(546) s(576,724) a(1843,568) fails to compile
+	  0 s(527,568) a(1307,1347) a(571,714) s(1215,566) d(546) s(576,724) a(1843,568)
+	0.296143 s(1215,566) d(546) d(551) s(527,568) d(1826) a(1307,1347) s(954,952) a(571,714) s(1836,735)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000371/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) a(1843,1348) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) a(1843,1348)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000372/gzip.c  s(1215,566) d(546) s(576,724) d(546) d(551) s(550,561) d(562) fails to compile
+	  0 s(1215,566) d(546) s(576,724) d(546) d(551) s(550,561) d(562)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000373/gzip.c  s(576,724) a(563,1419) a(1307,1347) d(531) a(1215,750) fails to compile
+	  0 s(576,724) a(563,1419) a(1307,1347) d(531) a(1215,750)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000374/gzip.c  s(576,724) s(527,568) a(527,471) d(531) a(563,1419) s(1193,559) s(977,972) a(1184,575) fails to compile
+	  0 s(576,724) s(527,568) a(527,471) d(531) a(563,1419) s(1193,559) s(977,972) a(1184,575)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000375/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000376/gzip.c  s(527,568) s(576,724) a(563,1419) a(578,551) s(527,568) d(1826) a(1307,1347) a(527,471) d(531) s(575,1838) d(373) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) a(578,551) s(527,568) d(1826) a(1307,1347) a(527,471) d(531) s(575,1838) d(373)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000377/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) d(575) d(555) d(458) d(635) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) d(575) d(555) d(458) d(635)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000378/gzip.c  d(546) d(484) s(527,568) d(1826) a(573,724) s(778,824) d(576) a(1281,1849) d(767) fails to compile
+	  0 d(546) d(484) s(527,568) d(1826) a(573,724) s(778,824) d(576) a(1281,1849) d(767)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000379/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000380/gzip.c  s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) a(576,527) fails to compile
+	  0 s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) a(576,527)
+	0.54427 d(546) d(551) d(484) a(1307,1347) d(542) a(571,714) d(1269)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000382/gzip.c  d(484) s(527,568) d(1826) a(1307,1347) s(954,952) d(546) s(576,724) d(551) s(37,36) fails to compile
+	  0 d(484) s(527,568) d(1826) a(1307,1347) s(954,952) d(546) s(576,724) d(551) s(37,36)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000383/gzip.c  s(1215,566) d(546) s(576,724) d(546) d(551) s(545,580) s(562,531) fails to compile
+	  0 s(1215,566) d(546) s(576,724) d(546) d(551) s(545,580) s(562,531)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000384/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(380) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(380)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000385/gzip.c  s(527,568) s(579,1263) s(718,657) a(563,1202) a(577,750) a(573,724) d(542) s(380,494) fails to compile
+	  0 s(527,568) s(579,1263) s(718,657) a(563,1202) a(577,750) a(573,724) d(542) s(380,494)
+	0.125497 s(527,568) s(954,952) a(571,714) s(527,568) a(563,1419) s(579,1263) a(577,750) a(735,726)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000387/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(559,576) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(559,576)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000388/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) a(530,552) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) a(530,552)
+	0.119854 d(452) s(576,1220) a(570,1420) s(1270,1276) d(532) a(462,463)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000390/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) a(573,571) a(1847,454) a(347,1838) a(1197,1287) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) a(573,571) a(1847,454) a(347,1838) a(1197,1287)
+	0.544599 a(1826,1200) s(563,573) d(1826) s(642,1200) d(954) d(530) d(555)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000392/gzip.c  d(1826) a(573,724) d(1826) a(573,724) d(963) d(552) d(1275) a(717,724) fails to compile
+	  0 d(1826) a(573,724) d(1826) a(573,724) d(963) d(552) d(1275) a(717,724)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000393/gzip.c  s(527,568) s(576,724) d(552) a(1826,1200) d(1275) a(1274,1437) s(563,573) s(530,545) fails to compile
+	  0 s(527,568) s(576,724) d(552) a(1826,1200) d(1275) a(1274,1437) s(563,573) s(530,545)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000394/gzip.c  s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530) d(963) a(570,766) fails to compile
+	  0 s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530) d(963) a(570,766)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000395/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(1286) s(635,454) s(751,656) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(1286) s(635,454) s(751,656)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000396/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(559) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(559)
+	0.285818 s(527,568) a(1274,1437) s(563,573) d(484) s(527,568) s(642,1200) s(578,576) s(567,579)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000398/gzip.c  d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) fails to compile
+	  0 d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000399/gzip.c  s(527,568) s(576,724) d(552) a(1826,1200) d(1275) a(1274,1437) s(563,573) a(773,480) fails to compile
+	  0 s(527,568) s(576,724) d(552) a(1826,1200) d(1275) a(1274,1437) s(563,573) a(773,480)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000400/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576) a(573,526) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576) a(573,526)
+Elite size: 4
+	0.544818 a(567,1215)
+	0.544818 d(530)
+	0.544818 d(1817)
+	0.544818 d(530)
+Best individual (Elite U Pop'):
+ 0.544818 a(567,1215) 
+search: generation 8 (sizeof one variant = 0.875126 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000401/gzip.c  s(576,724) s(718,657) a(563,1202) a(577,750) s(718,657) a(563,1202) a(573,724) d(542) s(380,494) a(575,1200) fails to compile
+	  0 s(576,724) s(718,657) a(563,1202) a(577,750) s(718,657) a(563,1202) a(573,724) d(542) s(380,494) a(575,1200)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000402/gzip.c  a(573,724) d(542) s(380,494) s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) a(961,479) fails to compile
+	  0 a(573,724) d(542) s(380,494) s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) a(961,479)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000403/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000404/gzip.c  s(527,568) s(579,1263) s(718,657) a(563,1202) a(577,750) a(573,724) d(542) s(380,494) d(751) fails to compile
+	  0 s(527,568) s(579,1263) s(718,657) a(563,1202) a(577,750) a(573,724) d(542) s(380,494) d(751)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000405/gzip.c  d(484) s(576,724) a(635,656) s(560,462) d(554) s(527,568) s(576,724) a(577,750) s(1336,1263) fails to compile
+	  0 d(484) s(576,724) a(635,656) s(560,462) d(554) s(527,568) s(576,724) a(577,750) s(1336,1263)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000406/gzip.c  s(527,568) s(718,657) a(563,1202) d(484) s(576,724) d(376) a(635,656) d(531) d(376) s(560,462) d(532) fails to compile
+	  0 s(527,568) s(718,657) a(563,1202) d(484) s(576,724) d(376) a(635,656) d(531) d(376) s(560,462) d(532)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000407/gzip.c  d(484) s(527,568) s(576,724) d(376) a(635,656) d(531) d(376) s(560,462) d(554) d(635) fails to compile
+	  0 d(484) s(527,568) s(576,724) d(376) a(635,656) d(531) d(376) s(560,462) d(554) d(635)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000408/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(550,1202) s(526,531) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(550,1202) s(526,531)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000409/gzip.c  s(527,568) a(1307,1347) a(571,714) s(1215,566) s(576,724) a(1843,568) d(552) d(452) s(561,559) s(516,514) fails to compile
+	  0 s(527,568) a(1307,1347) a(571,714) s(1215,566) s(576,724) a(1843,568) d(552) d(452) s(561,559) s(516,514)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000410/gzip.c  s(576,724) d(552) d(1204) d(452) d(978) s(527,568) a(1307,1347) a(571,714) s(1215,566) s(576,724) d(790) fails to compile
+	  0 s(576,724) d(552) d(1204) d(452) d(978) s(527,568) a(1307,1347) a(571,714) s(1215,566) s(576,724) d(790)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000411/gzip.c  s(527,568) a(1307,1347) a(571,714) s(1215,566) d(546) s(576,724) a(1843,568) d(635) fails to compile
+	  0 s(527,568) a(1307,1347) a(571,714) s(1215,566) d(546) s(576,724) a(1843,568) d(635)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000412/gzip.c  s(527,568) s(576,724) d(552) d(1204) d(452) d(978) a(980,1837) s(561,559) d(580) fails to compile
+	  0 s(527,568) s(576,724) d(552) d(1204) d(452) d(978) a(980,1837) s(561,559) d(580)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000413/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(1823,1263) d(1233) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(1823,1263) d(1233)
+	  0 d(546) d(484) s(527,568) d(1826) a(573,724) s(778,824) d(576) a(1281,1849) d(767) d(381)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000414/gzip.c  s(954,952) a(571,714) a(530,552) s(576,724) s(718,657) a(563,1202) a(1823,1263) a(788,726) fails to compile
+	  0 s(954,952) a(571,714) a(530,552) s(576,724) s(718,657) a(563,1202) a(1823,1263) a(788,726)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000415/gzip.c  s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) d(1826) a(573,724) d(542) d(1233) fails to compile
+	  0 s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) d(1826) a(573,724) d(542) d(1233)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000416/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) a(530,552) d(570) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) a(530,552) d(570)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000417/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(1823,1263) a(380,477) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(1823,1263) a(380,477)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000418/gzip.c  d(546) d(484) s(527,568) d(1826) a(573,724) s(778,824) d(576) a(1281,1849) d(560) s(527,568) s(576,724) s(571,1418) fails to compile
+	  0 d(546) d(484) s(527,568) d(1826) a(573,724) s(778,824) d(576) a(1281,1849) d(560) s(527,568) s(576,724) s(571,1418)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000419/gzip.c  s(527,568) a(1843,568) d(546) d(484) s(527,568) a(573,724) a(1281,1849) d(560) a(562,752) fails to compile
+	  0 s(527,568) a(1843,568) d(546) d(484) s(527,568) a(573,724) a(1281,1849) d(560) a(562,752)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000420/gzip.c  d(546) d(484) s(527,568) d(1826) a(573,724) s(778,824) d(576) a(1281,1849) d(560) a(551,508) fails to compile
+	  0 d(546) d(484) s(527,568) d(1826) a(573,724) s(778,824) d(576) a(1281,1849) d(560) a(551,508)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000421/gzip.c  s(527,568) a(1307,1347) a(571,714) s(1215,566) d(546) s(576,724) a(1843,568) a(1191,825) fails to compile
+	  0 s(527,568) a(1307,1347) a(571,714) s(1215,566) d(546) s(576,724) a(1843,568) a(1191,825)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000422/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(380) a(978,734) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(380) a(978,734)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000423/gzip.c  s(527,568) d(1826) a(573,724) a(1307,1347) s(579,1263) s(554,528) a(527,471) d(531) d(774) a(976,1220) a(468,1199) fails to compile
+	  0 s(527,568) d(1826) a(573,724) a(1307,1347) s(579,1263) s(554,528) a(527,471) d(531) d(774) a(976,1220) a(468,1199)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000424/gzip.c  s(576,724) d(376) a(635,656) d(531) s(527,568) a(573,724) d(376) a(951,1821) s(560,462) d(559) a(546,562) s(580,837) a(567,554) fails to compile
+	  0 s(576,724) d(376) a(635,656) d(531) s(527,568) a(573,724) d(376) a(951,1821) s(560,462) d(559) a(546,562) s(580,837) a(567,554)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000425/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576) a(573,526) a(1260,766) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576) a(573,526) a(1260,766)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000426/gzip.c  d(484) s(527,568) d(1826) a(573,724) d(545) s(512,1263) s(1253,1189) d(1826) a(559,735) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) d(545) s(512,1263) s(1253,1189) d(1826) a(559,735)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000427/gzip.c  d(1826) s(642,1200) d(1826) a(573,724) d(963) a(570,766) d(484) s(527,568) d(1826) s(642,1200) d(545) s(512,1263) s(1253,1189) s(559,713) fails to compile
+	  0 d(1826) s(642,1200) d(1826) a(573,724) d(963) a(570,766) d(484) s(527,568) d(1826) s(642,1200) d(545) s(512,1263) s(1253,1189) s(559,713)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000428/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576) s(1253,1189) d(567) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576) s(1253,1189) d(567)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000429/gzip.c  s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530) d(963) a(570,766) s(551,573) fails to compile
+	  0 s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530) d(963) a(570,766) s(551,573)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000430/gzip.c  s(576,724) s(1270,1276) d(371) a(580,724) s(527,568) a(978,498) d(495) a(555,738) fails to compile
+	  0 s(576,724) s(1270,1276) d(371) a(580,724) s(527,568) a(978,498) d(495) a(555,738)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000431/gzip.c  s(527,568) a(573,724) d(376) a(951,1821) s(560,462) a(767,1838) s(717,579) s(634,778) a(559,468) fails to compile
+	  0 s(527,568) a(573,724) d(376) a(951,1821) s(560,462) a(767,1838) s(717,579) s(634,778) a(559,468)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000432/gzip.c  a(573,724) s(579,1263) a(527,471) d(774) a(527,471) d(634) d(531) d(484) d(1826) a(1307,1347) s(954,952) d(554) fails to compile
+	  0 a(573,724) s(579,1263) a(527,471) d(774) a(527,471) d(634) d(531) d(484) d(1826) a(1307,1347) s(954,952) d(554)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000433/gzip.c  s(527,568) a(573,724) a(1307,1347) a(571,714) a(573,724) s(579,1263) a(527,471) d(774) d(531) fails to compile
+	  0 s(527,568) a(573,724) a(1307,1347) a(571,714) a(573,724) s(579,1263) a(527,471) d(774) d(531)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000434/gzip.c  a(573,724) a(1307,1347) s(579,1263) a(527,471) d(774) s(579,1263) a(527,471) s(527,568) d(634) d(531) a(1255,1263) fails to compile
+	  0 a(573,724) a(1307,1347) s(579,1263) a(527,471) d(774) s(579,1263) a(527,471) s(527,568) d(634) d(531) a(1255,1263)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000435/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(559) a(531,530) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(559) a(531,530)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000436/gzip.c  d(376) a(573,724) d(376) s(560,462) d(559) a(546,562) d(484) d(545) a(381,1223) d(568) fails to compile
+	  0 d(376) a(573,724) d(376) s(560,462) d(559) a(546,562) d(484) d(545) a(381,1223) d(568)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000437/gzip.c  a(573,724) a(1307,1347) s(579,1263) a(527,471) d(774) s(579,1263) a(527,471) s(527,568) d(634) d(531) a(532,724) fails to compile
+	  0 a(573,724) a(1307,1347) s(579,1263) a(527,471) d(774) s(579,1263) a(527,471) s(527,568) d(634) d(531) a(532,724)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000438/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000439/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(578) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(578)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000440/gzip.c  a(573,724) a(573,724) s(1285,1254) d(552) d(1214) d(578) fails to compile
+	  0 a(573,724) a(573,724) s(1285,1254) d(552) d(1214) d(578)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000441/gzip.c  s(642,1200) s(527,568) s(576,724) d(1826) a(573,724) a(573,724) d(530) a(576,527) s(1843,1847) fails to compile
+	  0 s(642,1200) s(527,568) s(576,724) d(1826) a(573,724) a(573,724) d(530) a(576,527) s(1843,1847)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000442/gzip.c  s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) a(576,527) s(1812,1804) fails to compile
+	  0 s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) a(576,527) s(1812,1804)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000443/gzip.c  d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) a(563,555) fails to compile
+	  0 d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) a(563,555)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000444/gzip.c  s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530) d(963) a(570,766) a(576,769) fails to compile
+	  0 s(527,568) d(1826) a(573,724) s(642,1200) d(1826) a(573,724) d(954) d(530) d(963) a(570,766) a(576,769)
+	0.119854 d(452) s(576,1220) a(570,1420) s(1270,1276) d(532) a(462,463) a(1818,1215)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000446/gzip.c  d(484) s(527,568) d(1826) a(1307,1347) s(576,724) d(551) s(37,36) a(571,714) s(1215,566) d(546) s(576,724) a(1843,568) d(512) fails to compile
+	  0 d(484) s(527,568) d(1826) a(1307,1347) s(576,724) d(551) s(37,36) a(571,714) s(1215,566) d(546) s(576,724) a(1843,568) d(512)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000447/gzip.c  a(1307,1347) a(571,714) a(1843,568) s(954,952) d(546) s(576,724) s(530,526) fails to compile
+	  0 a(1307,1347) a(571,714) a(1843,568) s(954,952) d(546) s(576,724) s(530,526)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000448/gzip.c  d(484) s(527,568) d(1826) a(1307,1347) s(954,952) d(546) s(576,724) d(551) s(37,36) a(570,752) fails to compile
+	  0 d(484) s(527,568) d(1826) a(1307,1347) s(954,952) d(546) s(576,724) d(551) s(37,36) a(570,752)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000449/gzip.c  s(527,568) a(1307,1347) a(571,714) s(1215,566) d(546) s(576,724) a(1843,568) d(1805) fails to compile
+	  0 s(527,568) a(1307,1347) a(571,714) s(1215,566) d(546) s(576,724) a(1843,568) d(1805)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000450/gzip.c  s(576,724) s(579,1263) s(1193,559) a(1281,1204) s(527,568) s(576,724) d(552) a(838,1394) fails to compile
+	  0 s(576,724) s(579,1263) s(1193,559) a(1281,1204) s(527,568) s(576,724) d(552) a(838,1394)
+	0.0672263 s(578,576) d(1214) s(576,724) a(563,1419) s(977,972) s(1851,838)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000452/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204) a(1232,1194) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204) a(1232,1194)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000453/gzip.c  d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) s(1219,1412) fails to compile
+	  0 d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) s(1219,1412)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000454/gzip.c  s(527,568) a(563,1419) s(1193,559) s(977,972) a(1281,1204) s(576,724) s(579,1263) s(718,657) s(578,1821) d(634) fails to compile
+	  0 s(527,568) a(563,1419) s(1193,559) s(977,972) a(1281,1204) s(576,724) s(579,1263) s(718,657) s(578,1821) d(634)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000455/gzip.c  a(1281,1849) s(576,724) s(579,1263) s(718,657) s(578,1821) s(579,1263) s(1193,559) a(1281,1204) d(552) fails to compile
+	  0 a(1281,1849) s(576,724) s(579,1263) s(718,657) s(578,1821) s(579,1263) s(1193,559) a(1281,1204) d(552)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000456/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204) d(546) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204) d(546)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000457/gzip.c  d(484) s(527,568) d(1826) a(1281,1849) s(527,568) s(576,724) s(579,1263) s(718,657) a(577,750) s(578,1821) d(1835) fails to compile
+	  0 d(484) s(527,568) d(1826) a(1281,1849) s(527,568) s(576,724) s(579,1263) s(718,657) a(577,750) s(578,1821) d(1835)
+Elite size: 4
+	0.544818 a(567,1215)
+	0.544818 d(530)
+	0.544818 d(1817)
+	0.544818 d(530)
+Best individual (Elite U Pop'):
+ 0.544818 a(567,1215) 
+search: generation 9 (sizeof one variant = 0.875332 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000458/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) s(563,555) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) s(563,555)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000459/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(573,638) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(573,638)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000460/gzip.c  a(1281,1849) s(576,724) s(579,1263) s(718,657) s(579,1263) a(1281,1204) d(552) a(573,724) d(774) d(531) d(484) d(1826) s(954,952) d(554) a(542,566) fails to compile
+	  0 a(1281,1849) s(576,724) s(579,1263) s(718,657) s(579,1263) a(1281,1204) d(552) a(573,724) d(774) d(531) d(484) d(1826) s(954,952) d(554) a(542,566)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000461/gzip.c  a(573,724) s(579,1263) a(527,471) a(527,471) d(634) d(531) d(484) d(1826) d(554) s(576,724) s(718,657) s(579,1263) d(552) s(563,570) fails to compile
+	  0 a(573,724) s(579,1263) a(527,471) a(527,471) d(634) d(531) d(484) d(1826) d(554) s(576,724) s(718,657) s(579,1263) d(552) s(563,570)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000462/gzip.c  a(1281,1849) s(576,724) s(579,1263) s(718,657) s(578,1821) s(579,1263) s(1193,559) a(1281,1204) d(552) a(570,531) fails to compile
+	  0 a(1281,1849) s(576,724) s(579,1263) s(718,657) s(578,1821) s(579,1263) s(1193,559) a(1281,1204) d(552) a(570,531)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000463/gzip.c  a(573,724) s(579,1263) a(527,471) d(774) a(527,471) d(634) d(531) d(484) d(1826) a(1307,1347) s(954,952) d(554) s(480,452) fails to compile
+	  0 a(573,724) s(579,1263) a(527,471) d(774) a(527,471) d(634) d(531) d(484) d(1826) a(1307,1347) s(954,952) d(554) s(480,452)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000464/gzip.c  d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) a(563,555) d(526) fails to compile
+	  0 d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) a(563,555) d(526)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000465/gzip.c  a(573,724) a(1307,1347) s(579,1263) a(527,471) d(774) s(579,1263) a(527,471) s(527,568) d(634) d(531) a(532,724) s(1285,1201) fails to compile
+	  0 a(573,724) a(1307,1347) s(579,1263) a(527,471) d(774) s(579,1263) a(527,471) s(527,568) d(634) d(531) a(532,724) s(1285,1201)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000466/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(1823,1263) d(1233) a(561,455) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) a(1823,1263) d(1233) a(561,455)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000467/gzip.c  a(573,724) a(1307,1347) s(579,1263) a(527,471) d(774) s(579,1263) a(527,471) s(527,568) d(634) d(531) a(532,724) a(525,479) fails to compile
+	  0 a(573,724) a(1307,1347) s(579,1263) a(527,471) d(774) s(579,1263) a(527,471) s(527,568) d(634) d(531) a(532,724) a(525,479)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000468/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(779,778) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(779,778)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000469/gzip.c  s(527,568) s(576,724) d(552) d(1204) d(452) d(978) a(980,1837) s(561,559) d(580) d(1841) fails to compile
+	  0 s(527,568) s(576,724) d(552) d(1204) d(452) d(978) a(980,1837) s(561,559) d(580) d(1841)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000470/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(380) a(978,734) d(580) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(380) a(978,734) d(580)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000471/gzip.c  s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) a(576,527) s(1812,1804) a(571,577) fails to compile
+	  0 s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) a(576,527) s(1812,1804) a(571,577)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000472/gzip.c  s(527,568) s(579,1263) a(563,1202) a(577,750) a(573,724) d(1233) s(576,724) s(1270,1276) a(580,724) s(527,568) d(495) a(555,738) s(559,546) fails to compile
+	  0 s(527,568) s(579,1263) a(563,1202) a(577,750) a(573,724) d(1233) s(576,724) s(1270,1276) a(580,724) s(527,568) d(495) a(555,738) s(559,546)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000473/gzip.c  a(580,724) a(978,498) d(495) a(555,738) s(527,568) s(576,724) a(577,750) d(1826) s(526,575) fails to compile
+	  0 a(580,724) a(978,498) d(495) a(555,738) s(527,568) s(576,724) a(577,750) d(1826) s(526,575)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000474/gzip.c  s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) d(1826) a(573,724) d(542) d(1233) d(578) fails to compile
+	  0 s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) d(1826) a(573,724) d(542) d(1233) d(578)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000475/gzip.c  s(576,724) s(1270,1276) d(371) a(580,724) s(527,568) a(978,498) d(495) a(555,738) d(560) fails to compile
+	  0 s(576,724) s(1270,1276) d(371) a(580,724) s(527,568) a(978,498) d(495) a(555,738) d(560)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000476/gzip.c  d(546) s(527,568) d(1826) a(573,724) s(778,824) d(576) d(560) a(551,508) a(1281,1204) s(576,724) s(579,1263) s(718,657) s(578,1821) s(575,750) fails to compile
+	  0 d(546) s(527,568) d(1826) a(573,724) s(778,824) d(576) d(560) a(551,508) a(1281,1204) s(576,724) s(579,1263) s(718,657) s(578,1821) s(575,750)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000477/gzip.c  s(977,972) s(718,657) s(578,1821) d(546) s(527,568) a(573,724) s(778,824) d(576) a(551,508) a(638,1201) fails to compile
+	  0 s(977,972) s(718,657) s(578,1821) d(546) s(527,568) a(573,724) s(778,824) d(576) a(551,508) a(638,1201)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000478/gzip.c  d(546) d(484) s(527,568) d(1826) a(573,724) s(778,824) d(576) a(1281,1849) d(560) a(551,508) s(497,499) fails to compile
+	  0 d(546) d(484) s(527,568) d(1826) a(573,724) s(778,824) d(576) a(1281,1849) d(560) a(551,508) s(497,499)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000479/gzip.c  s(527,568) a(563,1419) s(1193,559) s(977,972) a(1281,1204) s(576,724) s(579,1263) s(718,657) s(578,1821) d(634) a(632,1826) fails to compile
+	  0 s(527,568) a(563,1419) s(1193,559) s(977,972) a(1281,1204) s(576,724) s(579,1263) s(718,657) s(578,1821) d(634) a(632,1826)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000480/gzip.c  s(576,724) s(1270,1276) d(371) a(580,724) s(527,568) a(978,498) d(495) a(555,738) a(778,634) fails to compile
+	  0 s(576,724) s(1270,1276) d(371) a(580,724) s(527,568) a(978,498) d(495) a(555,738) a(778,634)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000481/gzip.c  d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) a(563,555) a(1821,1219) fails to compile
+	  0 d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) a(563,555) a(1821,1219)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000482/gzip.c  s(527,568) a(563,1419) s(1193,559) s(977,972) a(1281,1204) s(576,724) s(579,1263) s(718,657) s(578,1821) d(634) d(530) fails to compile
+	  0 s(527,568) a(563,1419) s(1193,559) s(977,972) a(1281,1204) s(576,724) s(579,1263) s(718,657) s(578,1821) d(634) d(530)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000483/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204) d(546) d(377) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204) d(546) d(377)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000484/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) a(1202,571) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) a(1202,571)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000485/gzip.c  a(1281,1849) s(576,724) s(579,1263) s(718,657) s(578,1821) s(579,1263) s(1193,559) a(1281,1204) d(552) a(1221,480) fails to compile
+	  0 a(1281,1849) s(576,724) s(579,1263) s(718,657) s(578,1821) s(579,1263) s(1193,559) a(1281,1204) d(552) a(1221,480)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000486/gzip.c  d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) s(1219,1412) s(1834,472) fails to compile
+	  0 d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) s(1219,1412) s(1834,472)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000487/gzip.c  a(573,724) a(573,724) s(1285,1254) d(552) d(1214) d(578) s(577,463) fails to compile
+	  0 a(573,724) a(573,724) s(1285,1254) d(552) d(1214) d(578) s(577,463)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000488/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) d(1807) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) d(1807)
+	0.0672263 s(578,576) d(1214) s(576,724) a(563,1419) s(977,972) s(1851,838) d(542)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000489/gzip.c  d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) s(1219,1412) d(1210) fails to compile
+	  0 d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) s(1219,1412) d(1210)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000490/gzip.c  a(573,724) d(542) s(380,494) s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) a(961,479) d(980) fails to compile
+	  0 a(573,724) d(542) s(380,494) s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) a(961,479) d(980)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000491/gzip.c  s(642,1200) s(527,568) s(576,724) d(1826) a(573,724) a(573,724) d(530) a(576,527) s(1843,1847) a(480,1826) fails to compile
+	  0 s(642,1200) s(527,568) s(576,724) d(1826) a(573,724) a(573,724) d(530) a(576,527) s(1843,1847) a(480,1826)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000492/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576) s(1253,1189) d(567) s(1256,1202) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576) s(1253,1189) d(567) s(1256,1202)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000493/gzip.c  a(573,724) d(954) a(573,724) a(573,724) s(1285,1254) s(1812,1804) d(542) s(576,724) a(577,750) a(552,458) fails to compile
+	  0 a(573,724) d(954) a(573,724) a(573,724) s(1285,1254) s(1812,1804) d(542) s(576,724) a(577,750) a(552,458)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000494/gzip.c  a(573,724) s(380,494) a(961,479) s(527,568) d(1826) a(573,724) d(1826) d(954) a(573,724) a(576,527) s(1812,1804) d(552) fails to compile
+	  0 a(573,724) s(380,494) a(961,479) s(527,568) d(1826) a(573,724) d(1826) d(954) a(573,724) a(576,527) s(1812,1804) d(552)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000495/gzip.c  s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) a(576,527) s(1812,1804) a(723,510) fails to compile
+	  0 s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) a(576,527) s(1812,1804) a(723,510)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000496/gzip.c  a(573,724) d(542) s(380,494) s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) a(961,479) d(571) fails to compile
+	  0 a(573,724) d(542) s(380,494) s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) a(961,479) d(571)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000497/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(380) a(978,734) a(561,577) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(380) a(978,734) a(561,577)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000498/gzip.c  s(576,724) s(579,1263) s(1193,559) a(1281,1204) s(527,568) s(576,724) d(552) a(838,1394) a(561,1270) fails to compile
+	  0 s(576,724) s(579,1263) s(1193,559) a(1281,1204) s(527,568) s(576,724) d(552) a(838,1394) a(561,1270)
+	  0 s(576,724) d(376) a(635,656) d(531) s(527,568) a(573,724) d(376) a(951,1821) s(560,462) d(559) a(546,562) s(580,837) a(567,554) d(542)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000499/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204) d(546) a(462,477) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204) d(546) a(462,477)
+Elite size: 4
+	0.544818 a(567,1215)
+	0.544818 d(530)
+	0.544818 d(1817)
+	0.544818 d(530)
+Best individual (Elite U Pop'):
+ 0.544818 a(567,1215) 
+search: generation 10 (sizeof one variant = 0.875606 MB)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000500/gzip.c  a(573,724) a(1307,1347) s(579,1263) a(527,471) d(774) s(579,1263) a(527,471) s(527,568) d(634) d(531) a(532,724) a(525,479) d(526) fails to compile
+	  0 a(573,724) a(1307,1347) s(579,1263) a(527,471) d(774) s(579,1263) a(527,471) s(527,568) d(634) d(531) a(532,724) a(525,479) d(526)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000501/gzip.c  a(573,724) d(542) s(380,494) s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) a(961,479) d(980) s(1818,1828) fails to compile
+	  0 a(573,724) d(542) s(380,494) s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) a(961,479) d(980) s(1818,1828)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000502/gzip.c  s(527,568) s(576,724) s(718,657) a(563,1202) d(1308) s(573,638) s(527,568) d(1826) a(571,714) s(525,550) fails to compile
+	  0 s(527,568) s(576,724) s(718,657) a(563,1202) d(1308) s(573,638) s(527,568) d(1826) a(571,714) s(525,550)
+	0.122036 d(1826) s(954,952) a(571,714) a(978,734) a(561,577) s(527,568) s(579,1263) s(718,657) a(563,1202) d(545) a(531,498)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000504/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(573,638) s(517,769) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(573,638) s(517,769)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000505/gzip.c  d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(380) a(978,734) a(561,577) s(545,573) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) a(1307,1347) s(954,952) d(542) a(571,714) d(380) a(978,734) a(561,577) s(545,573)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000506/gzip.c  d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) s(1219,1412) s(1834,472) a(1804,1818) fails to compile
+	  0 d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) s(1219,1412) s(1834,472) a(1804,1818)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000507/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204) d(546) a(462,477) a(560,724) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204) d(546) a(462,477) a(560,724)
+	0.296813 d(1826) s(642,1200) s(578,576) s(527,568) d(552) s(1834,472) s(576,724) a(563,1202) d(1308) d(579)
+	0.113717 s(527,568) a(563,1419) s(579,1263) s(718,657) a(577,750) d(1308) s(573,638) d(1826) s(578,576) d(1214) s(1219,1412) s(1834,472) s(1270,1209)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000510/gzip.c  d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) s(1219,1412) s(1834,472) s(1274,1239) fails to compile
+	  0 d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) s(1219,1412) s(1834,472) s(1274,1239)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000511/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(573,638) a(1197,1269) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(573,638) a(1197,1269)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000512/gzip.c  d(542) s(380,494) s(576,724) s(579,1263) a(961,479) d(980) a(527,471) d(531) d(484) d(1826) s(579,1263) d(552) s(563,570) a(634,463) fails to compile
+	  0 d(542) s(380,494) s(576,724) s(579,1263) a(961,479) d(980) a(527,471) d(531) d(484) d(1826) s(579,1263) d(552) s(563,570) a(634,463)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000513/gzip.c  a(573,724) s(579,1263) a(527,471) a(527,471) d(531) s(718,657) s(563,570) d(542) s(380,494) s(527,568) s(579,1263) a(563,1202) s(571,532) fails to compile
+	  0 a(573,724) s(579,1263) a(527,471) a(527,471) d(531) s(718,657) s(563,570) d(542) s(380,494) s(527,568) s(579,1263) a(563,1202) s(571,532)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000514/gzip.c  a(573,724) d(542) s(380,494) s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) a(961,479) d(980) a(1189,1190) fails to compile
+	  0 a(573,724) d(542) s(380,494) s(527,568) s(576,724) s(579,1263) a(563,1202) a(577,750) a(961,479) d(980) a(1189,1190)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000515/gzip.c  a(573,724) s(579,1263) a(527,471) a(527,471) d(634) d(531) d(484) d(1826) d(554) s(576,724) s(718,657) s(579,1263) d(552) s(563,570) a(961,1850) fails to compile
+	  0 a(573,724) s(579,1263) a(527,471) a(527,471) d(634) d(531) d(484) d(1826) d(554) s(576,724) s(718,657) s(579,1263) d(552) s(563,570) a(961,1850)
+	0.128434 a(635,656) s(527,568) a(573,724) a(567,554) s(579,1263) a(577,750) d(545) d(571)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000517/gzip.c  s(527,568) d(545) d(1308) s(573,638) s(576,724) a(635,656) d(531) s(527,568) a(573,724) a(951,1821) d(559) s(580,837) a(563,713) fails to compile
+	  0 s(527,568) d(545) d(1308) s(573,638) s(576,724) a(635,656) d(531) s(527,568) a(573,724) a(951,1821) d(559) s(580,837) a(563,713)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000518/gzip.c  s(576,724) d(376) a(635,656) d(531) s(527,568) a(573,724) d(376) a(951,1821) s(560,462) d(559) a(546,562) s(580,837) a(567,554) d(542) a(738,736) fails to compile
+	  0 s(576,724) d(376) a(635,656) d(531) s(527,568) a(573,724) d(376) a(951,1821) s(560,462) d(559) a(546,562) s(580,837) a(567,554) d(542) a(738,736)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000519/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(573,638) s(560,1199) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(573,638) s(560,1199)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000520/gzip.c  s(527,568) a(563,1419) s(1193,559) s(977,972) a(1281,1204) s(576,724) s(579,1263) s(718,657) s(578,1821) d(634) d(530) a(531,771) fails to compile
+	  0 s(527,568) a(563,1419) s(1193,559) s(977,972) a(1281,1204) s(576,724) s(579,1263) s(718,657) s(578,1821) d(634) d(530) a(531,771)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000521/gzip.c  s(576,724) d(376) a(635,656) d(531) s(527,568) a(573,724) d(376) a(951,1821) s(560,462) d(559) a(546,562) s(580,837) a(567,554) d(542) a(571,571) fails to compile
+	  0 s(576,724) d(376) a(635,656) d(531) s(527,568) a(573,724) d(376) a(951,1821) s(560,462) d(559) a(546,562) s(580,837) a(567,554) d(542) a(571,571)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000522/gzip.c  s(642,1200) s(576,724) d(1826) a(573,724) a(576,527) a(480,1826) s(576,724) a(570,1420) d(371) d(1807) a(1257,1253) fails to compile
+	  0 s(642,1200) s(576,724) d(1826) a(573,724) a(576,527) a(480,1826) s(576,724) a(570,1420) d(371) d(1807) a(1257,1253)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000523/gzip.c  s(527,568) s(576,724) s(576,1220) s(1270,1276) a(580,724) d(838) d(1807) s(642,1200) s(527,568) s(576,724) d(1826) a(573,724) a(573,724) a(480,1826) s(517,1249) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) s(1270,1276) a(580,724) d(838) d(1807) s(642,1200) s(527,568) s(576,724) d(1826) a(573,724) a(573,724) a(480,1826) s(517,1249)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000524/gzip.c  s(642,1200) s(527,568) s(576,724) d(1826) a(573,724) a(573,724) d(530) a(576,527) s(1843,1847) a(480,1826) d(550) fails to compile
+	  0 s(642,1200) s(527,568) s(576,724) d(1826) a(573,724) a(573,724) d(530) a(576,527) s(1843,1847) a(480,1826) d(550)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000525/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) d(1807) a(477,1232) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) d(1807) a(477,1232)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000526/gzip.c  s(576,724) s(1270,1276) d(371) a(580,724) s(527,568) a(978,498) d(495) a(555,738) d(560) s(551,545) fails to compile
+	  0 s(576,724) s(1270,1276) d(371) a(580,724) s(527,568) a(978,498) d(495) a(555,738) d(560) s(551,545)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000527/gzip.c  s(527,568) a(563,1419) s(1193,559) s(977,972) a(1281,1204) s(576,724) s(579,1263) s(718,657) s(578,1821) d(634) a(632,1826) d(1257) fails to compile
+	  0 s(527,568) a(563,1419) s(1193,559) s(977,972) a(1281,1204) s(576,724) s(579,1263) s(718,657) s(578,1821) d(634) a(632,1826) d(1257)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000528/gzip.c  s(576,1220) s(1270,1276) d(371) d(838) a(573,724) s(527,568) d(1826) d(954) a(573,724) a(576,527) s(1812,1804) s(560,735) fails to compile
+	  0 s(576,1220) s(1270,1276) d(371) d(838) a(573,724) s(527,568) d(1826) d(954) a(573,724) a(576,527) s(1812,1804) s(560,735)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000529/gzip.c  s(380,494) a(961,479) d(1826) a(573,724) d(954) a(573,724) a(576,527) s(576,724) s(576,1220) d(371) a(580,724) d(567) a(1202,571) s(530,562) fails to compile
+	  0 s(380,494) a(961,479) d(1826) a(573,724) d(954) a(573,724) a(576,527) s(576,724) s(576,1220) d(371) a(580,724) d(567) a(1202,571) s(530,562)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000530/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) a(1202,571) a(635,578) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) a(1202,571) a(635,578)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000531/gzip.c  a(573,724) s(380,494) a(961,479) s(527,568) d(1826) a(573,724) d(1826) d(954) a(573,724) a(576,527) s(1812,1804) d(552) a(1220,1262) fails to compile
+	  0 a(573,724) s(380,494) a(961,479) s(527,568) d(1826) a(573,724) d(1826) d(954) a(573,724) a(576,527) s(1812,1804) d(552) a(1220,1262)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000532/gzip.c  d(1826) d(1826) a(573,724) a(573,724) a(573,724) d(530) s(1285,1254) a(576,527) s(576,724) a(563,1202) a(525,1336) fails to compile
+	  0 d(1826) d(1826) a(573,724) a(573,724) a(573,724) d(530) s(1285,1254) a(576,527) s(576,724) a(563,1202) a(525,1336)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000533/gzip.c  s(576,724) a(563,1419) s(579,1263) a(577,750) d(545) s(527,568) d(1826) a(573,724) a(573,724) a(576,527) a(1837,579) fails to compile
+	  0 s(576,724) a(563,1419) s(579,1263) a(577,750) d(545) s(527,568) d(1826) a(573,724) a(573,724) a(576,527) a(1837,579)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000534/gzip.c  s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) a(576,527) s(1812,1804) a(571,577) a(1850,725) fails to compile
+	  0 s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) a(576,527) s(1812,1804) a(571,577) a(1850,725)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000535/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(573,638) s(954,950) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(573,638) s(954,950)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000536/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(779,778) a(635,1256) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(779,778) a(635,1256)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000537/gzip.c  a(573,724) a(573,724) s(1285,1254) d(552) d(1214) d(578) s(577,463) s(378,507) fails to compile
+	  0 a(573,724) a(573,724) s(1285,1254) d(552) d(1214) d(578) s(577,463) s(378,507)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000538/gzip.c  s(576,724) s(576,1220) d(838) a(1202,571) s(1270,1276) d(371) a(978,498) d(560) a(1285,1279) fails to compile
+	  0 s(576,724) s(576,1220) d(838) a(1202,571) s(1270,1276) d(371) a(978,498) d(560) a(1285,1279)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000539/gzip.c  s(1270,1276) d(371) d(495) d(560) s(527,568) s(576,724) a(570,1420) a(580,724) d(567) d(838) a(1202,571) a(1287,1346) fails to compile
+	  0 s(1270,1276) d(371) d(495) d(560) s(527,568) s(576,724) a(570,1420) a(580,724) d(567) d(838) a(1202,571) a(1287,1346)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000540/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) a(1202,571) s(1248,1337) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) a(1202,571) s(1248,1337)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000541/gzip.c  s(576,724) s(1270,1276) d(371) a(580,724) s(527,568) a(978,498) d(495) a(555,738) d(560) d(484) fails to compile
+	  0 s(576,724) s(1270,1276) d(371) a(580,724) s(527,568) a(978,498) d(495) a(555,738) d(560) d(484)
+	0.159174 s(642,1200) s(578,576) s(527,568) s(576,724) s(1219,1412) s(1834,472) s(579,1263) a(1221,480) s(546,550)
+	0.114155 s(579,1263) s(578,1821) s(1193,559) a(1281,1204) d(552) s(642,1200) s(578,576) s(527,568) d(552) s(1219,1412) s(1834,472) d(542)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000544/gzip.c  d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) s(1219,1412) s(1834,472) s(345,499) fails to compile
+	  0 d(1826) a(573,724) s(642,1200) s(578,576) s(527,568) s(576,724) d(552) d(1214) s(1219,1412) s(1834,472) s(345,499)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000545/gzip.c  a(1281,1849) s(576,724) s(579,1263) s(718,657) s(578,1821) s(579,1263) s(1193,559) a(1281,1204) d(552) a(1221,480) a(773,1200) fails to compile
+	  0 a(1281,1849) s(576,724) s(579,1263) s(718,657) s(578,1821) s(579,1263) s(1193,559) a(1281,1204) d(552) a(1221,480) a(773,1200)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000546/gzip.c  d(1826) a(573,724) a(573,724) a(573,724) d(530) s(1812,1804) s(576,724) a(580,724) d(577) fails to compile
+	  0 d(1826) a(573,724) a(573,724) a(573,724) d(530) s(1812,1804) s(576,724) a(580,724) d(577)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000547/gzip.c  s(527,568) a(580,724) d(838) a(1202,571) a(573,724) d(530) s(1812,1804) a(1395,573) fails to compile
+	  0 s(527,568) a(580,724) d(838) a(1202,571) a(573,724) d(530) s(1812,1804) a(1395,573)
+	  0 s(527,568) d(1826) a(573,724) d(1826) a(573,724) d(954) a(573,724) a(573,724) d(530) s(1285,1254) a(576,527) s(1812,1804) a(723,510) s(514,976)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000548/gzip.c  s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) a(1202,571) s(1199,1420) fails to compile
+	  0 s(527,568) s(576,724) s(576,1220) a(570,1420) s(1270,1276) d(371) a(580,724) d(567) d(838) a(1202,571) s(1199,1420)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000549/gzip.c  d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576) s(1253,1189) d(567) s(1256,1202) d(1836) fails to compile
+	  0 d(484) s(527,568) d(1826) a(573,724) s(642,1200) d(545) s(512,1263) s(578,576) s(1253,1189) d(567) s(1256,1202) d(1836)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000550/gzip.c  a(573,724) d(954) a(573,724) a(573,724) s(1285,1254) s(1812,1804) d(542) s(576,724) a(577,750) a(552,458) d(1247) fails to compile
+	  0 a(573,724) d(954) a(573,724) a(573,724) s(1285,1254) s(1812,1804) d(542) s(576,724) a(577,750) a(552,458) d(1247)
+	0.124973 a(555,738) d(1826) s(527,568) s(579,1263) s(718,657) a(577,750) s(573,638) d(471)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000552/gzip.c  s(579,1263) s(718,657) d(545) s(573,638) s(576,724) d(1826) s(526,575) d(570) fails to compile
+	  0 s(579,1263) s(718,657) d(545) s(573,638) s(576,724) d(1826) s(526,575) d(570)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000553/gzip.c  a(580,724) a(978,498) d(495) a(555,738) s(527,568) s(576,724) a(577,750) d(1826) s(526,575) a(36,1382) fails to compile
+	  0 a(580,724) a(978,498) d(495) a(555,738) s(527,568) s(576,724) a(577,750) d(1826) s(526,575) a(36,1382)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000554/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(573,638) s(566,1287) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(718,657) a(563,1202) a(577,750) d(545) d(1308) s(573,638) s(566,1287)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000555/gzip.c  s(576,724) s(579,1263) a(578,551) s(977,972) d(377) s(527,568) d(552) s(561,559) d(580) d(1841) d(573) fails to compile
+	  0 s(576,724) s(579,1263) a(578,551) s(977,972) d(377) s(527,568) d(552) s(561,559) d(580) d(1841) d(573)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000556/gzip.c  s(527,568) s(576,724) d(452) a(980,1837) s(527,568) a(563,1419) s(1193,559) a(1847,1831) fails to compile
+	  0 s(527,568) s(576,724) d(452) a(980,1837) s(527,568) a(563,1419) s(1193,559) a(1847,1831)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000557/gzip.c  s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204) d(546) d(377) s(1803,1819) fails to compile
+	  0 s(527,568) s(576,724) a(563,1419) s(579,1263) s(1193,559) a(578,551) s(977,972) a(1281,1204) d(546) d(377) s(1803,1819)
+	/root/mountpoint-genprog/genprog-many-bugs/gzip-bug-2009-09-26-a1d3d4019d-f17cbd13a1/000558/gzip.c  s(527,568) s(576,724) d(552) d(1204) d(452) d(978) a(980,1837) s(561,559) d(580) d(1841) d(577) fails to compile
+	  0 s(527,568) s(576,724) d(552) d(1204) d(452) d(978) a(980,1837) s(561,559) d(580) d(1841) d(577)
+Elite size: 4
+	0.544818 a(567,1215)
+	0.544818 d(530)
+	0.544818 d(1817)
+	0.544818 d(530)
+Best individual (Elite U Pop'):
+ 0.544818 a(567,1215) 
+search: genetic algorithm ends
+
+No repair found.
+
+Variant Test Case Queries: 622
+"Test Suite Evaluations": 155.5
+
+Compile Failures: 338
+Wall-Clock Seconds Elapsed: 1184.99
+  Activity Name                     Count Seconds = Percent of Total Time
+  rebuild files                     67434  34.514 = 3.42083%
+  compile                             561 347.805 = 34.4729%
+  test                                229 626.506 = 62.0964%
+  TOTAL                                   1008.925 = 85.1415% (avg CPU usage)
